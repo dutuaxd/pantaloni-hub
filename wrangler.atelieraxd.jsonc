@@ -1,12 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "pantaloni-hub",
+  "name": "atelieraxd-ro",
   "compatibility_date": "2026-05-05",
   "assets": {
-    "directory": "pantalonicusnurlung-ro/dist"
+    "directory": "atelieraxd-ro/dist"
   },
   "build": {
-    "command": "npm --prefix pantalonicusnurlung-ro ci && npm --prefix pantalonicusnurlung-ro run build"
+    "command": "npm --prefix atelieraxd-ro ci && npm --prefix atelieraxd-ro run build"
   },
   "observability": {
     "enabled": true
