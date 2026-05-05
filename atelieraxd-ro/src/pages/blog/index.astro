@@ -1,0 +1,6 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const posts = (await Astro.glob('../../content/blog/*/index.md')).filter((p)=>!p.frontmatter.draft);
+const title='Blog pantaloni cu snur lung'; const description='Articole despre pantaloni cu snur lung, stil, marimi si ingrijire. Citeste ghidurile acum!'; const canonical='https://atelieraxd.ro/blog/';
+---
+<Layout title={title} description={description} canonical={canonical}><section class="mx-auto max-w-6xl px-4 py-12"><h1 class="text-4xl font-bold">Blog pantaloni cu snur lung</h1><div class="mt-8 grid gap-4 md:grid-cols-3">{posts.map((p)=><article class="rounded bg-white p-5"><h2 class="font-bold"><a href={'/blog/'+p.frontmatter.slug}>{p.frontmatter.title}</a></h2><p class="mt-2 text-sm">{p.frontmatter.metaDescription}</p></article>)}</div></section></Layout>

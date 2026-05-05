@@ -1,0 +1,32 @@
+[
+  {
+    "filename": "pantaloni-cu-snur-lung-bumbac-material.jpg",
+    "alt": "Pantaloni cu snur lung cotton fabric texture close pentru tinute casual confortabile",
+    "title": "Pantaloni cu snur lung 1",
+    "width": 1200,
+    "height": 630,
+    "loading": "eager",
+    "fetchpriority": "high",
+    "caption": "Pantaloni cu snur lung prezentati natural in context 1."
+  },
+  {
+    "filename": "pantaloni-cu-snur-lung-in-natural.jpg",
+    "alt": "Pantaloni cu snur lung linen natural fabric pentru tinute casual confortabile",
+    "title": "Pantaloni cu snur lung 2",
+    "width": 1200,
+    "height": 630,
+    "loading": "lazy",
+    "decoding": "async",
+    "caption": "Pantaloni cu snur lung prezentati natural in context 2."
+  },
+  {
+    "filename": "pantaloni-cu-snur-lung-poliester-sport.jpg",
+    "alt": "Pantaloni cu snur lung polyester fabric clothing pentru tinute casual confortabile",
+    "title": "Pantaloni cu snur lung 3",
+    "width": 1200,
+    "height": 630,
+    "loading": "lazy",
+    "decoding": "async",
+    "caption": "Pantaloni cu snur lung prezentati natural in context 3."
+  }
+]

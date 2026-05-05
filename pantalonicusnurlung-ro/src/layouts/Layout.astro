@@ -1,0 +1,22 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SEOHead from '../components/SEOHead.astro';
+import CookieBanner from '../components/CookieBanner.astro';
+interface Props { title:string; description:string; canonical:string; image?:string; type?:string; schema?:unknown; }
+const props = Astro.props;
+---
+<html lang="ro">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+<SEOHead {...props} />
+</head>
+<body class="bg-mist text-ink antialiased">
+<Header />
+<main><slot /></main>
+<Footer />
+<CookieBanner />
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "filename": "pantaloni-cu-snur-lung-comparatie-trening.jpg",
+    "alt": "Pantaloni cu snur lung drawstring pants vs sweatpants pentru tinute casual confortabile",
+    "title": "Pantaloni cu snur lung 1",
+    "width": 1200,
+    "height": 630,
+    "loading": "eager",
+    "fetchpriority": "high",
+    "caption": "Pantaloni cu snur lung prezentati natural in context 1."
+  },
+  {
+    "filename": "pantaloni-cu-snur-lung-stil-casual.jpg",
+    "alt": "Pantaloni cu snur lung casual pants comparison pentru tinute casual confortabile",
+    "title": "Pantaloni cu snur lung 2",
+    "width": 1200,
+    "height": 630,
+    "loading": "lazy",
+    "decoding": "async",
+    "caption": "Pantaloni cu snur lung prezentati natural in context 2."
+  },
+  {
+    "filename": "pantaloni-cu-snur-lung-confortabili.jpg",
+    "alt": "Pantaloni cu snur lung comfortable trousers style pentru tinute casual confortabile",
+    "title": "Pantaloni cu snur lung 3",
+    "width": 1200,
+    "height": 630,
+    "loading": "lazy",
+    "decoding": "async",
+    "caption": "Pantaloni cu snur lung prezentati natural in context 3."
+  }
+]

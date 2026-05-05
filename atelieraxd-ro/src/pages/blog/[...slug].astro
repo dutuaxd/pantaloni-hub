@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import { blogImages } from '../../data/blogImages';
+export async function getStaticPaths(){ const posts=(await Astro.glob('../../content/blog/*/index.md')).filter((p)=>!p.frontmatter.draft); return posts.map((post)=>({params:{slug:post.frontmatter.slug}, props:{post}})); }
+const { post } = Astro.props; const Content = post.Content;
+const folder = post.file.split(/[\\/]/).slice(-2,-1)[0];
+const modules = import.meta.glob('../../content/blog/**/*.{jpg,jpeg,png,webp,avif}', { eager:true });
+const meta = blogImages[folder];
+const imageFor = (name)=>Object.entries(modules).find(([k])=>k.endsWith('/'+folder+'/'+name))?.[1]?.default;
+const schema={ '@context':'https://schema.org', '@type':'Article', headline:post.frontmatter.title, description:post.frontmatter.metaDescription, image:post.frontmatter.images.hero.src, mainEntityOfPage:post.frontmatter.canonicalUrl, inLanguage:'ro-RO' };
+---
+<Layout title={post.frontmatter.metaTitle} description={post.frontmatter.metaDescription} canonical={post.frontmatter.canonicalUrl} type="article" schema={schema}>
+<article class="mx-auto max-w-3xl px-4 py-10 prose prose-neutral">
+{meta.slice(0,1).map((img)=><figure><Image src={imageFor(img.filename)} alt={img.alt} title={img.title} width={img.width} height={img.height} loading="eager" fetchpriority="high" class="rounded"/><figcaption>{img.caption}</figcaption></figure>)}
+<Content />
+{meta.slice(1).map((img)=><figure><Image src={imageFor(img.filename)} alt={img.alt} title={img.title} width={img.width} height={img.height} loading="lazy" decoding="async" class="rounded"/><figcaption>{img.caption}</figcaption></figure>)}
+</article></Layout>
