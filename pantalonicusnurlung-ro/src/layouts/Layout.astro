@@ -9,15 +9,27 @@ const props = Astro.props;
 ---
 <html lang="ro">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="generator" content={Astro.generator} />
-<SEOHead {...props} />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content={Astro.generator} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <SEOHead {...props} />
 </head>
-<body class="bg-mist text-ink antialiased">
-<Header />
-<main><slot /></main>
-<Footer />
-<CookieBanner />
+<body>
+  <Header />
+  <main><slot /></main>
+  <Footer />
+  <CookieBanner />
+  <script is:inline>
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>

@@ -1,10 +1,23 @@
 ---
-const links = [["/pantaloni-cu-snur-lung","Ghid lungi"],["/pantaloni-cu-snur-scurti","Ghid scurti"],["/cum-sa-porti-pantaloni-cu-snur","Stil"],["/ghid-marimi-pantaloni-cu-snur","Marimi"],["/blog","Blog"]];
+const links = [
+  ['/pantaloni-cu-snur-lung', 'Pantaloni lungi'],
+  ['/pantaloni-cu-snur-scurti', 'Pantaloni scurti'],
+  ['/cum-sa-porti-pantaloni-cu-snur', 'Styling'],
+  ['/ghid-marimi-pantaloni-cu-snur', 'Marimi'],
+  ['/blog', 'Blog'],
+  ['/despre', 'Despre'],
+  ['/contact', 'Contact'],
+];
 ---
-<header class="border-b border-ink/10 bg-white/90 sticky top-0 z-40 backdrop-blur">
-<nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4">
-<a href="/" class="font-black text-xl tracking-normal">PantaloniCuSnurLung.ro</a>
-<div class="hidden items-center gap-5 text-sm font-semibold md:flex">{links.map(([href,label]) => <a class="text-ink/75 hover:text-clay" href={href}>{label}</a>)}</div>
-<a class="rounded-md bg-ink px-4 py-2 text-sm font-semibold text-white hover:bg-clay" href="https://atelieraxd.ro/pantaloni-lungi">pantaloni cu snur lung</a>
-</nav>
+<header class="header-wrapper">
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="logo" aria-label="Acasa PantaloniCuSnurLung.ro">PantaloniCuSnurLung<span>.ro</span></a>
+      <ul class="nav-links">
+        {links.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
+      </ul>
+      <a href="https://atelieraxd.ro/pantaloni-lungi" class="nav-cta">Magazin -></a>
+    </div>
+  </nav>
 </header>
+<div class="fab-left"><a href="https://wa.me/40700000000" class="fab-btn fab-wa" aria-label="Contact WhatsApp">WA</a></div>
