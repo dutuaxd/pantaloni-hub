@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix atelieraxd-ro ci && npm --prefix atelieraxd-ro run build",
+    "build:atelieraxd": "npm --prefix atelieraxd-ro ci && npm --prefix atelieraxd-ro run build",
+    "build:pantalonicusnurlung": "npm --prefix pantalonicusnurlung-ro ci && npm --prefix pantalonicusnurlung-ro run build",
+    "deploy:atelieraxd": "npm run build:atelieraxd && wrangler deploy -c wrangler.jsonc",
+    "deploy:pantalonicusnurlung": "npm run build:pantalonicusnurlung && wrangler deploy -c wrangler.pantalonicusnurlung.jsonc"
+  },
+  "devDependencies": {
+    "wrangler": "^4.88.0"
+  }
+}

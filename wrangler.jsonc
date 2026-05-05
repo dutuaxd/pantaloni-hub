@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "atelieraxd-ro",
+  "compatibility_date": "2026-05-05",
+  "assets": {
+    "directory": "atelieraxd-ro/dist"
+  },
+  "build": {
+    "command": "npm --prefix atelieraxd-ro ci && npm --prefix atelieraxd-ro run build"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

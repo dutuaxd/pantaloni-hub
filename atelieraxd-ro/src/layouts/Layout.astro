@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SEOHead from '../components/SEOHead.astro';
 import CookieBanner from '../components/CookieBanner.astro';
+import '../styles/global.css';
 interface Props { title:string; description:string; canonical:string; image?:string; type?:string; schema?:unknown; }
 const props = Astro.props;
 ---

@@ -14,7 +14,32 @@ async function jsonFiles(){
 }
 async function moveAway(files){ await fs.rm(stash,{recursive:true,force:true}); for(const f of files){ try{ await fs.mkdir(path.dirname(f.to),{recursive:true}); await fs.rename(f.from,f.to); } catch {} } }
 async function restore(files){ for(const f of files){ try{ await fs.mkdir(path.dirname(f.from),{recursive:true}); await fs.rename(f.to,f.from); } catch {} } await fs.rm(stash,{recursive:true,force:true}); }
-function runAstro(){ return new Promise((resolve)=>{ const bin=path.join(root,'node_modules','.bin', process.platform==='win32'?'astro.cmd':'astro'); const command = process.platform === 'win32' ? 'cmd.exe' : bin; const args = process.platform === 'win32' ? ['/c', bin, 'build'] : ['build']; const cp=spawn(command, args, { stdio:'inherit' }); cp.on('exit', code=>resolve(code ?? 1)); }); }
+function pipeClean(stream, target){
+  let pending = '';
+  stream.on('data', (chunk) => {
+    pending += chunk.toString();
+    const lines = pending.split(/\r?\n/);
+    pending = lines.pop() ?? '';
+    for (const line of lines) {
+      if (line.includes('X [ERROR] The build was canceled')) continue;
+      target.write(line + '\n');
+    }
+  });
+  stream.on('end', () => {
+    if (pending && !pending.includes('X [ERROR] The build was canceled')) target.write(pending);
+  });
+}
+function runAstro(){
+  return new Promise((resolve)=>{
+    const bin=path.join(root,'node_modules','.bin', process.platform==='win32'?'astro.cmd':'astro');
+    const command = process.platform === 'win32' ? 'cmd.exe' : bin;
+    const args = process.platform === 'win32' ? ['/c', bin, 'build'] : ['build'];
+    const cp=spawn(command, args, { stdio:['ignore','pipe','pipe'] });
+    pipeClean(cp.stdout, process.stdout);
+    pipeClean(cp.stderr, process.stderr);
+    cp.on('exit', code=>resolve(code ?? 1));
+  });
+}
 const files = await jsonFiles();
 let code = 1;
 try { await fetchImages(); await moveAway(files); code = await runAstro(); } finally { await restore(files); }

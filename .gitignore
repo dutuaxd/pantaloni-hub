@@ -1,0 +1,9 @@
+node_modules/
+**/node_modules/
+.wrangler/
+**/.wrangler/
+.astro/
+**/.astro/
+dist/
+**/dist/
+npm-debug.log*

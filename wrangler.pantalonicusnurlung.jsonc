@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pantalonicusnurlung-ro",
+  "compatibility_date": "2026-05-05",
+  "assets": {
+    "directory": "pantalonicusnurlung-ro/dist"
+  },
+  "build": {
+    "command": "npm --prefix pantalonicusnurlung-ro ci && npm --prefix pantalonicusnurlung-ro run build"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
