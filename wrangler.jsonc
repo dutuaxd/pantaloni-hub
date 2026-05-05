@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "atelieraxd-ro",
+  "name": "pantaloni-hub",
   "compatibility_date": "2026-05-05",
   "assets": {
     "directory": "atelieraxd-ro/dist"
