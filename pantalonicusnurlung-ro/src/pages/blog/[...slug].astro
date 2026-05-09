@@ -1,56 +1,11 @@
 ---
-import { Image } from 'astro:assets';
-import Layout from '../../layouts/Layout.astro';
-import { blogImages } from '../../data/blogImages';
+import ContentPage from '../../components/ContentPage.astro';
+import { blogPosts } from '../../data/seoSite';
 
-export async function getStaticPaths() {
-  const posts = (await Astro.glob('../../content/blog/*/index.md')).filter((p) => !p.frontmatter.draft);
-  return posts.map((post) => ({ params: { slug: post.frontmatter.slug }, props: { post } }));
+export function getStaticPaths() {
+  return blogPosts.map((page) => ({ params: { slug: page.slug.replace('blog/', '') }, props: { page } }));
 }
 
-const { post } = Astro.props;
-const Content = post.Content;
-const folder = post.file.split(/[\\/]/).slice(-2, -1)[0];
-const modules = import.meta.glob('../../content/blog/**/*.{jpg,jpeg,png,webp,avif}', { eager: true });
-const meta = blogImages[folder];
-const imageFor = (name) => Object.entries(modules).find(([k]) => k.endsWith('/' + folder + '/' + name))?.[1]?.default;
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: post.frontmatter.title,
-  description: post.frontmatter.metaDescription,
-  image: post.frontmatter.images.hero.src,
-  mainEntityOfPage: post.frontmatter.canonicalUrl,
-  inLanguage: 'ro-RO',
-};
+const { page } = Astro.props;
 ---
-<Layout title={post.frontmatter.metaTitle} description={post.frontmatter.metaDescription} canonical={post.frontmatter.canonicalUrl} type="article" schema={schema}>
-  <article class="article-shell">
-    <div class="hero-badge">Articol streetwear</div>
-    <h1>{post.frontmatter.title}</h1>
-    <p class="hero-sub">{post.frontmatter.metaDescription}</p>
-
-    {meta.slice(0, 1).map((img) => (
-      <figure>
-        <Image src={imageFor(img.filename)} alt={img.alt} title={img.title} width={img.width} height={img.height} loading="eager" fetchpriority="high" />
-        <figcaption>{img.caption}</figcaption>
-      </figure>
-    ))}
-
-    <Content />
-
-    {meta.slice(1).map((img) => (
-      <figure>
-        <Image src={imageFor(img.filename)} alt={img.alt} title={img.title} width={img.width} height={img.height} loading="lazy" decoding="async" />
-        <figcaption>{img.caption}</figcaption>
-      </figure>
-    ))}
-
-    <div class="content-panel" style="margin-top:40px;text-align:center">
-      <span class="section-tag">// magazin</span>
-      <h2>Pantaloni cu snur lung AtelierAXD</h2>
-      <p>Ai citit ghidul. Urmatorul pas este sa vezi modelele disponibile in magazin.</p>
-      <a class="btn-primary" href="https://atelieraxd.ro/pantaloni-lungi">pantaloni cu snur lung atelieraxd</a>
-    </div>
-  </article>
-</Layout>
+<ContentPage page={page} />

@@ -1,0 +1,13 @@
+---
+import ContentPage from '../components/ContentPage.astro';
+import { pages } from '../data/seoSite';
+
+export function getStaticPaths() {
+  return pages
+    .filter((page) => !['contact', 'faq', 'politica-de-confidentialitate', 'politica-cookies', 'termeni-si-conditii'].includes(page.slug))
+    .map((page) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props;
+---
+<ContentPage page={page} />

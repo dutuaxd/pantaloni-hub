@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE, SHOP, articleSchema, breadcrumbSchema, company, faqSchema, faqs, galleryImages, organizationSchema, updated } from '../data/seoSite';
+
+const { page, isHome = false } = Astro.props;
+const canonical = page.slug ? `${SITE}/${page.slug}/` : `${SITE}/`;
+const image = `/${page.image}`;
+const title = page.title.length > 62 ? page.title : `${page.title} | pantalonicusnurlung.ro`;
+const schema = [
+  organizationSchema(),
+  ...(isHome ? [faqSchema()] : [articleSchema(page), breadcrumbSchema(page.h1, canonical)]),
+  ...(page.slug === 'faq' ? [faqSchema()] : []),
+  ...(page.slug === 'galerie-pantaloni-snur-lung'
+    ? [{
+        '@context': 'https://schema.org',
+        '@type': 'ImageGallery',
+        name: 'Galerie Pantaloni cu Snur Lung',
+        description: page.description,
+        url: canonical,
+        image: galleryImages.map(([file, alt]) => ({ '@type': 'ImageObject', url: `${SITE}/${file}`, name: alt, description: alt, width: 800, height: 1200 })),
+      }]
+    : []),
+];
+---
+<Layout title={title} description={page.description} canonical={canonical} image={image} type={isHome ? 'website' : 'article'} schema={schema}>
+  <article class="seo-article">
+    <section class:list={['seo-hero', isHome && 'home-hero']}>
+      <div class="container hero-grid">
+        <div>
+          <p class="section-tag">{isHome ? 'pantaloni cu snur lung' : `// actualizat ${updated}`}</p>
+          <h1>{page.h1}</h1>
+          <p class="direct-answer">{page.intro}</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href={SHOP} target="_blank" rel="noopener">{isHome ? 'Vezi colectia' : 'Cumpara pantaloni cu snur lung'}</a>
+            <a class="btn-ghost" href={isHome ? '/ghid-marimi-pantaloni-cu-snur/' : '/galerie-pantaloni-snur-lung/'}>{isHome ? 'Ghid de marimi' : 'Vezi galeria'}</a>
+          </div>
+          {isHome && (
+            <div class="home-offer">
+              <span>Oferta Atelier AXD</span>
+              <strong>4 produse = 15% reducere</strong>
+              <small>Reducerea se aplica automat in magazinul atelieraxd.ro.</small>
+            </div>
+          )}
+        </div>
+        <figure class="hero-figure">
+          <img src={image} alt={page.h1} title={page.h1} width="1200" height="1600" loading="eager" decoding="async" fetchpriority="high" />
+          <figcaption>{page.h1}</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-layout">
+        <div class="article-main">
+          <aside class="about-box">
+            <strong>Despre acest articol</strong>
+            <span>Autor: {company.author}</span>
+            <span>Publicat: <time datetime={page.date || '2026-01-01'}>{page.date || '2026-01-01'}</time></span>
+            <span>Actualizat: <time datetime={updated}>{updated}</time></span>
+          </aside>
+
+          {isHome && (
+            <>
+              <h2>De ce snurul lung?</h2>
+              <ul class="check-list">
+                <li>Adauga un accent vizual imediat, fara imprimeuri sau logo-uri mari.</li>
+                <li>Functioneaza in tinute unisex, moda urbana si casual.</li>
+                <li>Regleaza talia si pastreaza o silueta relaxata.</li>
+                <li>Se observa bine in Google Images si in continut de inspiratie moda.</li>
+              </ul>
+              <h2>Categorii principale</h2>
+              <div class="mini-grid">
+                {['barbati', 'femei', 'unisex', 'negri', 'bumbac', 'stil-urban'].map((item) => (
+                  <a class="mini-card" href={`/pantaloni-cu-snur-lung-${item}/`}>Pantaloni cu snur lung {item}</a>
+                ))}
+              </div>
+            </>
+          )}
+
+          {page.sections.map(([heading, body]) => (
+            <section>
+              <h2>{heading}</h2>
+              <p>{body}</p>
+              <p>Pentru context suplimentar, consulta <a href="/ghid-alegere-pantaloni-snur-lung/">ghidul de alegere pantaloni cu snur lung</a>, pagina despre <a href="/pantaloni-cu-snur-lung-unisex/">modele unisex</a> si <a href="/cum-se-poarta-pantaloni-snur-lung/">ghidul de purtare</a>.</p>
+            </section>
+          ))}
+
+          <div class="cta-strip">
+            <h2>Colectia comerciala este pe Atelier AXD</h2>
+            <p>Pantalonicusnurlung.ro este site informativ. Pentru produse, marimi disponibile si comanda, intra pe atelieraxd.ro.</p>
+            <a class="btn-primary" href={SHOP} target="_blank" rel="noopener">vezi pantalonii pe atelieraxd.ro</a>
+          </div>
+
+          {page.slug === 'galerie-pantaloni-snur-lung' && (
+            <div class="gallery-grid">
+              {galleryImages.map(([file, alt]) => (
+                <figure>
+                  <img src={`/${file}`} alt={alt} title={alt} width="800" height="1200" loading="lazy" decoding="async" />
+                  <figcaption>{alt}</figcaption>
+                </figure>
+              ))}
+            </div>
+          )}
+
+          <h2>Intrebari frecvente despre pantaloni cu snur lung</h2>
+          <div class="faq-list">
+            {faqs.map(([q, a]) => (
+              <details>
+                <summary>{q}</summary>
+                <p>{a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+        <aside class="article-side">
+          <h2>Cele mai citite ghiduri</h2>
+          <a href="/ce-sunt-pantalonii-cu-snur-lung/">Ce sunt pantalonii cu snur lung?</a>
+          <a href="/ghid-alegere-pantaloni-snur-lung/">Ghid alegere</a>
+          <a href="/blog/cum-faci-nod-snur-pantaloni/">Cum faci nod la snur</a>
+          <a href="/blog/trenduri-urbane-pantaloni-2026/">Trenduri moda urbana 2026</a>
+          <a href={SHOP} target="_blank" rel="noopener">Cumpara de la Atelier AXD</a>
+          <address>{company.name}<br />{company.cui}<br />{company.email}</address>
+        </aside>
+      </div>
+    </section>
+  </article>
+</Layout>

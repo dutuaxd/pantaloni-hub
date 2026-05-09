@@ -1,25 +1,45 @@
+---
+import { ATELIER_HOME, ATELIER_LINKS, SHOP } from '../data/seoSite';
+---
 <footer id="footer-contact">
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
-        <div class="logo">PantaloniCuSnurLung<span>.ro</span></div>
-        <p>Destinatia ta pentru pantaloni cu snur lung de streetwear. Import de calitate superioara, operat si sustinut oficial de <strong>AtelierAXD</strong>.</p>
+        <div class="logo">Pantaloni cu Snur Lung<span>.ro</span></div>
+        <p>Site informativ in romana despre pantaloni cu snur lung, tinute moda urbana, ghiduri de alegere si trenduri 2026. Pentru produse, stoc si comenzi, traficul merge transparent catre <a href={ATELIER_HOME} target="_blank" rel="noopener">AtelierAXD.ro</a>.</p>
         <div class="social-links">
-          <a href="https://www.instagram.com/atelieraxd.ro/?hl=en" aria-label="Instagram">IG</a>
-          <a href="https://www.tiktok.com/@atelieraxd?lang=en" aria-label="TikTok">TT</a>
-          <a href="https://www.youtube.com/@atelieraxd" aria-label="YouTube">YT</a>
-          <a href="https://www.facebook.com/profile.php?id=100067635362487" aria-label="Facebook">FB</a>
+          <a href="https://www.instagram.com/atelieraxd.ro/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@atelieraxd" aria-label="TikTok" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.youtube.com/@atelieraxd" aria-label="YouTube" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100067635362487" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
       </div>
-      <div class="footer-col"><h4>Suport clienti</h4><ul><li><a href="/contact">Contact</a></li><li><a href="/faq">FAQ</a></li><li><a href="https://atelieraxd.ro/">Unde este comanda mea?</a></li><li><a href="https://atelieraxd.ro/">Return & schimb</a></li><li><a href="https://atelieraxd.ro/">Plati si preturi</a></li></ul></div>
-      <div class="footer-col"><h4>Pagini</h4><ul><li><a href="/pantaloni-cu-snur-lung">Pantaloni lungi</a></li><li><a href="/pantaloni-cu-snur-scurti">Pantaloni scurti</a></li><li><a href="/ghid-marimi-pantaloni-cu-snur">Ghid marimi</a></li><li><a href="/blog">Blog</a></li><li><a href="/despre">Despre</a></li></ul></div>
-      <div class="footer-col"><h4>Legal</h4><ul class="company-details"><li><strong>SC ATELIER AXD SRL</strong></li><li>CUI: 50848938</li><li>Reg. Com: J2024039294009</li><li>Str. Mare A Unirii 4, Bl. 5, Sc. 2, Et. 1, Ap. 17</li><li>Focsani, Vrancea</li><li><strong>atelieraxd@outlook.com</strong></li></ul></div>
+      <div class="footer-col"><h4>Ghiduri</h4><ul><li><a href="/ghid-alegere-pantaloni-snur-lung/">Ghid alegere</a></li><li><a href="/blog/pantaloni-snur-lung-outfit-idei/">Tinute cu snur lung</a></li><li><a href="/blog/trenduri-urbane-pantaloni-2026/">Trenduri moda urbana 2026</a></li><li><a href="/blog/cum-faci-nod-snur-pantaloni/">Cum legi snurul</a></li><li><a href="/pantaloni-cu-snur-lung-unisex/">Ghid unisex</a></li><li><a href="/blog/">Blog</a></li></ul></div>
+      <div class="footer-col"><h4>Site</h4><ul><li><a href="/despre-noi/">Despre noi</a></li><li><a href="/contact/">Contact</a></li><li><a href="/faq/">Intrebari frecvente</a></li><li><a href="/politica-de-confidentialitate/">Politica de confidentialitate</a></li><li><a href="/termeni-si-conditii/">Termeni si conditii</a></li><li><button class="cookie-reset" type="button" data-cookie-reset>Retrage consimtamantul</button></li></ul></div>
+      <div class="footer-col"><h4>Atelier AXD</h4><ul><li><a href={SHOP} target="_blank" rel="noopener">Pantaloni barbati</a></li><li><a href={ATELIER_LINKS.tricouri} target="_blank" rel="noopener">Tricouri barbati</a></li><li><a href={ATELIER_LINKS.hanorace} target="_blank" rel="noopener">Hanorace barbati</a></li><li><a href={ATELIER_LINKS.seturi} target="_blank" rel="noopener">Seturi barbati</a></li><li><a href={ATELIER_LINKS.reduceri} target="_blank" rel="noopener">Reduceri</a></li><li><a href={ATELIER_LINKS.blog} target="_blank" rel="noopener">Blog Atelier AXD</a></li></ul></div>
     </div>
     <div class="delivery-payment-box">
-      <div class="dp-group"><span class="dp-title">Livrare rapida 1-3 zile</span><div class="dp-flex"><div class="dp-badge">Sameday Courier</div><div class="dp-badge">Easybox Delivery</div></div></div>
-      <div class="dp-group"><span class="dp-title">Metode de plata</span><div class="dp-flex"><div class="dp-badge">Ramburs</div><div class="dp-badge">Card securizat</div></div></div>
-      <div class="anpc-logos"><a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="nofollow noopener"><img src="/ANPC_logo.avif" alt="Site oficial ANPC" width="140" height="35" loading="lazy" decoding="async" /></a><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="nofollow noopener"><img src="/Solutionarea_online_a_litigiilor_logo.avif" alt="Solutionarea online a litigiilor" width="140" height="35" loading="lazy" decoding="async" /></a></div>
+      <div class="dp-group">
+        <span class="dp-title">Livrare si plata</span>
+        <div class="dp-flex">
+          <span class="dp-badge">Sameday Courier</span>
+          <span class="dp-badge">Easybox Delivery</span>
+          <span class="dp-badge">Plata ramburs</span>
+          <span class="dp-badge">Card</span>
+          <span class="dp-badge">Cash</span>
+          <span class="dp-badge">Visa</span>
+          <span class="dp-badge">Apple Pay</span>
+          <span class="dp-badge">Google Pay</span>
+        </div>
+      </div>
+      <div class="anpc-logos" aria-label="Informatii ANPC">
+        <a href="/informatii-legale/" aria-label="Informatii legale ANPC"><img src="/ANPC_logo.avif" alt="ANPC" width="120" height="35" loading="lazy" decoding="async" /></a>
+        <a href="/solutionarea-litigiilor/" aria-label="Solutionarea alternativa a litigiilor"><img src="/Solutionarea_online_a_litigiilor_logo.avif" alt="Solutionarea alternativa a litigiilor" width="120" height="35" loading="lazy" decoding="async" /></a>
+      </div>
     </div>
-    <div class="footer-bottom"><p>© 2026 PantaloniCuSnurLung.ro. Toate drepturile rezervate. Magazin retail operat de Atelier AXD.</p></div>
+    <div class="legal-notice">
+      <strong>SC ATELIER AXD SRL</strong> | CUI: 50848938 | Reg. Com: J2024039294009 | Str. Mare A Unirii 4, Bl. 5, Sc. 2, Et. 1, Ap. 17, Focsani, Vrancea | atelieraxd@outlook.com
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 pantalonicusnurlung.ro | Site informativ operat de SC ATELIER AXD SRL.</p></div>
   </div>
 </footer>

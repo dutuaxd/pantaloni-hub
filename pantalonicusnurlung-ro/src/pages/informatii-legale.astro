@@ -1,0 +1,42 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+
+const sections = [
+  {
+    heading: 'Operatorul site-ului',
+    body: [
+      'Site-ul PantaloniCuSnurLung.ro este operat de SC ATELIER AXD SRL, CUI 50848938, Nr. Reg. Com. J2024039294009, cu sediul in Str. Mare A Unirii 4, Bl. 5, Sc. 2, Et. 1, Ap. 17, Focsani, Vrancea.',
+      'Contact principal: atelieraxd@outlook.com. Pentru intrebari comerciale, stoc, comenzi, livrare sau retur, foloseste paginile si canalele de pe atelieraxd.ro.',
+    ],
+  },
+  {
+    heading: 'Rolul acestui site',
+    body: [
+      'PantaloniCuSnurLung.ro publica informatii, ghiduri, recomandari de stil si pagini SEO despre pantaloni cu snur lung. Site-ul nu finalizeaza comenzi, nu incaseaza plati si nu emite facturi direct.',
+      'Linkurile catre atelieraxd.ro directioneaza utilizatorul catre magazinul unde se pot plasa comenzi. Conditiile aplicabile unei comenzi sunt cele afisate pe atelieraxd.ro la momentul plasarii comenzii.',
+    ],
+  },
+  {
+    heading: 'Informare consumatori',
+    body: [
+      'Pentru vanzari online, informatiile despre profesionist, produse, preturi, costuri, livrare, dreptul de retragere si garantii trebuie afisate clar in magazinul unde se incheie contractul. Pentru comenzile plasate prin AtelierAXD, verifica paginile legale si comerciale de pe atelieraxd.ro.',
+      'Pentru solutionarea alternativa a litigiilor, consumatorii se pot informa pe site-ul ANPC si prin Directia SAL. Platforma europeana SOL/ODR nu mai este operationala dupa modificarile europene din 2025, asa ca trimiterile principale raman catre mecanismele actuale ANPC/SAL.',
+    ],
+  },
+  {
+    heading: 'Acceptarea conditiilor',
+    body: [
+      'Prin continuarea navigarii pe PantaloniCuSnurLung.ro, esti de acord cu Termenii si Conditiile acestui site informativ, cu Politica de confidentialitate si cu Politica privind cookie-urile.',
+      'Daca nu esti de acord cu aceste documente, poti opri navigarea si poti sterge cookie-urile sau preferintele salvate in browser.',
+    ],
+  },
+];
+---
+<LegalPage
+  title="Informatii legale | PantaloniCuSnurLung.ro"
+  description="Informatii legale despre PantaloniCuSnurLung.ro, site informativ operat de SC ATELIER AXD SRL, cu comenzi plasate pe atelieraxd.ro."
+  canonical="https://pantalonicusnurlung.ro/informatii-legale/"
+  heading="Informatii legale"
+  intro="Datele operatorului, rolul site-ului informativ si trimiterile catre politicile comerciale aplicabile comenzilor."
+  sections={sections}
+/>

@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+interface Section {
+  heading: string;
+  body: string[];
+}
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  heading: string;
+  intro: string;
+  sections: Section[];
+}
+
+const { title, description, canonical, heading, intro, sections } = Astro.props;
+const image = '/og-pantaloni-cu-snur-lung.jpg';
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  url: canonical,
+  image: new URL(image, canonical).href,
+};
+---
+<Layout title={title} description={description} canonical={canonical} image={image} type="website" schema={schema}>
+  <section id="hero" class="legal-hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content legal-hero-content">
+        <div class="hero-badge">Informare legala</div>
+        <h1 class="hero-h1">{heading}</h1>
+        <p class="hero-sub">{intro}</p>
+        <div class="hero-actions">
+          <a href="https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd" class="btn-primary">Comanda pe AtelierAXD</a>
+          <a href="/informatii-legale" class="btn-ghost">Informatii legale</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container legal-shell">
+      <article class="content-panel reveal legal-disclaimer">
+        <h2>PantaloniCuSnurLung.ro este site informativ</h2>
+        <p>PantaloniCuSnurLung.ro este un site informativ despre pantaloni cu snur lung, operat de SC ATELIER AXD SRL. Comenzile, plata, livrarea, returul si relatia comerciala se gestioneaza pe atelieraxd.ro.</p>
+      </article>
+      {sections.map((section) => (
+        <article class="content-panel reveal">
+          <h2>{section.heading}</h2>
+          {section.body.map((paragraph) => <p>{paragraph}</p>)}
+        </article>
+      ))}
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,35 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+
+const sections = [
+  {
+    heading: 'Rezolvare amiabila',
+    body: [
+      'Daca apare o problema legata de informatiile de pe PantaloniCuSnurLung.ro, ne poti contacta la atelieraxd@outlook.com pentru clarificare.',
+      'Daca problema tine de o comanda, plata, livrare, retur sau garantie, contacteaza magazinul unde ai plasat comanda, respectiv atelieraxd.ro.',
+    ],
+  },
+  {
+    heading: 'ANPC si SAL',
+    body: [
+      'Consumatorii se pot informa pe site-ul ANPC despre mecanismele de protectie a consumatorilor si despre solutionarea alternativa a litigiilor prin Directia SAL.',
+      'Procedura SAL poate ajuta la solutionarea amiabila a unor litigii dintre consumatori si comercianti, fara parcurgerea unui proces in instanta.',
+    ],
+  },
+  {
+    heading: 'Platforma SOL/ODR',
+    body: [
+      'Platforma europeana de solutionare online a litigiilor a fost eliminata prin Regulamentul (UE) 2024/3228 si nu mai accepta plangeri noi din 2025.',
+      'Din acest motiv, site-ul directioneaza catre informarea actuala ANPC/SAL si catre canalele magazinului unde se incheie comanda.',
+    ],
+  },
+];
+---
+<LegalPage
+  title="Solutionarea litigiilor | PantaloniCuSnurLung.ro"
+  description="Informatii despre rezolvarea amiabila a litigiilor, ANPC si SAL pentru utilizatorii PantaloniCuSnurLung.ro."
+  canonical="https://pantalonicusnurlung.ro/solutionarea-litigiilor/"
+  heading="Solutionarea litigiilor"
+  intro="Canale de informare si pasi recomandati pentru clarificari sau litigii."
+  sections={sections}
+/>

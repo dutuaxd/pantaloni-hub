@@ -1,0 +1,35 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+
+const sections = [
+  {
+    heading: 'Rambursari',
+    body: [
+      'PantaloniCuSnurLung.ro nu incaseaza plati si nu face rambursari direct. Rambursarea unei comenzi depinde de magazinul unde ai plasat comanda, respectiv atelieraxd.ro.',
+      'Pentru comenzi online, rambursarea sumelor se face conform conditiilor legale si politicii magazinului, dupa acceptarea returului sau dupa situatia care da dreptul la restituire.',
+    ],
+  },
+  {
+    heading: 'Termene si metoda de plata',
+    body: [
+      'Termenul, metoda si eventualele conditii de rambursare trebuie verificate in politica de retur/rambursare de pe atelieraxd.ro.',
+      'Daca ai platit card, rambursarea se poate face de regula prin acelasi mijloc de plata, cu exceptia situatiilor comunicate de comerciant si permise de lege.',
+    ],
+  },
+  {
+    heading: 'Contact pentru rambursare',
+    body: [
+      'Pentru intrebari despre o rambursare concreta, contacteaza AtelierAXD si include numarul comenzii, numele folosit la comanda si dovada returului, daca este cazul.',
+      'Nu trimite date bancare sensibile prin formulare nesecurizate sau mesaje publice pe retele sociale.',
+    ],
+  },
+];
+---
+<LegalPage
+  title="Politica de rambursare | PantaloniCuSnurLung.ro"
+  description="Informatii despre rambursare pentru PantaloniCuSnurLung.ro: platile si rambursarile tin de magazinul atelieraxd.ro."
+  canonical="https://pantalonicusnurlung.ro/politica-rambursare/"
+  heading="Politica de rambursare"
+  intro="Informatii pentru utilizatori despre rambursari, in contextul unui site informativ care trimite catre AtelierAXD."
+  sections={sections}
+/>

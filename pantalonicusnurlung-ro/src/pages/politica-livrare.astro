@@ -1,0 +1,35 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+
+const sections = [
+  {
+    heading: 'Livrare',
+    body: [
+      'PantaloniCuSnurLung.ro nu expediaza produse direct. Livrarea comenzilor plasate pe atelieraxd.ro este gestionata de AtelierAXD si de curierii sau serviciile indicate in magazin.',
+      'Informatiile despre cost, termen estimat, metode de livrare, zone acoperite si eventuale restrictii trebuie verificate pe atelieraxd.ro inainte de finalizarea comenzii.',
+    ],
+  },
+  {
+    heading: 'Estimari de timp',
+    body: [
+      'Textele promotionale de pe acest site pot mentiona intervale orientative de livrare, dar termenul aplicabil este cel afisat in magazin si confirmat in procesul de comanda.',
+      'Intarzierile pot aparea din cauza curierilor, perioadelor aglomerate, adreselor incomplete sau altor situatii independente de operator.',
+    ],
+  },
+  {
+    heading: 'Probleme cu livrarea',
+    body: [
+      'Pentru intrebari despre AWB, colet, adresa sau statusul comenzii, contacteaza AtelierAXD folosind datele de contact de pe atelieraxd.ro.',
+      'Pastreaza confirmarile primite prin email sau SMS pana la livrarea coletului.',
+    ],
+  },
+];
+---
+<LegalPage
+  title="Politica de livrare | PantaloniCuSnurLung.ro"
+  description="Informatii despre livrare pentru PantaloniCuSnurLung.ro: comenzile si expedierile sunt gestionate pe atelieraxd.ro."
+  canonical="https://pantalonicusnurlung.ro/politica-livrare/"
+  heading="Politica de livrare"
+  intro="Detalii privind livrarea cand acest site are rol informativ si trimite catre magazinul AtelierAXD."
+  sections={sections}
+/>

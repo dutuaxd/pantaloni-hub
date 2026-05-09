@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+const title = 'Preferinte cookie | PantaloniCuSnurLung.ro';
+const description = 'Modifica preferinta privind cookie-urile pentru PantaloniCuSnurLung.ro.';
+const canonical = 'https://pantalonicusnurlung.ro/preferinte-cookie/';
+const image = '/og-pantaloni-cu-snur-lung.jpg';
+const schema = { '@context':'https://schema.org', '@type':'WebPage', name:title, url:canonical, image:new URL(image, canonical).href };
+---
+<Layout title={title} description={description} canonical={canonical} image={image} type="website" schema={schema}>
+  <section id="hero" class="legal-hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content legal-hero-content">
+        <div class="hero-badge">Cookie consent</div>
+        <h1 class="hero-h1">Preferinte cookie</h1>
+        <p class="hero-sub">Alege daca permiti cookie-uri neesentiale. Site-ul ramane accesibil si daca alegi doar cookie-uri esentiale.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container legal-shell">
+      <article class="content-panel reveal">
+        <h2>Setarea curenta</h2>
+        <p id="cookie-status">Se verifica preferinta salvata in browser.</p>
+        <div class="cookie-preference-actions">
+          <button id="save-accept" class="cookie-accept">Accept cookie-uri neesentiale</button>
+          <button id="save-reject" class="cookie-reject">Doar cookie-uri esentiale</button>
+          <button id="save-reset" class="cookie-reset">Reseteaza preferinta</button>
+        </div>
+      </article>
+      <article class="content-panel reveal">
+        <h2>Detalii</h2>
+        <p>PantaloniCuSnurLung.ro foloseste in prezent stocare locala pentru a retine optiunea ta. Tracking-ul sau marketingul nu trebuie pornit fara consimtamant.</p>
+        <p>Poti citi detalii complete in <a href="/politica-cookies">Politica cookies</a>.</p>
+      </article>
+    </div>
+  </section>
+  <script is:inline>
+    const status = document.getElementById('cookie-status');
+    const render = () => {
+      const value = localStorage.getItem('axd_consent');
+      status.textContent = value === 'accepted'
+        ? 'Ai acceptat cookie-urile neesentiale.'
+        : value === 'rejected'
+          ? 'Ai ales doar cookie-uri esentiale.'
+          : 'Nu exista o preferinta salvata in acest browser.';
+    };
+    document.getElementById('save-accept')?.addEventListener('click', () => { localStorage.setItem('axd_consent', 'accepted'); render(); });
+    document.getElementById('save-reject')?.addEventListener('click', () => { localStorage.setItem('axd_consent', 'rejected'); render(); });
+    document.getElementById('save-reset')?.addEventListener('click', () => { localStorage.removeItem('axd_consent'); render(); });
+    render();
+  </script>
+</Layout>

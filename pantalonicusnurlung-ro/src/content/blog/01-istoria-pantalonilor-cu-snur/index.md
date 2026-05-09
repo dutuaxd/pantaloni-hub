@@ -73,4 +73,4 @@ Cand vorbim despre pantaloni cu snur lung, detaliile mici fac diferenta: elastic
 - [pantaloni cu snur lung](/ghid-marimi-pantaloni-cu-snur)
 - [pantaloni cu snur lung](/blog)
 
-[pantaloni cu snur lung atelieraxd](https://atelieraxd.ro/pantaloni-lungi){.btn}
+[pantaloni cu snur lung atelieraxd](https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd){.btn}

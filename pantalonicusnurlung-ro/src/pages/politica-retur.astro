@@ -1,0 +1,35 @@
+---
+import LegalPage from '../components/LegalPage.astro';
+
+const sections = [
+  {
+    heading: 'Retur pentru comenzi',
+    body: [
+      'PantaloniCuSnurLung.ro nu preia comenzi si nu proceseaza retururi direct. Pentru o comanda plasata pe atelieraxd.ro, returul se solicita prin canalele si formularul puse la dispozitie de AtelierAXD.',
+      'Consumatorii care cumpara online beneficiaza, in principiu, de dreptul de retragere in termen de 14 zile, in conditiile OUG 34/2014 si cu exceptiile prevazute de lege.',
+    ],
+  },
+  {
+    heading: 'Ce trebuie verificat in magazin',
+    body: [
+      'Inainte de a comanda, verifica pe atelieraxd.ro conditiile de retur, exceptiile aplicabile, adresa de trimitere, starea in care trebuie returnat produsul si modul de rambursare.',
+      'Pentru produse purtate, deteriorate, personalizate sau exceptate legal, magazinul poate aplica reguli specifice conform legislatiei si politicilor comerciale afisate.',
+    ],
+  },
+  {
+    heading: 'Formular retur',
+    body: [
+      'Daca ai nevoie de formular de retur, foloseste formularul sau instructiunile publicate pe atelieraxd.ro. Acest site informativ nu colecteaza cereri de retur.',
+      'Pastreaza dovada comenzii si dovada expedierii returului pana la solutionarea cererii.',
+    ],
+  },
+];
+---
+<LegalPage
+  title="Politica de retur | PantaloniCuSnurLung.ro"
+  description="Informatii despre retur pentru utilizatorii PantaloniCuSnurLung.ro: comenzile si retururile se gestioneaza pe atelieraxd.ro."
+  canonical="https://pantalonicusnurlung.ro/politica-retur/"
+  heading="Politica de retur"
+  intro="Cum functioneaza returul cand site-ul este informativ si comanda se plaseaza pe AtelierAXD."
+  sections={sections}
+/>

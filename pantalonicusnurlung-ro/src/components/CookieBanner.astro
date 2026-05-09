@@ -1,1 +1,34 @@
-<div id="cookie-banner" class="cookie-panel hidden"><p>Folosim cookie-uri esentiale pentru functionarea site-ului. Tracking-ul nu porneste fara consimtamant.</p><div class="cookie-actions"><button id="accept-cookies" class="cookie-accept">Accept</button><button id="reject-cookies" class="cookie-reject">Refuz</button></div></div><script is:inline>const b=document.getElementById('cookie-banner');if(!localStorage.getItem('axd_consent')) b?.classList.remove('hidden');document.getElementById('accept-cookies')?.addEventListener('click',()=>{localStorage.setItem('axd_consent','accepted');b?.remove();});document.getElementById('reject-cookies')?.addEventListener('click',()=>{localStorage.setItem('axd_consent','rejected');b?.remove();});</script>
+<div id="cookie-banner" class="cookie-panel hidden">
+  <p>Folosim cookie-uri esentiale pentru functionare. Cookie-urile analitice, functionale si marketing pornesc doar dupa consimtamant.</p>
+  <label><input type="checkbox" data-cookie-category="analytics" /> Analytics</label>
+  <label><input type="checkbox" data-cookie-category="functional" /> Functionale</label>
+  <label><input type="checkbox" data-cookie-category="marketing" /> Marketing</label>
+  <div class="cookie-actions">
+    <button id="accept-cookies" class="cookie-accept">Accepta toate</button>
+    <button id="reject-cookies" class="cookie-reject">Refuza toate</button>
+    <button id="save-cookies" class="cookie-reject">Salveaza</button>
+    <a href="/politica-cookies/" class="cookie-link">Politica</a>
+  </div>
+</div>
+<script is:inline>
+  const b = document.getElementById('cookie-banner');
+  const key = 'pantaloni_cookie_consent_v1';
+  if (!localStorage.getItem(key)) b?.classList.remove('hidden');
+  const save = (value) => {
+    localStorage.setItem(key, JSON.stringify({ ...value, date: new Date().toISOString() }));
+    b?.classList.add('hidden');
+  };
+  document.getElementById('accept-cookies')?.addEventListener('click', () => save({ analytics: true, functional: true, marketing: true }));
+  document.getElementById('reject-cookies')?.addEventListener('click', () => save({ analytics: false, functional: false, marketing: false }));
+  document.getElementById('save-cookies')?.addEventListener('click', () => {
+    save({
+      analytics: Boolean(document.querySelector('[data-cookie-category="analytics"]')?.checked),
+      functional: Boolean(document.querySelector('[data-cookie-category="functional"]')?.checked),
+      marketing: Boolean(document.querySelector('[data-cookie-category="marketing"]')?.checked),
+    });
+  });
+  document.querySelectorAll('[data-cookie-reset]').forEach((el) => el.addEventListener('click', () => {
+    localStorage.removeItem(key);
+    b?.classList.remove('hidden');
+  }));
+</script>

@@ -2,7 +2,7 @@ export const blogImages = {
   "01-istoria-pantalonilor-cu-snur": [
     {
       "filename": "pantaloni-cu-snur-lung-istorie-sport.jpg",
-      "alt": "Pantaloni cu snur lung fashion history sportswear pentru tinute casual confortabile",
+      "alt": "Pantaloni cu snur lung moda history sportswear pentru tinute casual confortabile",
       "title": "Pantaloni cu snur lung 1",
       "width": 1200,
       "height": 630,

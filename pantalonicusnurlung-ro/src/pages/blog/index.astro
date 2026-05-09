@@ -1,48 +1,29 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-const posts = (await Astro.glob('../../content/blog/*/index.md')).filter((p) => !p.frontmatter.draft);
-const title = 'Blog pantaloni cu snur lung | Streetwear ghid';
-const description = 'Articole despre pantaloni cu snur lung, streetwear, materiale, marimi si styling unisex. Citeste ghidurile acum!';
-const canonical = 'https://pantalonicusnurlung.ro/blog/';
-const schema = { '@context': 'https://schema.org', '@type': 'Blog', name: title, url: canonical };
+import { SITE, blogPosts, organizationSchema } from '../../data/seoSite';
+const title = 'Blog pantaloni cu snur lung | Ghiduri 2026';
+const description = 'Blog cu ghiduri in romana despre pantaloni cu snur lung: tinute, noduri, diferente snur scurt/lung, trenduri moda urbana 2026 si vara.';
+const canonical = `${SITE}/blog/`;
+const schema = [organizationSchema(), { '@context': 'https://schema.org', '@type': 'Blog', name: title, url: canonical }];
 ---
 <Layout title={title} description={description} canonical={canonical} schema={schema}>
-  <section id="hero">
-    <div class="hero-bg"></div>
+  <section class="seo-hero">
     <div class="container">
-      <div class="hero-inner-wrapper">
-        <div class="hero-content">
-          <div class="hero-badge">Ghiduri streetwear</div>
-          <h1 class="hero-h1">Blog<br /><span class="line2">pantaloni cu snur lung</span></h1>
-          <p class="hero-sub">Articole optimizate SEO despre materiale, croieli, istorie, styling si alegerea perechii potrivite de pantaloni cu snur lung.</p>
-          <div class="hero-actions">
-            <a href="https://atelieraxd.ro/pantaloni-lungi" class="btn-primary">Vezi colectia</a>
-            <a href="/pantaloni-cu-snur-lung" class="btn-ghost">Ghid principal</a>
-          </div>
-        </div>
-        <div class="hero-promo-box">
-          <div class="promo-title">Citeste si cumpara</div>
-          <div class="promo-big">5</div>
-          <div class="promo-highlight">ghiduri</div>
-          <div class="promo-desc">Fiecare articol trimite natural catre colectia AtelierAXD.</div>
-          <a href="https://atelieraxd.ro/pantaloni-lungi" class="promo-btn">Magazin</a>
-        </div>
-      </div>
+      <p class="section-tag">// ghiduri editoriale</p>
+      <h1>Blog pantaloni cu snur lung</h1>
+      <p class="direct-answer">Articole SEO informationale despre tinute, materiale, noduri, trenduri si alegerea pantalonilor cu snur lung pentru tinute urbane. Fiecare ghid are un subiect separat ca sa evitam canibalizarea.</p>
     </div>
   </section>
-
   <section class="section">
-    <div class="container">
-      <div class="blog-grid">
-        {posts.map((p) => (
-          <article class="blog-card reveal">
-            <span class="section-tag">// articol</span>
-            <h2><a href={'/blog/' + p.frontmatter.slug}>{p.frontmatter.title}</a></h2>
-            <p>{p.frontmatter.metaDescription}</p>
-            <a class="btn-ghost" href={'/blog/' + p.frontmatter.slug}>Citeste</a>
-          </article>
-        ))}
-      </div>
+    <div class="container blog-grid">
+      {blogPosts.map((post) => (
+        <article class="blog-card">
+          <img src={`/${post.image}`} alt={post.h1} title={post.h1} width="800" height="1000" loading="lazy" decoding="async" />
+          <h2><a href={`/${post.slug}/`}>{post.h1}</a></h2>
+          <p>{post.description}</p>
+          <a class="btn-ghost" href={`/${post.slug}/`}>Citeste ghidul</a>
+        </article>
+      ))}
     </div>
   </section>
 </Layout>

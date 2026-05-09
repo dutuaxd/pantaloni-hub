@@ -1,10 +1,272 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const title = 'Pantaloni cu snur lung unisex | Streetwear import';
-const description = 'Pantaloni cu snur lung unisex din materiale premium, stil streetwear si link direct catre AtelierAXD. Descopera colectia acum!';
-const canonical = 'https://pantalonicusnurlung.ro/';
-const image = '/pantaloni-barbati-largi-negri-snur-casual.jpg';
-const schema = { '@context':'https://schema.org', '@type':'ClothingStore', name:title, url:canonical, image:new URL(image, canonical).href };
+import { productImages, productImagePath } from '../data/productImages';
+import { SITE, SHOP, faqSchema, faqs, organizationSchema } from '../data/seoSite';
+
+const title = 'Pantaloni cu snur lung | Ghiduri, tinute si trenduri 2026';
+const description = 'Ghid informativ in romana despre pantaloni cu snur lung: tinute moda urbana, croieli baggy, materiale, marimi si trenduri 2026 cu link catre Atelier AXD.';
+const canonical = `${SITE}/`;
+const hero = productImages[2];
+const img = (index: number) => productImages[index % productImages.length];
+const imageUrl = (item: { file: string }) => `${productImagePath}${item.file}`;
+const schema = [
+  organizationSchema(),
+  faqSchema(),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ImageGallery',
+    name: 'Pantaloni cu Snur Lung Atelier AXD',
+    url: canonical,
+    image: productImages.map((item) => ({
+      '@type': 'ImageObject',
+      url: `${SITE}${imageUrl(item)}`,
+      name: item.title,
+      description: item.alt,
+      width: 1200,
+      height: 1600,
+    })),
+  },
+];
+
+const categories = [
+  ['Pantaloni negri', 'Cel mai usor de purtat zilnic', img(3)],
+  ['Pantaloni bleumarin', 'Look curat, urban, discret', img(6)],
+  ['Pantaloni maro', 'Ton cald pentru tinute relaxate', img(9)],
+  ['Pantaloni bej', 'Varianta luminoasa pentru vara', img(11)],
+];
+
+const benefits = [
+  ['fa-solid fa-feather-pointed', 'Confort zilnic', 'Materiale lejere, usor de purtat zilnic.'],
+  ['fa-solid fa-infinity', 'Croiala actuala', 'Croiala relaxata care ramane relevanta si in 2027.'],
+  ['fa-solid fa-scissors', 'Linie curata', 'Proportii ordonate, fara stilizare incarcat.'],
+  ['fa-solid fa-layer-group', 'Versatilitate', 'Merge cu tricou, hanorac sau jacheta minimal.'],
+  ['fa-solid fa-truck-fast', 'Livrare rapida', 'Comanda este gestionata prin Atelier AXD.'],
+  ['fa-solid fa-users', 'Comunitate activa', 'Peste 7000 de urmaritori pe Instagram si peste 7000 pe TikTok.'],
+];
+
+const iconBenefits = [
+  ['fa-solid fa-feather-pointed', 'Confort'],
+  ['fa-solid fa-infinity', 'Actual'],
+  ['fa-solid fa-scissors', 'Linie curata'],
+  ['fa-solid fa-layer-group', 'Straturi'],
+  ['fa-solid fa-truck-fast', 'Livrare'],
+  ['fa-solid fa-box-open', 'Ambalare'],
+  ['fa-solid fa-store', 'Atelier AXD'],
+];
+const stars = Array.from({ length: 5 });
 ---
-<Layout title={title} description={description} canonical={canonical} image={image} type="website" schema={schema}>
-<section id="hero"><div class="hero-bg"></div><div class="container"><div class="hero-inner-wrapper"><div class="hero-content"><div class="hero-badge">Streetwear Premium Import</div><h1 class="hero-h1">Pantaloni cu<br/><span class="line2">snur lung.</span><br/>Stil urban.</h1><p class="hero-sub">Redefineste-ti tinuta cu selectia noastra de pantaloni cu snur lung unisex, streetwear de import, materiale durabile si croiala relaxata.</p><div class="hero-actions"><a href="https://atelieraxd.ro/pantaloni-lungi" class="btn-primary">Vezi colectia</a><a href="/ghid-marimi-pantaloni-cu-snur" class="btn-ghost">Ghid marimi</a></div></div><div class="hero-promo-box"><div class="promo-title">Oferta speciala</div><div class="promo-big">4 PRODUSE</div><div class="promo-highlight">-15% reducere</div><div class="promo-desc">Cumpara orice 4 produse din magazinul AtelierAXD si reducerea se aplica automat la check-out.</div><a href="https://atelieraxd.ro/pantaloni-lungi" class="promo-btn">Profita acum</a></div></div><div class="hero-stats"><div class="hero-stat"><div class="stat-num">100<span>%</span></div><div class="stat-label">Calitate superioara</div></div><div class="hero-stat"><div class="stat-num">Unisex</div><div class="stat-label">Purtat si de femei</div></div><div class="hero-stat"><div class="stat-num">1-3<span>zile</span></div><div class="stat-label">Timp livrare</div></div><div class="hero-stat"><div class="stat-num">Card</div><div class="stat-label">sau ramburs</div></div></div></div></section><section class="section" id="colectie"><div class="container"><div class="services-header reveal"><div><span class="section-tag">// Magazin niche</span><h2 class="section-h2">Alege modelul de <em>pantaloni</em> preferat</h2></div><p class="section-lead">Importam si comercializam croieli streetwear cautate, disponibile prin AtelierAXD, cu accent pe pantaloni cu snur lung, negru, lejer si unisex.</p></div><div class="services-grid"><a class="service-card featured reveal " href="https://atelieraxd.ro/pantaloni-lungi"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-barbati-largi-negri-snur-casual.jpg" alt="Pantaloni barbati largi negri snur casual" title="Pantaloni barbati largi negri snur casual" width="1200" height="1600" loading="eager" fetchpriority="high" /></div><div class="service-name">Pantaloni barbati largi negri snur casual</div><div class="service-desc">Croiala loose-fit perfecta pentru un aspect relaxat. Echilibru intre streetwear si casual, purtat usor de baieti si fete.</div><div class="service-tags"><span class="tag">Bestseller</span><span class="tag">Unisex Loose</span></div></a><a class="service-card  reveal reveal-delay-1" href="https://atelieraxd.ro/pantaloni-lungi"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-barbati-negri-snur-lung.jpg" alt="Pantaloni barbati negri snur lung" title="Pantaloni barbati negri snur lung" width="1200" height="1600" loading="lazy" decoding="async" /></div><div class="service-name">Pantaloni barbati negri snur lung</div><div class="service-desc">Varianta clasica reinventata, cu material durabil, asezare buna pe sneakers si snur lung vizibil.</div><div class="service-tags"><span class="tag">Classic Fit</span><span class="tag">Import</span></div></a><a class="service-card  reveal " href="https://atelieraxd.ro/pantaloni-lungi"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-scurti-negri-cu-snur-lung.jpg" alt="Pantaloni scurti negri cu snur lung" title="Pantaloni scurti negri cu snur lung" width="1200" height="1600" loading="lazy" decoding="async" /></div><div class="service-name">Pantaloni scurti negri cu snur lung</div><div class="service-desc">Pentru sezonul cald: acelasi impact vizual streetwear intr-o pereche scurta si confortabila.</div><div class="service-tags"><span class="tag">Summer</span><span class="tag">Shorts</span></div></a><a class="service-card  reveal reveal-delay-1" href="https://atelieraxd.ro/pantaloni-lungi"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-negri-scurti-snur-lung.jpg" alt="Pantaloni negri scurti snur lung" title="Pantaloni negri scurti snur lung" width="1200" height="1600" loading="lazy" decoding="async" /></div><div class="service-name">Pantaloni negri scurti snur lung</div><div class="service-desc">Alternativa pentru zile de vara petrecute in oras, cu material placut si croiala lejera.</div><div class="service-tags"><span class="tag">Breeze Fit</span><span class="tag">Urban</span></div></a><a class="service-card  reveal " href="https://atelieraxd.ro/pantaloni-lungi"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-negri-oversized-barbati-snur-lung.jpg" alt="Pantaloni negri oversized barbati snur lung" title="Pantaloni negri oversized barbati snur lung" width="1200" height="1600" loading="lazy" decoding="async" /></div><div class="service-name">Pantaloni negri oversized barbati snur lung</div><div class="service-desc">Baggy, masiv, pur streetwear. Pentru look foarte larg inspirat din cultura urbana internationala.</div><div class="service-tags"><span class="tag">Oversized</span><span class="tag">Baggy</span></div></a><a class="service-card  reveal reveal-delay-1" href="https://atelieraxd.ro/pantaloni-lungi"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-negri-slim-snur-lung-atelieraxd.jpg" alt="Pantaloni negri slim snur lung AtelierAXD" title="Pantaloni negri slim snur lung AtelierAXD" width="1200" height="1600" loading="lazy" decoding="async" /></div><div class="service-name">Pantaloni negri slim snur lung AtelierAXD</div><div class="service-desc">Slim-fit selectat pentru asezare mai apropiata de corp, pastrand detaliul urban al snurului lung.</div><div class="service-tags"><span class="tag">Slim Fit</span><span class="tag">AtelierAXD</span></div></a></div></div></section><section class="section" id="lookbook"><div class="container"><div class="services-header reveal"><div><span class="section-tag">// Purtat si de ea</span><h2 class="section-h2">Menswear? Mai degraba <em>Unisex.</em></h2></div><p class="section-lead">Desi multe modele vin din zona menswear, croielile loose-fit si snurul lung le fac potrivite si pentru tinute feminine, streetwear si relaxate.</p></div><div class="lookbook-grid reveal reveal-delay-1"><figure class="lookbook-item"><img src="/pantaloni-femei-streetwear-snur-lung.png" alt="Streetwear dama cu pantaloni cu snur lung" title="Streetwear dama" width="1080" height="1440" loading="lazy" decoding="async" /><figcaption class="lookbook-overlay"><span class="lookbook-title">Streetwear dama</span></figcaption></figure><figure class="lookbook-item"><img src="/tinuta-unisex-pantaloni-largi-snur-extra-lung.png" alt="Tinuta unisex cu pantaloni largi si snur extra lung" title="Unisex fit" width="1080" height="1440" loading="lazy" decoding="async" /><figcaption class="lookbook-overlay"><span class="lookbook-title">Unisex fit</span></figcaption></figure><figure class="lookbook-item"><img src="/outfit-casual-tricou-pantaloni-negri-snur-lung.png" alt="Outfit casual cu tricou si pantaloni negri cu snur lung" title="Urban casual" width="1080" height="1440" loading="lazy" decoding="async" /><figcaption class="lookbook-overlay"><span class="lookbook-title">Urban casual</span></figcaption></figure><figure class="lookbook-item"><img src="/pantaloni-baggy-fete-snur-lung-atelieraxd.png" alt="Pantaloni baggy pentru fete cu snur lung AtelierAXD" title="Baggy style" width="1080" height="1440" loading="lazy" decoding="async" /><figcaption class="lookbook-overlay"><span class="lookbook-title">Baggy style</span></figcaption></figure><figure class="lookbook-item"><img src="/detaliu-snur-lung-pantaloni-oversized-dama.png" alt="Detaliu snur lung la pantaloni oversized de dama" title="Oversized details" width="1080" height="1440" loading="lazy" decoding="async" /><figcaption class="lookbook-overlay"><span class="lookbook-title">Oversized details</span></figcaption></figure><figure class="lookbook-item"><img src="/moda-urbana-pantaloni-unisex-cu-snur-lung.png" alt="Moda urbana cu pantaloni unisex cu snur lung" title="Urban fashion" width="1080" height="1440" loading="lazy" decoding="async" /><figcaption class="lookbook-overlay"><span class="lookbook-title">Urban fashion</span></figcaption></figure></div></div></section><section class="owner-section" id="despre"><div class="container reveal"><div class="owner-grid"><img src="/pantaloni-barbati-negri-snur-lung.jpg" alt="Pantaloni cu snur lung purtati in stil streetwear" title="Pantaloni cu snur lung streetwear" width="1200" height="1600" loading="lazy" decoding="async" class="owner-img" /><div class="owner-text"><span class="section-tag">// Povestea magazinului</span><h2 class="section-h2" style="margin-bottom:20px">Pasiune pentru <em>Streetwear</em></h2><p>La PantaloniCuSnurLung.ro strangem intr-un singur loc informatia si directia vizuala pentru pantalonii cu snur lung. Site-ul functioneaza ca hub dedicat, iar achizitia se face prin AtelierAXD.</p><p>Modelul cu snur lung este ales pentru impact vizual, confort si felul in care se aseaza in tinute urbane. Croiala poate fi loose, oversized, slim sau scurta, dar ideea ramane aceeasi: o piesa simpla, neagra, usor de purtat.</p><a href="https://atelieraxd.ro/pantaloni-lungi" class="btn-primary">pantaloni cu snur lung atelieraxd</a></div></div></div></section></Layout>
+<Layout title={title} description={description} canonical={canonical} image={imageUrl(hero)} type="website" schema={schema}>
+  <section class="landing-hero">
+    <div class="landing-shell landing-hero-grid">
+      <div class="landing-copy">
+        <p class="eyebrow">Ghid moda urbana romanesc</p>
+        <h1>Pantaloni cu snur lung: ghiduri, tinute si trenduri 2026.</h1>
+        <p>Site informativ SEO despre croieli baggy, croiala oversized, materiale, marimi si felul in care porti snurul lung in tinute urbane. Produsele si comenzile raman pe Atelier AXD.</p>
+        <div class="landing-actions">
+          <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Vezi colectia</a>
+          <a class="secondary-action" href="/ghid-marimi-pantaloni-cu-snur/">Ghid de marimi</a>
+        </div>
+        <div class="offer-note">
+          <span>Oferta</span>
+          <strong>4 produse = 15% reducere</strong>
+          <small>Reducerea se aplica in magazinul Atelier AXD.</small>
+        </div>
+      </div>
+      <a class="hero-product-link" href={SHOP} target="_blank" rel="noopener" aria-label={hero.alt}>
+        <img src={imageUrl(hero)} alt={hero.alt} title={hero.title} width="1200" height="1600" loading="eager" fetchpriority="high" />
+      </a>
+    </div>
+  </section>
+
+  <section class="proof-band">
+    <div class="landing-shell">
+      <p>Ghiduri in romana pentru pantaloni cu snur lung, croiala baggy si tinute moda urbana.</p>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="landing-shell">
+      <h2>Ghid vizual pentru modele esentiale</h2>
+      <div class="filter-row">
+        <span>Alege tinuta</span><span>Croiala larga</span><span>Unisex</span><span>Moda urbana romaneasca</span>
+      </div>
+      <div class="product-grid">
+        {productImages.slice(0, 4).map((item) => (
+          <a class="product-card" href={SHOP} target="_blank" rel="noopener">
+            <span class="card-badge">Catre Atelier AXD</span>
+            <img src={imageUrl(item)} alt={item.alt} title={item.title} width="800" height="1067" loading="lazy" decoding="async" />
+            <small class="stars">{stars.map(() => <i class="fa-solid fa-star"></i>)} 2000+ comenzi onorate</small>
+            <strong>{item.title}</strong>
+            <em>Snur lung contrastant, croiala lejera.</em>
+            <span class="card-button">Vezi pe site</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section soft">
+    <div class="landing-shell">
+      <h2>Galerie urbana</h2>
+      <div class="ugc-grid">
+        {productImages.slice(4, 7).map((item) => (
+          <a href={SHOP} target="_blank" rel="noopener">
+            <img src={imageUrl(item)} alt={item.alt} title={item.title} width="800" height="1067" loading="lazy" decoding="async" />
+            <span>{item.title}</span>
+          </a>
+        ))}
+      </div>
+      <a class="primary-action center" href={SHOP} target="_blank" rel="noopener">Vezi pe Atelier AXD</a>
+    </div>
+  </section>
+
+  <section class="icon-row">
+    <div class="landing-shell icons">
+      {iconBenefits.map(([icon, text]) => (
+        <span><b><i class={icon} aria-hidden="true"></i></b>{text}</span>
+      ))}
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="landing-shell split">
+      <a class="image-panel" href={SHOP} target="_blank" rel="noopener">
+        <img src={imageUrl(img(7))} alt={img(7).alt} title={img(7).title} width="900" height="1200" loading="lazy" decoding="async" />
+      </a>
+      <div class="text-panel">
+        <h2>Detaliu vizual puternic</h2>
+        <p>Snurul lung creeaza imediat un centru vizual. Nu ai nevoie de imprimeuri mari sau stilizare complicat: pantalonii devin piesa care da directia tinutei.</p>
+        <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Descopera</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="landing-shell split reverse">
+      <div class="text-panel">
+        <h2>Croiala relaxata, look ordonat</h2>
+        <p>Croiala relaxata merge in tinute de oras, drum, facultate, munca lejera sau weekend. Modelele sunt usor de purtat cu tricou alb, tricou negru sau hanorac.</p>
+        <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Vezi pe Atelier AXD</a>
+      </div>
+      <a class="image-panel" href={SHOP} target="_blank" rel="noopener">
+        <img src={imageUrl(img(8))} alt={img(8).alt} title={img(8).title} width="900" height="1200" loading="lazy" decoding="async" />
+      </a>
+    </div>
+  </section>
+
+  <section class="landing-section soft">
+    <div class="landing-shell">
+      <h2>Categorii principale</h2>
+      <div class="product-grid categories-grid">
+        {categories.map(([name, copy, item]) => (
+          <a class="product-card" href={SHOP} target="_blank" rel="noopener">
+            <img src={imageUrl(item)} alt={item.alt} title={item.title} width="800" height="1067" loading="lazy" decoding="async" />
+            <small class="stars">{stars.map(() => <i class="fa-solid fa-star"></i>)} 4.9 | Atelier AXD</small>
+            <strong>{name}</strong>
+            <em>{copy}</em>
+            <span class="card-button">Vezi categoria</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="proof-large">
+    <div class="landing-shell">
+      <h2>Minimal pe culoare, maxim pe impact</h2>
+      <div>Snur lung contrastant, talie elastica si volume usor de integrat in tinute urbane.</div>
+      <a class="primary-action center" href={SHOP} target="_blank" rel="noopener">Mergi catre magazin</a>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="landing-shell">
+      <h2>Beneficii clare</h2>
+      <div class="benefit-grid">
+        {benefits.map(([icon, name, body]) => (
+          <a href={SHOP} target="_blank" rel="noopener">
+            <i class={icon} aria-hidden="true"></i>
+            <strong>{name}</strong>
+            <span>{body}</span>
+          </a>
+        ))}
+      </div>
+      <a class="primary-action center" href={SHOP} target="_blank" rel="noopener">Intra pe Atelier AXD</a>
+    </div>
+  </section>
+
+  <section class="landing-section soft">
+    <div class="landing-shell split reverse">
+      <div class="text-panel">
+        <h2>Creat pentru cautari vizuale</h2>
+        <p>Pagina foloseste imagini de produs, tinute si detalii pentru a prezenta clar forma, snurul si proportia pantalonilor in cautari vizuale.</p>
+        <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Vezi pe Atelier AXD</a>
+      </div>
+      <a class="image-panel" href={SHOP} target="_blank" rel="noopener">
+        <img src={imageUrl(img(14))} alt={img(14).alt} title={img(14).title} width="900" height="1200" loading="lazy" decoding="async" />
+      </a>
+    </div>
+  </section>
+
+  <section class="guarantee">
+    <div class="landing-shell">
+      <h2>Comanda gestionata transparent</h2>
+      <p>Comanda, livrarea, returul si plata sunt gestionate transparent pe atelieraxd.ro.</p>
+      <a class="primary-action center" href={SHOP} target="_blank" rel="noopener">Vezi pe Atelier AXD</a>
+    </div>
+  </section>
+
+  <section class="proof-large">
+    <div class="landing-shell">
+      <h2>Moda urbana fara zgomot vizual</h2>
+      <div>Alb, negru estompat si albastru intens: o prezenta curata, moderna si usor de recunoscut.</div>
+      <a class="primary-action center" href={SHOP} target="_blank" rel="noopener">Mergi catre magazin</a>
+    </div>
+  </section>
+
+  <section class="landing-section faq-split">
+    <div class="landing-shell split">
+      <a class="image-panel" href={SHOP} target="_blank" rel="noopener">
+        <img src={imageUrl(img(20))} alt={img(20).alt} title={img(20).title} width="900" height="1200" loading="lazy" decoding="async" />
+      </a>
+      <div class="faq-panel">
+        <h2>Intrebari frecvente</h2>
+        {faqs.slice(0, 4).map(([question, answer]) => (
+          <details>
+            <summary>{question}</summary>
+            <p>{answer}</p>
+          </details>
+        ))}
+        <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Vezi colectia</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section offers">
+    <div class="landing-shell offer-grid">
+      <a class="offer-card wide" href={SHOP} target="_blank" rel="noopener">
+        <img src={imageUrl(img(21))} alt={img(21).alt} title={img(21).title} width="1200" height="900" loading="lazy" decoding="async" />
+        <span>Modele noi</span>
+        <strong>Modele noi cu snur lung</strong>
+      </a>
+      <a class="offer-card" href={SHOP} target="_blank" rel="noopener">
+        <img src={imageUrl(img(22))} alt={img(22).alt} title={img(22).title} width="1200" height="900" loading="lazy" decoding="async" />
+        <span>Croiala</span>
+        <strong>Croieli relaxate</strong>
+      </a>
+      <a class="offer-card" href={SHOP} target="_blank" rel="noopener">
+        <img src={imageUrl(img(18))} alt={img(18).alt} title={img(18).title} width="1200" height="900" loading="lazy" decoding="async" />
+        <span>Sezon</span>
+        <strong>Variante scurte</strong>
+      </a>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="landing-shell">
+      <p>Ghid informativ pentru stil urban</p>
+      <h2>Alege pantalonii cu snur lung care tin tinuta curata si intentionata.</h2>
+      <a class="white-action" href={SHOP} target="_blank" rel="noopener">Vezi pe Atelier AXD</a>
+    </div>
+  </section>
+</Layout>

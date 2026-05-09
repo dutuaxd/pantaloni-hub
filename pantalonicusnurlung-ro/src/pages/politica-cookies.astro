@@ -1,0 +1,6 @@
+---
+import ContentPage from '../components/ContentPage.astro';
+import { pages } from '../data/seoSite';
+const page = pages.find((item) => item.slug === 'politica-cookies');
+---
+<ContentPage page={page} />
