@@ -2,8 +2,20 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "pantaloni-hub",
   "compatibility_date": "2026-05-05",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "pantalonicusnurlung.ro",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.pantalonicusnurlung.ro",
+      "custom_domain": true
+    }
+  ],
   "assets": {
-    "directory": "pantalonicusnurlung-ro/dist"
+    "directory": "pantalonicusnurlung-ro/dist",
+    "not_found_handling": "single-page-application"
   },
   "build": {
     "command": "npm --prefix pantalonicusnurlung-ro ci && npm --prefix pantalonicusnurlung-ro run build"
