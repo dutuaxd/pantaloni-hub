@@ -1,14 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { SITE, SHOP, articleSchema, breadcrumbSchema, company, faqSchema, faqs, galleryImages, organizationSchema, updated } from '../data/seoSite';
+import { SITE, SHOP, articleSchema, breadcrumbSchema, company, faqSchema, faqs, galleryImages, organizationSchema, updated, websiteSchema } from '../data/seoSite';
 
 const { page, isHome = false } = Astro.props;
 const canonical = page.slug ? `${SITE}/${page.slug}/` : `${SITE}/`;
-const image = `/${page.image}`;
+const image = page.image.endsWith('.webp') ? `/images/seo-products/${page.image}` : `/${page.image}`;
 const title = page.title.length > 62 ? page.title : `${page.title} | pantalonicusnurlung.ro`;
 const schema = [
   organizationSchema(),
-  ...(isHome ? [faqSchema()] : [articleSchema(page), breadcrumbSchema(page.h1, canonical)]),
+  websiteSchema(),
+  ...(isHome ? [] : [articleSchema(page), breadcrumbSchema(page.h1, canonical)]),
+  faqSchema(),
   ...(page.slug === 'faq' ? [faqSchema()] : []),
   ...(page.slug === 'galerie-pantaloni-snur-lung'
     ? [{

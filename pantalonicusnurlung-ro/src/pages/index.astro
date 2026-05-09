@@ -1,17 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { productImages, productImagePath } from '../data/productImages';
-import { SITE, SHOP, faqSchema, faqs, organizationSchema } from '../data/seoSite';
+import { SITE, SHOP, faqSchema, faqs, organizationSchema, productSchema, websiteSchema } from '../data/seoSite';
 
-const title = 'Pantaloni cu snur lung | Ghiduri, tinute si trenduri 2026';
-const description = 'Ghid informativ in romana despre pantaloni cu snur lung: tinute moda urbana, croieli baggy, materiale, marimi si trenduri 2026 cu link catre Atelier AXD.';
+const title = 'Pantaloni baggy si oversized | Streetwear romanesc 2026';
+const description = 'Hub romanesc pentru pantaloni baggy, joggeri oversized, pantaloni loose fit si outfituri streetwear cu link transparent catre Atelier AXD.';
 const canonical = `${SITE}/`;
 const hero = productImages[2];
 const img = (index: number) => productImages[index % productImages.length];
 const imageUrl = (item: { file: string }) => `${productImagePath}${item.file}`;
 const schema = [
   organizationSchema(),
+  websiteSchema(),
   faqSchema(),
+  productSchema(),
   {
     '@context': 'https://schema.org',
     '@type': 'ImageGallery',
@@ -36,34 +38,31 @@ const categories = [
 ];
 
 const benefits = [
-  ['fa-solid fa-feather-pointed', 'Confort zilnic', 'Materiale lejere, usor de purtat zilnic.'],
-  ['fa-solid fa-infinity', 'Croiala actuala', 'Croiala relaxata care ramane relevanta si in 2027.'],
-  ['fa-solid fa-scissors', 'Linie curata', 'Proportii ordonate, fara stilizare incarcat.'],
-  ['fa-solid fa-layer-group', 'Versatilitate', 'Merge cu tricou, hanorac sau jacheta minimal.'],
-  ['fa-solid fa-truck-fast', 'Livrare rapida', 'Comanda este gestionata prin Atelier AXD.'],
-  ['fa-solid fa-users', 'Comunitate activa', 'Peste 7000 de urmaritori pe Instagram si peste 7000 pe TikTok.'],
+  ['<svg viewBox="0 0 24 24"><path d="M4 14c4-6 10-8 16-7-1 7-5 11-12 12l-4 1 1-4Z"></path><path d="M8 16c3-3 6-5 10-7"></path></svg>', 'Confort zilnic', 'Materiale lejere, usor de purtat zilnic.'],
+  ['<svg viewBox="0 0 24 24"><path d="M7 8h10l2 4-7 8-7-8 2-4Z"></path><path d="M8 12h8"></path></svg>', 'Croiala actuala', 'Croiala relaxata care ramane relevanta si in 2027.'],
+  ['<svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h10M5 17h14"></path></svg>', 'Linie curata', 'Proportii ordonate, fara stilizare incarcata.'],
+  ['<svg viewBox="0 0 24 24"><path d="m12 3 8 4-8 4-8-4 8-4Z"></path><path d="m4 12 8 4 8-4"></path><path d="m4 17 8 4 8-4"></path></svg>', 'Versatilitate', 'Merge cu tricou, hanorac sau jacheta minimal.'],
 ];
 
 const iconBenefits = [
-  ['fa-solid fa-feather-pointed', 'Confort'],
-  ['fa-solid fa-infinity', 'Actual'],
-  ['fa-solid fa-scissors', 'Linie curata'],
-  ['fa-solid fa-layer-group', 'Straturi'],
-  ['fa-solid fa-truck-fast', 'Livrare'],
-  ['fa-solid fa-box-open', 'Ambalare'],
-  ['fa-solid fa-store', 'Atelier AXD'],
+  ['<svg viewBox="0 0 24 24"><path d="M4 14c4-6 10-8 16-7-1 7-5 11-12 12l-4 1 1-4Z"></path></svg>', 'Confort'],
+  ['<svg viewBox="0 0 24 24"><path d="M6 12c2-4 5-6 9-6 2 0 3 1 3 3 0 4-4 7-10 9"></path></svg>', 'Actual'],
+  ['<svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h10M5 17h14"></path></svg>', 'Linie curata'],
+  ['<svg viewBox="0 0 24 24"><path d="m12 4 8 4-8 4-8-4 8-4Z"></path><path d="m4 14 8 4 8-4"></path></svg>', 'Straturi'],
+  ['<svg viewBox="0 0 24 24"><path d="M3 7h11v10H3z"></path><path d="M14 11h4l3 3v3h-7z"></path><circle cx="7" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg>', 'Livrare'],
+  ['<svg viewBox="0 0 24 24"><path d="m4 8 8-4 8 4-8 4-8-4Z"></path><path d="M4 8v8l8 4 8-4V8"></path><path d="M12 12v8"></path></svg>', 'Ambalare'],
+  ['<svg viewBox="0 0 24 24"><path d="M4 10h16l-2-5H6l-2 5Z"></path><path d="M6 10v9h12v-9"></path><path d="M9 19v-5h6v5"></path></svg>', 'Atelier AXD'],
 ];
-const stars = Array.from({ length: 5 });
 ---
 <Layout title={title} description={description} canonical={canonical} image={imageUrl(hero)} type="website" schema={schema}>
   <section class="landing-hero">
     <div class="landing-shell landing-hero-grid">
       <div class="landing-copy">
-        <p class="eyebrow">Ghid moda urbana romanesc</p>
-        <h1>Pantaloni cu snur lung: ghiduri, tinute si trenduri 2026.</h1>
-        <p>Site informativ SEO despre croieli baggy, croiala oversized, materiale, marimi si felul in care porti snurul lung in tinute urbane. Produsele si comenzile raman pe Atelier AXD.</p>
+        <p class="eyebrow">Hub streetwear romanesc</p>
+        <h1>Pantaloni baggy, oversized si urban fit pentru 2026.</h1>
+        <p>Ghid editorial despre pantaloni casual largi, joggeri oversized, croieli loose fit si tinute streetwear curate. Produsele si comenzile raman pe Atelier AXD.</p>
         <div class="landing-actions">
-          <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Vezi colectia</a>
+          <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Descopera modelele</a>
           <a class="secondary-action" href="/ghid-marimi-pantaloni-cu-snur/">Ghid de marimi</a>
         </div>
         <div class="offer-note">
@@ -80,7 +79,7 @@ const stars = Array.from({ length: 5 });
 
   <section class="proof-band">
     <div class="landing-shell">
-      <p>Ghiduri in romana pentru pantaloni cu snur lung, croiala baggy si tinute moda urbana.</p>
+      <p>Ghiduri in romana pentru pantaloni baggy, croieli relaxate si tinute moda urbana.</p>
     </div>
   </section>
 
@@ -95,7 +94,7 @@ const stars = Array.from({ length: 5 });
           <a class="product-card" href={SHOP} target="_blank" rel="noopener">
             <span class="card-badge">Catre Atelier AXD</span>
             <img src={imageUrl(item)} alt={item.alt} title={item.title} width="800" height="1067" loading="lazy" decoding="async" />
-            <small class="stars">{stars.map(() => <i class="fa-solid fa-star"></i>)} 2000+ comenzi onorate</small>
+            <small class="stars">2000+ comenzi onorate</small>
             <strong>{item.title}</strong>
             <em>Snur lung contrastant, croiala lejera.</em>
             <span class="card-button">Vezi pe site</span>
@@ -122,8 +121,8 @@ const stars = Array.from({ length: 5 });
 
   <section class="icon-row">
     <div class="landing-shell icons">
-      {iconBenefits.map(([icon, text]) => (
-        <span><b><i class={icon} aria-hidden="true"></i></b>{text}</span>
+        {iconBenefits.map(([icon, text]) => (
+        <span><b set:html={icon}></b>{text}</span>
       ))}
     </div>
   </section>
@@ -161,7 +160,7 @@ const stars = Array.from({ length: 5 });
         {categories.map(([name, copy, item]) => (
           <a class="product-card" href={SHOP} target="_blank" rel="noopener">
             <img src={imageUrl(item)} alt={item.alt} title={item.title} width="800" height="1067" loading="lazy" decoding="async" />
-            <small class="stars">{stars.map(() => <i class="fa-solid fa-star"></i>)} 4.9 | Atelier AXD</small>
+            <small class="stars">4.9 | Atelier AXD</small>
             <strong>{name}</strong>
             <em>{copy}</em>
             <span class="card-button">Vezi categoria</span>
@@ -185,7 +184,7 @@ const stars = Array.from({ length: 5 });
       <div class="benefit-grid">
         {benefits.map(([icon, name, body]) => (
           <a href={SHOP} target="_blank" rel="noopener">
-            <i class={icon} aria-hidden="true"></i>
+            <span class="benefit-svg" set:html={icon}></span>
             <strong>{name}</strong>
             <span>{body}</span>
           </a>
@@ -265,7 +264,7 @@ const stars = Array.from({ length: 5 });
   <section class="final-cta">
     <div class="landing-shell">
       <p>Ghid informativ pentru stil urban</p>
-      <h2>Alege pantalonii cu snur lung care tin tinuta curata si intentionata.</h2>
+      <h2>Alege croiala relaxata care tine tinuta curata si intentionata.</h2>
       <a class="white-action" href={SHOP} target="_blank" rel="noopener">Vezi pe Atelier AXD</a>
     </div>
   </section>

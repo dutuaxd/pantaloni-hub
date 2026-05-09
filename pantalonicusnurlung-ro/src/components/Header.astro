@@ -2,23 +2,34 @@
 import { SHOP } from '../data/seoSite';
 
 const links = [
-  ['/ce-sunt-pantalonii-cu-snur-lung/', 'Ce sunt'],
-  ['/ghid-alegere-pantaloni-snur-lung/', 'Ghid alegere'],
-  ['/blog/pantaloni-snur-lung-outfit-idei/', 'Tinute'],
-  ['/blog/trenduri-urbane-pantaloni-2026/', 'Trenduri'],
-  ['/pantaloni-cu-snur-lung-unisex/', 'Unisex'],
+  ['/pantaloni-baggy-negri/', 'Baggy negru'],
+  ['/pantaloni-oversized/', 'Oversized'],
+  ['/streetwear-barbati/', 'Barbati'],
+  ['/streetwear-femei/', 'Femei'],
+  ['/pantaloni-loose-fit/', 'Loose fit'],
   ['/blog/', 'Blog'],
 ];
 ---
 <header class="header-wrapper">
   <nav>
     <div class="nav-inner">
-      <a href="/" class="logo" aria-label="Acasa Pantaloni cu Snur Lung">Pantaloni cu Snur Lung<span>.ro</span></a>
+      <a href="/" class="logo logo-mark" aria-label="Acasa PantaloniCuSnurLung.ro">
+        <span class="logo-square" aria-hidden="true">
+          <svg viewBox="0 0 36 36" role="img" focusable="false">
+            <rect x="3" y="3" width="30" height="30" rx="4"></rect>
+            <path d="M12 9v18M24 9v18M12 16h12M15 27l3-5 3 5"></path>
+          </svg>
+        </span>
+        <span class="logo-word">PantaloniCuSnurLung<span>.ro</span></span>
+      </a>
       <ul class="nav-links">
         {links.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
       </ul>
-      <a href={SHOP} class="nav-cta" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Atelier AXD</a>
+      <a href={SHOP} class="nav-cta" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8"></path></svg>
+        Atelier AXD
+      </a>
     </div>
   </nav>
 </header>
-<div class="fab-left"><a href="mailto:atelieraxd@outlook.com" class="fab-btn fab-email" aria-label="Trimite email catre Atelier AXD"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></div>
+<div class="fab-left"><a href="mailto:atelieraxd@outlook.com" class="fab-btn fab-email" aria-label="Trimite email catre Atelier AXD"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16v12H4z"></path><path d="m4 7 8 6 8-6"></path></svg></a></div>
