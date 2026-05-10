@@ -18,6 +18,7 @@ export const ATELIER_LINKS = {
 };
 export const updated = '2026-05-10';
 export const brandName = 'PantaloniCuSnurLung.ro';
+export const merchantReturnPolicyId = `${SITE}/#merchant-return-policy`;
 
 export const company = {
   name: 'SC ATELIER AXD SRL',
@@ -121,12 +122,23 @@ export function organizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': `${SITE}/#organization`,
     name: brandName,
     url: SITE,
     logo: `${SITE}/og-pantaloni-cu-snur-lung.jpg`,
     description: 'Publicatie editoriala romaneasca pentru pantaloni baggy, joggeri oversized, croieli relaxate si outfituri streetwear.',
     sameAs: ['https://www.instagram.com/atelieraxd.ro/', 'https://www.facebook.com/profile.php?id=100067635362487', 'https://atelieraxd.ro'],
     contactPoint: { '@type': 'ContactPoint', email: company.email, contactType: 'serviciu clienti', availableLanguage: 'Romanian' },
+    hasMerchantReturnPolicy: {
+      '@type': 'MerchantReturnPolicy',
+      '@id': merchantReturnPolicyId,
+      merchantReturnLink: 'https://atelieraxd.ro/policies/refund-policy',
+      applicableCountry: 'RO',
+      returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+      merchantReturnDays: 14,
+      returnMethod: 'https://schema.org/ReturnByMail',
+      returnFees: 'https://schema.org/ReturnFeesCustomerResponsibility',
+    },
   };
 }
 
@@ -154,26 +166,44 @@ export function productSchema(
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
+    '@id': `${url}#product`,
     name,
-    image,
+    image: [
+      image,
+      `${SITE}/images/seo-products/pantaloni-cu-snur-lung-negri-barbati-outfit.webp`,
+      `${SITE}/images/seo-products/pantaloni-cu-snur-lung-negri-femei-outfit.webp`,
+    ],
     description: 'Pantaloni casual largi cu talie reglabila, croiala relaxata si estetica streetwear urbana.',
     brand: { '@type': 'Brand', name: 'Atelier AXD' },
     category: 'Streetwear pants',
     url,
     sku: 'atelier-axd-wide-leg-snur-negru',
+    mpn: 'AXD-WIDE-LEG-SNUR-NEGRU',
     offers: {
       '@type': 'Offer',
+      '@id': `${url}#offer`,
       url,
-      price: '100.00',
+      price: 100.00,
       priceCurrency: 'RON',
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: 100.00,
+        priceCurrency: 'RON',
+      },
+      priceValidUntil: '2027-12-31',
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
-      seller: { '@type': 'Organization', name: 'Atelier AXD' },
+      seller: { '@type': 'Organization', name: 'Atelier AXD', url: ATELIER_HOME },
       shippingDetails: {
         '@type': 'OfferShippingDetails',
         shippingDestination: {
           '@type': 'DefinedRegion',
           addressCountry: 'RO',
+        },
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          value: 19.00,
+          currency: 'RON',
         },
         deliveryTime: {
           '@type': 'ShippingDeliveryTime',
@@ -193,12 +223,12 @@ export function productSchema(
       },
       hasMerchantReturnPolicy: {
         '@type': 'MerchantReturnPolicy',
+        '@id': merchantReturnPolicyId,
         applicableCountry: 'RO',
         returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
         merchantReturnDays: 14,
         returnMethod: 'https://schema.org/ReturnByMail',
         returnFees: 'https://schema.org/ReturnFeesCustomerResponsibility',
-        merchantReturnLink: 'https://atelieraxd.ro/policies/refund-policy',
       },
     },
   };
