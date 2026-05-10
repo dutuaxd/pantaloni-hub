@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { SITE, SHOP, articleSchema, breadcrumbSchema, company, faqSchema, faqs, galleryImages, organizationSchema, updated, websiteSchema } from '../data/seoSite';
+import { SITE, SHOP, articleSchema, breadcrumbSchema, company, editorialClusters, faqSchema, faqs, galleryImages, organizationSchema, updated, websiteSchema } from '../data/seoSite';
 
 const { page, isHome = false } = Astro.props;
 const canonical = page.slug ? `${SITE}/${page.slug}/` : `${SITE}/`;
@@ -11,7 +11,6 @@ const schema = [
   websiteSchema(),
   ...(isHome ? [] : [articleSchema(page), breadcrumbSchema(page.h1, canonical)]),
   faqSchema(),
-  ...(page.slug === 'faq' ? [faqSchema()] : []),
   ...(page.slug === 'galerie-pantaloni-snur-lung'
     ? [{
         '@context': 'https://schema.org',
@@ -83,7 +82,7 @@ const schema = [
             <section>
               <h2>{heading}</h2>
               <p>{body}</p>
-              <p>Pentru context suplimentar, consulta <a href="/ghid-alegere-pantaloni-snur-lung/">ghidul de alegere pantaloni cu snur lung</a>, pagina despre <a href="/pantaloni-cu-snur-lung-unisex/">modele unisex</a> si <a href="/cum-se-poarta-pantaloni-snur-lung/">ghidul de purtare</a>.</p>
+              <p>Continua lectura prin <a href="/pantaloni-baggy-negri/">ghidul pentru pantaloni baggy negri</a>, analiza despre <a href="/pantaloni-oversized/">croieli oversized</a> si pagina de <a href="/pantaloni-loose-fit/">pantaloni loose fit</a>.</p>
             </section>
           ))}
 
@@ -120,6 +119,7 @@ const schema = [
           <a href="/ghid-alegere-pantaloni-snur-lung/">Ghid alegere</a>
           <a href="/blog/cum-faci-nod-snur-pantaloni/">Cum faci nod la snur</a>
           <a href="/blog/trenduri-urbane-pantaloni-2026/">Trenduri moda urbana 2026</a>
+          {editorialClusters[0].links.slice(0, 3).map(([href, label]) => <a href={href}>{label}</a>)}
           <a href={SHOP} target="_blank" rel="noopener">Cumpara de la Atelier AXD</a>
           <address>{company.name}<br />{company.cui}<br />{company.email}</address>
         </aside>

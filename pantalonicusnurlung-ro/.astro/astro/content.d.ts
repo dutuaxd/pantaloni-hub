@@ -140,63 +140,48 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		
+		"blog": {
+"01-istoria-pantalonilor-cu-snur/index.md": {
+	id: "01-istoria-pantalonilor-cu-snur/index.md";
+  slug: "01-istoria-pantalonilor-cu-snur";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"02-pantaloni-cu-snur-barbati-vs-femei/index.md": {
+	id: "02-pantaloni-cu-snur-barbati-vs-femei/index.md";
+  slug: "02-pantaloni-cu-snur-barbati-vs-femei";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"03-materiale-pantaloni-cu-snur/index.md": {
+	id: "03-materiale-pantaloni-cu-snur/index.md";
+  slug: "03-materiale-pantaloni-cu-snur";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"04-pantaloni-cu-snur-pentru-acasa/index.md": {
+	id: "04-pantaloni-cu-snur-pentru-acasa/index.md";
+  slug: "04-pantaloni-cu-snur-pentru-acasa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"05-cum-legi-snurul-la-pantaloni/index.md": {
+	id: "05-cum-legi-snurul-la-pantaloni/index.md";
+  slug: "05-cum-legi-snurul-la-pantaloni";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+};
+
 	};
 
 	type DataEntryMap = {
-		"blog": {
-"01-istoria-pantalonilor-cu-snur/images": {
-	id: "01-istoria-pantalonilor-cu-snur/images";
-  collection: "blog";
-  data: any
-};
-"01-istoria-pantalonilor-cu-snur/images-meta": {
-	id: "01-istoria-pantalonilor-cu-snur/images-meta";
-  collection: "blog";
-  data: any
-};
-"02-pantaloni-cu-snur-barbati-vs-femei/images": {
-	id: "02-pantaloni-cu-snur-barbati-vs-femei/images";
-  collection: "blog";
-  data: any
-};
-"02-pantaloni-cu-snur-barbati-vs-femei/images-meta": {
-	id: "02-pantaloni-cu-snur-barbati-vs-femei/images-meta";
-  collection: "blog";
-  data: any
-};
-"03-materiale-pantaloni-cu-snur/images": {
-	id: "03-materiale-pantaloni-cu-snur/images";
-  collection: "blog";
-  data: any
-};
-"03-materiale-pantaloni-cu-snur/images-meta": {
-	id: "03-materiale-pantaloni-cu-snur/images-meta";
-  collection: "blog";
-  data: any
-};
-"04-pantaloni-cu-snur-pentru-acasa/images": {
-	id: "04-pantaloni-cu-snur-pentru-acasa/images";
-  collection: "blog";
-  data: any
-};
-"04-pantaloni-cu-snur-pentru-acasa/images-meta": {
-	id: "04-pantaloni-cu-snur-pentru-acasa/images-meta";
-  collection: "blog";
-  data: any
-};
-"05-cum-legi-snurul-la-pantaloni/images": {
-	id: "05-cum-legi-snurul-la-pantaloni/images";
-  collection: "blog";
-  data: any
-};
-"05-cum-legi-snurul-la-pantaloni/images-meta": {
-	id: "05-cum-legi-snurul-la-pantaloni/images-meta";
-  collection: "blog";
-  data: any
-};
-};
-
+		
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;

@@ -1,5 +1,5 @@
 ---
-import { ATELIER_HOME, ATELIER_LINKS, SHOP } from '../data/seoSite';
+import { ATELIER_HOME, ATELIER_LINKS, SHOP, editorialClusters, scheduledTopics } from '../data/seoSite';
 
 const socials = [
   ['https://www.instagram.com/atelieraxd.ro/', 'Instagram', '<svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17 7h.01"></path></svg>'],
@@ -22,6 +22,39 @@ const socials = [
       <div class="footer-col"><h4>Site</h4><ul><li><a href="/despre-noi/">Despre noi</a></li><li><a href="/contact/">Contact</a></li><li><a href="/faq/">Intrebari frecvente</a></li><li><a href="/politica-de-confidentialitate/">Politica de confidentialitate</a></li><li><a href="/termeni-si-conditii/">Termeni si conditii</a></li><li><button class="cookie-reset" type="button" data-cookie-reset>Retrage consimtamantul</button></li></ul></div>
       <div class="footer-col"><h4>Atelier AXD</h4><ul><li><a href={SHOP} target="_blank" rel="noopener">Pantaloni barbati</a></li><li><a href={ATELIER_LINKS.tricouri} target="_blank" rel="noopener">Tricouri barbati</a></li><li><a href={ATELIER_LINKS.hanorace} target="_blank" rel="noopener">Hanorace barbati</a></li><li><a href={ATELIER_LINKS.seturi} target="_blank" rel="noopener">Seturi barbati</a></li><li><a href={ATELIER_LINKS.reduceri} target="_blank" rel="noopener">Reduceri</a></li><li><a href={ATELIER_LINKS.blog} target="_blank" rel="noopener">Blog Atelier AXD</a></li></ul></div>
     </div>
+    <section class="footer-authority" aria-label="Arhitectura editoriala">
+      <div class="footer-trust">
+        <span>Publicatie editoriala</span>
+        <span>Ghiduri de fit</span>
+        <span>Actualizat 2026</span>
+        <span>Atelier AXD ecosystem</span>
+      </div>
+      <div class="footer-clusters">
+        {editorialClusters.map((cluster) => (
+          <div>
+            <h4>{cluster.title}</h4>
+            <ul>
+              {cluster.links.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <div class="footer-calendar">
+        <h4>Calendar editorial pregatit</h4>
+        <p>Publicarea se face gradual, cu rotatie intre ghiduri, comparatii, materiale, outfituri si pagini de intent comercial.</p>
+        <div>
+          {scheduledTopics.map((topic) => <span>{topic}</span>)}
+        </div>
+      </div>
+      <form class="newsletter-box" action="/blog/" aria-label="Newsletter editorial">
+        <h4>Brief editorial</h4>
+        <p>Urmareste ghiduri noi despre croieli relaxate, proportii si tinute streetwear.</p>
+        <div>
+          <input type="email" placeholder="email pentru inspiratie" aria-label="Email newsletter" />
+          <button type="submit">Urmareste</button>
+        </div>
+      </form>
+    </section>
     <div class="delivery-payment-box">
       <div class="dp-group">
         <span class="dp-title">Livrare si plata</span>

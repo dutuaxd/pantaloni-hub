@@ -1,5 +1,6 @@
 export const SITE = 'https://pantalonicusnurlung.ro';
 export const SHOP = 'https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd';
+export const FEATURED_PRODUCT = 'https://atelieraxd.ro/products/pantaloni-barba%C8%9Bi-negri-croiala-larga-wide-leg-cu-%C8%99nur-lung';
 export const ATELIER_HOME = 'https://atelieraxd.ro/';
 export const ATELIER_LINKS = {
   reduceri: 'https://atelieraxd.ro/collections/reduceri',
@@ -15,8 +16,8 @@ export const ATELIER_LINKS = {
   partener: 'https://atelieraxd.ro/pages/devino-partener-atelieraxd',
   blog: 'https://atelieraxd.ro/blogs/news',
 };
-export const updated = '2026-05-09';
-export const brandName = 'Pantaloni Hub';
+export const updated = '2026-05-10';
+export const brandName = 'PantaloniCuSnurLung.ro';
 
 export const company = {
   name: 'SC ATELIER AXD SRL',
@@ -27,6 +28,60 @@ export const company = {
   phone: 'Telefon disponibil la cerere prin email',
   author: 'Echipa editoriala Atelier AXD',
 };
+
+export const editorialClusters = [
+  {
+    title: 'Croieli explicate',
+    links: [
+      ['/pantaloni-baggy-negri/', 'Pantaloni baggy negri'],
+      ['/pantaloni-oversized/', 'Pantaloni oversized'],
+      ['/pantaloni-loose-fit/', 'Pantaloni loose fit'],
+      ['/pantaloni-urban-fit/', 'Pantaloni urban fit'],
+      ['/baggy-cu-snur/', 'Baggy cu snur'],
+    ],
+  },
+  {
+    title: 'Streetwear Romania',
+    links: [
+      ['/streetwear-barbati/', 'Streetwear barbati'],
+      ['/streetwear-femei/', 'Streetwear femei'],
+      ['/blog/streetwear-minimalist/', 'Streetwear minimalist'],
+      ['/blog/outfituri-monocrome-streetwear/', 'Outfituri monocrome'],
+      ['/blog/trenduri-streetwear-2026/', 'Trenduri streetwear 2026'],
+    ],
+  },
+  {
+    title: 'Ghiduri de fit',
+    links: [
+      ['/ghid-marimi/', 'Ghid marimi streetwear'],
+      ['/blog/cum-alegi-marimea-corecta/', 'Cum alegi marimea'],
+      ['/blog/baggy-daca-esti-scund/', 'Baggy pentru persoane scunde'],
+      ['/blog/incaltaminte-pantaloni-oversized/', 'Incaltaminte pentru oversized'],
+      ['/blog/greseli-outfit-oversized/', 'Greseli in oversized'],
+    ],
+  },
+  {
+    title: 'Publicatie',
+    links: [
+      ['/despre-noi/', 'Despre publicatie'],
+      ['/despre-atelier-axd/', 'Despre Atelier AXD'],
+      ['/cum-produsem/', 'Materiale si croieli'],
+      ['/analiza-serp/', 'Analiza SERP'],
+      ['/galerie-pantaloni-snur-lung/', 'Galerie vizuala'],
+    ],
+  },
+];
+
+export const scheduledTopics = [
+  'baggy cu sneakers voluminosi',
+  'pantaloni oversized vara',
+  'streetwear minimalist pentru facultate',
+  'outfit negru cu pantaloni largi',
+  'diferenta dintre cargo si baggy',
+  'cum alegi pant stacking',
+  'ghid materiale textile pentru pantaloni largi',
+  'outfituri de oras pentru vreme rece',
+];
 
 export const galleryImages = [
   ['pantaloni-barbati-largi-negri-snur-casual.jpg', 'Pantaloni cu snur lung negri barbati, croiala larga casual'],
@@ -69,7 +124,7 @@ export function organizationSchema() {
     name: brandName,
     url: SITE,
     logo: `${SITE}/og-pantaloni-cu-snur-lung.jpg`,
-    description: 'Hub editorial romanesc pentru pantaloni baggy, joggeri oversized, croieli relaxate si outfituri streetwear.',
+    description: 'Publicatie editoriala romaneasca pentru pantaloni baggy, joggeri oversized, croieli relaxate si outfituri streetwear.',
     sameAs: ['https://www.instagram.com/atelieraxd.ro/', 'https://www.facebook.com/profile.php?id=100067635362487', 'https://atelieraxd.ro'],
     contactPoint: { '@type': 'ContactPoint', email: company.email, contactType: 'serviciu clienti', availableLanguage: 'Romanian' },
   };
@@ -91,7 +146,11 @@ export function websiteSchema() {
   };
 }
 
-export function productSchema(name = 'Pantaloni oversized Atelier AXD', url = SHOP, image = `${SITE}/images/seo-products/pantaloni-cu-snur-lung-negri-produs-unisex.webp`) {
+export function productSchema(
+  name = 'Pantaloni barbati negri croiala larga cu snur lung',
+  url = FEATURED_PRODUCT,
+  image = `${SITE}/images/seo-products/pantaloni-cu-snur-lung-negri-produs-unisex.webp`,
+) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -101,12 +160,46 @@ export function productSchema(name = 'Pantaloni oversized Atelier AXD', url = SH
     brand: { '@type': 'Brand', name: 'Atelier AXD' },
     category: 'Streetwear pants',
     url,
+    sku: 'atelier-axd-wide-leg-snur-negru',
     offers: {
       '@type': 'Offer',
       url,
+      price: '100.00',
       priceCurrency: 'RON',
       availability: 'https://schema.org/InStock',
+      itemCondition: 'https://schema.org/NewCondition',
       seller: { '@type': 'Organization', name: 'Atelier AXD' },
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingDestination: {
+          '@type': 'DefinedRegion',
+          addressCountry: 'RO',
+        },
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 0,
+            maxValue: 1,
+            unitCode: 'DAY',
+          },
+          transitTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 1,
+            maxValue: 3,
+            unitCode: 'DAY',
+          },
+        },
+      },
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'RO',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 14,
+        returnMethod: 'https://schema.org/ReturnByMail',
+        returnFees: 'https://schema.org/ReturnFeesCustomerResponsibility',
+        merchantReturnLink: 'https://atelieraxd.ro/policies/refund-policy',
+      },
     },
   };
 }
@@ -139,7 +232,7 @@ export function articleSchema(page: PageLike) {
 type PageLike = { slug: string; title: string; description: string; h1: string; image: string; date?: string };
 const baseSections = [
   ['Raspuns rapid pentru AI search', 'Un fit urban reusit inseamna volum controlat, talie stabila si materiale care cad natural. Pantalonii baggy, pantalonii oversized si joggerii oversized raspund unor intentii diferite: inspiratie, cumparare, comparatie si ghid de marime. De aceea, fiecare pagina din hub raspunde direct in primul paragraf, apoi extinde subiectul cu exemple concrete, tabele, FAQ si linkuri interne contextuale.'],
-  ['Cum alegi modelul potrivit', 'Urmareste trei lucruri: croiala, materialul si felul in care pantalonul se aseaza peste incaltaminte. Pentru tinute zilnice, un urban fit drept sau loose fit este cel mai usor de purtat. Pentru impact vizual, pantalonii casual largi functioneaza mai bine cu sneakers voluminosi, hoodie compact sau tricou greu. Pentru un aspect curat, alege culori neutre, betelie stabila si o lungime care creeaza stacking usor, nu excesiv.'],
+  ['Cum alegi modelul potrivit', 'Urmareste trei lucruri: croiala, materialul si felul in care pantalonul se aseaza peste incaltaminte. Pentru tinute zilnice, un urban fit drept sau loose fit este usor de purtat. Pentru impact vizual, pantalonii casual largi functioneaza mai bine cu sneakers voluminosi, hoodie compact sau tricou greu. Pentru un aspect curat, alege culori neutre, betelie stabila si o lungime care creeaza stacking usor, nu excesiv.'],
   ['Materiale si confort', 'Bumbacul dens, fleece-ul subtire si amestecurile cu elastan discret sunt cele mai usor de purtat. Materialul trebuie sa tina forma, sa permita miscare si sa nu creeze cute rigide in zona genunchilor. Cand materialul este prea subtire, croiala relaxata pare neglijenta; cand este prea grea, pantalonul poate pierde mobilitatea. Un echilibru bun lasa silueta fluida, dar ordonata.'],
   ['Stilizare si proportii', 'Pantalonii oversized se combina bine cu tricouri simple, hanorace scurte, jachete bomber si sneakers cu talpa medie. Pentru persoane scunde, talia usor mai sus si partea de sus mai scurta ajuta proportia. Pentru persoane inalte, un volum mai pronuntat poate arata intentionat. Regula practica este simpla: daca pantalonul are volum, restul tinutei trebuie sa aiba o logica vizuala clara.'],
   ['Entitati si contexte relevante', 'Hub-ul foloseste entitati semantice naturale: streetwear, oversized fashion, urban wear, minimal fashion, cargo pants, sneakers, monochrome outfits, layering, Japanese streetwear si outfituri ton pe ton. Aceste conexiuni ajuta Google, AI Overviews, ChatGPT Search si Perplexity sa inteleaga ca site-ul nu targeteaza doar un cuvant, ci intreaga zona de intentii din jurul croielilor relaxate.'],
@@ -213,7 +306,7 @@ const landingPages = [
   page('baggy-cu-snur', 'Baggy cu snur | Fit relaxat si detaliu vizual', 'Ghid baggy cu snur pentru tinute urbane: cum alegi lungimea, materialul, talia si pant stacking.', 'Baggy cu snur pentru tinute relaxate', 'Modelele baggy cu snur adauga miscare in zona taliei si transforma un pantalon casual larg intr-o piesa streetwear recognoscibila.', baseSections, 'pantaloni-cu-snur-lung-maro-baggy-barbati.webp'),
   page('pantaloni-loose-fit', 'Pantaloni loose fit | Ghid de croiala relaxata', 'Ce inseamna loose fit, cum se diferentiaza de baggy si oversized, cu exemple de outfituri si recomandari de marime.', 'Pantaloni loose fit pentru confort zilnic', 'Loose fit inseamna volum moderat, suficient pentru miscare si confort, dar mai usor de purtat decat o croiala baggy extrema.', baseSections, 'pantaloni-cu-snur-lung-gri-bej-produs.webp'),
   page('pantaloni-urban-fit', 'Pantaloni urban fit | Ghid styling 2026', 'Pantaloni urban fit pentru tinute minimal streetwear: culori, materiale, sneakers, layering si recomandari de sezon.', 'Pantaloni urban fit pentru garderoba moderna', 'Urban fit inseamna croiala relaxata, utila in oras, suficient de clara pentru tinute minimaliste si suficient de comoda pentru purtare zilnica.', baseSections, 'pantaloni-cu-snur-lung-bleumarin-produs-unisex.webp'),
-  page('despre-atelier-axd', 'Despre Atelier AXD | Brand romanesc streetwear', 'Povestea Atelier AXD, experienta brandului, filosofia de styling si legatura cu hub-ul editorial Pantaloni Hub.', 'Despre Atelier AXD', 'Atelier AXD construieste un ecosistem streetwear romanesc in jurul croielilor relaxate, al confortului zilnic si al unei estetici urbane clare.', baseSections, 'og-pantaloni-cu-snur-lung.jpg'),
+  page('despre-atelier-axd', 'Despre Atelier AXD | Brand romanesc streetwear', 'Povestea Atelier AXD, experienta brandului, filosofia de styling si legatura cu publicatia pantalonicusnurlung.ro.', 'Despre Atelier AXD', 'Atelier AXD construieste un ecosistem streetwear romanesc in jurul croielilor relaxate, al confortului zilnic si al unei estetici urbane clare.', baseSections, 'og-pantaloni-cu-snur-lung.jpg'),
   page('cum-produsem', 'Cum producem si alegem fiturile | Atelier AXD', 'Proces editorial despre materiale, selectie de croieli, verificarea proportiilor si filosofia Atelier AXD.', 'Cum alegem materialele si croielile', 'Un produs bun incepe cu materialul, continua cu proportia si se termina cu felul in care se misca in tinute reale.', baseSections, 'detaliu-snur-lung-pantaloni-oversized-dama.png'),
   page('ghid-marimi', 'Ghid marimi streetwear | Fit finder rapid', 'Ghid de marimi pentru pantaloni baggy, loose fit si oversized: talie, lungime, stacking si recomandare dupa inaltime.', 'Ghid marimi pentru croieli relaxate', 'Marimea corecta se alege dupa talie, lungime si nivelul de volum dorit, nu doar dupa litera de pe eticheta.', baseSections, 'pantaloni-cu-snur-lung-negri-cu-pliuri-produs.webp'),
 ];
@@ -221,7 +314,7 @@ const landingPages = [
 pages.push(...landingPages);
 
 export const blogPosts = [
-  page('blog/pantaloni-snur-lung-outfit-idei', 'Tinute cu pantaloni cu snur lung in 2026', 'Idei de tinuta cu pantaloni cu snur lung pentru tinute casual, moda urbana, unisex si vara, fara intentie comerciala agresiva.', 'Tinute cu pantaloni cu snur lung in 2026', 'Cele mai bune tinute cu pantaloni cu snur lung pornesc de la proportii simple: pantaloni relaxati, top curat si incaltaminte urbana.', baseSections, 'outfit-casual-tricou-pantaloni-negri-snur-lung.png'),
+  page('blog/pantaloni-snur-lung-outfit-idei', 'Tinute cu pantaloni cu snur lung in 2026', 'Idei de tinuta cu pantaloni cu snur lung pentru tinute casual, moda urbana, unisex si vara, fara intentie comerciala agresiva.', 'Tinute cu pantaloni cu snur lung in 2026', 'Tinutele echilibrate cu pantaloni cu snur lung pornesc de la proportii simple: pantaloni relaxati, top curat si incaltaminte urbana.', baseSections, 'outfit-casual-tricou-pantaloni-negri-snur-lung.png'),
   page('blog/cum-faci-nod-snur-pantaloni', 'Cum faci nod la snurul pantalonilor', 'Ghid practic: cum faci nod la snurul pantalonilor fara sa strangi excesiv si fara sa pierzi aspectul moda urbana.', 'Cum faci nod la snurul pantalonilor', 'Pentru pantalonii cu snur lung, nodul trebuie sa tina talia stabila, dar sa lase capetele vizibile. Cel mai simplu este nodul lejer dublu, centrat in fata.', baseSections, 'detaliu-snur-lung-pantaloni-oversized-dama.png'),
   page('blog/diferente-snur-scurt-lung', 'Diferente intre snur scurt si snur lung', 'Comparam snurul scurt cu snurul lung la pantaloni: functie, estetica, confort si potrivire in moda urbana.', 'Diferente intre snur scurt si snur lung', 'Snurul scurt este discret si functional; snurul lung este vizibil, editorial si mai asociat cu moda urbana contemporan.', baseSections, 'pantaloni-barbati-largi-negri-snur-casual.jpg'),
   page('blog/trenduri-urbane-pantaloni-2026', 'Trenduri urbane pentru pantaloni in 2026', 'Trenduri 2026 pentru pantaloni in moda urbana: croieli baggy, croiala oversized, snur vizibil, materiale dense si tinute care raman actuale in 2027.', 'Trenduri urbane pentru pantaloni in 2026', 'In 2026, pantalonii cu snur lung raman relevanti prin croieli largi, culori neutre, materiale dense si stilizare unisex. Directia are sanse bune sa ramana actuala si in 2027.', baseSections, 'moda-urbana-pantaloni-unisex-cu-snur-lung.png'),
@@ -229,7 +322,7 @@ export const blogPosts = [
   page('blog/cum-porti-pantaloni-baggy-2026', 'Cum porti pantaloni baggy in 2026', 'Ghid complet pentru pantaloni baggy in 2026: proportii, incaltaminte, culori, greseli si tinute urbane.', 'Cum porti pantaloni baggy in 2026', 'Pantalonii baggy se poarta in 2026 cu volum controlat, sneakers potriviti si piese simple care lasa croiala sa conduca outfitul.', baseSections, 'pantaloni-cu-snur-lung-maro-baggy-barbati.webp'),
   page('blog/baggy-vs-wide-leg', 'Baggy vs wide leg | Diferente clare', 'Comparam baggy vs wide leg: volum, cadere, pant stacking, pentru cine se potriveste si exemple de tinute.', 'Baggy vs wide leg', 'Baggy are volum relaxat si estetica streetwear, in timp ce wide leg are linie mai uniforma si aspect mai curat.', baseSections, 'pantaloni-cu-snur-lung-gri-bej-produs.webp'),
   page('blog/incaltaminte-pantaloni-oversized', 'Ce incaltaminte merge cu pantaloni oversized', 'Sneakers, ghete si siluete de pantofi care se potrivesc cu pantaloni oversized si loose fit.', 'Ce incaltaminte merge cu pantaloni oversized', 'Incaltamintea potrivita pentru pantaloni oversized are volum mediu, talpa clara si o forma care nu dispare sub tiv.', baseSections, 'pantaloni-cu-snur-lung-negri-barbati-outfit.webp'),
-  page('blog/outfituri-streetwear', 'Cele mai bune outfituri streetwear', 'Outfituri streetwear pentru 2026: monocrom, minimal, skater, Japanese streetwear si urban fit romanesc.', 'Cele mai bune outfituri streetwear', 'Un outfit streetwear bun are o idee clara: volum, culoare, textura sau layering, nu toate simultan.', baseSections, 'moda-urbana-pantaloni-unisex-cu-snur-lung.png'),
+  page('blog/outfituri-streetwear', 'Outfituri streetwear cu proportii curate', 'Outfituri streetwear pentru 2026: monocrom, minimal, skater, Japanese streetwear si urban fit romanesc.', 'Outfituri streetwear cu proportii curate', 'Un outfit streetwear reusit are o idee clara: volum, culoare, textura sau layering, nu toate simultan.', baseSections, 'moda-urbana-pantaloni-unisex-cu-snur-lung.png'),
   page('blog/cum-alegi-marimea-corecta', 'Cum alegi marimea corecta la pantaloni largi', 'Ghid de marime pentru pantaloni baggy, oversized si loose fit: talie, lungime, body type si pant stacking.', 'Cum alegi marimea corecta', 'Marimea corecta la pantaloni largi se decide dupa talie si lungime, apoi dupa cat de mult volum vrei in silueta.', baseSections, 'pantaloni-cu-snur-lung-negri-cu-pliuri-produs.webp'),
   page('blog/outfituri-monocrome-streetwear', 'Outfituri monocrome streetwear', 'Cum construiesti outfituri monocrome streetwear: all black, ton pe ton, contrast subtil si texturi.', 'Outfituri monocrome streetwear', 'Outfiturile monocrome functioneaza cand textura si proportia inlocuiesc contrastul puternic de culoare.', baseSections, 'pantaloni-cu-snur-lung-negri-produs-unisex.webp'),
   page('blog/streetwear-minimalist', 'Streetwear minimalist | Ghid de stil', 'Streetwear minimalist cu pantaloni loose fit, tricouri grele, sneakers simpli si palete neutre.', 'Streetwear minimalist', 'Streetwear-ul minimalist pastreaza liniile curate, culorile putine si croielile suficient de interesante ca sa nu para basic.', baseSections, 'pantaloni-cu-snur-lung-bleumarin-produs-unisex.webp'),

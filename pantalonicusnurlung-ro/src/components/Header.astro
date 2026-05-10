@@ -2,15 +2,23 @@
 import { SHOP } from '../data/seoSite';
 
 const links = [
+  ['/pantaloni-cu-snur-lung/', 'Hub'],
   ['/pantaloni-baggy-negri/', 'Baggy negru'],
   ['/pantaloni-oversized/', 'Oversized'],
-  ['/streetwear-barbati/', 'Barbati'],
-  ['/streetwear-femei/', 'Femei'],
+  ['/streetwear-barbati/', 'Streetwear'],
   ['/pantaloni-loose-fit/', 'Loose fit'],
   ['/blog/', 'Blog'],
 ];
 ---
 <header class="header-wrapper">
+  <div class="promo-bar" aria-label="Actualizari editoriale Atelier AXD">
+    <a href={SHOP} target="_blank" rel="noopener">
+      <span class="promo-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 12v8H4v-8"></path><path d="M2 7h20v5H2z"></path><path d="M12 20V7"></path><path d="M12 7H7.5a2.5 2.5 0 1 1 2-4c1.4 1.8 2.5 4 2.5 4Z"></path><path d="M12 7h4.5a2.5 2.5 0 1 0-2-4c-1.4 1.8-2.5 4-2.5 4Z"></path></svg></span>
+      <span>Ghiduri noi, trenduri streetwear si inspiratie outfit</span>
+      <span class="promo-separator" aria-hidden="true"></span>
+      <span>Vezi colectia AtelierAXD</span>
+    </a>
+  </div>
   <nav>
     <div class="nav-inner">
       <a href="/" class="logo logo-mark" aria-label="Acasa PantaloniCuSnurLung.ro">
@@ -25,6 +33,10 @@ const links = [
       <ul class="nav-links">
         {links.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
       </ul>
+      <form class="site-search" action="/search/baggy/" role="search" aria-label="Cauta ghiduri streetwear">
+        <label for="site-search-input">Cauta</label>
+        <input id="site-search-input" type="search" name="q" placeholder="baggy, oversized..." />
+      </form>
       <a href={SHOP} class="nav-cta" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8"></path></svg>
         Atelier AXD
