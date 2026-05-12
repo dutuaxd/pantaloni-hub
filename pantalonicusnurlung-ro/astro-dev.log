@@ -1,0 +1,33 @@
+
+> dev
+> astro dev --host 127.0.0.1 --port 4323
+
+23:24:32 [types] Generated 1ms
+
+ astro  v4.16.19 ready in 425 ms
+
+┃ Local    http://127.0.0.1:4323/
+
+23:24:32 watching for file changes...
+23:25:00 [200] / 18ms
+23:25:00 [200] /pantaloni-cu-siret-lung/ 26ms
+23:25:00 [200] /pantaloni-negri-cu-siret-lung/ 28ms
+23:25:00 [200] /blog/siret-lung-vs-snur-lung/ 28ms
+23:32:29 [watch] src/data/seoSite.ts
+23:32:44 [watch] src/pages/index.astro
+23:33:08 [200] /tricou-gri-pantaloni-albi-siret-lung/ 7ms
+23:37:33 [watch] src/data/seoSite.ts
+23:37:59 [watch] src/pages/index.astro
+23:38:37 [200] /set-alb-pantaloni-scurti-siret-lung/ 10ms
+23:38:37 [200] /tricou-bej-pantaloni-albi-siret-lung/ 11ms
+23:38:37 [200] /tricou-verde-armata-pantaloni-siret-lung/ 11ms
+23:45:33 [watch] src/data/seoSite.ts
+23:45:55 [watch] src/pages/index.astro
+23:46:26 [200] /tricou-verde-armata-pantaloni-albi-siret-lung/ 9ms
+23:46:26 [200] /tricou-bleumarin-pantaloni-albi-siret-lung/ 10ms
+23:46:26 [200] /tricou-gri-simplu-pantaloni-siret-lung/ 10ms
+23:55:30 [watch] src/data/seoSite.ts
+23:56:01 [watch] src/pages/index.astro
+23:56:01 [watch] src/pages/index.astro
+23:57:07 [200] /tricou-tie-dye-pantaloni-albi-siret-lung/ 7ms
+23:57:07 [200] /tricou-tie-dye-pantaloni-siret-lung/ 8ms

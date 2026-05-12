@@ -140,83 +140,113 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"blog": {
-"01-ce-sunt-pantalonii-cu-snur/index.md": {
-	id: "01-ce-sunt-pantalonii-cu-snur/index.md";
-  slug: "01-ce-sunt-pantalonii-cu-snur";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
-"02-cum-alegi-pantalonii-cu-snur/index.md": {
-	id: "02-cum-alegi-pantalonii-cu-snur/index.md";
-  slug: "02-cum-alegi-pantalonii-cu-snur";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
-"03-outfit-uri-pantaloni-cu-snur-vara/index.md": {
-	id: "03-outfit-uri-pantaloni-cu-snur-vara/index.md";
-  slug: "03-outfit-uri-pantaloni-cu-snur-vara";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
-"04-pantaloni-cu-snur-vs-trening/index.md": {
-	id: "04-pantaloni-cu-snur-vs-trening/index.md";
-  slug: "04-pantaloni-cu-snur-vs-trening";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
-"05-ingrijire-pantaloni-cu-snur/index.md": {
-	id: "05-ingrijire-pantaloni-cu-snur/index.md";
-  slug: "05-ingrijire-pantaloni-cu-snur";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
-"06-seturi-cu-pantaloni-cu-snur/index.md": {
-	id: "06-seturi-cu-pantaloni-cu-snur/index.md";
-  slug: "06-seturi-cu-pantaloni-cu-snur";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
-"07-tricouri-si-pantaloni-cu-snur/index.md": {
-	id: "07-tricouri-si-pantaloni-cu-snur/index.md";
-  slug: "07-tricouri-si-pantaloni-cu-snur";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
-"08-pantaloni-cu-snur-scurti/index.md": {
-	id: "08-pantaloni-cu-snur-scurti/index.md";
-  slug: "08-pantaloni-cu-snur-scurti";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
-"09-unde-cumpar-pantaloni-cu-snur-romania/index.md": {
-	id: "09-unde-cumpar-pantaloni-cu-snur-romania/index.md";
-  slug: "09-unde-cumpar-pantaloni-cu-snur-romania";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
-"10-tendinte-pantaloni-cu-snur-2025/index.md": {
-	id: "10-tendinte-pantaloni-cu-snur-2025/index.md";
-  slug: "10-tendinte-pantaloni-cu-snur-2025";
-  body: string;
-  collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
-};
-
+		
 	};
 
 	type DataEntryMap = {
-		
+		"blog": {
+"01-ce-sunt-pantalonii-cu-snur/images": {
+	id: "01-ce-sunt-pantalonii-cu-snur/images";
+  collection: "blog";
+  data: any
+};
+"01-ce-sunt-pantalonii-cu-snur/images-meta": {
+	id: "01-ce-sunt-pantalonii-cu-snur/images-meta";
+  collection: "blog";
+  data: any
+};
+"02-cum-alegi-pantalonii-cu-snur/images": {
+	id: "02-cum-alegi-pantalonii-cu-snur/images";
+  collection: "blog";
+  data: any
+};
+"02-cum-alegi-pantalonii-cu-snur/images-meta": {
+	id: "02-cum-alegi-pantalonii-cu-snur/images-meta";
+  collection: "blog";
+  data: any
+};
+"03-outfit-uri-pantaloni-cu-snur-vara/images": {
+	id: "03-outfit-uri-pantaloni-cu-snur-vara/images";
+  collection: "blog";
+  data: any
+};
+"03-outfit-uri-pantaloni-cu-snur-vara/images-meta": {
+	id: "03-outfit-uri-pantaloni-cu-snur-vara/images-meta";
+  collection: "blog";
+  data: any
+};
+"04-pantaloni-cu-snur-vs-trening/images": {
+	id: "04-pantaloni-cu-snur-vs-trening/images";
+  collection: "blog";
+  data: any
+};
+"04-pantaloni-cu-snur-vs-trening/images-meta": {
+	id: "04-pantaloni-cu-snur-vs-trening/images-meta";
+  collection: "blog";
+  data: any
+};
+"05-ingrijire-pantaloni-cu-snur/images": {
+	id: "05-ingrijire-pantaloni-cu-snur/images";
+  collection: "blog";
+  data: any
+};
+"05-ingrijire-pantaloni-cu-snur/images-meta": {
+	id: "05-ingrijire-pantaloni-cu-snur/images-meta";
+  collection: "blog";
+  data: any
+};
+"06-seturi-cu-pantaloni-cu-snur/images": {
+	id: "06-seturi-cu-pantaloni-cu-snur/images";
+  collection: "blog";
+  data: any
+};
+"06-seturi-cu-pantaloni-cu-snur/images-meta": {
+	id: "06-seturi-cu-pantaloni-cu-snur/images-meta";
+  collection: "blog";
+  data: any
+};
+"07-tricouri-si-pantaloni-cu-snur/images": {
+	id: "07-tricouri-si-pantaloni-cu-snur/images";
+  collection: "blog";
+  data: any
+};
+"07-tricouri-si-pantaloni-cu-snur/images-meta": {
+	id: "07-tricouri-si-pantaloni-cu-snur/images-meta";
+  collection: "blog";
+  data: any
+};
+"08-pantaloni-cu-snur-scurti/images": {
+	id: "08-pantaloni-cu-snur-scurti/images";
+  collection: "blog";
+  data: any
+};
+"08-pantaloni-cu-snur-scurti/images-meta": {
+	id: "08-pantaloni-cu-snur-scurti/images-meta";
+  collection: "blog";
+  data: any
+};
+"09-unde-cumpar-pantaloni-cu-snur-romania/images": {
+	id: "09-unde-cumpar-pantaloni-cu-snur-romania/images";
+  collection: "blog";
+  data: any
+};
+"09-unde-cumpar-pantaloni-cu-snur-romania/images-meta": {
+	id: "09-unde-cumpar-pantaloni-cu-snur-romania/images-meta";
+  collection: "blog";
+  data: any
+};
+"10-tendinte-pantaloni-cu-snur-2025/images": {
+	id: "10-tendinte-pantaloni-cu-snur-2025/images";
+  collection: "blog";
+  data: any
+};
+"10-tendinte-pantaloni-cu-snur-2025/images-meta": {
+	id: "10-tendinte-pantaloni-cu-snur-2025/images-meta";
+  collection: "blog";
+  data: any
+};
+};
+
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;

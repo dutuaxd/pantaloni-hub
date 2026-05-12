@@ -1,0 +1,45 @@
+
+> dev
+> astro dev --host 127.0.0.1 --port 4321
+
+22:38:22 [types] Generated 3ms
+22:38:22 [vite] Port 4321 is in use, trying another one...
+
+ astro  v4.16.19 ready in 482 ms
+
+┃ Local    http://127.0.0.1:4322/
+
+22:38:23 watching for file changes...
+
+ update  ▶ New version of Astro available: 6.3.1
+  Run npx @astrojs/upgrade to update
+
+22:38:57 [200] /tricouri/ 17ms
+22:38:57 [200] /blog/11-cum-porti-tricoul-negru-oversized/ 8ms
+22:38:57 [200] /blog/12-ingrijire-tricou-negru-bumbac/ 10ms
+23:18:42 [watch] src/content/blog/tricou-alb-pantaloni-negri-snur-lung/tricou-alb-basic-produs.png
+23:18:42 [watch] src/content/blog/tricou-alb-pantaloni-negri-snur-lung/tricou-alb-pantaloni-negri-siret-lung-outfit.png
+23:18:42 [watch] src/content/blog/tricou-alb-pantaloni-negri-snur-lung/tricou-alb-pantaloni-negri-snur-lung-unisex.png
+23:18:42 [watch] src/content/blog/cum-porti-tricoul-negru-oversized/index.md
+23:18:42 [watch] src/content/blog/cum-porti-tricoul-negru-oversized/tricou-negru-basic-detaliu-produs.png
+23:18:42 [watch] src/content/blog/cum-porti-tricoul-negru-oversized/tricou-negru-basic-pantaloni-scurti-barbati.png
+23:18:42 [watch] src/content/blog/cum-porti-tricoul-negru-oversized/tricou-negru-oversized-pantaloni-cu-snur-femei.png
+23:18:42 [watch] src/content/blog/11-cum-porti-tricoul-negru-oversized/index.md
+23:18:42 [watch] src/content/blog/11-cum-porti-tricoul-negru-oversized/tricou-negru-basic-detaliu-produs.png
+23:18:42 [watch] src/content/blog/11-cum-porti-tricoul-negru-oversized/tricou-negru-basic-pantaloni-scurti-barbati.png
+23:18:42 [watch] src/content/blog/11-cum-porti-tricoul-negru-oversized/tricou-negru-oversized-pantaloni-cu-snur-femei.png
+23:18:42 [watch] src/content/blog/12-ingrijire-tricou-negru-bumbac/index.md
+23:18:42 [watch] src/content/blog/12-ingrijire-tricou-negru-bumbac/tricou-negru-bumbac-detaliu-produs.png
+23:18:42 [watch] src/content/blog/12-ingrijire-tricou-negru-bumbac/tricou-negru-bumbac-purtare-barbati.png
+23:18:42 [watch] src/content/blog/12-ingrijire-tricou-negru-bumbac/tricou-negru-bumbac-tinuta-lejera.png
+23:18:42 [watch] src/content/blog/ingrijire-tricou-negru-bumbac/index.md
+23:18:42 [watch] src/content/blog/ingrijire-tricou-negru-bumbac/tricou-negru-bumbac-detaliu-produs.png
+23:18:42 [watch] src/content/blog/ingrijire-tricou-negru-bumbac/tricou-negru-bumbac-purtare-barbati.png
+23:18:42 [watch] src/content/blog/ingrijire-tricou-negru-bumbac/tricou-negru-bumbac-tinuta-lejera.png
+23:20:27 [watch] src/data/blogImages.ts
+23:20:27 [watch] src/content/blog/tricou-alb-pantaloni-negri-snur-lung/index.md
+23:20:27 [watch] src/pages/tricouri.astro
+23:21:06 [200] /tricouri/ 3ms
+23:21:06 [200] /blog/ingrijire-tricou-negru-bumbac/ 10ms
+23:21:06 [200] /blog/tricou-alb-pantaloni-negri-snur-lung/ 10ms
+23:21:06 [200] /blog/cum-porti-tricoul-negru-oversized/ 11ms

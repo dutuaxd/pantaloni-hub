@@ -318,5 +318,101 @@ export const blogImages = {
       "decoding": "async",
       "caption": "Pantaloni cu snur lung prezentati natural in context 3."
     }
+  ],
+  "cum-porti-tricoul-negru-oversized": [
+    {
+      "filename": "tricou-negru-oversized-pantaloni-cu-snur-femei.png",
+      "alt": "Tricou negru oversized purtat cu pantaloni largi si sneakers albi intr-o tinuta casual",
+      "title": "Tricou negru oversized cu pantaloni casual",
+      "width": 1023,
+      "height": 1537,
+      "loading": "eager",
+      "fetchpriority": "high",
+      "caption": "Tricou negru oversized combinat cu pantaloni largi pentru o tinuta relaxata."
+    },
+    {
+      "filename": "tricou-negru-basic-pantaloni-scurti-barbati.png",
+      "alt": "Tricou negru basic purtat cu pantaloni scurti gri si sneakers albi",
+      "title": "Tricou negru basic cu pantaloni scurti",
+      "width": 1086,
+      "height": 1448,
+      "loading": "lazy",
+      "decoding": "async",
+      "caption": "Exemplu de tricou negru basic purtat simplu cu pantaloni scurti casual."
+    },
+    {
+      "filename": "tricou-negru-basic-detaliu-produs.png",
+      "alt": "Tricou negru basic simplu din bumbac fotografiat frontal",
+      "title": "Tricou negru basic detaliu produs",
+      "width": 1254,
+      "height": 1254,
+      "loading": "lazy",
+      "decoding": "async",
+      "caption": "Detaliu de produs pentru croiala si aspectul unui tricou negru basic."
+    }
+  ],
+  "ingrijire-tricou-negru-bumbac": [
+    {
+      "filename": "tricou-negru-bumbac-detaliu-produs.png",
+      "alt": "Tricou negru basic din bumbac fotografiat frontal pe fundal alb",
+      "title": "Ingrijire tricou negru din bumbac",
+      "width": 1254,
+      "height": 1254,
+      "loading": "eager",
+      "fetchpriority": "high",
+      "caption": "Tricou negru basic prezentat clar pentru recomandari de ingrijire."
+    },
+    {
+      "filename": "tricou-negru-bumbac-purtare-barbati.png",
+      "alt": "Tricou negru din bumbac purtat cu pantaloni scurti casual",
+      "title": "Tricou negru din bumbac in tinuta casual",
+      "width": 1086,
+      "height": 1448,
+      "loading": "lazy",
+      "decoding": "async",
+      "caption": "Tricoul negru ramane versatil cand este spalat si uscat corect."
+    },
+    {
+      "filename": "tricou-negru-bumbac-tinuta-lejera.png",
+      "alt": "Tricou negru lejer purtat cu pantaloni largi negri si sneakers albi",
+      "title": "Tricou negru lejer intretinut corect",
+      "width": 1023,
+      "height": 1537,
+      "loading": "lazy",
+      "decoding": "async",
+      "caption": "Tinuta lejera cu tricou negru si pantaloni largi, potrivita pentru purtare zilnica."
+    }
+  ],
+  "tricou-alb-pantaloni-negri-snur-lung": [
+    {
+      "filename": "tricou-alb-pantaloni-negri-snur-lung-unisex.png",
+      "alt": "Tricou alb basic purtat de femeie si barbat cu pantaloni negri scurti cu snur lung",
+      "title": "Tricou alb cu pantaloni negri cu snur lung",
+      "width": 1024,
+      "height": 1536,
+      "loading": "eager",
+      "fetchpriority": "high",
+      "caption": "Tinuta unisex cu tricou alb basic si pantaloni negri cu snur lung."
+    },
+    {
+      "filename": "tricou-alb-pantaloni-negri-siret-lung-outfit.png",
+      "alt": "Tricou alb oversized cu pantaloni negri cu siret lung si sneakers albi",
+      "title": "Tricou alb cu pantaloni negri cu siret lung",
+      "width": 1023,
+      "height": 1537,
+      "loading": "lazy",
+      "decoding": "async",
+      "caption": "Varianta de outfit alb-negru cu siret lung vizibil si croiala lejera."
+    },
+    {
+      "filename": "tricou-alb-basic-produs.png",
+      "alt": "Tricou alb basic simplu din bumbac fotografiat frontal",
+      "title": "Tricou alb basic detaliu produs",
+      "width": 1254,
+      "height": 1254,
+      "loading": "lazy",
+      "decoding": "async",
+      "caption": "Detaliu de produs pentru croiala unui tricou alb basic."
+    }
   ]
 } as const;
