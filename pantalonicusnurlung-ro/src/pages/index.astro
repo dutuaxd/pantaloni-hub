@@ -8,7 +8,7 @@ const description = 'Ghid romanesc pentru pantaloni baggy, joggeri oversized, pa
 const canonical = `${SITE}/`;
 const hero = productImages[2];
 const img = (index: number) => productImages[index % productImages.length];
-const imageUrl = (item: { file: string }) => `${productImagePath}${item.file}`;
+const imageUrl = (item: { file: string }) => item.file.endsWith('.webp') ? `${productImagePath}${item.file}` : `/${item.file}`;
 const schema = [
   organizationSchema(),
   websiteSchema(),
