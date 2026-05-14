@@ -1,15 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { SITE, SHOP, articleSchema, breadcrumbSchema, company, editorialClusters, faqSchema, faqs, galleryImages, organizationSchema, updated, websiteSchema } from '../data/seoSite';
+import { SITE, SHOP, articleSchema, breadcrumbSchema, company, editorialClusters, faqSchema, faqs, galleryImages, organizationSchema, productSchema, updated, websiteSchema } from '../data/seoSite';
+import { atelierImages, atelierImagePath } from '../data/atelierImages';
 
 const { page, isHome = false } = Astro.props;
 const canonical = page.slug ? `${SITE}/${page.slug}/` : `${SITE}/`;
-const image = page.image.endsWith('.webp') ? `/images/seo-products/${page.image}` : `/${page.image}`;
+const image = page.image.endsWith('.webp') ? `/images/products/${page.image}` : `/${page.image}`;
 const title = page.title.length > 62 ? page.title : `${page.title} | pantalonicusnurlung.ro`;
+const articleImages = Array.isArray(page.images) ? page.images : [];
+const isScheduledArticle = articleImages.length > 0;
+const fullGalleryImages = [
+  ...galleryImages.map(([file, alt]) => ({ file: `/${file}`, alt })),
+  ...atelierImages.map((item) => ({ file: `${atelierImagePath}${item.file}`, alt: item.alt })),
+];
 const schema = [
   organizationSchema(),
   websiteSchema(),
   ...(isHome ? [] : [articleSchema(page), breadcrumbSchema(page.h1, canonical)]),
+  ...(isScheduledArticle ? [productSchema(page.h1, SHOP, new URL(image, SITE).href)] : []),
   faqSchema(),
   ...(page.slug === 'galerie-pantaloni-snur-lung'
     ? [{
@@ -18,14 +26,14 @@ const schema = [
         name: 'Galerie Pantaloni cu Snur Lung',
         description: page.description,
         url: canonical,
-        image: galleryImages.map(([file, alt]) => ({ '@type': 'ImageObject', url: `${SITE}/${file}`, name: alt, description: alt, width: 800, height: 1200 })),
+        image: fullGalleryImages.map((item) => ({ '@type': 'ImageObject', url: `${SITE}${item.file}`, name: item.alt, description: item.alt, width: 800, height: 1200 })),
       }]
     : []),
 ];
 ---
 <Layout title={title} description={page.description} canonical={canonical} image={image} type={isHome ? 'website' : 'article'} schema={schema}>
-  <article class="seo-article">
-    <section class:list={['seo-hero', isHome && 'home-hero']}>
+  <article class="content-article">
+    <section class:list={['content-hero', isHome && 'home-hero']}>
       <div class="container hero-grid">
         <div>
           <p class="section-tag">{isHome ? 'pantaloni cu snur lung' : `// actualizat ${updated}`}</p>
@@ -67,7 +75,7 @@ const schema = [
                 <li>Adauga un accent vizual imediat, fara imprimeuri sau logo-uri mari.</li>
                 <li>Functioneaza in tinute unisex, moda urbana si casual.</li>
                 <li>Regleaza talia si pastreaza o silueta relaxata.</li>
-                <li>Se observa bine in Google Images si in continut de inspiratie moda.</li>
+                <li>Se observa bine in poze si in continut de inspiratie moda.</li>
               </ul>
               <h2>Categorii principale</h2>
               <div class="mini-grid">
@@ -86,6 +94,64 @@ const schema = [
             </section>
           ))}
 
+          {isScheduledArticle && (
+            <section class="scheduled-guide-pack">
+              <h2>Comparatie rapida pentru alegere</h2>
+              <div class="article-table-wrap">
+                <table class="article-table">
+                  <thead>
+                    <tr>
+                      <th>Criteriu</th>
+                      <th>Alege asa</th>
+                      <th>Evita</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Fit</td>
+                      <td>Croiala relaxata, talie clara, snur vizibil</td>
+                      <td>Volum fara structura sau tiv prea lung</td>
+                    </tr>
+                    <tr>
+                      <td>Culoare</td>
+                      <td>Negru, gri, bej, maro sau bleumarin</td>
+                      <td>Prea multe accente intr-o singura tinuta</td>
+                    </tr>
+                    <tr>
+                      <td>Styling</td>
+                      <td>Tricou simplu, hanorac compact, sneakers curati</td>
+                      <td>Logo-uri mari peste tot si proportii neclare</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="reader-question">
+                <strong>Intrebare pentru cititor</strong>
+                <span>Ai purta modelul mai degraba cu tricou oversized sau cu hanorac minimalist?</span>
+              </div>
+              <div class="social-share-row" aria-label="Distribuie articolul">
+                <a href="https://www.instagram.com/atelieraxd.ro/" target="_blank" rel="noopener">IG</a>
+                <a href="https://www.facebook.com/profile.php?id=100067635362487" target="_blank" rel="noopener">FB</a>
+                <a href={`https://pinterest.com/pin/create/button/?url=${canonical}`} target="_blank" rel="noopener">Pinterest</a>
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+              </div>
+            </section>
+          )}
+
+          {articleImages.length > 0 && (
+            <section>
+              <h2>Galerie vizuala pentru articol</h2>
+              <div class="gallery-grid article-image-grid">
+                {articleImages.map((item) => (
+                  <figure>
+                    <img src={`/${item.file}`} alt={item.alt} title={item.title || item.alt} width="800" height="1200" loading="lazy" decoding="async" />
+                    <figcaption>{item.alt}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </section>
+          )}
+
           <div class="cta-strip">
             <h2>Colectia comerciala este pe Atelier AXD</h2>
             <p>Pantalonicusnurlung.ro este site informativ. Pentru produse, marimi disponibile si comanda, intra pe atelieraxd.ro.</p>
@@ -94,9 +160,9 @@ const schema = [
 
           {page.slug === 'galerie-pantaloni-snur-lung' && (
             <div class="gallery-grid">
-              {galleryImages.map(([file, alt]) => (
+              {fullGalleryImages.map(({ file, alt }) => (
                 <figure>
-                  <img src={`/${file}`} alt={alt} title={alt} width="800" height="1200" loading="lazy" decoding="async" />
+                  <img src={file} alt={alt} title={alt} width="800" height="1200" loading="lazy" decoding="async" />
                   <figcaption>{alt}</figcaption>
                 </figure>
               ))}

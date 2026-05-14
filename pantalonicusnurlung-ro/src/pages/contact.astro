@@ -1,6 +1,94 @@
 ---
-import ContentPage from '../components/ContentPage.astro';
-import { pages } from '../data/seoSite';
-const page = pages.find((item) => item.slug === 'contact');
+import Layout from '../layouts/Layout.astro';
+import { SITE, SHOP, company, organizationSchema, websiteSchema } from '../data/seoSite';
+
+const title = 'Contact PantaloniCuSnurLung.ro | Atelier AXD';
+const description = 'Contact pentru PantaloniCuSnurLung.ro: intrebari despre ghiduri, pantaloni cu snur lung, comenzi, retur, colaborari si date firma Atelier AXD.';
+const canonical = `${SITE}/contact/`;
+const schema = [
+  organizationSchema(),
+  websiteSchema(),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: title,
+    description,
+    url: canonical,
+    mainEntity: {
+      '@type': 'Organization',
+      name: company.name,
+      email: company.email,
+      telephone: '+40737101911',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Str. Mare a Unirii 4, Bl. 5, Sc. 2, Et. 1, Ap. 17',
+        addressLocality: 'Focsani',
+        addressRegion: 'Vrancea',
+        addressCountry: 'RO',
+      },
+    },
+  },
+];
 ---
-<ContentPage page={page} />
+<Layout title={title} description={description} canonical={canonical} image="/og-pantaloni-cu-snur-lung.jpg" type="website" schema={schema}>
+  <section class="content-hero contact-hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="section-tag">PantaloniCuSnurLung.ro</p>
+        <h1>Contact pentru ghiduri, pantaloni cu snur lung si comenzi</h1>
+        <p class="direct-answer">Aceasta este pagina de contact a site-ului PantaloniCuSnurLung.ro. Pentru intrebari despre ghiduri, modele, marimi, colaborari sau comenzi gestionate prin Atelier AXD, foloseste datele de mai jos.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href={`mailto:${company.email}`}>Trimite email</a>
+          <a class="btn-ghost" href={SHOP} target="_blank" rel="noopener">Vezi colectia</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="/og-pantaloni-cu-snur-lung.jpg" alt="Pantaloni cu snur lung in tinuta casual moderna" title="Contact PantaloniCuSnurLung.ro" width="1200" height="630" loading="eager" fetchpriority="high" />
+        <figcaption>Pantaloni cu snur lung prezentati natural pentru inspiratie de stil.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-layout">
+      <div class="article-main">
+        <div class="contact-grid">
+          <section class="contact-card">
+            <h2>Date rapide</h2>
+            <p><strong>Email:</strong> <a href={`mailto:${company.email}`}>{company.email}</a></p>
+            <p><strong>Telefon:</strong> <a href="tel:+40737101911">+40 737 101 911</a></p>
+            <p><strong>Magazin produse:</strong> <a href={SHOP} target="_blank" rel="noopener">atelieraxd.ro</a></p>
+            <p>Pentru intrebari despre pantaloni cu snur lung, include modelul vazut, marimea dorita si orasul pentru livrare.</p>
+          </section>
+
+          <section class="contact-card">
+            <h2>Date firma</h2>
+            <p><strong>{company.name}</strong></p>
+            <p><strong>CUI:</strong> {company.cui}</p>
+            <p><strong>Reg. Com.:</strong> {company.reg}</p>
+            <p><strong>Sediu:</strong> {company.address}</p>
+          </section>
+        </div>
+
+        <section class="cta-strip">
+          <h2>Ce poti trimite pe email</h2>
+          <p>Intrebari despre marimi, retur, livrare, colaborari, articole din enciclopedia de pantaloni sau pagini locale precum pantaloni Focsani, Bucuresti, Cluj si alte orase.</p>
+          <a class="btn-primary" href={`mailto:${company.email}?subject=Contact%20PantaloniCuSnurLung.ro`}>Scrie echipei</a>
+        </section>
+
+        <h2>Legatura cu Atelier AXD</h2>
+        <p>PantaloniCuSnurLung.ro este partea informativa si editoriala: ghiduri, blog, enciclopedie despre pantaloni, pagini locale si explicatii despre fit. Produsele, preturile, stocul si comenzile sunt gestionate transparent pe Atelier AXD.</p>
+      </div>
+
+      <aside class="article-side">
+        <h2>Rapid</h2>
+        <a href="/blog/">Blogul nostru</a>
+        <a href="/ce-sunt-pantalonii-cu-snur-lung/">Enciclopedie pantaloni</a>
+        <a href="/pantaloni-pe-orase/">Pantaloni pe orase</a>
+        <a href="/faq/">Intrebari frecvente</a>
+        <a href={SHOP} target="_blank" rel="noopener">Colectia Atelier AXD</a>
+        <address>{company.name}<br />{company.cui}</address>
+      </aside>
+    </div>
+  </section>
+</Layout>

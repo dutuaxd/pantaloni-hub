@@ -5,14 +5,14 @@ const title = 'Blog pantaloni cu snur lung | Ghiduri 2026';
 const description = 'Blog cu ghiduri in romana despre pantaloni cu snur lung: tinute, noduri, diferente snur scurt/lung, trenduri moda urbana 2026 si vara.';
 const canonical = `${SITE}/blog/`;
 const schema = [organizationSchema(), { '@context': 'https://schema.org', '@type': 'Blog', name: title, url: canonical }];
-const imagePath = (image: string) => image.endsWith('.webp') ? `/images/seo-products/${image}` : `/${image}`;
+const imagePath = (image: string) => image.endsWith('.webp') ? `/images/products/${image}` : `/${image}`;
 ---
 <Layout title={title} description={description} canonical={canonical} schema={schema}>
-  <section class="seo-hero">
+  <section class="content-hero">
     <div class="container">
       <p class="section-tag">// ghiduri editoriale</p>
       <h1>Blog pantaloni cu snur lung</h1>
-      <p class="direct-answer">Articole SEO informationale despre tinute, materiale, noduri, trenduri si alegerea pantalonilor cu snur lung pentru tinute urbane. Fiecare ghid are un subiect separat ca sa evitam canibalizarea.</p>
+      <p class="direct-answer">Articole informationale despre tinute, materiale, noduri, trenduri si alegerea pantalonilor cu snur lung pentru tinute urbane. Fiecare ghid are un subiect clar si usor de parcurs.</p>
     </div>
   </section>
   <section class="section">

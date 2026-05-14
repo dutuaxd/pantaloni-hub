@@ -1,22 +1,26 @@
 ---
 import { ATELIER_LINKS, SHOP } from '../data/seoSite';
 
-const links = [
+const shopLinks = [
   [ATELIER_LINKS.reduceri, 'Reduceri'],
   [ATELIER_LINKS.hanorace, 'Hanorace'],
   [ATELIER_LINKS.tricouri, 'Tricouri'],
   [SHOP, 'Pantaloni'],
   [ATELIER_LINKS.seturi, 'Seturi'],
   [ATELIER_LINKS.copii, 'Copii'],
-  [ATELIER_LINKS.blog, 'Blog'],
-  [ATELIER_LINKS.contact, 'Contact'],
+];
+
+const editorialLinks = [
+  ['/blog/', 'Blog'],
+  ['/contact/', 'Contact'],
 ];
 
 const localLinks = [
   ['/pantaloni-baggy-negri/', 'Baggy negru'],
   ['/pantaloni-oversized/', 'Oversized'],
   ['/pantaloni-loose-fit/', 'Loose fit'],
-  ['/blog/', 'Ghiduri'],
+  ['/pantaloni-pe-orase/', 'Orase'],
+  ['/ce-sunt-pantalonii-cu-snur-lung/', 'Enciclopedie'],
 ];
 ---
 <header class="header-wrapper">
@@ -49,7 +53,8 @@ const localLinks = [
     </div>
     <div class="category-nav">
       <ul class="nav-links">
-        {links.map(([href, label]) => <li><a href={href} target="_blank" rel="noopener">{label}</a></li>)}
+        {shopLinks.map(([href, label]) => <li><a href={href} target="_blank" rel="noopener">{label}</a></li>)}
+        {editorialLinks.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
         {localLinks.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
       </ul>
     </div>

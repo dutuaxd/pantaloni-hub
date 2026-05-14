@@ -31,3 +31,13 @@
 23:56:01 [watch] src/pages/index.astro
 23:57:07 [200] /tricou-tie-dye-pantaloni-albi-siret-lung/ 7ms
 23:57:07 [200] /tricou-tie-dye-pantaloni-siret-lung/ 8ms
+00:54:14 [watch] src/pages/sitemap.xml.ts
+00:54:14 [watch] src/data/seoSite.ts
+00:54:14 [watch] /src/styles/global.css
+00:54:14 [watch] src/components/Header.astro
+00:58:43 [watch] src/pages/contact.astro
+00:58:43 [watch] /src/styles/global.css
+00:58:43 [watch] src/components/Header.astro
+00:59:46 [watch] /src/styles/global.css
+00:59:46 [watch] src/components/Footer.astro
+00:59:53 [watch] src/components/Footer.astro

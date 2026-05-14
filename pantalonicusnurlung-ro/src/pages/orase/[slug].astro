@@ -1,0 +1,102 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { SITE, SHOP, breadcrumbSchema, faqSchema, organizationSchema, productSchema, websiteSchema } from '../../data/seoSite';
+import { localCityDescription, localCityPages, localCityTitle, localCityUrl, localFaqs, localBusinessSchema } from '../../data/localSeo';
+
+export function getStaticPaths() {
+  return localCityPages.map((page) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const canonical = localCityUrl(page);
+const title = localCityTitle(page);
+const description = localCityDescription(page);
+const image = `/images/products/${page.image}`;
+const faqs = localFaqs(page);
+const relatedCities = localCityPages.filter((item) => item.slug !== page.slug).slice(0, 5);
+const schema = [
+  organizationSchema(),
+  websiteSchema(),
+  localBusinessSchema(page),
+  productSchema(),
+  faqSchema(faqs),
+  breadcrumbSchema(`Pantaloni in ${page.city}`, canonical),
+];
+---
+<Layout title={`${title} | pantalonicusnurlung.ro`} description={description} canonical={canonical} image={image} type="article" schema={schema}>
+  <article class="content-article local-page">
+    <section class="content-hero local-hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="section-tag">Ghid local {page.county}</p>
+          <h1>Pantaloni in {page.city}: modele casual, baggy si oversized</h1>
+          <p class="direct-answer">Daca esti in {page.city} si cauti pantaloni casual, pantaloni baggy, pantaloni cu snur lung sau un magazin haine online cu livrare in {page.county}, ghidul acesta strange optiunile relevante si trimite catre colectia Atelier AXD.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href={SHOP} target="_blank" rel="noopener">Vezi pantalonii</a>
+            <a class="btn-ghost" href="/pantaloni-pe-orase/">Toate orasele</a>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <img src={image} alt={`Pantaloni cu snur lung pentru livrare in ${page.city}`} title={`Pantaloni in ${page.city}`} width="1200" height="1600" loading="eager" decoding="async" />
+          <figcaption>Pantaloni online cu livrare in {page.city}, {page.county}</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-layout">
+        <div class="article-main">
+          <aside class="about-box">
+            <strong>Pe scurt</strong>
+            <span>Oras: {page.city}</span>
+            <span>Judet: {page.county}</span>
+            <span>Regiune: {page.region}</span>
+          </aside>
+
+          <h2>De unde iti iei pantaloni in {page.city}</h2>
+          <p>O cautare de tip <strong>pantaloni {page.city}</strong> sau <strong>magazin haine {page.city}</strong> poate insemna doua lucruri: vrei o locatie fizica imediata sau vrei o comanda online care ajunge rapid in oras. Pantalonicusnurlung.ro acopera partea de informare, iar achizitia se face prin Atelier AXD.</p>
+          <p>Pentru {page.city}, intentia principala este {page.angle}. De aceea, recomandarea porneste de la modele usor de purtat: pantaloni negri, croieli loose fit, pantaloni baggy si variante cu snur lung vizibil.</p>
+
+          <h2>Modele potrivite pentru {page.city}</h2>
+          <div class="mini-grid local-mini-grid">
+            <a class="mini-card" href="/pantaloni-baggy-negri/">Pantaloni baggy negri</a>
+            <a class="mini-card" href="/pantaloni-oversized/">Pantaloni oversized</a>
+            <a class="mini-card" href="/pantaloni-loose-fit/">Pantaloni loose fit</a>
+            <a class="mini-card" href="/pantaloni-cu-siret-lung/">Pantaloni cu siret lung</a>
+            <a class="mini-card" href="/pantaloni-scurti-cu-siret-lung/">Pantaloni scurti</a>
+            <a class="mini-card" href="/ghid-marimi/">Ghid marimi</a>
+          </div>
+
+          <h2>Livrare in {page.county}</h2>
+          <p>Comanda se face online, iar livrarea poate acoperi atat {page.city}, cat si zone apropiate precum {page.nearby.join(', ')}. Verifica pe pagina produsului marimile disponibile, pretul actual si conditiile de livrare/retur inainte de finalizarea comenzii.</p>
+
+          <h2>Cum alegi marimea</h2>
+          <p>Pentru pantaloni largi, marimea trebuie aleasa dupa talie, lungime si nivelul de volum dorit. Daca vrei un look curat pentru oras, alege o croiala relaxata care cade natural peste incaltaminte, fara material excesiv in zona gleznei.</p>
+
+          <div class="cta-strip">
+            <h2>Vezi colectia disponibila</h2>
+            <p>Produsele, stocul si comanda sunt gestionate pe Atelier AXD. Aceasta pagina ramane un ghid local pentru cautari din {page.city} si {page.county}.</p>
+            <a class="btn-primary" href={SHOP} target="_blank" rel="noopener">Cumpara de pe atelieraxd.ro</a>
+          </div>
+
+          <h2>Intrebari frecvente</h2>
+          <div class="faq-list">
+            {faqs.map(([question, answer]) => (
+              <details>
+                <summary>{question}</summary>
+                <p>{answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+        <aside class="article-side">
+          <h2>Alte orase</h2>
+          {relatedCities.map((item) => <a href={`/orase/${item.slug}/`}>Pantaloni in {item.city}</a>)}
+          <a href="/pantaloni-pe-orase/">Hub pantaloni pe orase</a>
+          <a href={SHOP} target="_blank" rel="noopener">Colectia Atelier AXD</a>
+          <address>Livrare in {page.city}<br />{page.county}, Romania</address>
+        </aside>
+      </div>
+    </section>
+  </article>
+</Layout>

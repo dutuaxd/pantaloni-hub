@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE, SHOP, organizationSchema, websiteSchema } from '../data/seoSite';
+import { localCityPages, localCityUrl, localHub } from '../data/localSeo';
+
+const canonical = `${SITE}/${localHub.slug}/`;
+const schema = [
+  organizationSchema(),
+  websiteSchema(),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: localHub.title,
+    description: localHub.description,
+    url: canonical,
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: localCityPages.map((page, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: `Pantaloni in ${page.city}`,
+        url: localCityUrl(page),
+      })),
+    },
+  },
+];
+---
+<Layout title={`${localHub.title} | pantalonicusnurlung.ro`} description={localHub.description} canonical={canonical} image="/og-pantaloni-cu-snur-lung.jpg" type="website" schema={schema}>
+  <section class="content-hero local-hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="section-tag">Pantaloni pe orase</p>
+        <h1>{localHub.h1}</h1>
+        <p class="direct-answer">Alege orasul si vezi ghidul local pentru pantaloni baggy, oversized, pantaloni cu snur lung si cautari de tip magazin haine. Paginile trimit transparent catre colectia comerciala Atelier AXD.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href={SHOP} target="_blank" rel="noopener">Vezi colectia</a>
+          <a class="btn-ghost" href="/ghid-marimi/">Ghid marimi</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="/images/products/pantaloni-cu-snur-lung-negri-produs-unisex.webp" alt="Pantaloni negri cu snur lung disponibili online in Romania" width="1200" height="1600" loading="eager" decoding="async" />
+        <figcaption>Ghid local pentru pantaloni cu livrare in Romania</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <div class="landing-shell">
+      <h2>Orase disponibile</h2>
+      <div class="filter-row">
+        <span>pantaloni baggy</span>
+        <span>magazin haine</span>
+        <span>livrare in Romania</span>
+        <span>moda urbana</span>
+      </div>
+      <div class="local-city-grid">
+        {localCityPages.map((page) => (
+          <a class="local-city-card" href={`/orase/${page.slug}/`}>
+            <span>{page.county}</span>
+            <strong>Pantaloni in {page.city}</strong>
+            <em>{page.angle}</em>
+            <small>Vezi ghidul local</small>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section soft">
+    <div class="landing-shell split">
+      <div class="text-panel">
+        <h2>De ce exista paginile locale</h2>
+        <p>Multi oameni cauta direct dupa oras: pantaloni Focsani, magazin haine Bucuresti, pantaloni baggy Cluj sau pantaloni scurti Constanta. Hub-ul strange aceste intentii intr-o structura curata, fara sa promita magazin fizic acolo unde comanda se face online.</p>
+        <p>Fiecare pagina explica livrarea, tipurile de pantaloni si legatura cu Atelier AXD, astfel incat continutul sa fie util si pentru utilizator, nu doar o lista de cuvinte cheie.</p>
+      </div>
+      <div class="text-panel">
+        <h2>Cum extindem corect</h2>
+        <p>Prima etapa acopera orase mari si Focsani, pentru relevanta brandului. Dupa ce apar date in Search Console, se pot adauga pagini pentru judete, orase secundare si cautari mai precise precum pantaloni barbati Focsani sau pantaloni scurti Constanta.</p>
+        <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Mergi la produse</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -36,11 +36,11 @@ const categories = [
   ['Pantaloni scurti cu siret lung', 'Varianta de vara pentru cautari vizuale', img(18), '/pantaloni-scurti-cu-siret-lung/'],
   ['Pantaloni cu siret lung barbati', 'Fit larg, talie elastica, stil urban', img(14), '/pantaloni-cu-siret-lung-barbati/'],
   ['Tricou gri si pantaloni albi', 'Outfit unisex cu siret lung vizibil', { file: 'tricou-gri-pantaloni-albi-siret-lung-outfit.png', title: 'Tricou gri cu pantaloni albi cu siret lung', alt: 'Tinuta unisex cu tricou gri oversized si pantaloni scurti albi cu siret lung' }, '/tricou-gri-pantaloni-albi-siret-lung/'],
-  ['Set alb cu siret lung', 'All white pentru vara si Google Images', { file: 'set-alb-pantaloni-scurti-siret-lung-outfit.png', title: 'Set alb cu pantaloni scurti cu siret lung', alt: 'Set alb unisex cu tricou oversized si pantaloni scurti cu siret lung' }, '/set-alb-pantaloni-scurti-siret-lung/'],
+  ['Set alb cu siret lung', 'All white pentru vara', { file: 'set-alb-pantaloni-scurti-siret-lung-outfit.png', title: 'Set alb cu pantaloni scurti cu siret lung', alt: 'Set alb unisex cu tricou oversized si pantaloni scurti cu siret lung' }, '/set-alb-pantaloni-scurti-siret-lung/'],
   ['Tricou bej si pantaloni albi', 'Paleta neutra, soft, usor de purtat', { file: 'tricou-bej-pantaloni-albi-siret-lung-outfit.png', title: 'Tricou bej cu pantaloni albi cu siret lung', alt: 'Tinuta cu tricou bej oversized si pantaloni scurti albi cu siret lung' }, '/tricou-bej-pantaloni-albi-siret-lung/'],
   ['Tricou verde armata', 'Culoare neutra pentru pantaloni cu siret', { file: 'tricou-verde-armata-pantaloni-siret-lung-produs.png', title: 'Tricou verde armata pentru pantaloni cu siret lung', alt: 'Tricou verde armata simplu pentru outfituri cu pantaloni cu siret lung' }, '/tricou-verde-armata-pantaloni-siret-lung/'],
   ['Verde armata cu alb', 'Outfit de vara cu siret lung vizibil', { file: 'tricou-verde-armata-pantaloni-albi-siret-lung-outfit.png', title: 'Tricou verde armata cu pantaloni albi cu siret lung', alt: 'Tinuta cu tricou verde armata oversized si pantaloni scurti albi cu siret lung' }, '/tricou-verde-armata-pantaloni-albi-siret-lung/'],
-  ['Bleumarin cu pantaloni albi', 'Contrast navy-alb pentru Google Images', { file: 'tricou-bleumarin-pantaloni-albi-siret-lung-outfit.png', title: 'Tricou bleumarin cu pantaloni albi cu siret lung', alt: 'Tinuta cu tricou bleumarin oversized si pantaloni scurti albi cu siret lung' }, '/tricou-bleumarin-pantaloni-albi-siret-lung/'],
+  ['Bleumarin cu pantaloni albi', 'Contrast navy-alb usor de purtat', { file: 'tricou-bleumarin-pantaloni-albi-siret-lung-outfit.png', title: 'Tricou bleumarin cu pantaloni albi cu siret lung', alt: 'Tinuta cu tricou bleumarin oversized si pantaloni scurti albi cu siret lung' }, '/tricou-bleumarin-pantaloni-albi-siret-lung/'],
   ['Tricou gri simplu', 'Piesa neutra langa pantaloni cu siret', { file: 'tricou-gri-simplu-pantaloni-siret-lung-produs.png', title: 'Tricou gri simplu pentru pantaloni cu siret lung', alt: 'Tricou gri simplu din bumbac pentru tinute cu pantaloni cu siret lung' }, '/tricou-gri-simplu-pantaloni-siret-lung/'],
   ['Tie dye cu pantaloni albi', 'Statement top, pantaloni simpli cu siret', { file: 'tricou-tie-dye-pantaloni-albi-siret-lung-outfit.png', title: 'Tricou tie dye cu pantaloni albi cu siret lung', alt: 'Tinuta unisex cu tricou tie dye gri albastru si pantaloni scurti albi cu siret lung' }, '/tricou-tie-dye-pantaloni-albi-siret-lung/'],
   ['Tricou tie dye', 'Gri-albastru pentru pantaloni cu siret', { file: 'tricou-tie-dye-gri-albastru-pantaloni-siret-lung-produs.png', title: 'Tricou tie dye gri albastru pentru pantaloni cu siret lung', alt: 'Tricou tie dye gri albastru pentru tinute cu pantaloni cu siret lung' }, '/tricou-tie-dye-pantaloni-siret-lung/'],
@@ -106,7 +106,7 @@ const iconBenefits = [
         {categories.map(([name, copy, item, href]) => (
           <a class="product-card" href={href}>
             <img src={imageUrl(item)} alt={`${name} in tinuta moda urbana cu snur alb vizibil`} title={name} width="800" height="1067" loading="lazy" decoding="async" />
-            <small class="stars">SEO vizual</small>
+            <small class="stars">Ghid vizual</small>
             <strong>{name}</strong>
             <em>{copy}</em>
             <span class="card-button">Vezi ghidul</span>

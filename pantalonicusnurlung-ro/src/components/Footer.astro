@@ -27,25 +27,24 @@ const socials = [
         <span>Publicatie editoriala</span>
         <span>Ghiduri de fit</span>
         <span>Actualizat 2026</span>
-        <span>Atelier AXD ecosystem</span>
       </div>
       <div class="footer-clusters">
         {editorialClusters.map((cluster) => (
-          <div>
-            <h4>{cluster.title}</h4>
+          <details>
+            <summary>{cluster.title}</summary>
             <ul>
               {cluster.links.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
             </ul>
-          </div>
+          </details>
         ))}
       </div>
-      <div class="footer-calendar">
-        <h4>Calendar editorial pregatit</h4>
+      <details class="footer-calendar">
+        <summary>Calendar editorial pregatit</summary>
         <p>Publicarea se face gradual, cu rotatie intre ghiduri, comparatii, materiale, outfituri si pagini de intent comercial.</p>
         <div>
           {scheduledTopics.map((topic) => <span>{topic}</span>)}
         </div>
-      </div>
+      </details>
     </section>
     <div class="delivery-payment-box">
       <div class="dp-group">

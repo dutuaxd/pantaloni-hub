@@ -1,0 +1,36 @@
+name: Publish scheduled posts
+
+on:
+  schedule:
+    - cron: '10 0 * * *'
+  workflow_dispatch:
+    inputs:
+      publish_date:
+        description: 'Optional date override, format YYYY-MM-DD'
+        required: false
+        type: string
+      show_future_posts:
+        description: 'Preview/deploy all future posts'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      PUBLISH_DATE: ${{ inputs.publish_date }}
+      SHOW_FUTURE_POSTS: ${{ inputs.show_future_posts }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npx wrangler deploy

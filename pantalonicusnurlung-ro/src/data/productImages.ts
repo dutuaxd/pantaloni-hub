@@ -116,4 +116,4 @@ export const productImages = [
   },
 ];
 
-export const productImagePath = '/images/seo-products/';
+export const productImagePath = '/images/products/';
