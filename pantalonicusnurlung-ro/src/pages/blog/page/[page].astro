@@ -1,0 +1,48 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { SITE, organizationSchema } from '../../../data/seoSite';
+import { blogPageUrl, getBlogPage, totalBlogPages } from '../../../data/blogPagination';
+
+export function getStaticPaths() {
+  return Array.from({ length: Math.max(totalBlogPages - 1, 0) }, (_, index) => {
+    const pageNumber = index + 2;
+    return { params: { page: String(pageNumber) }, props: { pageNumber } };
+  });
+}
+
+const { pageNumber } = Astro.props;
+const { posts, currentPage, totalPages } = getBlogPage(Number(pageNumber));
+const title = `Blog pantaloni cu snur lung | Pagina ${currentPage}`;
+const description = `Pagina ${currentPage} din blogul PantaloniCuSnurLung.ro: ghiduri despre tinute, culori, evenimente si moda urbana 2026.`;
+const canonical = `${SITE}${blogPageUrl(currentPage)}`;
+const schema = [organizationSchema(), { '@context': 'https://schema.org', '@type': 'Blog', name: title, url: canonical }];
+const imagePath = (image: string) => image.endsWith('.webp') ? `/images/products/${image}` : `/${image}`;
+---
+<Layout title={title} description={description} canonical={canonical} schema={schema}>
+  <section class="content-hero">
+    <div class="container">
+      <p class="section-tag">// pagina {currentPage}</p>
+      <h1>Blog pantaloni cu snur lung</h1>
+      <p class="direct-answer">Arhiva de articole continua cu ghiduri despre culori, evenimente, tinute de sezon si idei de purtare pentru pantaloni cu snur lung.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container blog-grid">
+      {posts.map((post) => (
+        <article class="blog-card">
+          <img src={imagePath(post.image)} alt={post.h1} title={post.h1} width="800" height="1000" loading="lazy" decoding="async" />
+          <h2><a href={`/${post.slug}/`}>{post.h1}</a></h2>
+          <p>{post.description}</p>
+          <a class="btn-ghost" href={`/${post.slug}/`}>Citeste ghidul</a>
+        </article>
+      ))}
+    </div>
+    <nav class="blog-pagination" aria-label="Paginare blog">
+      {Array.from({ length: totalPages }, (_, index) => index + 1).map((item) => (
+        <a class:list={['blog-page-link', item === currentPage && 'active']} href={blogPageUrl(item)} aria-current={item === currentPage ? 'page' : undefined}>
+          {item}
+        </a>
+      ))}
+    </nav>
+  </section>
+</Layout>

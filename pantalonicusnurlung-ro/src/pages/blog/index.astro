@@ -1,11 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { SITE, blogPosts, organizationSchema } from '../../data/seoSite';
+import { SITE, organizationSchema } from '../../data/seoSite';
+import { blogPageUrl, getBlogPage } from '../../data/blogPagination';
 const title = 'Blog pantaloni cu snur lung | Ghiduri 2026';
 const description = 'Blog cu ghiduri in romana despre pantaloni cu snur lung: tinute, noduri, diferente snur scurt/lung, trenduri moda urbana 2026 si vara.';
 const canonical = `${SITE}/blog/`;
 const schema = [organizationSchema(), { '@context': 'https://schema.org', '@type': 'Blog', name: title, url: canonical }];
 const imagePath = (image: string) => image.endsWith('.webp') ? `/images/products/${image}` : `/${image}`;
+const { posts, currentPage, totalPages } = getBlogPage(1);
 ---
 <Layout title={title} description={description} canonical={canonical} schema={schema}>
   <section class="content-hero">
@@ -17,7 +19,7 @@ const imagePath = (image: string) => image.endsWith('.webp') ? `/images/products
   </section>
   <section class="section">
     <div class="container blog-grid">
-      {blogPosts.map((post) => (
+      {posts.map((post) => (
         <article class="blog-card">
           <img src={imagePath(post.image)} alt={post.h1} title={post.h1} width="800" height="1000" loading="lazy" decoding="async" />
           <h2><a href={`/${post.slug}/`}>{post.h1}</a></h2>
@@ -26,5 +28,12 @@ const imagePath = (image: string) => image.endsWith('.webp') ? `/images/products
         </article>
       ))}
     </div>
+    <nav class="blog-pagination" aria-label="Paginare blog">
+      {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (
+        <a class:list={['blog-page-link', pageNumber === currentPage && 'active']} href={blogPageUrl(pageNumber)} aria-current={pageNumber === currentPage ? 'page' : undefined}>
+          {pageNumber}
+        </a>
+      ))}
+    </nav>
   </section>
 </Layout>
