@@ -41,6 +41,9 @@ const localLinks = [
       <a href="/" class="logo logo-mark" aria-label="Acasa Pantaloni cu snur lung">
         <span class="logo-word"><span class="brand-dark">PANTALONI</span> <span class="brand-accent">CU SNUR LUNG.ro</span></span>
       </a>
+      <button class="mobile-menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="mobile-menu-panel" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg>
+      </button>
       <form class="site-search" action="/search/baggy/" role="search" aria-label="Cauta produse">
         <label for="site-search-input">Cauta</label>
         <input id="site-search-input" type="search" name="q" placeholder="Cauta produse..." />
@@ -58,5 +61,48 @@ const localLinks = [
         {localLinks.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
       </ul>
     </div>
+    <div class="mobile-menu-panel" id="mobile-menu-panel" aria-hidden="true">
+      <div class="mobile-menu-head">
+        <strong>Meniu</strong>
+        <button class="mobile-menu-close" type="button" aria-label="Inchide meniul">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg>
+        </button>
+      </div>
+      <form class="mobile-site-search" action="/search/baggy/" role="search" aria-label="Cauta produse">
+        <label for="mobile-site-search-input">Cauta</label>
+        <input id="mobile-site-search-input" type="search" name="q" placeholder="Cauta produse..." />
+        <button type="submit">Cauta</button>
+      </form>
+      <div class="mobile-menu-service">
+        <span>Livrare rapida oriunde in Romania</span>
+        <span>Suport clienti: <strong>+40 737 101 911</strong></span>
+        <a href="mailto:atelieraxd@outlook.com">atelieraxd@outlook.com</a>
+      </div>
+      <ul class="mobile-menu-links">
+        {shopLinks.map(([href, label]) => <li><a href={href} target="_blank" rel="noopener">{label}</a></li>)}
+        {editorialLinks.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
+        {localLinks.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
+        <li><a href={ATELIER_LINKS.partener} target="_blank" rel="noopener">Colaborator</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu-backdrop" hidden></div>
   </nav>
 </header>
+<script>
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const close = document.querySelector('.mobile-menu-close');
+  const panel = document.querySelector('.mobile-menu-panel');
+  const backdrop = document.querySelector('.mobile-menu-backdrop');
+
+  const setMobileMenu = (open) => {
+    document.documentElement.classList.toggle('mobile-menu-open', open);
+    toggle?.setAttribute('aria-expanded', String(open));
+    panel?.setAttribute('aria-hidden', String(!open));
+    if (backdrop) backdrop.hidden = !open;
+  };
+
+  toggle?.addEventListener('click', () => setMobileMenu(true));
+  close?.addEventListener('click', () => setMobileMenu(false));
+  backdrop?.addEventListener('click', () => setMobileMenu(false));
+  panel?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMobileMenu(false)));
+</script>
