@@ -1115,10 +1115,16 @@ body{padding-top:178px}
   }
   .mobile-menu-panel{
     position:fixed;
-    inset:0 auto 0 0;
+    top:0;
+    right:auto;
+    bottom:0;
+    left:0;
     z-index:10002;
     display:block;
     width:min(86vw,340px);
+    height:100vh;
+    min-height:100dvh;
+    max-height:100dvh;
     padding:18px;
     background:#fff;
     box-shadow:24px 0 60px rgba(0,0,0,.18);
