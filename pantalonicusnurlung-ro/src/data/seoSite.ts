@@ -1,5 +1,6 @@
 import { scheduledBlogPosts } from './scheduledBlogPosts';
 import { contentExpansionBlogPosts } from './contentExpansionBlogPosts';
+import { seoContentEngine2026Posts } from './seoContentEngine2026Posts';
 
 export const SITE = 'https://pantalonicusnurlung.ro';
 export const SHOP = 'https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd';
@@ -497,6 +498,7 @@ const landingPages = [
 pages.push(...landingPages);
 
 export const blogPosts = [
+  ...seoContentEngine2026Posts,
   ...contentExpansionBlogPosts,
   page('blog/siret-lung-vs-snur-lung', 'Siret lung vs snur lung la pantaloni', 'Explicatie clara intre siret lung si snur lung la pantaloni, cu exemple de cautari, imagini si recomandari utile pentru utilizatori.', 'Siret lung vs snur lung la pantaloni', 'Siret lung si snur lung sunt folosite des pentru acelasi detaliu vizibil la talia pantalonilor. Snur lung este termenul mai corect, iar siret lung este varianta populara pe care multi utilizatori o tasteaza dupa ce vad poza.', [
     ['Diferenta de termen', 'Snurul este cordonul textil folosit la talia pantalonilor. Siretul este termenul asociat incaltamintei, dar in cautari oamenii il folosesc pentru orice cordon lung si vizibil. Merita explicate ambele formulari clar, fara formulari fortate sau confuze.'],

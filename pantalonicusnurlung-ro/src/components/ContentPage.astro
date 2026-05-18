@@ -2,8 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import { SITE, SHOP, articleSchema, breadcrumbSchema, company, editorialClusters, faqSchema, faqs, galleryImages, organizationSchema, productSchema, updated, websiteSchema } from '../data/seoSite';
 import { atelierImages, atelierImagePath } from '../data/atelierImages';
+import { publicCopy, publicPage } from '../data/publicCopy';
 
-const { page, isHome = false } = Astro.props;
+const { page: rawPage, isHome = false } = Astro.props;
+const page = publicPage(rawPage);
 const canonical = page.slug ? `${SITE}/${page.slug}/` : `${SITE}/`;
 const image = page.image.endsWith('.webp') ? `/images/products/${page.image}` : `/${page.image}`;
 const title = page.title.length > 62 ? page.title : `${page.title} | pantalonicusnurlung.ro`;
@@ -145,7 +147,7 @@ const schema = [
                 {articleImages.map((item) => (
                   <figure>
                     <img src={`/${item.file}`} alt={item.alt} title={item.title || item.alt} width="800" height="1200" loading="lazy" decoding="async" />
-                    <figcaption>{item.alt}</figcaption>
+                    <figcaption>{publicCopy(item.alt)}</figcaption>
                   </figure>
                 ))}
               </div>

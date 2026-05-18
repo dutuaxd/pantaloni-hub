@@ -185,7 +185,7 @@ const opportunities = [
   ['pantaloni cu snur pe ploaie', 'how-to', 'sezon-si-ocazii', 'awareness', 'vreme si material, complet nou', 'evita tiv ud, culori, materiale', 3],
   ['pantaloni maro barbati cu ce se asorteaza', 'how-to', 'combinatii-outfit', 'consideration', 'culoare maro, diferit de negru/crem', 'palete, piele, tricouri, sneakers', 2],
   ['pantaloni gri largi barbati outfit', 'inspiratie', 'combinatii-outfit', 'awareness', 'culoare gri si fit larg, nu snur general', 'gri rece/cald, sala vs oras', 2],
-  ['pantaloni cu snur pentru poze de produs', 'technical editorial', 'google-images-seo', 'consideration', 'SEO images si ecommerce, nu styling pur', 'cadre, alt text, lumina, zoom detaliu', 1],
+  ['pantaloni cu snur pentru poze de produs', 'visual guide', 'imagini-outfit', 'consideration', 'ghid vizual pentru imagini de produs, nu styling general', 'cadre, lumina, zoom detaliu si pozitionare pe model', 1],
   ['haine old money barbati cu pantaloni lejeri', 'trend', 'croieli-urbane', 'awareness', 'aesthetic trend, diferit de streetwear', 'old money relaxat romanesc, fara costum rigid', 3],
   ['pantaloni largi cu camasa deschisa vara', 'how-to', 'combinatii-outfit', 'consideration', 'combinatie piesa sus specifica', 'camasa peste tricou, lungime, materiale', 2],
   ['pantaloni scurti cu sosete inalte barbati', 'comparison', 'sezon-si-ocazii', 'awareness', 'micro-intentie vizuala controversata', 'cand merge, cand nu, proportii', 3],
@@ -196,7 +196,7 @@ const opportunities = [
   ['pantaloni cu snur si geaca piele', 'how-to', 'combinatii-outfit', 'consideration', 'geaca piele, diferit de denim/hanorac', 'contrast masculin, textura, seara', 3],
   ['pantaloni cu snur pentru zbor avion', 'checklist', 'sezon-si-ocazii', 'consideration', 'travel avion, complet distinct', 'confort, buzunare, materiale, security', 2],
   ['pantaloni largi barbati capsule wardrobe', 'strategy', 'topical-authority', 'consideration', 'arhitectura garderoba, nu outfit singular', '5 perechi, 12 tinute, culori', 1],
-  ['pantaloni cu snur pentru Google Images', 'technical SEO', 'google-images-seo', 'decision', 'meta-articol SEO imagini, nu concurenta comerciala', 'filename, alt, schema, WebP, captions', 1],
+  ['pantaloni cu snur pentru poze clare', 'visual guide', 'imagini-outfit', 'decision', 'ghid vizual pentru clienti, nu articol tehnic despre optimizare', 'lumina, unghi, detaliu talie si fotografie de outfit', 1],
 ].map(([keyword, search_intent, cluster, funnel_stage, reason_safe, recommended_angle, priority]) => ({
   keyword,
   search_intent,
@@ -588,6 +588,77 @@ ${faqs.map(([q, a]) => `### ${q}\n\n${a}`).join('\n\n')}
 `;
 }
 
+function escapeTs(value) {
+  return String(value).replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$\{/g, '\\${');
+}
+
+function articleDataObject(item, index) {
+  const slug = slugify(item.keyword);
+  const title = `${item.keyword.charAt(0).toUpperCase()}${item.keyword.slice(1)}: ghid editorial 2026`;
+  const images = imagePlan(item.keyword, index).map((image) => ({
+    file: image.source_candidate,
+    alt: image.alt_text,
+    title: image.title_text,
+  }));
+  const matrix = differentiationMatrix(item, index);
+  const intro = `${item.keyword.charAt(0).toUpperCase()}${item.keyword.slice(1)} se abordeaza prin context, proportii si material, nu prin repetarea unei retete generale. Alege croiala dupa locul in care mergi, pastreaza talia curata, verifica lungimea peste incaltaminte si foloseste culori neutre ca baza.`;
+  const sections = [
+    [
+      'De ce merita ghid separat',
+      `Acest subiect are nevoie de un ghid propriu pentru ca raspunde unei situatii foarte concrete: ${item.recommended_angle}. Nu repetam ghidurile generale despre pantaloni cu snur lung, baggy sau wide leg; aici conteaza contextul real in care porti tinuta.`,
+    ],
+    [
+      'Formula rapida de styling',
+      `Alege pantalonul dupa context, nu dupa trend. Pentru ${item.keyword}, pastreaza talia vizibila cand snurul sau siretul este elementul cheie, foloseste o singura piesa cu volum evident si verifica incaltamintea din profil ca tivul sa nu inghita pantoful.`,
+    ],
+    [
+      'Tabel de decizie',
+      'Prima impresie cere croiala curata si material cu tinuta; pozele cer cadru frontal plus detaliu de talie; tinuta de oras cere tricou greu, camasa deschisa sau jacheta scurta; intrebarile frecvente trebuie sa fie naturale si utile.',
+    ],
+    [
+      'Greseli de evitat',
+      'Nu transforma tinuta intr-o combinatie fara directie. Evita topurile prea lungi peste talie, materialele care se sifoneaza imediat si pozele taiate exact in zona snurului. Recomandarea de produs trebuie sa vina natural, dupa ce cititorul intelege ce i se potriveste.',
+    ],
+    [
+      'Pentru cine functioneaza cel mai bine',
+      `Ghidul este gandit pentru ${matrix.persona}, intr-un context de tip ${matrix.context}. Formatul este ${matrix.format}, cu recomandari directe si exemple usor de verificat in oglinda.`,
+    ],
+    [
+      'Ce poze ajuta cel mai mult',
+      `Foloseste trei cadre diferite: tinuta completa pentru inspiratie, detaliu talie si snur pentru inspectarea materialului, incaltaminte si tiv pentru proportii. Asa cititorul vede rapid cum arata pantalonii in viata reala.`,
+    ],
+    [
+      'Intrebari frecvente',
+      `Este ${item.keyword} potrivit pentru 2026? Da, daca alegerea ramane legata de ${item.recommended_angle}. Greseala frecventa este excesul de volum fara ancora vizuala. Imaginea principala trebuie sa arate tinuta completa, nu doar produsul izolat.`,
+    ],
+  ];
+  return {
+    slug: `blog/${slug}`,
+    title,
+    description: `${title}. Include formule de styling, greseli de evitat, intrebari frecvente si recomandari de poze pentru inspiratie reala.`,
+    h1: title,
+    intro,
+    date: '2026-05-18',
+    image: images[0].file,
+    images,
+    seoEngine: {
+      keyword_principal: item.keyword,
+      cluster: item.cluster,
+      intent: item.search_intent,
+      funnel_stage: item.funnel_stage,
+      reason_safe: item.reason_safe,
+      recommended_angle: item.recommended_angle,
+      priority: item.priority,
+    },
+    sections,
+  };
+}
+
+function tsDataFile(items) {
+  const objects = items.map((item, index) => articleDataObject(item, index));
+  return `export const seoContentEngine2026Posts = ${JSON.stringify(objects, null, 2)};\n`;
+}
+
 fs.writeFileSync(path.join(outDir, 'existing-content-audit.json'), `${JSON.stringify(uniqueAudit, null, 2)}\n`);
 fs.writeFileSync(path.join(outDir, 'topic-gap-analysis.json'), `${JSON.stringify(topicGapAnalysis, null, 2)}\n`);
 fs.writeFileSync(path.join(outDir, 'competitor-gap-analysis.json'), `${JSON.stringify(competitorGapAnalysis, null, 2)}\n`);
@@ -595,6 +666,11 @@ fs.writeFileSync(path.join(outDir, 'competitor-gap-analysis.json'), `${JSON.stri
 for (const [index, item] of safeOpportunities.entries()) {
   fs.writeFileSync(path.join(articlesDir, `${String(index + 1).padStart(2, '0')}-${slugify(item.keyword)}.md`), articleMarkdown(item, index));
 }
+
+fs.writeFileSync(
+  path.join(root, 'pantalonicusnurlung-ro/src/data/seoContentEngine2026Posts.ts'),
+  tsDataFile(safeOpportunities)
+);
 
 const indexMd = `# AI SEO Content Engine 2026 - Output
 

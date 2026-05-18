@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T08:17:31.181Z",
+  "generated_at": "2026-05-18T08:26:06.918Z",
   "audit_scope": {
     "audited_items": 195,
     "sources": [
@@ -772,11 +772,11 @@
     },
     {
       "keyword": "pantaloni cu snur pentru poze de produs",
-      "search_intent": "technical editorial",
-      "cluster": "google-images-seo",
+      "search_intent": "visual guide",
+      "cluster": "imagini-outfit",
       "funnel_stage": "consideration",
-      "reason_safe": "SEO images si ecommerce, nu styling pur",
-      "recommended_angle": "cadre, alt text, lumina, zoom detaliu",
+      "reason_safe": "ghid vizual pentru imagini de produs, nu styling general",
+      "recommended_angle": "cadre, lumina, zoom detaliu si pozitionare pe model",
       "priority": 1
     },
     {
@@ -870,12 +870,12 @@
       "priority": 1
     },
     {
-      "keyword": "pantaloni cu snur pentru Google Images",
-      "search_intent": "technical SEO",
-      "cluster": "google-images-seo",
+      "keyword": "pantaloni cu snur pentru poze clare",
+      "search_intent": "visual guide",
+      "cluster": "imagini-outfit",
       "funnel_stage": "decision",
-      "reason_safe": "meta-articol SEO imagini, nu concurenta comerciala",
-      "recommended_angle": "filename, alt, schema, WebP, captions",
+      "reason_safe": "ghid vizual pentru clienti, nu articol tehnic despre optimizare",
+      "recommended_angle": "lumina, unghi, detaliu talie si fotografie de outfit",
       "priority": 1
     }
   ],

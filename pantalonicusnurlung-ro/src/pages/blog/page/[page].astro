@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import { SITE, organizationSchema } from '../../../data/seoSite';
 import { blogPageUrl, getBlogPage, totalBlogPages } from '../../../data/blogPagination';
+import { publicPage } from '../../../data/publicCopy';
 
 export function getStaticPaths() {
   return Array.from({ length: Math.max(totalBlogPages - 1, 0) }, (_, index) => {
@@ -11,7 +12,8 @@ export function getStaticPaths() {
 }
 
 const { pageNumber } = Astro.props;
-const { posts, currentPage, totalPages } = getBlogPage(Number(pageNumber));
+const { posts: rawPosts, currentPage, totalPages } = getBlogPage(Number(pageNumber));
+const posts = rawPosts.map(publicPage);
 const title = `Blog pantaloni cu snur lung | Pagina ${currentPage}`;
 const description = `Pagina ${currentPage} din blogul PantaloniCuSnurLung.ro: ghiduri despre tinute, culori, evenimente si moda urbana 2026.`;
 const canonical = `${SITE}${blogPageUrl(currentPage)}`;

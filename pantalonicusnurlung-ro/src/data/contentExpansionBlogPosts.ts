@@ -10,7 +10,8 @@ function article(
   intent: string,
   sections: [string, string][],
   image = 'outfit-casual-tricou-pantaloni-negri-snur-lung.png',
-  date = '2026-05-15'
+  date = '2026-05-15',
+  images: { file: string; alt: string; title?: string }[] = []
 ) {
   return {
     slug: `blog/${slug}`,
@@ -20,8 +21,9 @@ function article(
     intro,
     date,
     image,
+    ...(images.length ? { images } : {}),
     sections: [
-      ['Intentie SEO separata', intent],
+      ['De ce merita ghid separat', intent],
       ...sections,
       ['Unde continui', generalLinks],
     ],
@@ -207,7 +209,7 @@ export const contentExpansionBlogPosts = [
       ['Snurul ca accent', 'Snurul lung da linie verticala si face pantalonul mai interesant in poze. Tine partea de sus simpla ca detaliul sa nu se piarda.'],
       ['Ce eviti', 'Materiale grele, buzunare incarcate, imprimeuri mari peste tot si incaltaminte nepotrivita pentru nisip sau terasa.'],
     ],
-    'set-alb-pantaloni-scurti-siret-lung-outfit.png'
+    'images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-albi-siret-lung-streetwear.jpg'
   ),
   article(
     'pantaloni-cu-snur-pentru-vacanta-in-oras',
@@ -237,7 +239,7 @@ export const contentExpansionBlogPosts = [
       ['Formula potrivita', 'Pantaloni bleumarin sau gri, tricou simplu, overshirt sau blazer nestructurat si sneakers curati.'],
       ['Detalii mici', 'Materialul trebuie sa tina forma, tivul sa nu mature podeaua, iar snurul sa fie legat simplu si centrat.'],
     ],
-    'pantaloni-barbati-negri-snur-lung.jpg'
+    'pantaloni-cu-snur-lung-bleumarin-barbati-outfit.webp'
   ),
   article(
     'ce-porti-la-gratar-in-mai-2026',
@@ -297,7 +299,7 @@ export const contentExpansionBlogPosts = [
       ['Indoor vs outdoor', 'Indoor cere materiale respirabile si strat minim. Outdoor cere hanorac sau jacheta subtire pentru finalul serii.'],
       ['Ce eviti', 'Pantaloni prea lungi, materiale rigide, incaltaminte incomoda si accesorii care te incurca in multime.'],
     ],
-    'pantaloni-negri-oversized-barbati-snur-lung.jpg'
+    'images/atelieraxd-long-tail/atelier-axd-pantaloni-negri-bumbac-snur-lung.png'
   ),
   article(
     'cum-porti-tricou-oversized-cu-pantaloni-cu-snur',
@@ -312,7 +314,7 @@ export const contentExpansionBlogPosts = [
       ['Layering', 'Camasa deschisa sau jacheta scurta ajuta proportia. Evita doua piese foarte lungi una peste alta.'],
       ['Greseala comuna', 'Oversized peste oversized fara structura poate scurta silueta. Foloseste incaltaminte cu volum mediu si o talie clara.'],
     ],
-    'outfit-casual-tricou-pantaloni-negri-snur-lung.png'
+    'pantaloni-cu-snur-lung-negri-femei-outfit.webp'
   ),
   article(
     'camasa-cu-pantaloni-cu-snur-smart-casual',
@@ -342,7 +344,7 @@ export const contentExpansionBlogPosts = [
       ['Retro running', 'Buni pentru city break si tinute casual. Arata mai usor decat sneakersii masivi si merg bine cu loose fit.'],
       ['Ce eviti', 'Pantofi prea subtiri sub pantaloni foarte largi sau sneakers murdari sub o tinuta altfel curata. Incaltamintea decide mult din rezultat.'],
     ],
-    'moda-urbana-pantaloni-unisex-cu-snur-lung.png'
+    'pantaloni-cu-snur-lung-gri-deschis-produs-unisex.webp'
   ),
   article(
     'pantaloni-cu-snur-pentru-femei-in-mai-2026',
@@ -372,7 +374,7 @@ export const contentExpansionBlogPosts = [
       ['Culori', 'Negru, bleumarin, olive, gri si maro sunt baza. Accentele rosii sau galbene merg in tricou, sapca sau geanta.'],
       ['Ce eviti', 'Volum prea mare sus si jos, snur foarte lung la evenimente semi-formale si pantofi care dispar sub tiv.'],
     ],
-    'pantaloni-barbati-largi-negri-snur-casual.jpg'
+    'images/atelieraxd-long-tail/atelier-axd-barbat-pantaloni-maro-wide-leg-siret-lung.png'
   ),
   article(
     'pantaloni-cu-snur-pentru-cupluri-outfituri',
@@ -387,7 +389,7 @@ export const contentExpansionBlogPosts = [
       ['Pentru poze', 'Snurul lung se vede bine frontal, asa ca pozitionarea si lumina conteaza. Evita imprimeuri mari care distrag atentia.'],
       ['Ocazii', 'City break, zi de nastere relaxata, festival, plimbare, content social. Pentru evenimente formale, coordonarea trebuie sa fie mai eleganta.'],
     ],
-    'tinuta-unisex-pantaloni-largi-snur-extra-lung.png'
+    'pantaloni-cu-snur-lung-bej-femei-outfit.webp'
   ),
   article(
     'cum-porti-pantaloni-cu-snur-daca-esti-inalt',
@@ -402,7 +404,7 @@ export const contentExpansionBlogPosts = [
       ['Partea de sus', 'Tricourile oversized merg bine, dar o jacheta scurta sau medie pastreaza proportia. Evita topuri foarte lungi peste pantaloni foarte largi.'],
       ['Culori', 'Poti purta tonuri deschise fara sa maresti exagerat silueta. Crem, gri si olive sunt optiuni bune pentru mai si vara.'],
     ],
-    'pantaloni-negri-oversized-barbati-snur-lung.jpg'
+    'pantaloni-cu-snur-lung-maro-baggy-barbati.webp'
   ),
   article(
     'cum-porti-pantaloni-cu-snur-daca-ai-solduri-late',
@@ -417,7 +419,7 @@ export const contentExpansionBlogPosts = [
       ['Partea de sus', 'Topul trebuie sa se opreasca intr-un punct avantajos: fie scurt si clar, fie mediu, dar nu fix pe zona cea mai lata.'],
       ['Snurul', 'Leaga snurul simplu, central. Un snur foarte lung si foarte contrastant poate atrage prea mult atentia daca nu vrei accent pe talie.'],
     ],
-    'pantaloni-baggy-fete-snur-lung-atelieraxd.png'
+    'images/atelieraxd-long-tail/atelier-axd-femeie-pantaloni-crem-cu-siret-lung-wide.png'
   ),
   article(
     'pantaloni-cu-snur-si-hanorac-in-2026',
@@ -432,7 +434,7 @@ export const contentExpansionBlogPosts = [
       ['Culori', 'Gri cu negru, crem cu maro, bleumarin cu alb si olive cu gri sunt combinatii usor de purtat.'],
       ['Layering', 'Sub hanorac poate aparea un tricou alb usor mai lung, dar nu exagerat. Linia dintre piese trebuie sa fie clara.'],
     ],
-    'moda-urbana-pantaloni-unisex-cu-snur-lung.png'
+    'images/atelieraxd-long-tail/pantaloni-cu-snur-lung-hanorac-negru-simplu-siret-lung-hoodie-negru-minimalist.jpg'
   ),
   article(
     'pantaloni-cu-snur-si-geaca-denim',
@@ -447,7 +449,7 @@ export const contentExpansionBlogPosts = [
       ['Lungime', 'Geaca trebuie sa fie scurta sau medie. Daca este foarte lunga, acopera talia si pierde detaliul snurului.'],
       ['Primavara', 'In mai, denimul este stratul potrivit pentru seara. Ziua poate sta deschis peste tricou simplu.'],
     ],
-    'pantaloni-femei-moda-urbana-snur-lung.png'
+    'pantaloni-cu-snur-lung-bleumarin-femei-outfit.webp'
   ),
   article(
     'pantaloni-cu-snur-pentru-poze-instagram',
@@ -493,7 +495,7 @@ export const contentExpansionBlogPosts = [
       ['Vacanta', 'Seturi albe, tricouri bej, camasi deschise si pantaloni scurti care se potrivesc la plaja si terasa.'],
       ['Terase', 'Pantaloni scurti negri sau gri, tricou premium, camasa subtire si sneakers curati pentru seara.'],
     ],
-    'set-alb-pantaloni-scurti-siret-lung-outfit.png',
+    'images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-albastru-deschis-cu-snur-lung.jpg',
     '2026-07-01'
   ),
   article(
@@ -509,7 +511,231 @@ export const contentExpansionBlogPosts = [
       ['Festivaluri de final de vara', 'Negru, buzunare, material rezistent si incaltaminte comoda. Snurul lung ramane accent vizual.'],
       ['Intoarcere in oras', 'Reintrodu outfituri cu pantaloni lungi, camasa lejera, geaca denim si sneakers curati.'],
     ],
-    'pantaloni-maro-casual-snur-lung-modern.png',
+    'pantaloni-cu-snur-lung-maro-drepti-barbati.webp',
     '2026-08-01'
+  ),
+  article(
+    'pantaloni-gri-cu-palton-lung-si-bocanci-barbati',
+    'Pantaloni gri cu palton lung si bocanci barbati',
+    'Ghid long-tail pentru pantaloni gri cu palton lung si bocanci barbati: proportii, helanca, gri tonal si cand tinuta devine prea grea.',
+    'Pantaloni gri cu palton lung si bocanci barbati',
+    'Pantalonii gri purtati cu palton lung si bocanci creeaza o tinuta masculina de iarna curata, dar proportiile trebuie controlate ca sa nu para prea masiva.',
+    'Articolul izoleaza intentia de iarna cu palton si bocanci, diferita de ghidurile despre pantaloni cu snur, birou sau evenimente smart casual.',
+    [
+      ['Cand functioneaza', 'Functioneaza in oras, la birou creativ, la cina relaxata sau pentru o tinuta de iarna unde vrei volum elegant, nu trening. Pantalonul trebuie sa cada drept si sa nu se adune peste bocanci.'],
+      ['Formula cromatica', 'Gri peste gri arata bine daca nuantele sunt usor diferite: palton mediu, helanca mai inchisa si pantalon carbune sau antracit. Negrul intra cel mai bine in bocanci si curea.'],
+      ['Lungime si incaltaminte', 'Bocancii cer tiv controlat. Daca pantalonul este prea lung, tinuta devine grea jos; daca este prea scurt, pierde aerul matur.'],
+      ['Ce eviti', 'Evita palton supradimensionat cu pantalon foarte larg si bocanci masivi simultan. Alege maximum doua piese voluminoase si lasa restul curat.'],
+    ],
+    'images/user-long-tail/whitebg_minimalist_streetwear_1779094897126.png',
+    '2026-08-05',
+    [
+      {
+        file: 'images/user-long-tail/whitebg_minimalist_streetwear_1779094897126.png',
+        alt: 'barbat cu pantaloni gri palton lung gri helanca si bocanci negri pe fundal alb',
+        title: 'Pantaloni gri cu palton lung si bocanci barbati'
+      },
+      {
+        file: 'images/user-long-tail/whitebg_all_black_men_1779094965886.png',
+        alt: 'barbat in tinuta all black cu helanca pantaloni negri si bocanci eleganti',
+        title: 'Tinuta all black cu pantaloni negri si bocanci'
+      }
+    ]
+  ),
+  article(
+    'pantaloni-palazzo-bej-cu-camasa-alba-la-birou-vara',
+    'Pantaloni palazzo bej cu camasa alba la birou vara',
+    'Cum porti pantaloni palazzo bej cu camasa alba la birou vara: materiale, pantofi, geanta si limite pentru office casual.',
+    'Pantaloni palazzo bej cu camasa alba la birou vara',
+    'Pantalonii palazzo bej cu camasa alba sunt o formula office casual buna pentru vara daca materialul nu se sifoneaza excesiv si talia ramane curata.',
+    'Articolul tinteste o combinatie feminina concreta pentru birou vara, separata de articolul general despre pantaloni cu snur la birou.',
+    [
+      ['De ce arata curat', 'Albul si bejul dau lumina fara sa para de vacanta daca piesele au croiala clara. Camasa trebuie introdusa lejer in talie ca pantalonul sa ramana piesa principala.'],
+      ['Materiale potrivite', 'In, vascoza mai densa, bumbac satinat sau amestecuri fluide merg bine. Materialul foarte subtire poate arata transparent sau prea relaxat pentru birou.'],
+      ['Pantofi si geanta', 'Loaferii, sandalele joase elegante si geanta neagra mica pastreaza tinuta practica. Tocurile subtiri nu sunt obligatorii daca pantalonul are cadere buna.'],
+      ['Ce eviti', 'Evita camasa prea transparenta, pantalonul care atinge podeaua si prea multe bijuterii stralucitoare ziua.'],
+    ],
+    'images/user-long-tail/office_casual_women_1779094724184.png',
+    '2026-08-06',
+    [
+      {
+        file: 'images/user-long-tail/office_casual_women_1779094724184.png',
+        alt: 'femeie cu pantaloni palazzo bej camasa alba geanta neagra in cladire office moderna',
+        title: 'Pantaloni palazzo bej cu camasa alba la birou'
+      },
+      {
+        file: 'images/user-long-tail/whitebg_office_casual_women_1779094884359.png',
+        alt: 'tinuta office casual femei cu pantaloni bej camasa alba si loafers',
+        title: 'Tinuta office casual femei pantaloni bej'
+      }
+    ]
+  ),
+  article(
+    'blazer-bej-cu-pantaloni-bleumarin-si-tricou-alb-barbati-vara',
+    'Blazer bej cu pantaloni bleumarin si tricou alb barbati vara',
+    'Ghid pentru blazer bej cu pantaloni bleumarin si tricou alb barbati vara: pantofi, proportii, ocazii si greseli.',
+    'Blazer bej cu pantaloni bleumarin si tricou alb barbati vara',
+    'Blazerul bej cu pantaloni bleumarin si tricou alb este o tinuta smart casual de vara buna pentru terasa, city break sau cina relaxata.',
+    'Articolul intra pe o formula exacta de culoare si sezon, ca sa nu concureze cu ghidurile smart casual generale deja existente.',
+    [
+      ['Cand o porti', 'Merge la cina in vacanta, eveniment de zi relaxat, petrecere pe terasa sau intalnire unde costumul complet ar fi prea formal.'],
+      ['Pantalonul potrivit', 'Bleumarinul trebuie sa fie curat si drept, nu prea sport. Daca pantalonul are snur, tine-l discret sau acoperit de tricou si blazer.'],
+      ['Incaltaminte', 'Loaferii maro, sneakers albi simpli sau pantofii casual din piele intoarsa merg cel mai bine. Evita adidasi foarte sport.'],
+      ['Cum eviti rigiditatea', 'Tricoul alb relaxeaza blazerul, iar bejul face tinuta mai luminoasa decat sacoul bleumarin clasic.'],
+    ],
+    'images/user-long-tail/smart_casual_men_summer_1779094677710.png',
+    '2026-08-07',
+    [
+      {
+        file: 'images/user-long-tail/smart_casual_men_summer_1779094677710.png',
+        alt: 'barbat cu blazer bej tricou alb pantaloni bleumarin si loafers pe strada de vacanta',
+        title: 'Blazer bej pantaloni bleumarin tricou alb'
+      },
+      {
+        file: 'images/user-long-tail/whitebg_smart_casual_men_1779094847185.png',
+        alt: 'barbat smart casual cu blazer bej tricou alb pantaloni bleumarin pe fundal alb',
+        title: 'Tinuta smart casual barbati vara'
+      }
+    ]
+  ),
+  article(
+    'costum-roz-prafuit-cu-tricou-alb-si-sneakers-barbati',
+    'Costum roz prafuit cu tricou alb si sneakers barbati',
+    'Cum porti costum roz prafuit cu tricou alb si sneakers barbati: evenimente relaxate, proportii, culori si limite.',
+    'Costum roz prafuit cu tricou alb si sneakers barbati',
+    'Costumul roz prafuit poate arata modern si relaxat cu tricou alb si sneakers, dar functioneaza doar in contexte unde dress code-ul permite culoare si informalitate.',
+    'Articolul vizeaza o culoare si o combinatie foarte specifice, fara sa canibalizeze ghidurile despre nunta, banchet sau smart casual generic.',
+    [
+      ['Unde merge', 'Petreceri de zi, cununie civila relaxata, eveniment creativ, rooftop, zi de nastere eleganta sau shooting. Pentru ceremonii formale, rozul prafuit trebuie validat de dress code.'],
+      ['De ce tricou alb', 'Tricoul alb taie formalitatea costumului si pastreaza culoarea principala in centru. Materialul tricoului trebuie sa fie dens, fara logo.'],
+      ['Sneakers potriviti', 'Sneakers albi simpli sunt cei mai siguri. Modelele foarte voluminoase fac pantalonul sa para scurt sau costumului sa para accidental.'],
+      ['Accesorii', 'Pastreaza ceas, bratara sau lant discret. Culoarea costumului este deja accentul.'],
+    ],
+    'images/user-long-tail/whitebg_dusty_pink_suit_1779094924830.png',
+    '2026-08-08',
+    [
+      {
+        file: 'images/user-long-tail/whitebg_dusty_pink_suit_1779094924830.png',
+        alt: 'barbat cu costum roz prafuit tricou alb si sneakers albi pe fundal alb',
+        title: 'Costum roz prafuit cu tricou alb si sneakers'
+      },
+      {
+        file: 'images/user-long-tail/whitebg_old_money_men_1779094872296.png',
+        alt: 'barbat old money cu blazer bleumarin camasa bleu si pantaloni bej',
+        title: 'Alternativa old money cu blazer bleumarin'
+      }
+    ]
+  ),
+  article(
+    'pantaloni-roz-baggy-cu-siret-lung-barbati-streetwear',
+    'Pantaloni roz baggy cu siret lung barbati streetwear',
+    'Ghid pentru pantaloni roz baggy cu siret lung barbati streetwear: tricou oversized, sneakers, geanta crossbody si proportii.',
+    'Pantaloni roz baggy cu siret lung barbati streetwear',
+    'Pantalonii roz baggy cu siret lung sunt o piesa statement, deci restul tinutei trebuie sa fie simplu si intentionat.',
+    'Articolul tinteste o cautare long-tail pe culoare, croiala si siret lung, distincta de articolele despre pantaloni negri sau baggy generic.',
+    [
+      ['Cum echilibrezi rozul', 'Rozul prafuit sau pastel functioneaza cu alb, gri, negru si sneakers in aceeasi familie cromatica. Evita sa adaugi inca doua culori tari.'],
+      ['Siretul lung', 'Siretul lung trebuie sa fie vizibil, dar nu lasat sa atarne pana la genunchi. Leaga-l simplu sau lasa doua capete controlate.'],
+      ['Partea de sus', 'Tricoul oversized poate fi deteriorat sau texturat, dar nu trebuie sa acopere complet talia. Geanta crossbody adauga structura.'],
+      ['Ocazii', 'Merge la concert, festival, poze de content, iesire urbana sau club relaxat. Nu este potrivit pentru evenimente formale.'],
+    ],
+    'images/user-long-tail/pantaloni_lungi_roz_baggy_1779095124193.png',
+    '2026-08-09',
+    [
+      {
+        file: 'images/user-long-tail/pantaloni_lungi_roz_baggy_1779095124193.png',
+        alt: 'barbat streetwear cu pantaloni roz baggy siret lung tricou oversized roz si geanta crossbody',
+        title: 'Pantaloni roz baggy cu siret lung barbati'
+      },
+      {
+        file: 'images/user-long-tail/whitebg_vintage_90s_1779094953473.png',
+        alt: 'tinuta streetwear vintage cu geaca piele blugi si sneakers albi',
+        title: 'Referinta streetwear vintage pentru proportii'
+      }
+    ]
+  ),
+  article(
+    'pantaloni-scurti-negri-cu-siret-lung-si-sneakers-jordan',
+    'Pantaloni scurti negri cu siret lung si sneakers Jordan',
+    'Cum porti pantaloni scurti negri cu siret lung si sneakers Jordan: tricou oversized, lungime, contrast si greseli.',
+    'Pantaloni scurti negri cu siret lung si sneakers Jordan',
+    'Pantalonii scurti negri cu siret lung merg natural cu sneakers Jordan daca lasi contrastul dintre siret alb, denim negru si pantofi sa conduca tinuta.',
+    'Articolul separa intentia pe pantaloni scurti, siret lung si sneakers Jordan, fara sa concureze cu ghidurile generale de pantaloni scurti.',
+    [
+      ['Lungimea corecta', 'Pentru sneakers inalti, pantalonii scurti pot cobori spre genunchi, dar nu trebuie sa acopere complet forma pantofului.'],
+      ['Tricou oversized', 'Un tricou negru oversized pastreaza tinuta coerenta. Daca are rupturi sau textura, restul pieselor trebuie sa ramana simple.'],
+      ['Siretul ca accent', 'Siretul alb devine linia verticala a tinutei. Tine-l curat si centrat, mai ales cand pantofii au rosu sau alb.'],
+      ['Ce eviti', 'Evita sosete foarte incarcate, buzunare pline si inca o piesa statement. Jordanii si siretul lung sunt deja suficiente.'],
+    ],
+    'images/user-long-tail/pantaloni_scurti_siret_jordan_1779095137999.png',
+    '2026-08-10',
+    [
+      {
+        file: 'images/user-long-tail/pantaloni_scurti_siret_jordan_1779095137999.png',
+        alt: 'barbat cu pantaloni scurti negri siret lung tricou oversized negru si sneakers Jordan rosu alb',
+        title: 'Pantaloni scurti negri cu siret lung si Jordan'
+      },
+      {
+        file: 'images/user-long-tail/whitebg_baggy_pants_men_1779094859535.png',
+        alt: 'barbat cu pantaloni albi baggy tricou negru si sneakers pe fundal alb',
+        title: 'Proportii baggy cu tricou negru si sneakers'
+      }
+    ]
+  ),
+  article(
+    'pantaloni-albi-largi-cu-tricou-negru-outfit-minimalist',
+    'Pantaloni albi largi cu tricou negru outfit minimalist',
+    'Ghid pentru pantaloni albi largi cu tricou negru intr-un outfit minimalist: contrast, sneakers, talie si proportii.',
+    'Pantaloni albi largi cu tricou negru outfit minimalist',
+    'Pantalonii albi largi cu tricou negru creeaza un contrast minimalist puternic, dar tinuta trebuie sa fie bine proportionata ca sa nu para prea simpla.',
+    'Articolul tinteste contrastul alb-negru si croiala larga, o intentie diferita de articolele despre pantaloni albi cu snur sau tinute monochrome.',
+    [
+      ['De ce merge contrastul', 'Tricoul negru strange vizual partea de sus, iar pantalonii albi largi adauga volum jos. Contrastul este clar si usor de citit in poze.'],
+      ['Talie vizibila', 'Tricoul trebuie sa se opreasca aproape de talie sau sa fie introdus partial. Daca acopera tot, pantalonul larg isi pierde forma.'],
+      ['Sneakers', 'Sneakers albi, crem sau alb-negru pastreaza outfitul curat. Pantofii foarte colorați rup minimalismul.'],
+      ['Cand il porti', 'Galerii, cafenele, city break, facultate, plimbari urbane si zile calde in care vrei ceva simplu, dar vizual.'],
+    ],
+    'images/user-long-tail/minimalist_streetwear_1779094738264.png',
+    '2026-08-11',
+    [
+      {
+        file: 'images/user-long-tail/minimalist_streetwear_1779094738264.png',
+        alt: 'barbat cu pantaloni albi largi tricou negru si sneakers intr-un spatiu minimalist',
+        title: 'Pantaloni albi largi cu tricou negru'
+      },
+      {
+        file: 'images/user-long-tail/whitebg_baggy_pants_men_1779094859535.png',
+        alt: 'barbat cu pantaloni albi baggy tricou negru si sneakers pe fundal alb',
+        title: 'Pantaloni albi baggy cu tricou negru'
+      }
+    ]
+  ),
+  article(
+    'pantaloni-cargo-olive-cu-jacheta-bej-si-bocanci-femei',
+    'Pantaloni cargo olive cu jacheta bej si bocanci femei',
+    'Cum porti pantaloni cargo olive cu jacheta bej si bocanci femei: proportii, culori utilitare, strat tehnic si greseli.',
+    'Pantaloni cargo olive cu jacheta bej si bocanci femei',
+    'Pantalonii cargo olive cu jacheta bej si bocanci formeaza o tinuta utilitara feminina buna pentru vreme instabila, drumuri lungi si iesiri casual active.',
+    'Articolul tinteste zona utilitara/gorpcore feminina, separata de outfiturile office, smart casual si streetwear cu siret lung.',
+    [
+      ['De ce olive si bej', 'Olive si bej arata utilitar fara sa para costum de munte complet. Negrul poate intra in tricou sau accesorii pentru contrast.'],
+      ['Croiala pantalonului', 'Cargo-ul trebuie sa aiba volum moderat si buzunare functionale, nu exagerate. Tivul strans peste bocanc ajuta tinuta sa ramana clara.'],
+      ['Straturi tehnice', 'Jacheta bej cu gluga, tricou respirabil si rucsac mic creeaza un outfit practic pentru oras, trasee usoare sau weekend.'],
+      ['Ce eviti', 'Evita prea multe fermoare, curele si accesorii simultan. Daca pantalonul are buzunare vizibile, lasa restul pieselor mai simple.'],
+    ],
+    'images/user-long-tail/whitebg_gorpcore_women_1779094938449.png',
+    '2026-08-12',
+    [
+      {
+        file: 'images/user-long-tail/whitebg_gorpcore_women_1779094938449.png',
+        alt: 'femeie cu pantaloni cargo olive jacheta bej rucsac si bocanci hiking pe fundal alb',
+        title: 'Pantaloni cargo olive cu jacheta bej si bocanci femei'
+      },
+      {
+        file: 'images/user-long-tail/office_casual_women_1779094724184.png',
+        alt: 'femeie cu pantaloni largi bej camasa alba si geanta crossbody intr-un spatiu office',
+        title: 'Alternativa urbana cu pantaloni largi si geanta crossbody'
+      }
+    ]
   ),
 ];

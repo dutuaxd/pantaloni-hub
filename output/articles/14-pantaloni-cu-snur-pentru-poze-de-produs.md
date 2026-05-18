@@ -2,8 +2,8 @@
 title: "Pantaloni cu snur pentru poze de produs: ghid editorial 2026"
 slug: "blog/pantaloni-cu-snur-pentru-poze-de-produs"
 keyword_principal: "pantaloni cu snur pentru poze de produs"
-cluster: "google-images-seo"
-intent: "technical editorial"
+cluster: "imagini-outfit"
+intent: "visual guide"
 funnel_stage: "consideration"
 date: "2026-05-18"
 ---
@@ -12,7 +12,7 @@ date: "2026-05-18"
 
 Pantaloni cu snur pentru poze de produs se abordeaza prin context, proportii si material, nu prin repetarea unei retete generale. Alege croiala dupa locul in care mergi, pastreaza talia curata, verifica lungimea peste incaltaminte si foloseste culori neutre ca baza. Asa obtii o tinuta urbana actuala, fara sa concurezi vizual cu articolele deja existente.
 
-> Unghi editorial: cadre, alt text, lumina, zoom detaliu. Articolul este sigur anti-canibalizare deoarece SEO images si ecommerce, nu styling pur.
+> Unghi editorial: cadre, lumina, zoom detaliu si pozitionare pe model. Articolul este sigur anti-canibalizare deoarece ghid vizual pentru imagini de produs, nu styling general.
 
 ## Cuprins
 
@@ -31,7 +31,7 @@ Din auditul local, riscul mare este sa repetam aceleasi structuri: ce sunt panta
 
 ## Formula rapida de styling
 
-1. Alege pantalonul dupa context, nu dupa trend. Pentru pantaloni cu snur pentru poze de produs, contextul principal este: cadre, alt text, lumina, zoom detaliu.
+1. Alege pantalonul dupa context, nu dupa trend. Pentru pantaloni cu snur pentru poze de produs, contextul principal este: cadre, lumina, zoom detaliu si pozitionare pe model.
 2. Pastreaza talia vizibila cand snurul sau siretul este elementul cheie.
 3. Foloseste o singura piesa cu volum evident. Daca pantalonii sunt largi, topul trebuie sa fie compact sau intentionat scurt.
 4. Verifica incaltamintea din profil. Pantofii prea subtiri dispar sub tiv, iar sneakersii prea voluminosi pot scurta vizual piciorul.
@@ -57,13 +57,13 @@ Din auditul local, riscul mare este sa repetam aceleasi structuri: ce sunt panta
 
 ```json
 {
-  "search_intent": "technical editorial",
+  "search_intent": "visual guide",
   "persona": "barbat urban 25-35",
-  "context": "cadre, alt text, lumina, zoom detaliu",
+  "context": "cadre, lumina, zoom detaliu si pozitionare pe model",
   "funnel_stage": "consideration",
   "format": "ghid practic",
   "stil_narativ": "stylist conversational",
-  "unghi_seo": "SEO images si ecommerce, nu styling pur",
+  "unghi_seo": "ghid vizual pentru imagini de produs, nu styling general",
   "tip_keyword": "informational long-tail"
 }
 ```
@@ -115,7 +115,7 @@ Din auditul local, riscul mare este sa repetam aceleasi structuri: ce sunt panta
 
 ### Este pantaloni cu snur pentru poze de produs potrivit pentru 2026?
 
-Da, daca tema este tratata specific: cadre, alt text, lumina, zoom detaliu. Intentia nu este sa repetam ghidurile generale, ci sa raspundem unei situatii clare.
+Da, daca tema este tratata specific: cadre, lumina, zoom detaliu si pozitionare pe model. Intentia nu este sa repetam ghidurile generale, ci sa raspundem unei situatii clare.
 
 ### Ce greseala apare cel mai des la pantaloni cu snur pentru poze de produs?
 
