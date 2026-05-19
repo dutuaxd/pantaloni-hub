@@ -79,6 +79,10 @@ function rotateImages(index: number) {
   });
 }
 
+function generatedImage(slug: string) {
+  return `images/fashion-expansion-2026/${slug.replace('blog/', '')}.svg`;
+}
+
 function sections(piece: string, context: string, angle: string, contextDetail: string) {
   return [
     ['Intentie SEO distincta', `Acest articol raspunde cautarii lungi "${piece} ${context} 2026". Nu canibalizeaza paginile despre pantaloni cu snur, pentru ca intentia este despre piesa ${piece} intr-un context precis: ${contextDetail}.`],
@@ -97,6 +101,7 @@ export const fashionExpansionBlogPosts2026 = pieces.flatMap(([piece, pieceSlug, 
     const title = `${piece[0].toUpperCase()}${piece.slice(1)} ${context} in 2026`;
     const slug = `blog/${pieceSlug}-${contextSlug}-2026`;
     const images = rotateImages(index);
+    const image = generatedImage(slug);
 
     return {
       slug,
@@ -105,8 +110,15 @@ export const fashionExpansionBlogPosts2026 = pieces.flatMap(([piece, pieceSlug, 
       h1: title,
       intro: `${piece[0].toUpperCase()}${piece.slice(1)} ${context} se aleg dupa context, nu doar dupa trend. In 2026, tinuta buna combina ${angle}, apoi adauga incaltaminte comoda si un accent vizual usor de fotografiat.`,
       date: '2026-05-20',
-      image: images[0].file,
-      images,
+      image,
+      images: [
+        {
+          file: image,
+          alt: `${title} - ilustratie editoriala unica pentru ghidul 2026`,
+          title,
+        },
+        ...images.slice(0, 2),
+      ],
       seoEngine: {
         keyword_principal: `${piece} ${context} 2026`,
         cluster: 'fashion-expansion-2026',

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Rochii de nunta pentru invitate la date pe terasa</title>
+  <desc id="desc">Ilustratie editoriala unica pentru Rochii de nunta pentru invitate la date pe terasa in 2026</desc>
+  <rect width="1200" height="1600" fill="#f4f2ed"/>
+  <rect x="74" y="74" width="1052" height="1452" rx="48" fill="none" stroke="#34495e" stroke-width="8" opacity=".12"/>
+  <g>
+    <circle cx="220" cy="260" r="68" fill="#ffffff" opacity=".55"/>
+    <rect x="820" y="190" width="180" height="260" rx="90" fill="#d8a24a" opacity=".20"/>
+    <path d="M130 1350 C360 1240 520 1510 780 1340 S1030 1280 1120 1390" fill="none" stroke="#d8a24a" stroke-width="14" opacity=".35"/>
+  
+      <path d="M600 310 C520 410 492 540 505 720 L405 1190 C520 1268 690 1268 795 1190 L692 720 C708 548 680 410 600 310Z" fill="#ffffff" stroke="#34495e" stroke-width="12"/>
+      <path d="M548 318 C560 430 640 430 652 318" fill="none" stroke="#34495e" stroke-width="10"/>
+      <path d="M504 725 C570 768 646 768 696 725" fill="none" stroke="#d8a24a" stroke-width="12"/>
+      <path d="M440 1050 C535 1105 680 1105 760 1050" fill="none" stroke="#34495e" stroke-width="8" opacity=".35"/>
+    </g>
+  <text x="120" y="124" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#34495e" opacity=".88">GHID MODA 2026</text>
+  <text x="120" y="1450" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#34495e">Rochii de nunta pentru invitate la date pe teras</text>
+  <rect x="120" y="1488" width="412" height="12" rx="6" fill="#d8a24a"/>
+</svg>
