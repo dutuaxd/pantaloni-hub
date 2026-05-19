@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "pantaloni cu snur lung"
 images:
   hero:
-    src: "pantaloni-cu-snur-lung-outfit-vara.jpg"
-    alt: "Pantaloni cu snur lung prezentati intr-o tinuta casual confortabila si moderna"
-    title: "Pantaloni cu snur lung"
+    src: "03-outfit-uri-pantaloni-cu-snur-vara-hero.jpg"
+    alt: "pantaloni cu snur lung alesi dupa croiala si material - tinuta completa pentru Outfit-uri cu pantaloni cu snur lung pentru va"
+    title: "Outfit-uri cu pantaloni cu snur lung pentru vara: 7 combinatii - HERO"
 ---
 # Outfit-uri cu pantaloni cu snur lung pentru vara: 7 combinatii
 

@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "pantaloni cu snur lung"
 images:
   hero:
-    src: "pantaloni-cu-snur-lung-model-casual.jpg"
-    alt: "Pantaloni cu snur lung prezentati intr-o tinuta casual confortabila si moderna"
-    title: "Pantaloni cu snur lung"
+    src: "01-ce-sunt-pantalonii-cu-snur-hero.jpg"
+    alt: "pantaloni cu snur lung alesi dupa croiala si material - tinuta completa pentru Pantaloni cu snur lung: ce sunt si de ce sunt "
+    title: "Pantaloni cu snur lung: ce sunt si de ce sunt atat de comozi - HERO"
 ---
 # Pantaloni cu snur lung: ce sunt si de ce sunt atat de comozi
 

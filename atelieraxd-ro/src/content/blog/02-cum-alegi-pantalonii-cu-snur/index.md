@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "pantaloni cu snur lung"
 images:
   hero:
-    src: "pantaloni-cu-snur-lung-ghid-alegere.jpg"
-    alt: "Pantaloni cu snur lung prezentati intr-o tinuta casual confortabila si moderna"
-    title: "Pantaloni cu snur lung"
+    src: "02-cum-alegi-pantalonii-cu-snur-hero.jpg"
+    alt: "pantaloni cu snur lung alesi dupa croiala si material - tinuta completa pentru Pantaloni cu snur lung: cum alegi modelul potr"
+    title: "Pantaloni cu snur lung: cum alegi modelul potrivit pentru tine - HERO"
 ---
 # Pantaloni cu snur lung: cum alegi modelul potrivit pentru tine
 

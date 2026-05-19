@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "seturi casual"
 images:
   hero:
-    src: "tricou-negru-oversized-pantaloni-cu-snur-femei.png"
-    alt: "Tricou negru oversized purtat cu pantaloni largi casual"
-    title: "Tricou negru oversized cu pantaloni casual"
+    src: "cum-porti-tricoul-negru-oversized-hero.jpg"
+    alt: "tricou negru oversized din bumbac - tinuta completa pentru Cum porti tricoul negru oversized cu pantaloni casual"
+    title: "Cum porti tricoul negru oversized cu pantaloni casual - HERO"
 ---
 # Cum porti tricoul negru oversized cu pantaloni casual
 

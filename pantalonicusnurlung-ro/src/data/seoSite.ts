@@ -3,6 +3,7 @@ import { contentExpansionBlogPosts } from './contentExpansionBlogPosts';
 import { seoContentEngine2026Posts } from './seoContentEngine2026Posts';
 import { colorTrendBlogPosts2026 } from './colorTrendBlogPosts2026';
 import { fashionExpansionBlogPosts2026 } from './fashionExpansionBlogPosts2026';
+import { withPremiumEditorialImages } from './editorialImagePrompts';
 
 export const SITE = 'https://pantalonicusnurlung.ro';
 export const SHOP = 'https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd';
@@ -499,7 +500,7 @@ const landingPages = [
 
 pages.push(...landingPages);
 
-export const blogPosts = [
+export const blogPosts = withPremiumEditorialImages([
   ...fashionExpansionBlogPosts2026,
   ...colorTrendBlogPosts2026,
   ...seoContentEngine2026Posts,
@@ -529,6 +530,6 @@ export const blogPosts = [
   page('blog/greseli-outfit-oversized', 'Greseli in outfituri oversized', 'Cele mai frecvente greseli in outfituri oversized: volum fara proportie, materiale slabe, culori haotice si pant stacking excesiv.', 'Greseli in outfituri oversized', 'Oversized nu inseamna haine prea mari, ci volum ales intentionat si echilibrat prin proportii.', baseSections, 'pantaloni-cu-snur-lung-maro-produs-unisex.webp'),
   page('blog/trenduri-moda-urbana-2026', 'Trenduri moda urbana 2026', 'Trenduri moda urbana 2026: baggy, loose fit, monochrome, influente japoneze, layering si materiale dense.', 'Trenduri moda urbana 2026', 'In 2026, moda urbana se muta spre croieli relaxate, palete mai curate si outfituri care pot fi purtate zilnic.', baseSections, 'tinuta-unisex-pantaloni-largi-snur-extra-lung.png'),
   ...visibleScheduledBlogPosts,
-];
+]);
 
 export const allContentPages = [...pages, ...blogPosts];

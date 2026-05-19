@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "pantaloni cu snur lung"
 images:
   hero:
-    src: "pantaloni-cu-snur-lung-set-complet.jpg"
-    alt: "Pantaloni cu snur lung prezentati intr-o tinuta casual confortabila si moderna"
-    title: "Pantaloni cu snur lung"
+    src: "06-seturi-cu-pantaloni-cu-snur-hero.jpg"
+    alt: "set casual cu pantaloni cu snur lung - tinuta completa pentru Seturi cu pantaloni cu snur lung: cum arati stilat fara efort"
+    title: "Seturi cu pantaloni cu snur lung: cum arati stilat fara efort - HERO"
 ---
 # Seturi cu pantaloni cu snur lung: cum arati stilat fara efort
 

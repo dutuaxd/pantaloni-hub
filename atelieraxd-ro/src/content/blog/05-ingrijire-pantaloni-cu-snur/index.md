@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "pantaloni cu snur lung"
 images:
   hero:
-    src: "pantaloni-cu-snur-lung-ingrijire-spalare.jpg"
-    alt: "Pantaloni cu snur lung prezentati intr-o tinuta casual confortabila si moderna"
-    title: "Pantaloni cu snur lung"
+    src: "05-ingrijire-pantaloni-cu-snur-hero.jpg"
+    alt: "pantaloni cu snur lung din bumbac ingrijit - tinuta completa pentru Pantaloni cu snur lung: cum ii ingrijesti ca sa dureze ma"
+    title: "Pantaloni cu snur lung: cum ii ingrijesti ca sa dureze mai mult - HERO"
 ---
 # Pantaloni cu snur lung: cum ii ingrijesti ca sa dureze mai mult
 

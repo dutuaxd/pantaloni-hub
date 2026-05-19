@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "seturi casual"
 images:
   hero:
-    src: "tricou-alb-pantaloni-negri-snur-lung-unisex.png"
-    alt: "Tricou alb basic purtat cu pantaloni negri scurti cu snur lung"
-    title: "Tricou alb cu pantaloni negri cu snur lung"
+    src: "tricou-alb-pantaloni-negri-snur-lung-hero.jpg"
+    alt: "tricou alb basic purtat cu pantaloni negri cu snur lung - tinuta completa pentru Tricou alb cu pantaloni negri cu snur lung"
+    title: "Tricou alb cu pantaloni negri cu snur lung - HERO"
 ---
 # Tricou alb cu pantaloni negri cu snur lung
 

@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "pantaloni cu snur lung"
 images:
   hero:
-    src: "pantaloni-cu-snur-lung-tendinte-2025.jpg"
-    alt: "Pantaloni cu snur lung prezentati intr-o tinuta casual confortabila si moderna"
-    title: "Pantaloni cu snur lung"
+    src: "10-tendinte-pantaloni-cu-snur-2025-hero.jpg"
+    alt: "pantaloni cu snur lung alesi dupa croiala si material - tinuta completa pentru Pantaloni cu snur lung in 2025: de ce sunt mai"
+    title: "Pantaloni cu snur lung in 2025: de ce sunt mai populari ca niciodata - HERO"
 ---
 # Pantaloni cu snur lung in 2025: de ce sunt mai populari ca niciodata
 

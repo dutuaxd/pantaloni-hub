@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "pantaloni cu snur lung"
 images:
   hero:
-    src: "pantaloni-cu-snur-lung-vs-scurti.jpg"
-    alt: "Pantaloni cu snur lung prezentati intr-o tinuta casual confortabila si moderna"
-    title: "Pantaloni cu snur lung"
+    src: "08-pantaloni-cu-snur-scurti-hero.jpg"
+    alt: "pantaloni scurti cu snur lung - tinuta completa pentru Pantaloni cu snur lung vs scurti: care sunt mai buni pentru tine"
+    title: "Pantaloni cu snur lung vs scurti: care sunt mai buni pentru tine - HERO"
 ---
 # Pantaloni cu snur lung vs scurti: care sunt mai buni pentru tine
 

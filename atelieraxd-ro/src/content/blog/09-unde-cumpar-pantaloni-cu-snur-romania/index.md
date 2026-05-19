@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "pantaloni cu snur lung"
 images:
   hero:
-    src: "pantaloni-cu-snur-lung-cumparaturi-online.jpg"
-    alt: "Pantaloni cu snur lung prezentati intr-o tinuta casual confortabila si moderna"
-    title: "Pantaloni cu snur lung"
+    src: "09-unde-cumpar-pantaloni-cu-snur-romania-hero.jpg"
+    alt: "pantaloni cu snur lung alesi dupa croiala si material - tinuta completa pentru Unde cumperi pantaloni cu snur lung de calitat"
+    title: "Unde cumperi pantaloni cu snur lung de calitate in Romania - HERO"
 ---
 # Unde cumperi pantaloni cu snur lung de calitate in Romania
 

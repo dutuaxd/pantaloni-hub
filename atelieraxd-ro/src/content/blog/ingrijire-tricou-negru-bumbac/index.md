@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "retur si schimb"
 images:
   hero:
-    src: "tricou-negru-bumbac-detaliu-produs.png"
-    alt: "Tricou negru basic din bumbac prezentat pe fundal alb"
-    title: "Ingrijire tricou negru din bumbac"
+    src: "ingrijire-tricou-negru-bumbac-hero.jpg"
+    alt: "tricou negru din bumbac premium - tinuta completa pentru Cum ingrijesti un tricou negru din bumbac"
+    title: "Cum ingrijesti un tricou negru din bumbac - HERO"
 ---
 # Cum ingrijesti un tricou negru din bumbac
 

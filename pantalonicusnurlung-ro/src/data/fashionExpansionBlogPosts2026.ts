@@ -80,7 +80,7 @@ function rotateImages(index: number) {
 }
 
 function generatedImage(slug: string) {
-  return `images/fashion-expansion-2026/${slug.replace('blog/', '')}.svg`;
+  return `images/fashion-expansion-2026/${slug.replace('blog/', '')}.png`;
 }
 
 function sections(piece: string, context: string, angle: string, contextDetail: string) {

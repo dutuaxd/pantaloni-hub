@@ -19,9 +19,9 @@ internalLinks:
     anchorText: "pantaloni cu snur lung"
 images:
   hero:
-    src: "pantaloni-cu-snur-lung-cu-tricou-alb.jpg"
-    alt: "Pantaloni cu snur lung prezentati intr-o tinuta casual confortabila si moderna"
-    title: "Pantaloni cu snur lung"
+    src: "07-tricouri-si-pantaloni-cu-snur-hero.jpg"
+    alt: "pantaloni cu snur lung alesi dupa croiala si material - tinuta completa pentru Tricouri simple si pantaloni cu snur lung: com"
+    title: "Tricouri simple si pantaloni cu snur lung: combinatia perfecta - HERO"
 ---
 # Tricouri simple si pantaloni cu snur lung: combinatia perfecta
 

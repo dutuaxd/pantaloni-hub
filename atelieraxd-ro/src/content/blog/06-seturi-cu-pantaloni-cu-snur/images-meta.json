@@ -1,32 +1,50 @@
 [
   {
-    "filename": "pantaloni-cu-snur-lung-set-complet.jpg",
-    "alt": "Pantaloni cu snur lung matching outfit set casual pentru tinute casual confortabile",
-    "title": "Pantaloni cu snur lung 1",
-    "width": 1200,
-    "height": 630,
+    "filename": "06-seturi-cu-pantaloni-cu-snur-hero.jpg",
+    "alt": "set casual cu pantaloni cu snur lung - tinuta completa pentru Seturi cu pantaloni cu snur lung: cum arati stilat fara efort",
+    "title": "Seturi cu pantaloni cu snur lung: cum arati stilat fara efor",
+    "width": 960,
+    "height": 1200,
     "loading": "eager",
     "fetchpriority": "high",
-    "caption": "Pantaloni cu snur lung prezentati natural in context 1."
+    "caption": "Imagine hero pentru Seturi cu pantaloni cu snur lung: cum arati stilat fara efort.",
+    "role": "hero",
+    "prompt": "Fotografie fotorealista premium, verticala 4:5, sharp, aparat profesional, fashion editorial realist, fara text, fara logo, fara watermark, fara ilustratie, fara cartoon, fara vector, fara randare 3D, fara fundal generic AI, proportii naturale, haine si maini corecte, textura materialului vizibila. Persoana reala purtand set casual cu pantaloni cu snur lung, compozitie de hero pentru articolul \"Seturi cu pantaloni cu snur lung: cum arati stilat fara efort\". Fundal real: oras real, trotuar curat, cafenea sau terasa discreta, lumina naturala. Styling curat, Vogue/lookbook realist, croiala vizibila, cute naturale, snur sau siret vizibil, incaltaminte potrivita si accesorii discrete."
   },
   {
-    "filename": "pantaloni-cu-snur-lung-set-tricou.jpg",
-    "alt": "Pantaloni cu snur lung coordinated clothing set pentru tinute casual confortabile",
-    "title": "Pantaloni cu snur lung 2",
-    "width": 1200,
-    "height": 630,
+    "filename": "06-seturi-cu-pantaloni-cu-snur-detaliu.jpg",
+    "alt": "set casual cu pantaloni cu snur lung - detaliu material si snur pentru Seturi cu pantaloni cu snur lung: cum arati stilat far",
+    "title": "Seturi cu pantaloni cu snur lung: cum arati stilat fara efor",
+    "width": 960,
+    "height": 1200,
     "loading": "lazy",
     "decoding": "async",
-    "caption": "Pantaloni cu snur lung prezentati natural in context 2."
+    "caption": "Detaliu editorial pentru Seturi cu pantaloni cu snur lung: cum arati stilat fara efort.",
+    "role": "detaliu",
+    "prompt": "Fotografie fotorealista premium, verticala 4:5, sharp, aparat profesional, fashion editorial realist, fara text, fara logo, fara watermark, fara ilustratie, fara cartoon, fara vector, fara randare 3D, fara fundal generic AI, proportii naturale, haine si maini corecte, textura materialului vizibila. Close-up fotorealist pentru set casual cu pantaloni cu snur lung, accent pe talie, snur lung, cusaturi, fibra materialului, cute naturale si caderea croielii. Lumina calda reala, fundal real usor estompat, fara blur excesiv, fara corpuri deformate, fara aspect artificial."
   },
   {
-    "filename": "pantaloni-cu-snur-lung-set-casual-outfit.jpg",
-    "alt": "Pantaloni cu snur lung affordable fashion matching set pentru tinute casual confortabile",
-    "title": "Pantaloni cu snur lung 3",
-    "width": 1200,
-    "height": 630,
+    "filename": "06-seturi-cu-pantaloni-cu-snur-context.jpg",
+    "alt": "set casual cu pantaloni cu snur lung - outfit in context real pentru Seturi cu pantaloni cu snur lung: cum arati stilat fara ",
+    "title": "Seturi cu pantaloni cu snur lung: cum arati stilat fara efor",
+    "width": 960,
+    "height": 1200,
     "loading": "lazy",
     "decoding": "async",
-    "caption": "Pantaloni cu snur lung prezentati natural in context 3."
+    "caption": "Outfit in context real pentru Seturi cu pantaloni cu snur lung: cum arati stilat fara efort.",
+    "role": "context",
+    "prompt": "Fotografie fotorealista premium, verticala 4:5, sharp, aparat profesional, fashion editorial realist, fara text, fara logo, fara watermark, fara ilustratie, fara cartoon, fara vector, fara randare 3D, fara fundal generic AI, proportii naturale, haine si maini corecte, textura materialului vizibila. Cadru full outfit cu persoana reala purtand set casual cu pantaloni cu snur lung intr-un context real: oras real, trotuar curat, cafenea sau terasa discreta, lumina naturala. Se vad incaltamintea, proportiile tinutei, miscarea naturala si interactiunea cu spatiul; atmosfera premium street style, editoriala, credibila."
+  },
+  {
+    "filename": "06-seturi-cu-pantaloni-cu-snur-variatie.jpg",
+    "alt": "set casual cu pantaloni cu snur lung - variatie de styling pentru Seturi cu pantaloni cu snur lung: cum arati stilat fara efo",
+    "title": "Seturi cu pantaloni cu snur lung: cum arati stilat fara efor",
+    "width": 960,
+    "height": 1200,
+    "loading": "lazy",
+    "decoding": "async",
+    "caption": "Variatie vizuala pentru Seturi cu pantaloni cu snur lung: cum arati stilat fara efort.",
+    "role": "variatie",
+    "prompt": "Fotografie fotorealista premium, verticala 4:5, sharp, aparat profesional, fashion editorial realist, fara text, fara logo, fara watermark, fara ilustratie, fara cartoon, fara vector, fara randare 3D, fara fundal generic AI, proportii naturale, haine si maini corecte, textura materialului vizibila. Imagine secundara diferita pentru set casual cu pantaloni cu snur lung: alt unghi, alta lumina reala sau detaliu relevant de accesoriu/incaltaminte/material. Context real: oras real, trotuar curat, cafenea sau terasa discreta, lumina naturala. Compozitie distincta fata de hero, utila pentru inspiratie fashion si Google Images."
   }
 ]
