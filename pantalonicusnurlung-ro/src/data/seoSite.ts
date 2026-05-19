@@ -2,6 +2,7 @@ import { scheduledBlogPosts } from './scheduledBlogPosts';
 import { contentExpansionBlogPosts } from './contentExpansionBlogPosts';
 import { seoContentEngine2026Posts } from './seoContentEngine2026Posts';
 import { colorTrendBlogPosts2026 } from './colorTrendBlogPosts2026';
+import { fashionExpansionBlogPosts2026 } from './fashionExpansionBlogPosts2026';
 
 export const SITE = 'https://pantalonicusnurlung.ro';
 export const SHOP = 'https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd';
@@ -499,6 +500,7 @@ const landingPages = [
 pages.push(...landingPages);
 
 export const blogPosts = [
+  ...fashionExpansionBlogPosts2026,
   ...colorTrendBlogPosts2026,
   ...seoContentEngine2026Posts,
   ...contentExpansionBlogPosts,
