@@ -1,6 +1,7 @@
 import { scheduledBlogPosts } from './scheduledBlogPosts';
 import { contentExpansionBlogPosts } from './contentExpansionBlogPosts';
 import { seoContentEngine2026Posts } from './seoContentEngine2026Posts';
+import { colorTrendBlogPosts2026 } from './colorTrendBlogPosts2026';
 
 export const SITE = 'https://pantalonicusnurlung.ro';
 export const SHOP = 'https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd';
@@ -20,7 +21,7 @@ export const ATELIER_LINKS = {
   partener: 'https://atelieraxd.ro/pages/devino-partener-atelieraxd',
   blog: 'https://atelieraxd.ro/blogs/news',
 };
-export const updated = '2026-05-10';
+export const updated = '2026-05-20';
 export const brandName = 'PantaloniCuSnurLung.ro';
 export const merchantReturnPolicyId = `${SITE}/#merchant-return-policy`;
 const todayInRomania = new Intl.DateTimeFormat('en-CA', {
@@ -498,6 +499,7 @@ const landingPages = [
 pages.push(...landingPages);
 
 export const blogPosts = [
+  ...colorTrendBlogPosts2026,
   ...seoContentEngine2026Posts,
   ...contentExpansionBlogPosts,
   page('blog/siret-lung-vs-snur-lung', 'Siret lung vs snur lung la pantaloni', 'Explicatie clara intre siret lung si snur lung la pantaloni, cu exemple de cautari, imagini si recomandari utile pentru utilizatori.', 'Siret lung vs snur lung la pantaloni', 'Siret lung si snur lung sunt folosite des pentru acelasi detaliu vizibil la talia pantalonilor. Snur lung este termenul mai corect, iar siret lung este varianta populara pe care multi utilizatori o tasteaza dupa ce vad poza.', [
