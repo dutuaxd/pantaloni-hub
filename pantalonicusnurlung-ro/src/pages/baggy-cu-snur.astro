@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE, SHOP, articleSchema, faqSchema, breadcrumbSchema, organizationSchema, websiteSchema } from '../data/seoSite';
+
+const canonical = `${SITE}/baggy-cu-snur/`;
+const title = "Pantaloni Baggy cu Snur: Volum si Confort Urban | Ghid 2026";
+const description = "Cum sa porti si sa integrezi pantalonii baggy cu snur lung. Sfaturi de stilizare, alegere a marimilor si inspiratie pentru pasionatii de streetwear in Romania.";
+
+const faqs = [
+  ["Ce diferentiaza pantalonii baggy de cei oversized?", "Termenul de 'baggy' se refera de obicei la pantalonii purtati usor cazut (low-slung) cu mult volum strans in zona gleznelor (stacking). Oversized este un termen mai general pentru o croiala supradimensionata, uneori purtata cu talia la locul ei."],
+  ["Cum evit ca pantalonii baggy sa ma faca sa par scund?", "Alege modele unde volumul este distribuit corect. Partea de jos (tivul) nu trebuie sa iti inghita complet incaltamintea. Snurul vizibil ajuta de asemenea creand o directie verticala, si poarta incaltaminte chunky."],
+  ["Materialele conteaza la pantalonii baggy?", "Enorm. Bumbacul heavy-weight ofera caderea necesara si mentine forma pantalonilor. Materialele prea subtiri vor parea o pijama, iar cele prea rigide vor restrange miscarea."]
+];
+
+const schema = [
+  organizationSchema(),
+  websiteSchema(),
+  breadcrumbSchema("Baggy cu snur", canonical),
+  faqSchema(faqs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description,
+    image: `${SITE}/images/products/pantaloni-negri-oversized-barbati-snur-lung.jpg`,
+    author: { '@type': 'Person', name: "Echipa editoriala Atelier AXD" },
+    publisher: { '@type': 'Organization', name: "PantaloniCuSnurLung.ro" },
+    datePublished: '2026-05-22',
+  }
+];
+---
+<Layout title={title} description={description} canonical={canonical} image="/images/products/pantaloni-negri-oversized-barbati-snur-lung.jpg" schema={schema}>
+  <section class="content-hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="section-tag">Hub Croieli: Baggy</p>
+        <h1>Pantaloni Baggy cu Snur: O Estetica Asumata</h1>
+        <p class="direct-answer">Pantalonii baggy aduc o estetica nostalgica Y2K adaptata perfect pentru 2026. Detaliul cu snur lung le ofera acea nota contemporana care ii scoate din zona retro si ii ancoreaza in moda urbana moderna.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/ghid-marimi/">Ghid Marimi</a>
+          <a class="btn-ghost" href="/pantaloni-cu-snur-lung-barbati/">Inspiratie Barbati</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="/images/products/pantaloni-negri-oversized-barbati-snur-lung.jpg" alt="Pantaloni baggy negri barbati snur lung" width="1200" height="1600" loading="eager" />
+        <figcaption>Proportia perfecta: Baggy si stacking controlat</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <article class="long-form-content container">
+    <div class="content-shell">
+      <h2>Stilul Baggy: Nu doar o croiala, o atitudine</h2>
+      <p>Moda strazii iubeste spatiul si fluiditatea, iar pantalonii baggy livreaza exact asta. O pereche corect structurata ofera confort absolut pe parcursul intregii zile si transmite celor din jur un mesaj subtil de incredere relaxata.</p>
+
+      <h3>Ghid de stilizare rapida</h3>
+      <ul>
+        <li><strong>Stilul Skater / Grunge:</strong> Asociaza pantalonii baggy cu o camasa in carouri desfacuta si un tricou vintage pe dedesubt.</li>
+        <li><strong>Minimalism Urban:</strong> Alege baggy intr-o nuanta de negru intens, poarta-i cu un pulover premium simplu, fara logo-uri si cu incaltaminte cu un profil tehnic.</li>
+        <li><strong>Detalii care conteaza:</strong> Lasati snurul de la talie la vedere. Nu este o scapare, este un detaliu de design (numit adesea popular 'siret lung') care marcheaza tranzitia si atrage ochiul.</li>
+      </ul>
+
+      <h2>De ce sa alegi talia pe snur?</h2>
+      <p>Daca volumul baggy poate aduce un anumit disconfort cand e asociat cu blugi cu capsa rigida si curea stransa puternic, snurul si talia elastica rezolva complet problema. Rezultatul este un pantalon care se aseaza exact acolo unde vrei – pe solduri, sau mai sus in talie – in functie de incaltamintea purtata.</p>
+
+      <h2>Intrebari frecvente</h2>
+      <div class="faq-section">
+        {faqs.map(([q, a]) => (
+          <div class="faq-item">
+            <strong>{q}</strong>
+            <p>{a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE, SHOP, articleSchema, faqSchema, breadcrumbSchema, organizationSchema, websiteSchema } from '../data/seoSite';
+
+const canonical = `${SITE}/oversized/`;
+const title = "Pantaloni Oversized si Tinute cu Volum | Ghid 2026";
+const description = "Hub dedicat stilului oversized in Romania: afla diferentele fata de hainele doar largi, sfaturi de proportionare si inspiratie vizuala pentru tinute cu snur.";
+
+const faqs = [
+  ["Cum aleg marimea la pantalonii oversized?", "Un design cu adevarat 'oversized' are deja volum suplimentar creat in croiala. Astfel, cel mai bine este sa iti alegi marimea obisnuita, pe care o vei simti mai larga, asa cum a fost intentionat. Daca iti iei o marime mai mare la un produs deja oversized, risti ca silueta sa para deformata."],
+  ["Pantalonii oversized se potrivesc la tinute elegante?", "Depinde de tesatura! O pereche de pantaloni oversized cu pliuri din stofa premium poate fi purtata intr-o tinuta 'smart-casual' sau elevata (soft tailoring). Daca pantalonii sunt dintr-un bumbac greu cu snur vizibil, tinuta este stricta de streetwear sau casual."],
+  ["Oversized vs Baggy - care e diferenta?", "Desi sunt adesea folositi ca sinonime, 'oversized' descrie orice haina supradimensionata in proportii. Baggy se refera mai ales la pantalonii care au talie mai joasa si se strang masiv deasupra incaltamintei."]
+];
+
+const schema = [
+  organizationSchema(),
+  websiteSchema(),
+  breadcrumbSchema("Oversized", canonical),
+  faqSchema(faqs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description,
+    image: `${SITE}/images/products/tinuta-unisex-pantaloni-largi-snur-extra-lung.png`,
+    author: { '@type': 'Person', name: "Echipa editoriala Atelier AXD" },
+    publisher: { '@type': 'Organization', name: "PantaloniCuSnurLung.ro" },
+    datePublished: '2026-05-22',
+  }
+];
+---
+<Layout title={title} description={description} canonical={canonical} image="/images/products/tinuta-unisex-pantaloni-largi-snur-extra-lung.png" schema={schema}>
+  <section class="content-hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="section-tag">Hub Croieli: Oversized</p>
+        <h1>Arta Stilului Oversized in 2026</h1>
+        <p class="direct-answer">Secretul esteticii oversized nu consta in simpla achizitie de haine cu un numar mai mare, ci in croielile intentionate (intentional fit), tesaturile cu greutate si coordonarea proportiilor.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/cum-se-poarta-pantaloni-snur-lung/">Sfaturi de Purtare</a>
+          <a class="btn-ghost" href="/ghid-marimi/">Marimi Oversized</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="/images/products/tinuta-unisex-pantaloni-largi-snur-extra-lung.png" alt="Oversized outfit unisex cu snur lung" width="1200" height="1600" loading="eager" />
+        <figcaption>Oversized realizat corect: silueta clean, volum intentionat.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <article class="long-form-content container">
+    <div class="content-shell">
+      <h2>Oversized: Un manifest pentru libertate de miscare</h2>
+      <p>Moda urbana a adoptat in totalitate croiala oversized pentru ca reflecta perfect stilul de viata din anul 2026: fara limitari, comoditate dusa la extrem, fara a sacrifica identitatea vizuala.</p>
+
+      <h3>Reguli pentru o tinuta oversized excelenta</h3>
+      <ul>
+        <li><strong>Echilibrul structurii:</strong> Daca porti pantaloni foarte largi, alege-i pe cei cu structura - cusaturi puternice, material plin. Hainele din materiale ieftine si foarte subtiri, desi sunt largi, vor atarna fara directie.</li>
+        <li><strong>Snurul lung – detaliul tehnic:</strong> Pantalonii oversized cu snur (sau siret) lung permit vizual evidentierea taliei. Aceasta marcatoare vizuala ajuta enorm cand tinuta per ansamblu are mult material.</li>
+        <li><strong>Layering monocrom:</strong> Tinutele supradimensionate pot sa para dezordonate daca au prea multe culori contrastante. O abordare in nuante inrudite de gri, maro sau negru tine look-ul unificat si sofisticat.</li>
+      </ul>
+
+      <h2>Intrebari frecvente</h2>
+      <div class="faq-section">
+        {faqs.map(([q, a]) => (
+          <div class="faq-item">
+            <strong>{q}</strong>
+            <p>{a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </article>
+</Layout>

@@ -1,10 +1,6 @@
 import { scheduledBlogPosts } from './scheduledBlogPosts';
-import { contentExpansionBlogPosts } from './contentExpansionBlogPosts';
-import { seoContentEngine2026Posts } from './seoContentEngine2026Posts';
-import { colorTrendBlogPosts2026 } from './colorTrendBlogPosts2026';
-import { fashionExpansionBlogPosts2026 } from './fashionExpansionBlogPosts2026';
-import { atelierClothingBlogPosts2026 } from './atelierClothingBlogPosts2026';
-import { questionAnswerBlogPosts2026 } from './questionAnswerBlogPosts2026';
+// Removed programmatic arrays to comply with Phase 1 - Crawl Budget & Topo-SEO Restructuring
+// Focus on pillar articles instead of spam combinations
 import { withPremiumEditorialImages } from './editorialImagePrompts';
 
 export const SITE = 'https://pantalonicusnurlung.ro';
@@ -502,13 +498,8 @@ const landingPages = [
 
 pages.push(...landingPages);
 
-export const blogPosts = withPremiumEditorialImages([
-  ...questionAnswerBlogPosts2026,
-  ...atelierClothingBlogPosts2026,
-  ...fashionExpansionBlogPosts2026,
-  ...colorTrendBlogPosts2026,
-  ...seoContentEngine2026Posts,
-  ...contentExpansionBlogPosts,
+const rawBlogPosts = withPremiumEditorialImages([
+  // Programmatic arrays removed to reduce thin pages and focus on pillar content
   page('blog/siret-lung-vs-snur-lung', 'Siret lung vs snur lung la pantaloni', 'Explicatie clara intre siret lung si snur lung la pantaloni, cu exemple de cautari, imagini si recomandari utile pentru utilizatori.', 'Siret lung vs snur lung la pantaloni', 'Siret lung si snur lung sunt folosite des pentru acelasi detaliu vizibil la talia pantalonilor. Snur lung este termenul mai corect, iar siret lung este varianta populara pe care multi utilizatori o tasteaza dupa ce vad poza.', [
     ['Diferenta de termen', 'Snurul este cordonul textil folosit la talia pantalonilor. Siretul este termenul asociat incaltamintei, dar in cautari oamenii il folosesc pentru orice cordon lung si vizibil. Merita explicate ambele formulari clar, fara formulari fortate sau confuze.'],
     ['Cum cauta oamenii', 'Utilizatorii pot scrie pantaloni cu siret lung, pantaloni negri cu siret alb, pantaloni cu snur lung sau pantaloni cu sireturi lungi. Toate descriu un detaliu vizual, iar pagina trebuie sa explice natural termenii.'],
@@ -535,5 +526,36 @@ export const blogPosts = withPremiumEditorialImages([
   page('blog/trenduri-moda-urbana-2026', 'Trenduri moda urbana 2026', 'Trenduri moda urbana 2026: baggy, loose fit, monochrome, influente japoneze, layering si materiale dense.', 'Trenduri moda urbana 2026', 'In 2026, moda urbana se muta spre croieli relaxate, palete mai curate si outfituri care pot fi purtate zilnic.', baseSections, 'tinuta-unisex-pantaloni-largi-snur-extra-lung.png'),
   ...visibleScheduledBlogPosts,
 ]);
+
+function clusterOf(page: any) {
+  return page.seoEngine?.cluster || page.slug.split('/')[1]?.split('-').slice(0, 2).join('-') || 'general';
+}
+
+function blogRelatedLinks(page: any, index: number, allPosts: any[]) {
+  const cluster = clusterOf(page);
+  const sameCluster = allPosts
+    .filter((candidate) => candidate.slug !== page.slug && clusterOf(candidate) === cluster)
+    .slice(0, 4)
+    .map((candidate) => [`/${candidate.slug}/`, candidate.h1 || candidate.title]);
+  const structural = [
+    allPosts[index - 1] && [`/${allPosts[index - 1].slug}/`, allPosts[index - 1].h1 || allPosts[index - 1].title],
+    allPosts[index + 1] && [`/${allPosts[index + 1].slug}/`, allPosts[index + 1].h1 || allPosts[index + 1].title],
+    ['/pantaloni-cu-snur-lung/', 'Pantaloni cu snur lung'],
+    ['/blog/', 'Toate ghidurile fashion'],
+  ].filter(Boolean);
+  const seen = new Set<string>();
+  return [...sameCluster, ...structural].filter((item: any) => {
+    if (seen.has(item[0])) return false;
+    seen.add(item[0]);
+    return item[0] !== `/${page.slug}/`;
+  }).slice(0, 8);
+}
+
+export const blogPosts = rawBlogPosts.map((post, index, allPosts) => ({
+  ...post,
+  relatedLinks: Array.isArray((post as any).relatedLinks) && (post as any).relatedLinks.length > 0
+    ? (post as any).relatedLinks
+    : blogRelatedLinks(post, index, allPosts),
+}));
 
 export const allContentPages = [...pages, ...blogPosts];

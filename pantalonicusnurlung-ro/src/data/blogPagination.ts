@@ -16,3 +16,69 @@ export function getBlogPage(pageNumber: number) {
 export function blogPageUrl(pageNumber: number) {
   return pageNumber === 1 ? '/blog/' : `/blog/page/${pageNumber}/`;
 }
+
+export type BlogPaginationItem = number | 'ellipsis';
+
+export function getCompactBlogPagination(currentPage: number, totalPages: number): BlogPaginationItem[] {
+  if (totalPages <= 7) {
+    return Array.from({ length: totalPages }, (_, index) => index + 1);
+  }
+
+  const pages = new Set<number>([1, totalPages]);
+
+  for (let page = currentPage - 1; page <= currentPage + 1; page += 1) {
+    if (page > 1 && page < totalPages) {
+      pages.add(page);
+    }
+  }
+
+  if (currentPage <= 3) {
+    pages.add(2);
+    pages.add(3);
+    pages.add(4);
+  }
+
+  if (currentPage >= totalPages - 2) {
+    pages.add(totalPages - 3);
+    pages.add(totalPages - 2);
+    pages.add(totalPages - 1);
+  }
+
+  const sortedPages = Array.from(pages).sort((a, b) => a - b);
+  const pagination: BlogPaginationItem[] = [];
+
+  sortedPages.forEach((page, index) => {
+    const previousPage = sortedPages[index - 1];
+    if (previousPage && page - previousPage > 1) {
+      pagination.push('ellipsis');
+    }
+    pagination.push(page);
+  });
+
+  return pagination;
+}
+
+export function getBlogPaginationHtml(currentPage: number, totalPages: number) {
+  const parts: string[] = [];
+
+  if (currentPage > 1) {
+    parts.push(`<a class="blog-page-link blog-page-link-wide" href="${blogPageUrl(currentPage - 1)}" aria-label="Pagina anterioara">Inapoi</a>`);
+  }
+
+  getCompactBlogPagination(currentPage, totalPages).forEach((item) => {
+    if (item === 'ellipsis') {
+      parts.push('<span class="blog-page-ellipsis" aria-hidden="true">...</span>');
+      return;
+    }
+
+    const activeClass = item === currentPage ? ' active' : '';
+    const ariaCurrent = item === currentPage ? ' aria-current="page"' : '';
+    parts.push(`<a class="blog-page-link${activeClass}" href="${blogPageUrl(item)}"${ariaCurrent}>${item}</a>`);
+  });
+
+  if (currentPage < totalPages) {
+    parts.push(`<a class="blog-page-link blog-page-link-wide" href="${blogPageUrl(currentPage + 1)}" aria-label="Pagina urmatoare">Inainte</a>`);
+  }
+
+  return parts.join('');
+}

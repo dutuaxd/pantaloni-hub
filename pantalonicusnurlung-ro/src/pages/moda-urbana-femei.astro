@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE, SHOP, articleSchema, faqSchema, breadcrumbSchema, organizationSchema, websiteSchema } from '../data/seoSite';
+
+const canonical = `${SITE}/moda-urbana-femei/`;
+const title = "Moda Urbana Femei | Pantaloni Streetwear si Outfituri 2026";
+const description = "Descopera ghidul complet de moda urbana femei pentru 2026. Cum sa integrezi pantaloni largi, accente streetwear si croieli comode in garderoba ta.";
+
+const faqs = [
+  ["Care sunt tendintele in moda urbana pentru femei in 2026?", "In 2026, moda urbana pentru femei se indreapta spre un minimalism relaxat. Se poarta pantaloni cu volum in partea inferioara combinati cu topuri mai structurate (crop-top, corsete sau maiouri stramte) pentru a crea o silueta in forma de clepsidra sau A-line."],
+  ["Se mai poarta blugii skinny in streetwear?", "Majoritatea pasionatelor de moda urbana au renuntat la croielile skinny in favoarea blugilor si pantalonilor baggy, cargo sau loose-fit. Aceste croieli ofera mai multa libertate de miscare si o atitudine mai degajata."],
+  ["Cum porti pantaloni cu snur lung intr-o tinuta de zi?", "Foarte simplu: alege o pereche de pantaloni largi cu talie inalta si snur lung lasat liber in fata, o bustiera sau un tricou curat si incaltaminte comoda (platform sneakers)."]
+];
+
+const schema = [
+  organizationSchema(),
+  websiteSchema(),
+  breadcrumbSchema("Moda Urbana Femei", canonical),
+  faqSchema(faqs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description,
+    image: `${SITE}/images/products/pantaloni-femei-moda-urbana-snur-lung.png`,
+    author: { '@type': 'Person', name: "Echipa editoriala Atelier AXD" },
+    publisher: { '@type': 'Organization', name: "PantaloniCuSnurLung.ro" },
+    datePublished: '2026-05-22',
+  }
+];
+---
+<Layout title={title} description={description} canonical={canonical} image="/images/products/pantaloni-femei-moda-urbana-snur-lung.png" schema={schema}>
+  <section class="content-hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="section-tag">Hub Moda Urbana</p>
+        <h1>Moda Urbana Femei: Ghid si Inspiratie 2026</h1>
+        <p class="direct-answer">Streetwear-ul feminin actual se defineste prin fuziunea dintre feminitate si elemente utilitare: pantaloni supradimensionati, texturi diverse si detalii masculine reinventate.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#sfaturi-styling">Sfaturi Styling</a>
+          <a class="btn-ghost" href="/pantaloni-cu-snur-lung-femei/">Vezi produse</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="/images/products/pantaloni-femei-moda-urbana-snur-lung.png" alt="Moda urbana femei pantaloni cu snur lung" width="1200" height="1600" loading="eager" />
+        <figcaption>Streetwear feminin relaxat, perfect pentru oras</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <article class="long-form-content container">
+    <div class="content-shell">
+      <h2>Feminitate prin confort: Noul standard in streetwear</h2>
+      <p>Odata perceputa doar ca haine pentru skateri, moda urbana feminina din Romania s-a transformat intr-o declaratie de stil. Femeile nu mai fac compromisuri intre a arata bine si a se simti confortabil. Piesa de rezistenta a acestei schimbari este perechea de pantaloni largi.</p>
+
+      <h3 id="sfaturi-styling">Cum sa creezi proportia perfecta</h3>
+      <ul>
+        <li><strong>Regula contrastului de volum:</strong> Pantaloni baggy + top stramt. Aceasta combinatie scoate talia in evidenta, dar mentine acea alura rebela.</li>
+        <li><strong>Talie inalta, picioare infinite:</strong> Pantalonii cu talie inalta si snur sau bata elastica alungesc optic silueta si sunt foarte comozi.</li>
+        <li><strong>Layering inteligent:</strong> Peste un crop top, un sacou usor oversized sau o jacheta din fas completate cu accesorii minimaliste pot schimba complet o tinuta.</li>
+      </ul>
+
+      <h2>De ce iubim pantalonii cu snur lung</h2>
+      <p>Pe langa faptul ca talia reglabila se muleaza dupa corpul tau in orice moment al zilei, snurul lasat lung adauga un element vizual de interes. E acea mica nota de imperfectiune studiata care atrage privirea catre centrul siluetei.</p>
+
+      <h2>Intrebari frecvente</h2>
+      <div class="faq-section">
+        {faqs.map(([q, a]) => (
+          <div class="faq-item">
+            <strong>{q}</strong>
+            <p>{a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </article>
+</Layout>

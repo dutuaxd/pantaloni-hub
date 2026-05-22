@@ -11,6 +11,12 @@ const image = page.image.endsWith('.webp') ? `/images/products/${page.image}` : 
 const title = page.title.length > 62 ? page.title : `${page.title} | pantalonicusnurlung.ro`;
 const articleImages = Array.isArray(page.images) ? page.images : [];
 const isScheduledArticle = articleImages.length > 0;
+const keyTakeaways = Array.isArray(page.keyTakeaways) ? page.keyTakeaways.map(publicCopy) : [];
+const comparisonRows = Array.isArray(page.comparisonRows) ? page.comparisonRows : [];
+const articleFaqs = Array.isArray(page.faqs) && page.faqs.length > 0 ? page.faqs : faqs;
+const relatedLinks = Array.isArray(page.relatedLinks) ? page.relatedLinks : [];
+const visibleSections = Array.isArray(page.sections) ? page.sections : [];
+const tocSections = visibleSections.slice(0, 6);
 const fullGalleryImages = [
   ...galleryImages.map(([file, alt]) => ({ file: `/${file}`, alt })),
   ...atelierImages.map((item) => ({ file: `${atelierImagePath}${item.file}`, alt: item.alt })),
@@ -20,7 +26,7 @@ const schema = [
   websiteSchema(),
   ...(isHome ? [] : [articleSchema(page), breadcrumbSchema(page.h1, canonical)]),
   ...(isScheduledArticle ? [productSchema(page.h1, SHOP, new URL(image, SITE).href)] : []),
-  faqSchema(),
+  faqSchema(articleFaqs),
   ...(page.slug === 'galerie-pantaloni-snur-lung'
     ? [{
         '@context': 'https://schema.org',
@@ -88,13 +94,67 @@ const schema = [
             </>
           )}
 
-          {page.sections.map(([heading, body]) => (
+          {(page.serpSnippet || keyTakeaways.length > 0 || tocSections.length > 2) && (
+            <section class="serp-brief">
+              <h2>Pe scurt</h2>
+              {page.serpSnippet && <p>{publicCopy(page.serpSnippet)}</p>}
+              {keyTakeaways.length > 0 && (
+                <ul class="check-list">
+                  {keyTakeaways.map((item) => <li>{item}</li>)}
+                </ul>
+              )}
+              {tocSections.length > 2 && (
+                <nav class="article-toc" aria-label="Cuprins articol">
+                  {tocSections.map(([heading]) => <a href={`#${heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`}>{heading}</a>)}
+                </nav>
+              )}
+            </section>
+          )}
+
+          {visibleSections.map(([heading, body]) => (
             <section>
-              <h2>{heading}</h2>
+              <h2 id={heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}>{heading}</h2>
               <p>{body}</p>
               <p>Continua lectura prin <a href="/pantaloni-baggy-negri/">ghidul pentru pantaloni baggy negri</a>, analiza despre <a href="/pantaloni-oversized/">croieli oversized</a> si pagina de <a href="/pantaloni-loose-fit/">pantaloni loose fit</a>.</p>
             </section>
           ))}
+
+          {comparisonRows.length > 0 && (
+            <section>
+              <h2>Comparatie rapida pentru decizie</h2>
+              <div class="article-table-wrap">
+                <table class="article-table">
+                  <thead>
+                    <tr>
+                      <th>Criteriu</th>
+                      <th>Alege asa</th>
+                      <th>Evita</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {comparisonRows.map((row) => (
+                      <tr>
+                        <td>{publicCopy(row[0])}</td>
+                        <td>{publicCopy(row[1])}</td>
+                        <td>{publicCopy(row[2])}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )}
+
+          {relatedLinks.length > 0 && (
+            <section class="related-guides">
+              <h2>Ghiduri conexe fara suprapunere</h2>
+              <div class="related-link-grid">
+                {relatedLinks.map(([href, label]) => (
+                  <a href={href}>{publicCopy(label)}</a>
+                ))}
+              </div>
+            </section>
+          )}
 
           {isScheduledArticle && (
             <section class="scheduled-guide-pack">
@@ -173,10 +233,10 @@ const schema = [
 
           <h2>Intrebari frecvente despre pantaloni cu snur lung</h2>
           <div class="faq-list">
-            {faqs.map(([q, a]) => (
+            {articleFaqs.map(([q, a]) => (
               <details>
-                <summary>{q}</summary>
-                <p>{a}</p>
+                <summary>{publicCopy(q)}</summary>
+                <p>{publicCopy(a)}</p>
               </details>
             ))}
           </div>

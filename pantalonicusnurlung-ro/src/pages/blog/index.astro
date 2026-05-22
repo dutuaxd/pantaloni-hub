@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { SITE, organizationSchema } from '../../data/seoSite';
-import { blogPageUrl, getBlogPage } from '../../data/blogPagination';
+import { getBlogPage, getBlogPaginationHtml } from '../../data/blogPagination';
 import { publicPage } from '../../data/publicCopy';
 const title = 'Blog pantaloni cu snur lung | Ghiduri 2026';
 const description = 'Blog cu ghiduri in romana despre pantaloni cu snur lung: tinute, noduri, diferente snur scurt/lung, trenduri moda urbana 2026 si vara.';
@@ -10,6 +10,7 @@ const schema = [organizationSchema(), { '@context': 'https://schema.org', '@type
 const imagePath = (image: string) => image.endsWith('.webp') ? `/images/products/${image}` : `/${image}`;
 const { posts: rawPosts, currentPage, totalPages } = getBlogPage(1);
 const posts = rawPosts.map(publicPage);
+const paginationHtml = getBlogPaginationHtml(currentPage, totalPages);
 ---
 <Layout title={title} description={description} canonical={canonical} schema={schema}>
   <section class="content-hero">
@@ -31,11 +32,7 @@ const posts = rawPosts.map(publicPage);
       ))}
     </div>
     <nav class="blog-pagination" aria-label="Paginare blog">
-      {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (
-        <a class:list={['blog-page-link', pageNumber === currentPage && 'active']} href={blogPageUrl(pageNumber)} aria-current={pageNumber === currentPage ? 'page' : undefined}>
-          {pageNumber}
-        </a>
-      ))}
+      <Fragment set:html={paginationHtml} />
     </nav>
   </section>
 </Layout>

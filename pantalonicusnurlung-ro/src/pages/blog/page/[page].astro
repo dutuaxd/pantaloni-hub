@@ -1,7 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { SITE, organizationSchema } from '../../../data/seoSite';
-import { blogPageUrl, getBlogPage, totalBlogPages } from '../../../data/blogPagination';
+import { blogPageUrl, getBlogPage, getBlogPaginationHtml, totalBlogPages } from '../../../data/blogPagination';
 import { publicPage } from '../../../data/publicCopy';
 
 export function getStaticPaths() {
@@ -14,6 +14,7 @@ export function getStaticPaths() {
 const { pageNumber } = Astro.props;
 const { posts: rawPosts, currentPage, totalPages } = getBlogPage(Number(pageNumber));
 const posts = rawPosts.map(publicPage);
+const paginationHtml = getBlogPaginationHtml(currentPage, totalPages);
 const title = `Blog pantaloni cu snur lung | Pagina ${currentPage}`;
 const description = `Pagina ${currentPage} din blogul PantaloniCuSnurLung.ro: ghiduri despre tinute, culori, evenimente si moda urbana 2026.`;
 const canonical = `${SITE}${blogPageUrl(currentPage)}`;
@@ -40,11 +41,7 @@ const imagePath = (image: string) => image.endsWith('.webp') ? `/images/products
       ))}
     </div>
     <nav class="blog-pagination" aria-label="Paginare blog">
-      {Array.from({ length: totalPages }, (_, index) => index + 1).map((item) => (
-        <a class:list={['blog-page-link', item === currentPage && 'active']} href={blogPageUrl(item)} aria-current={item === currentPage ? 'page' : undefined}>
-          {item}
-        </a>
-      ))}
+      <Fragment set:html={paginationHtml} />
     </nav>
   </section>
 </Layout>

@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE, SHOP, articleSchema, faqSchema, breadcrumbSchema, organizationSchema, websiteSchema } from '../data/seoSite';
+
+const canonical = `${SITE}/moda-urbana-barbati/`;
+const title = "Moda Urbana Barbati | Pantaloni Streetwear si Outfituri 2026";
+const description = "Ghid complet pentru moda urbana barbati in Romania: pantaloni baggy, oversized, layering, streetwear autentic si outfituri de inspiratie.";
+
+const faqs = [
+  ["Ce inseamna moda urbana pentru barbati in Romania?", "Moda urbana (streetwear) in Romania inseamna combinatia dintre functionalitate, confort si volum. Baza consta in pantaloni largi (baggy, oversized), tricouri cu greutate mare (heavyweight) si layering adaptat vremii schimbatoare."],
+  ["Cum incep sa port haine oversized?", "Incepe cu o pereche de pantaloni baggy sau wide-leg negri si un tricou cu o marime mai mare decat porti de obicei. Pastreaza culorile neutre (negru, alb, gri) pana te obisnuiesti cu noile proportii."],
+  ["Care sunt elementele de baza pentru un outfit streetwear masculin?", "Pantalonii largi cu snur sau fermoare, incaltamintea cu volum mediu sau mare, hanoracele scurte (cropped hoodie) si tricourile supradimensionate sunt piesele esentiale in 2026."]
+];
+
+const schema = [
+  organizationSchema(),
+  websiteSchema(),
+  breadcrumbSchema("Moda Urbana Barbati", canonical),
+  faqSchema(faqs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description,
+    image: `${SITE}/images/products/pantaloni-cu-snur-lung-negri-barbati-outfit.webp`,
+    author: { '@type': 'Person', name: "Echipa editoriala Atelier AXD" },
+    publisher: { '@type': 'Organization', name: "PantaloniCuSnurLung.ro" },
+    datePublished: '2026-05-22',
+  }
+];
+---
+<Layout title={title} description={description} canonical={canonical} image="/images/products/pantaloni-cu-snur-lung-negri-barbati-outfit.webp" schema={schema}>
+  <section class="content-hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="section-tag">Hub Moda Urbana</p>
+        <h1>Moda Urbana Barbati: Ghidul Esential pentru 2026</h1>
+        <p class="direct-answer">Moda urbana pentru barbati se distanteaza de croielile slim, imbratisand proportiile oversized, materialele dense si detaliile functionale precum snururile lungi si fermoarele la vedere.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#outfituri">Vezi outfituri</a>
+          <a class="btn-ghost" href="/streetwear-romania/">Streetwear Romania</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="/images/products/pantaloni-cu-snur-lung-negri-barbati-outfit.webp" alt="Outfit moda urbana barbati cu pantaloni baggy si snur lung" width="1200" height="1600" loading="eager" />
+        <figcaption>Volum, stratificare si accente streetwear</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <article class="long-form-content container">
+    <div class="content-shell">
+      <h2>De ce silueta oversized a preluat moda masculina</h2>
+      <p>Moda urbana pentru barbati a trecut printr-o schimbare radicala. Daca acum cativa ani focusul era pe haine cat mai stramte, astazi strada cere confort si dinamism. Silueta s-a marit, iar pantalonii largi – fie ei baggy, loose fit sau cargo – au devenit piesa centrala a oricarei garderobe masculine actuale.</p>
+
+      <h3>Reguli de aur in moda urbana</h3>
+      <ul>
+        <li><strong>Proportia este totul:</strong> Daca porti pantaloni foarte largi in partea de jos, echilibreaza cu un hanorac usor mai scurt sau un tricou care sa nu treaca de jumatatea coapselor.</li>
+        <li><strong>Incaltamintea conteaza:</strong> Pantalonii baggy au nevoie de baze solide. Sneakersii cu talpa groasa (chunky) sau ghetele urbane previn ca pantalonul sa mature podeaua.</li>
+        <li><strong>Materiale cu tinuta:</strong> Bumbacul dens, denimul greu si fasul structurat isi pastreaza forma in miscare, oferind acel aspect <em>premium</em> cautat in streetwear.</li>
+      </ul>
+
+      <h2 id="outfituri">Idei de Outfituri Streetwear pentru Barbati</h2>
+      <div class="outfit-grid">
+        <div class="outfit-card">
+          <h4>Monocrom Relaxat</h4>
+          <p>Pantaloni baggy negri cu snur lung vizibil, combinati cu un tricou negru heavy-weight. Perfect pentru o iesire seara in oras. Snurul ofera o taietura vizuala verticala care sparge blocul de negru.</p>
+          <a href="/pantaloni-cu-snur-lung-barbati/">Vezi pantaloni negri</a>
+        </div>
+        <div class="outfit-card">
+          <h4>Contrast Urban</h4>
+          <p>Pantaloni scurti albi sau gri cu fermoare, alaturati unui hanorac inchis la culoare. Tinuta de vara ideala cand vremea se racoreste pe inserat.</p>
+          <a href="/tricou-bleumarin-pantaloni-albi-siret-lung/">Vezi combinatie</a>
+        </div>
+      </div>
+
+      <h2>Integrarea detaliilor: Snurul lung si croiala</h2>
+      <p>Un element puternic in curentul actual de moda urbana din Romania este prezenta elementelor vizibile de ajustare. Snurul lung, lasat lejer peste pantaloni, nu este doar functional, ci adauga o vibratie de <em>effortless cool</em>. Nu te feri de contraste puternice: un siret alb lung pe o pereche de pantaloni negri atrage imediat atentia.</p>
+
+      <h2>Intrebari frecvente</h2>
+      <div class="faq-section">
+        {faqs.map(([q, a]) => (
+          <div class="faq-item">
+            <strong>{q}</strong>
+            <p>{a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SITE, SHOP, articleSchema, faqSchema, breadcrumbSchema, organizationSchema, websiteSchema } from '../data/seoSite';
+
+const canonical = `${SITE}/streetwear-romania/`;
+const title = "Streetwear Romania | Cultura Urbana si Moda Strazii in 2026";
+const description = "Hub cultural si vizual despre scena streetwear din Romania. Afla cum a evoluat moda urbana de la underground la mainstream si ce piese domina strada.";
+
+const faqs = [
+  ["Cum s-a dezvoltat scena de streetwear in Romania?", "Initial adoptata doar de o nisa conectata la skateboarding si hip-hop, cultura streetwear in Romania a explodat, integrandu-se in identitatea noii generatii. Orase precum Bucuresti si Cluj-Napoca sunt astazi centre cu o diversitate incredibila in moda urbana."],
+  ["De ce este snurul lung o semnatura in streetwear-ul local?", "Snurul lasat lung, contrastant, ofera acel 'touch' de rebeliune studiata si functionalitate bruta. E un detaliu simplu care vorbeste limba esteticii urbane contemporane, indicand un design intentionat, nu doar un pantalon larg oarecare."],
+  ["Cum vad romanii combinatia dintre hainele de strada si ocaziile casual?", "Limitele s-au estompat. In Romania in 2026, un hanorac si o pereche de pantaloni largi premium, de calitate, cu o pereche de incaltaminte ireprosabila, reprezinta o tinuta perfect acceptabila in cafenele de specialitate, restaurante moderne si chiar la birou (in medii creative)."]
+];
+
+const schema = [
+  organizationSchema(),
+  websiteSchema(),
+  breadcrumbSchema("Streetwear Romania", canonical),
+  faqSchema(faqs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description: description,
+    image: `${SITE}/images/products/pantaloni-barbati-largi-negri-snur-casual.jpg`,
+    author: { '@type': 'Person', name: "Echipa editoriala Atelier AXD" },
+    publisher: { '@type': 'Organization', name: "PantaloniCuSnurLung.ro" },
+    datePublished: '2026-05-22',
+  }
+];
+---
+<Layout title={title} description={description} canonical={canonical} image="/images/products/pantaloni-barbati-largi-negri-snur-casual.jpg" schema={schema}>
+  <section class="content-hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="section-tag">Hub Cultural</p>
+        <h1>Streetwear Romania: Evolutia Modei de Strada</h1>
+        <p class="direct-answer">De la subculturi underground la forta principala din moda actuala. In 2026, streetwear-ul romanesc respira inovatie, materiale de inalta calitate si fuziunea esteticii urbane cu lifestyle-ul modern.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/pantaloni-pe-orase/">Ghid Pe Orase</a>
+          <a class="btn-ghost" href="/moda-urbana-barbati/">Pentru Barbati</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="/images/products/pantaloni-barbati-largi-negri-snur-casual.jpg" alt="Streetwear romanesc - pantaloni cu snur lung" width="1200" height="1600" loading="eager" />
+        <figcaption>Scena urbana din Romania: influente clare si tinute premium.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <article class="long-form-content container">
+    <div class="content-shell">
+      <h2>Mai mult decat haine: Streetwear ca identitate</h2>
+      <p>Moda strazii nu dicteaza uniforma; ofera instrumente de expresie. O simpla pereche de pantaloni cu snur lung (sau 'pantaloni cu siret' asa cum le spunem adesea) poate reflecta atat de mult din atitudinea urbana locala.</p>
+
+      <h3>Scena actuala in orasele Romaniei</h3>
+      <ul>
+        <li><strong>Bucuresti:</strong> Influente puternice din techwear, minimalism scandinav, dar cu o pasiune clara pentru brandurile care experimenteaza cu volumul. O combinatie alerta de viata de noapte si utilitar.</li>
+        <li><strong>Cluj-Napoca:</strong> Axat mai mult pe lejeritate, layering si sustenabilitate. O abordare mai putin agresiva, dominata de culori soft, bejuri si texturi confortabile.</li>
+        <li><strong>Orase de coasta si festivaluri:</strong> In sezonul cald, la evenimente muzicale sau la mare, pantalonii scurti oversized din bumbac moale si hanoracele groase pentru noapte domina complet peisajul vizual.</li>
+      </ul>
+
+      <h2>Directia esteticii pentru anii urmatori</h2>
+      <p>S-a terminat epoca in care streetwear insemna logo-uri masive aplicate pe tricouri. Astazi, in Romania, estetica e condusa de taieturi curate, de proportii reinterpretate si elemente utilitare discrete, dar de impact (asa cum e fermoarul sau snurul gros).</p>
+
+      <h2>Intrebari frecvente</h2>
+      <div class="faq-section">
+        {faqs.map(([q, a]) => (
+          <div class="faq-item">
+            <strong>{q}</strong>
+            <p>{a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </article>
+</Layout>
