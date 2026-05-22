@@ -3,6 +3,8 @@ import { contentExpansionBlogPosts } from './contentExpansionBlogPosts';
 import { seoContentEngine2026Posts } from './seoContentEngine2026Posts';
 import { colorTrendBlogPosts2026 } from './colorTrendBlogPosts2026';
 import { fashionExpansionBlogPosts2026 } from './fashionExpansionBlogPosts2026';
+import { atelierClothingBlogPosts2026 } from './atelierClothingBlogPosts2026';
+import { questionAnswerBlogPosts2026 } from './questionAnswerBlogPosts2026';
 import { withPremiumEditorialImages } from './editorialImagePrompts';
 
 export const SITE = 'https://pantalonicusnurlung.ro';
@@ -501,6 +503,8 @@ const landingPages = [
 pages.push(...landingPages);
 
 export const blogPosts = withPremiumEditorialImages([
+  ...questionAnswerBlogPosts2026,
+  ...atelierClothingBlogPosts2026,
   ...fashionExpansionBlogPosts2026,
   ...colorTrendBlogPosts2026,
   ...seoContentEngine2026Posts,
