@@ -575,7 +575,7 @@ const topics: QuestionTopic[] = [
     product: 'seturi',
     shortAnswer: 'Hainele negre arata premium cand materialul este dens, negrul este uniform si proportiile sunt curate. Diferenta nu vine din logo, ci din textura si intretinere.',
     steps: 'Alege bumbac bun, spala pe dos, scoate scamele si combina texturi mate: tricou, hanorac, pantaloni si sneakers curati.',
-    avoid: 'Evita negrul decolorat, materialul lucios ieftin si hainele mototolite.',
+    avoid: 'Evita negrul decolorat, materialul lucios casual si hainele mototolite.',
     related: 'haine negre premium barbati, all black outfit, ingrijire haine negre',
   },
   {

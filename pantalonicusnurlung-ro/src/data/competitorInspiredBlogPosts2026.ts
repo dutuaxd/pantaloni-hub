@@ -210,7 +210,7 @@ const topics: Topic[] = [
     h1: 'Garderoba capsula cu pantaloni largi',
     intent: 'cum construiesti o garderoba simpla in jurul unei piese versatile',
     primary: 'garderoba capsula',
-    audience: 'cititori care cumpara mai atent',
+    audience: 'cititori care compara mai atent',
     angle: 'un pantalon larg neutru poate lega tricouri, camasi, hanorace si jachete fara sa creeze tinute repetitive',
     image: 'pantaloni-cu-snur-lung-gri-deschis-produs-unisex.webp',
   },

@@ -2112,15 +2112,15 @@ export const scheduledBlogPosts = [
     "scheduleSlot": 1
   },
   {
-    "slug": "blog/pantaloni-cu-snur-lung-ieftini-sau-premium-ghid-vizual-2026-05-24",
-    "title": "Pantaloni cu snur lung ieftini sau premium | ghid vizual",
-    "description": "Ghid vizual pentru pantaloni cu snur lung ieftini sau premium: ce se vede in material, cusatura si cadere, cu imagini Atelier AXD si recomandari de styling vizual.",
-    "h1": "Pantaloni cu snur lung ieftini sau premium: ghid vizual",
-    "intro": "Acest articol este programat pentru 2026-05-24 si raspunde unei cautari long-tail despre pantaloni cu snur lung ieftini sau premium. Focusul este practic: ce se vede in material, cusatura si cadere, cu exemple vizuale din galeria Atelier AXD si linkuri catre ghidurile principale.",
+    "slug": "blog/pantaloni-cu-snur-lung-casuali-sau-premium-ghid-vizual-2026-05-24",
+    "title": "Pantaloni cu snur lung standard sau premium | ghid vizual",
+    "description": "Ghid vizual pentru pantaloni cu snur lung standard sau premium: ce se vede in material, cusatura si cadere, cu imagini Atelier AXD si recomandari de styling vizual.",
+    "h1": "Pantaloni cu snur lung standard sau premium: ghid vizual",
+    "intro": "Acest articol este programat pentru 2026-05-24 si raspunde unei cautari long-tail despre pantaloni cu snur lung standard sau premium. Focusul este practic: ce se vede in material, cusatura si cadere, cu exemple vizuale din galeria Atelier AXD si linkuri catre ghidurile principale.",
     "sections": [
       [
         "Intentia cautarii",
-        "Utilizatorul care cauta pantaloni cu snur lung ieftini sau premium vrea de obicei inspiratie vizuala, diferente de fit si o confirmare rapida ca modelul poate fi purtat in tinute reale. De aceea articolul descrie culoarea, croiala, talia si felul in care snurul sau siretul ramane vizibil fara formulare fortata."
+        "Utilizatorul care cauta pantaloni cu snur lung standard sau premium vrea de obicei inspiratie vizuala, diferente de fit si o confirmare rapida ca modelul poate fi purtat in tinute reale. De aceea articolul descrie culoarea, croiala, talia si felul in care snurul sau siretul ramane vizibil fara formulare fortata."
       ],
       [
         "Cum folosesti imaginile",
@@ -2128,7 +2128,7 @@ export const scheduledBlogPosts = [
       ],
       [
         "Recomandare de styling",
-        "Pentru pantaloni cu snur lung ieftini sau premium, pastreaza partea de sus simpla si lasa pantalonii sa conduca proportia. Sneakers albi, tricouri grele, hanorace compacte si culori neutre ajuta tinuta sa ramana urbana fara exces."
+        "Pentru pantaloni cu snur lung standard sau premium, pastreaza partea de sus simpla si lasa pantalonii sa conduca proportia. Sneakers albi, tricouri grele, hanorace compacte si culori neutre ajuta tinuta sa ramana urbana fara exces."
       ],
       [
         "Legatura cu snur lung si siret lung",
@@ -4377,15 +4377,15 @@ export const scheduledBlogPosts = [
     "scheduleSlot": 1
   },
   {
-    "slug": "blog/pantaloni-cu-snur-lung-ieftini-sau-premium-idei-de-outfit-2026-06-03",
-    "title": "Pantaloni cu snur lung ieftini sau premium | idei de outfit",
-    "description": "Idei de outfit pentru pantaloni cu snur lung ieftini sau premium: ce se vede in material, cusatura si cadere, cu imagini Atelier AXD si recomandari de styling vizual",
-    "h1": "Pantaloni cu snur lung ieftini sau premium: idei de outfit",
-    "intro": "Acest articol este programat pentru 2026-06-03 si raspunde unei cautari long-tail despre pantaloni cu snur lung ieftini sau premium. Focusul este practic: ce se vede in material, cusatura si cadere, cu exemple vizuale din galeria Atelier AXD si linkuri catre ghidurile principale.",
+    "slug": "blog/pantaloni-cu-snur-lung-casuali-sau-premium-idei-de-outfit-2026-06-03",
+    "title": "Pantaloni cu snur lung standard sau premium | idei de outfit",
+    "description": "Idei de outfit pentru pantaloni cu snur lung standard sau premium: ce se vede in material, cusatura si cadere, cu imagini Atelier AXD si recomandari de styling vizual",
+    "h1": "Pantaloni cu snur lung standard sau premium: idei de outfit",
+    "intro": "Acest articol este programat pentru 2026-06-03 si raspunde unei cautari long-tail despre pantaloni cu snur lung standard sau premium. Focusul este practic: ce se vede in material, cusatura si cadere, cu exemple vizuale din galeria Atelier AXD si linkuri catre ghidurile principale.",
     "sections": [
       [
         "Intentia cautarii",
-        "Utilizatorul care cauta pantaloni cu snur lung ieftini sau premium vrea de obicei inspiratie vizuala, diferente de fit si o confirmare rapida ca modelul poate fi purtat in tinute reale. De aceea articolul descrie culoarea, croiala, talia si felul in care snurul sau siretul ramane vizibil fara formulare fortata."
+        "Utilizatorul care cauta pantaloni cu snur lung standard sau premium vrea de obicei inspiratie vizuala, diferente de fit si o confirmare rapida ca modelul poate fi purtat in tinute reale. De aceea articolul descrie culoarea, croiala, talia si felul in care snurul sau siretul ramane vizibil fara formulare fortata."
       ],
       [
         "Cum folosesti imaginile",
@@ -4393,7 +4393,7 @@ export const scheduledBlogPosts = [
       ],
       [
         "Recomandare de styling",
-        "Pentru pantaloni cu snur lung ieftini sau premium, pastreaza partea de sus simpla si lasa pantalonii sa conduca proportia. Sneakers albi, tricouri grele, hanorace compacte si culori neutre ajuta tinuta sa ramana urbana fara exces."
+        "Pentru pantaloni cu snur lung standard sau premium, pastreaza partea de sus simpla si lasa pantalonii sa conduca proportia. Sneakers albi, tricouri grele, hanorace compacte si culori neutre ajuta tinuta sa ramana urbana fara exces."
       ],
       [
         "Legatura cu snur lung si siret lung",
@@ -6642,15 +6642,15 @@ export const scheduledBlogPosts = [
     "scheduleSlot": 1
   },
   {
-    "slug": "blog/pantaloni-cu-snur-lung-ieftini-sau-premium-cum-ii-porti-2026-06-13",
-    "title": "Pantaloni cu snur lung ieftini sau premium | cum ii porti",
-    "description": "Cum ii porti pentru pantaloni cu snur lung ieftini sau premium: ce se vede in material, cusatura si cadere, cu imagini Atelier AXD si recomandari de styling vizual.",
-    "h1": "Pantaloni cu snur lung ieftini sau premium: cum ii porti",
-    "intro": "Acest articol este programat pentru 2026-06-13 si raspunde unei cautari long-tail despre pantaloni cu snur lung ieftini sau premium. Focusul este practic: ce se vede in material, cusatura si cadere, cu exemple vizuale din galeria Atelier AXD si linkuri catre ghidurile principale.",
+    "slug": "blog/pantaloni-cu-snur-lung-casuali-sau-premium-cum-ii-porti-2026-06-13",
+    "title": "Pantaloni cu snur lung standard sau premium | cum ii porti",
+    "description": "Cum ii porti pentru pantaloni cu snur lung standard sau premium: ce se vede in material, cusatura si cadere, cu imagini Atelier AXD si recomandari de styling vizual.",
+    "h1": "Pantaloni cu snur lung standard sau premium: cum ii porti",
+    "intro": "Acest articol este programat pentru 2026-06-13 si raspunde unei cautari long-tail despre pantaloni cu snur lung standard sau premium. Focusul este practic: ce se vede in material, cusatura si cadere, cu exemple vizuale din galeria Atelier AXD si linkuri catre ghidurile principale.",
     "sections": [
       [
         "Intentia cautarii",
-        "Utilizatorul care cauta pantaloni cu snur lung ieftini sau premium vrea de obicei inspiratie vizuala, diferente de fit si o confirmare rapida ca modelul poate fi purtat in tinute reale. De aceea articolul descrie culoarea, croiala, talia si felul in care snurul sau siretul ramane vizibil fara formulare fortata."
+        "Utilizatorul care cauta pantaloni cu snur lung standard sau premium vrea de obicei inspiratie vizuala, diferente de fit si o confirmare rapida ca modelul poate fi purtat in tinute reale. De aceea articolul descrie culoarea, croiala, talia si felul in care snurul sau siretul ramane vizibil fara formulare fortata."
       ],
       [
         "Cum folosesti imaginile",
@@ -6658,7 +6658,7 @@ export const scheduledBlogPosts = [
       ],
       [
         "Recomandare de styling",
-        "Pentru pantaloni cu snur lung ieftini sau premium, pastreaza partea de sus simpla si lasa pantalonii sa conduca proportia. Sneakers albi, tricouri grele, hanorace compacte si culori neutre ajuta tinuta sa ramana urbana fara exces."
+        "Pentru pantaloni cu snur lung standard sau premium, pastreaza partea de sus simpla si lasa pantalonii sa conduca proportia. Sneakers albi, tricouri grele, hanorace compacte si culori neutre ajuta tinuta sa ramana urbana fara exces."
       ],
       [
         "Legatura cu snur lung si siret lung",

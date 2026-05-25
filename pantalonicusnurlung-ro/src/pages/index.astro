@@ -3,8 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import { productImages, productImagePath } from '../data/productImages';
 import { SITE, SHOP, faqSchema, faqs, organizationSchema, productSchema, websiteSchema } from '../data/seoSite';
 
-const title = 'Pantaloni baggy si oversized | Moda urbana romanesc 2026';
-const description = 'Ghid romanesc pentru pantaloni baggy, joggeri oversized, pantaloni loose fit si outfituri moda urbana cu link transparent catre Atelier AXD.';
+const title = 'Pantaloni cu snur lung | Ghid moda urbana 2026';
+const description = 'Pantaloni cu snur lung pentru moda urbana: ghid despre croieli baggy, modele oversized, marimi, materiale si outfituri cu link transparent catre Atelier AXD.';
 const canonical = `${SITE}/`;
 const hero = productImages[2];
 const img = (index: number) => productImages[index % productImages.length];
@@ -75,16 +75,16 @@ const iconBenefits = [
     <div class="landing-shell landing-hero-grid">
       <div class="landing-copy">
         <p class="eyebrow">Ghid moda urbana romanesc</p>
-        <h1>Pantaloni baggy, oversized si urban fit pentru 2026.</h1>
+        <h1>Pantaloni cu snur lung pentru moda urbana in 2026</h1>
         <p>Ghid editorial despre pantaloni casual largi, joggeri oversized, croieli loose fit si tinute moda urbana curate. Produsele si comenzile raman pe Atelier AXD.</p>
         <div class="landing-actions">
           <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Descopera modelele</a>
           <a class="secondary-action" href="/ghid-marimi-pantaloni-cu-snur/">Ghid de marimi</a>
         </div>
         <div class="offer-note">
-          <span>Oferta</span>
-          <strong>4 produse = 15% reducere</strong>
-          <small>Reducerea se aplica in magazinul Atelier AXD.</small>
+          <span>Atelier AXD</span>
+          <strong>Produse, preturi si stoc actualizate</strong>
+          <small>Conditiile comerciale sunt afisate in magazinul Atelier AXD.</small>
         </div>
       </div>
       <a class="hero-product-link" href={SHOP} target="_blank" rel="noopener" aria-label={hero.alt}>

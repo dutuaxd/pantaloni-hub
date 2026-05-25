@@ -126,7 +126,7 @@ export const contentExpansionBlogPosts = [
     'Pantaloni maro ciocolatiu in 2026',
     'Pantaloni maro ciocolatiu in 2026: cum ii combini cu crem, alb, negru, verde si piese streetwear curate.',
     'Pantaloni maro ciocolatiu in 2026',
-    'Maro ciocolatiu este una dintre cele mai bune culori pentru pantaloni relaxati cand vrei o alternativa calda la negru si gri.',
+    'Maro ciocolatiu este una dintre modele selectate culori pentru pantaloni relaxati cand vrei o alternativa calda la negru si gri.',
     'Articolul tinteste cautarea pe maro, separata de paleta generala si de articolele despre negru.',
     [
       ['Cu ce merge', 'Maro merge natural cu crem, alb cald, bej, gri si verde olive. Daca pantalonul are snur vizibil, lasa partea de sus simpla.'],
@@ -457,7 +457,7 @@ export const contentExpansionBlogPosts = [
     'Cum alegi pantaloni cu snur pentru poze Instagram: contrast, lumina, culori, cadru si detalii vizibile.',
     'Pantaloni cu snur pentru poze Instagram',
     'Pentru poze Instagram, pantalonii cu snur functioneaza bine daca detaliul frontal este vizibil, lumina este buna si tinuta are contrast clar.',
-    'Articolul tinteste intentie de content vizual, nu ghid de cumparare.',
+    'Articolul tinteste intentie de content vizual, nu ghid de informare.',
     [
       ['Contrast', 'Pantalonii negri cu snur alb sunt cei mai usor de citit in imagine. Crem cu top inchis sau olive cu alb functioneaza la fel de bine.'],
       ['Pozitionare', 'Pozele frontale si trei sferturi arata cel mai bine snurul. Evita cadrele prea taiate in zona taliei.'],

@@ -163,7 +163,7 @@ const contexts = [
     slug: 'garderoba-capsula',
     intent: 'strategy',
     detail: 'piese putine, combinatii multe, culori neutre si cost per wear mai bun',
-    persona: 'barbat care cumpara mai rar, dar mai atent',
+    persona: 'barbat care compara mai rar, dar mai atent',
   },
 ];
 

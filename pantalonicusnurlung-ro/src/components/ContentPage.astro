@@ -8,7 +8,7 @@ const { page: rawPage, isHome = false } = Astro.props;
 const page = publicPage(rawPage);
 const canonical = page.slug ? `${SITE}/${page.slug}/` : `${SITE}/`;
 const image = page.image.endsWith('.webp') ? `/images/products/${page.image}` : `/${page.image}`;
-const title = page.title.length > 62 ? page.title : `${page.title} | pantalonicusnurlung.ro`;
+const title = page.title;
 const articleImages = Array.isArray(page.images) ? page.images : [];
 const isScheduledArticle = articleImages.length > 0;
 const keyTakeaways = Array.isArray(page.keyTakeaways) ? page.keyTakeaways.map(publicCopy) : [];
@@ -48,14 +48,14 @@ const schema = [
           <h1>{page.h1}</h1>
           <p class="direct-answer">{page.intro}</p>
           <div class="hero-actions">
-            <a class="btn-primary" href={SHOP} target="_blank" rel="noopener">{isHome ? 'Vezi colectia' : 'Cumpara pantaloni cu snur lung'}</a>
+            <a class="btn-primary" href={SHOP} target="_blank" rel="noopener">{isHome ? 'Vezi colectia' : 'Vezi pantalonii cu snur lung'}</a>
             <a class="btn-ghost" href={isHome ? '/ghid-marimi-pantaloni-cu-snur/' : '/galerie-pantaloni-snur-lung/'}>{isHome ? 'Ghid de marimi' : 'Vezi galeria'}</a>
           </div>
           {isHome && (
             <div class="home-offer">
-              <span>Oferta Atelier AXD</span>
-              <strong>4 produse = 15% reducere</strong>
-              <small>Reducerea se aplica automat in magazinul atelieraxd.ro.</small>
+              <span>Atelier AXD</span>
+              <strong>Colectie verificata pe magazin</strong>
+              <small>Disponibilitatea si conditiile comerciale sunt afisate pe atelieraxd.ro.</small>
             </div>
           )}
         </div>
@@ -242,13 +242,13 @@ const schema = [
           </div>
         </div>
         <aside class="article-side">
-          <h2>Cele mai citite ghiduri</h2>
+          <h2>Ghiduri recomandate</h2>
           <a href="/ce-sunt-pantalonii-cu-snur-lung/">Ce sunt pantalonii cu snur lung?</a>
           <a href="/ghid-alegere-pantaloni-snur-lung/">Ghid alegere</a>
           <a href="/blog/cum-faci-nod-snur-pantaloni/">Cum faci nod la snur</a>
           <a href="/blog/trenduri-urbane-pantaloni-2026/">Trenduri moda urbana 2026</a>
           {editorialClusters[0].links.slice(0, 3).map(([href, label]) => <a href={href}>{label}</a>)}
-          <a href={SHOP} target="_blank" rel="noopener">Cumpara de la Atelier AXD</a>
+          <a href={SHOP} target="_blank" rel="noopener">Vezi colectia Atelier AXD</a>
           <address>{company.name}<br />{company.cui}</address>
         </aside>
       </div>
