@@ -1,5 +1,6 @@
 import { scheduledBlogPosts } from './scheduledBlogPosts';
 import { queryDrivenBlogPosts } from './queryDrivenBlogPosts';
+import { summerFashionAuthorityBlogPosts2026 } from './summerFashionAuthorityBlogPosts2026';
 // Removed programmatic arrays to comply with Phase 1 - Crawl Budget & Topo-SEO Restructuring
 // Focus on pillar articles instead of spam combinations
 import { withPremiumEditorialImages } from './editorialImagePrompts';
@@ -553,6 +554,7 @@ const rawBlogPosts = withPremiumEditorialImages([
   page('blog/baggy-daca-esti-scund', 'Cum porti baggy daca esti scund', 'Ghid pentru persoane scunde: pantaloni baggy, proportii, talie, sneakers si greseli de evitat.', 'Cum porti baggy daca esti scund', 'Daca esti scund, pantalonii baggy trebuie sa pastreze talia clara si tivul controlat, ca volumul sa nu scurteze vizual silueta.', baseSections, 'pantaloni-cu-snur-lung-bej-femei-outfit.webp'),
   page('blog/greseli-outfit-oversized', 'Greseli in outfituri oversized', 'Intrebari utile greseli in outfituri oversized: volum fara proportie, materiale slabe, culori haotice si pant stacking excesiv.', 'Greseli in outfituri oversized', 'Oversized nu inseamna haine prea mari, ci volum ales intentionat si echilibrat prin proportii.', baseSections, 'pantaloni-cu-snur-lung-maro-produs-unisex.webp'),
   page('blog/trenduri-moda-urbana-2026', 'Trenduri moda urbana 2026', 'Trenduri moda urbana 2026: baggy, loose fit, monochrome, influente japoneze, layering si materiale dense.', 'Trenduri moda urbana 2026', 'In 2026, moda urbana se muta spre croieli relaxate, palete mai curate si outfituri care pot fi purtate zilnic.', baseSections, 'tinuta-unisex-pantaloni-largi-snur-extra-lung.png'),
+  ...summerFashionAuthorityBlogPosts2026,
   ...queryDrivenBlogPosts,
   ...visibleScheduledBlogPosts,
 ]);

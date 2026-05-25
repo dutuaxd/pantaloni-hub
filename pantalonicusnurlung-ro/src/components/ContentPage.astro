@@ -10,7 +10,9 @@ const canonical = page.slug ? `${SITE}/${page.slug}/` : `${SITE}/`;
 const image = page.image.endsWith('.webp') ? `/images/products/${page.image}` : `/${page.image}`;
 const title = page.title;
 const articleImages = Array.isArray(page.images) ? page.images : [];
-const isScheduledArticle = articleImages.length > 0;
+const isSummerFashionAuthority = page.articleType === 'summer-fashion-authority';
+const hasArticleGallery = articleImages.length > 0;
+const isScheduledArticle = hasArticleGallery && !isSummerFashionAuthority;
 const keyTakeaways = Array.isArray(page.keyTakeaways) ? page.keyTakeaways.map(publicCopy) : [];
 const comparisonRows = Array.isArray(page.comparisonRows) ? page.comparisonRows : [];
 const articleFaqs = Array.isArray(page.faqs) && page.faqs.length > 0 ? page.faqs : faqs;
@@ -200,7 +202,7 @@ const schema = [
             </section>
           )}
 
-          {articleImages.length > 0 && (
+          {hasArticleGallery && (
             <section>
               <h2>Galerie vizuala pentru articol</h2>
               <div class="gallery-grid article-image-grid">
