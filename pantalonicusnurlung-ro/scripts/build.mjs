@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { spawn } from 'node:child_process';
 import { fetchImages } from './fetch-images.mjs';
+import { optimizeBlogSeoImages } from './optimize-blog-seo-images.mjs';
 const root = process.cwd();
 const blogRoot = path.join(root, 'src', 'content', 'blog');
 const stash = path.join(root, '.astro-json-stash');
@@ -42,6 +43,15 @@ function runAstro(){
 }
 const files = await jsonFiles();
 let code = 1;
-try { await fetchImages(); await moveAway(files); code = await runAstro(); } finally { await restore(files); }
+try {
+  await fetchImages();
+  await optimizeBlogSeoImages();
+  await moveAway(files);
+  code = await runAstro();
+  const optimized = await optimizeBlogSeoImages();
+  if (code === 0 && optimized.converted > 0) code = await runAstro();
+} finally {
+  await restore(files);
+}
 let built = false; try { await fs.access(path.join(root, 'dist', 'sitemap-index.xml')); built = true; } catch {}
 process.exit(code === 0 || built ? 0 : code);

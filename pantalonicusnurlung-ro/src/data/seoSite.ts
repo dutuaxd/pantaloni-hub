@@ -554,6 +554,96 @@ const rawBlogPosts = withPremiumEditorialImages([
   page('blog/baggy-daca-esti-scund', 'Cum porti baggy daca esti scund', 'Ghid pentru persoane scunde: pantaloni baggy, proportii, talie, sneakers si greseli de evitat.', 'Cum porti baggy daca esti scund', 'Daca esti scund, pantalonii baggy trebuie sa pastreze talia clara si tivul controlat, ca volumul sa nu scurteze vizual silueta.', baseSections, 'pantaloni-cu-snur-lung-bej-femei-outfit.webp'),
   page('blog/greseli-outfit-oversized', 'Greseli in outfituri oversized', 'Intrebari utile greseli in outfituri oversized: volum fara proportie, materiale slabe, culori haotice si pant stacking excesiv.', 'Greseli in outfituri oversized', 'Oversized nu inseamna haine prea mari, ci volum ales intentionat si echilibrat prin proportii.', baseSections, 'pantaloni-cu-snur-lung-maro-produs-unisex.webp'),
   page('blog/trenduri-moda-urbana-2026', 'Trenduri moda urbana 2026', 'Trenduri moda urbana 2026: baggy, loose fit, monochrome, influente japoneze, layering si materiale dense.', 'Trenduri moda urbana 2026', 'In 2026, moda urbana se muta spre croieli relaxate, palete mai curate si outfituri care pot fi purtate zilnic.', baseSections, 'tinuta-unisex-pantaloni-largi-snur-extra-lung.png'),
+  {
+    ...page('blog/tricou-tie-dye-oversized-pantaloni-negri-snur-lung', 'Tricou tie dye oversized cu pantaloni negri cu snur lung', 'Ghid despre tricou tie dye oversized purtat cu pantaloni negri cu snur lung: contrast, proportii, sneakers si styling unisex.', 'Tricou tie dye oversized cu pantaloni negri cu snur lung', 'Un tricou tie dye oversized functioneaza cel mai bine cu pantaloni negri cu snur lung atunci cand vrei o tinuta statement, dar controlata. Imprimeul ramane sus, pantalonii tin baza neutra, iar snurul alb leaga vizual outfitul.', [
+      ['Intentia articolului', 'Acest ghid acopera cautarea pentru tricou tie dye oversized purtat cu pantaloni negri cu snur lung. Nu concureaza cu paginile despre pantaloni cu snur lung, pentru ca piesa principala analizata este tricoul cu imprimeu si felul in care se echilibreaza cu o baza neagra.'],
+      ['De ce merge combinatia', 'Tie dye-ul bej-negru are textura puternica, iar pantalonii negri reduc aglomerarea vizuala. Snurul lung alb creeaza o linie verticala clara si face tinuta mai usor de citit in poze de lookbook sau social media.'],
+      ['Cum alegi marimea', 'Alege tricoul suficient de larg incat sa cada peste talie, dar nu atat de lung incat sa acopere complet snurul. Daca pantalonii sunt foarte baggy, tricoul poate ramane oversized, dar tivul trebuie sa lase centrul tinutei vizibil.'],
+      ['Pantofi si accesorii', 'Sneakersii albi sunt cea mai simpla alegere deoarece repeta culoarea snurului. Accesoriile ar trebui sa fie discrete: lant subtire, sapca simpla sau geanta mica fara logo mare.'],
+      ['Cand il porti', 'Tinuta merge la iesiri urbane, festival, poze de continut, weekend si drumuri prin oras. Pentru contexte formale, imprimeul tie dye devine prea relaxat, asa ca merita inlocuit cu un tricou simplu.'],
+    ], 'images/blog/tricou-tie-dye-oversized-pantaloni-negri-snur-lung-outfit.png'),
+    imageLimit: 2,
+    images: [
+      { file: 'images/blog/tricou-tie-dye-oversized-pantaloni-negri-snur-lung-outfit.png', alt: 'Cuplu in tricouri tie dye oversized si pantaloni negri cu snur lung alb', title: 'Tricou tie dye oversized cu pantaloni negri cu snur lung' },
+      { file: 'images/blog/tricou-tie-dye-oversized-bej-negru-produs.png', alt: 'Tricou tie dye oversized bej si negru fotografiat pe fundal alb', title: 'Tricou tie dye oversized bej negru' },
+    ],
+    seoEngine: { cluster: 'tricouri-tie-dye' },
+  },
+  {
+    ...page('blog/tricou-gri-prespalat-buzunar-aplicat', 'Tricou gri prespalat cu buzunar aplicat', 'Ghid despre tricou gri prespalat cu buzunar aplicat: textura, proportii oversized, pantaloni negri cu snur si styling unisex.', 'Tricou gri prespalat cu buzunar aplicat', 'Tricoul gri prespalat cu buzunar aplicat este o piesa de mijloc intre basic si statement: ramane usor de purtat, dar buzunarul si cusaturile verticale dau tinutei o directie streetwear clara.', [
+      ['Intentia articolului', 'Pagina raspunde cautarii pentru tricou gri prespalat cu buzunar aplicat. Subiectul este diferit de ghidurile despre pantaloni, deoarece explica detaliile tricoului: spalare, buzunar, cusaturi si proportie peste pantaloni negri.'],
+      ['Ce adauga buzunarul', 'Buzunarul aplicat rupe suprafata simpla a tricoului si adauga un reper vizual pe piept. La un model gri, acest detaliu se vede suficient fara sa para agresiv sau incarcat.'],
+      ['Cum il combini', 'Pantalonii negri cu snur lung sunt baza cea mai buna pentru ca pastreaza contrastul jos. Snurul alb poate ramane vizibil sub tiv, iar tricoul gri lasa loc pentru sneakers albi sau gri.'],
+      ['Fit recomandat', 'Pentru un look relaxat, umarul trebuie sa cada usor, iar maneca sa ramana larga. Daca tricoul este prea stramt, buzunarul aplicat pare decorativ, nu parte din croiala oversized.'],
+      ['Cand alegi griul', 'Griul prespalat este potrivit cand vrei textura, dar nu vrei un outfit all black. Functioneaza ziua, la facultate, la plimbare sau intr-un look de weekend cu pantaloni largi.'],
+    ], 'images/blog/tricou-gri-prespalat-buzunar-aplicat-produs.png'),
+    imageLimit: 2,
+    images: [
+      { file: 'images/blog/tricou-gri-prespalat-buzunar-aplicat-produs.png', alt: 'Tricou gri prespalat cu buzunar aplicat si cusaturi verticale', title: 'Tricou gri prespalat cu buzunar aplicat' },
+      { file: 'images/blog/tricou-gri-prespalat-buzunar-aplicat-outfit.png', alt: 'Cuplu in tricouri gri prespalate cu buzunar si pantaloni negri cu snur lung', title: 'Tricou gri prespalat cu buzunar in outfit unisex' },
+    ],
+    seoEngine: { cluster: 'tricouri-buzunar' },
+  },
+  {
+    ...page('blog/tricou-negru-prespalat-buzunar-aplicat', 'Tricou negru prespalat cu buzunar aplicat', 'Cum porti un tricou negru prespalat cu buzunar aplicat: all black, pantaloni largi, snur alb si proportii streetwear.', 'Tricou negru prespalat cu buzunar aplicat', 'Tricoul negru prespalat cu buzunar aplicat este varianta mai inchisa si mai urbana a tricoului cu detaliu pe piept. Merge foarte bine in outfituri all black, unde textura materialului tine loc de imprimeu.', [
+      ['Intentia articolului', 'Acest articol izoleaza intentia pentru tricou negru cu buzunar aplicat. Nu se suprapune cu ghidul gri, fiind orientat spre all black, contrast discret si styling mai inchis.'],
+      ['De ce nu pare basic', 'Negrul prespalat scoate in fata textura materialului, iar buzunarul aplicat creeaza volum vizual. Cusaturile si marginile usor decolorate fac tricoul sa para lucrat, nu simplu.'],
+      ['Cu pantaloni negri', 'Combinatia cu pantaloni negri largi este fireasca, dar trebuie pastrat un reper luminos. Snurul alb, sneakersii albi sau o soseta alba pot rupe blocul de negru fara sa strice tinuta.'],
+      ['Proportii curate', 'Daca tricoul are buzunar si croiala larga, pantalonul poate fi baggy, dar partea de sus nu trebuie sa coboare prea mult peste talie. Snurul ramane detaliul care centreaza outfitul.'],
+      ['Unde functioneaza', 'Lookul este potrivit pentru seara, iesiri urbane, concerte si tinute minimal streetwear. Ziua, poate fi temperat cu sneakers albi si o jacheta gri.'],
+    ], 'images/blog/tricou-negru-prespalat-buzunar-aplicat-outfit.png'),
+    imageLimit: 2,
+    images: [
+      { file: 'images/blog/tricou-negru-prespalat-buzunar-aplicat-outfit.png', alt: 'Cuplu in tricouri negre prespalate cu buzunar aplicat si pantaloni negri largi', title: 'Tricou negru prespalat cu buzunar in outfit' },
+      { file: 'images/blog/tricou-negru-prespalat-buzunar-aplicat-produs.png', alt: 'Tricou negru prespalat cu buzunar aplicat fotografiat pe fundal alb', title: 'Tricou negru prespalat cu buzunar aplicat' },
+    ],
+    seoEngine: { cluster: 'tricouri-buzunar' },
+  },
+  {
+    ...page('blog/tricou-gri-oversized-cusaturi-laterale', 'Tricou gri oversized cu cusaturi laterale', 'Ghid despre tricou gri oversized cu cusaturi laterale: fit, linii de croiala, pantaloni negri cu snur si tinute minimaliste.', 'Tricou gri oversized cu cusaturi laterale', 'Tricoul gri oversized cu cusaturi laterale este pentru tinute minimaliste in care croiala face toata treaba. Nu are imprimeu mare, dar liniile laterale dau forma si fac piesa mai interesanta decat un basic simplu.', [
+      ['Intentia articolului', 'Pagina tinteste tricoul gri oversized cu cusaturi laterale, nu tricoul cu buzunar sau pantalonii cu snur. Diferenta principala este constructia laterala, utila pentru cei care cauta piese minimaliste cu detalii de croiala.'],
+      ['Rolul cusaturilor', 'Cusaturile laterale traseaza diagonale subtile care dau corpului o forma mai clara. Pe gri, aceste linii se vad natural si adauga structura fara imprimeu.'],
+      ['Cum se asaza pe corp', 'Fitul trebuie sa fie relaxat, cu umar cazut si tiv drept. Cand materialul este prea moale, liniile laterale dispar; cand este prea rigid, tricoul nu mai cade natural peste pantaloni.'],
+      ['Cu ce pantaloni merge', 'Pantalonii negri cu snur lung raman alegerea cea mai sigura. Griul creeaza contrast moderat, iar snurul alb mentine zona taliei interesanta.'],
+      ['Pentru ce stil', 'Este potrivit pentru moda urbana minimalist, tinute de zi, facultate, drumuri prin oras si layering cu jachete simple.'],
+    ], 'images/blog/tricou-gri-oversized-cusaturi-laterale-outfit.png'),
+    imageLimit: 2,
+    images: [
+      { file: 'images/blog/tricou-gri-oversized-cusaturi-laterale-outfit.png', alt: 'Cuplu in tricouri gri oversized cu cusaturi laterale si pantaloni negri cu snur lung', title: 'Tricou gri oversized cu cusaturi laterale in outfit' },
+      { file: 'images/blog/tricou-gri-oversized-cusaturi-laterale-produs.png', alt: 'Tricou gri oversized cu linii laterale de croiala pe fundal alb', title: 'Tricou gri oversized cu cusaturi laterale' },
+    ],
+    seoEngine: { cluster: 'tricouri-cusaturi' },
+  },
+  {
+    ...page('blog/tricou-taupe-oversized-pantaloni-negri', 'Tricou taupe oversized cu pantaloni negri', 'Cum porti tricou taupe oversized cu pantaloni negri: culori pamantii, snur alb, sneakers si tinute streetwear calme.', 'Tricou taupe oversized cu pantaloni negri', 'Tricoul taupe oversized aduce o alternativa mai calda la gri si negru. Cu pantaloni negri cu snur lung, culoarea ramane usor de purtat, dar tinuta capata un ton pamantiu mai rafinat.', [
+      ['Intentia articolului', 'Acest ghid acopera culoarea taupe in outfituri streetwear. Nu concureaza cu articolul gri, pentru ca raspunde unei intentii de paleta: bej-gri, earth tone, tonuri calde purtate cu pantaloni negri.'],
+      ['De ce taupe', 'Taupe-ul este mai bland decat negrul si mai cald decat griul rece. Pe un tricou oversized, culoarea arata bine in lumina naturala si se potriveste cu pantaloni negri fara contrast dur.'],
+      ['Cum echilibrezi tinuta', 'Pastreaza partea de jos simpla: pantaloni negri largi, snur alb si sneakers albi. Daca adaugi jacheta, merg variantele negre, gri inchis sau olive.'],
+      ['Fit si material', 'Croiala trebuie sa cada lejer, dar sa aiba suficienta greutate ca tivul sa nu se ridice. Cusaturile laterale ajuta tricoul sa nu para doar o marime prea mare.'],
+      ['Cand il alegi', 'Taupe-ul este bun pentru zi, cafenea, plimbare, city break si tinute de vara seara. Este mai putin dur decat all black si mai matur decat imprimeurile puternice.'],
+    ], 'images/blog/tricou-taupe-oversized-cusaturi-laterale-outfit.png'),
+    imageLimit: 2,
+    images: [
+      { file: 'images/blog/tricou-taupe-oversized-cusaturi-laterale-outfit.png', alt: 'Cuplu in tricouri taupe oversized si pantaloni negri cu snur lung', title: 'Tricou taupe oversized cu pantaloni negri' },
+      { file: 'images/blog/tricou-taupe-oversized-cusaturi-laterale-produs.png', alt: 'Tricou taupe oversized cu cusaturi laterale pe fundal alb', title: 'Tricou taupe oversized cu cusaturi laterale' },
+    ],
+    seoEngine: { cluster: 'tricouri-earth-tone' },
+  },
+  {
+    ...page('blog/tricou-negru-oversized-minimalist', 'Tricou negru oversized minimalist', 'Ghid despre tricou negru oversized minimalist: fara buzunar, cusaturi laterale, pantaloni negri largi si styling all black.', 'Tricou negru oversized minimalist', 'Tricoul negru oversized minimalist este piesa pentru outfituri curate, fara buzunar aplicat si fara imprimeu. Interesul vine din croiala, textura prespalata si felul in care cade peste pantaloni largi.', [
+      ['Intentia articolului', 'Pagina este separata de tricoul negru cu buzunar, deoarece discuta varianta minimalista fara buzunar. Cautarea este despre all black curat, nu despre detaliu aplicat pe piept.'],
+      ['Ce il face minimalist', 'Nu are grafica mare si nu are buzunar vizibil. Cusaturile laterale si textura materialului sunt suficiente pentru ca piesa sa nu para simpla sau generica.'],
+      ['All black fara monotonie', 'Intr-un outfit all black, diferentele de textura conteaza. Un tricou prespalat, pantaloni negri mai netezi si sneakers albi creeaza contrast fara culori suplimentare.'],
+      ['Cum alegi lungimea', 'Tivul trebuie sa ajunga peste talie, dar sa nu ascunda complet snurul. Daca snurul ramane vizibil, tinuta capata centru si proportie.'],
+      ['Cand il porti', 'Este potrivit pentru tinute de seara, streetwear minimalist, concerte si zile in care vrei o baza neagra usor de combinat cu orice jacheta.'],
+    ], 'images/blog/tricou-negru-oversized-minimalist-outfit.png'),
+    imageLimit: 2,
+    images: [
+      { file: 'images/blog/tricou-negru-oversized-minimalist-outfit.png', alt: 'Cuplu in tricouri negre oversized minimaliste si pantaloni negri largi', title: 'Tricou negru oversized minimalist in outfit all black' },
+      { file: 'images/blog/tricou-negru-oversized-minimalist-produs.png', alt: 'Tricou negru oversized minimalist fara buzunar pe fundal alb', title: 'Tricou negru oversized minimalist' },
+    ],
+    seoEngine: { cluster: 'tricouri-minimaliste' },
+  },
   ...summerFashionAuthorityBlogPosts2026,
   ...queryDrivenBlogPosts,
   ...visibleScheduledBlogPosts,
@@ -583,8 +673,97 @@ function blogRelatedLinks(page: any, index: number, allPosts: any[]) {
   }).slice(0, 8);
 }
 
+function cleanMetaTopic(text = '') {
+  return stripTrailingPunctuation(text)
+    .replace(/\s*\|\s*(Ghid Atelier AXD|PantaloniCuSnurLung\.ro|Ghid 2026|ghid vizual)\s*$/i, '')
+    .replace(/\s*-\s*tot ce trebuie sa stii\s*$/i, '')
+    .replace(/\s*:\s*(ghid vizual|idei de outfit|ghid complet)\s*$/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function coreMetaTopic(text = '') {
+  return cleanMetaTopic(text)
+    .replace(/\s*:\s*(casual|ghid|idei|tinute|outfit|fit|croiala|culoare|combinatii|asortare|eleganti|vara|iarna|toamna|primavara).*$/i, '')
+    .replace(/\s*\|\s*.*$/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function limitQuestion(text: string, maxLength: number) {
+  const clean = compactText(text).replace(/\?+$/g, '');
+  if (clean.length + 1 <= maxLength) return `${clean}?`;
+  const cut = clean.slice(0, maxLength - 1);
+  const lastSpace = cut.lastIndexOf(' ');
+  return `${cut.slice(0, lastSpace > 35 ? lastSpace : cut.length).replace(/[,:;|-]+$/g, '')}?`;
+}
+
+function startsAsQuestion(text = '') {
+  return /^(cum|cu ce|ce|de ce|unde|cand|care|cat|cati|cate|este|sunt|se poate|pot|merita)\b/i.test(cleanMetaTopic(text));
+}
+
+function questionMetaTitle(page: any) {
+  const source = coreMetaTopic(page.h1 || page.title || '');
+  const full = cleanMetaTopic(page.h1 || page.title || '');
+  const lower = full.toLowerCase();
+  if (startsAsQuestion(full)) return limitQuestion(full, 66);
+
+  let question = `Cum porti ${source}?`;
+  const isColorGuide = lower.includes('asort') || lower.includes('culoare') || /^(bej|gri|maro|verde|albastru|visiniu|portocaliu|galben|mov|crem)\b/i.test(source);
+  const isClothingPiece = /(tricou|pantaloni|rochie|sandale|set|hanorac|camasa|fusta|geanta|ochelari|costum|bermude|maieu|vesta|top)\b/i.test(source);
+  if (isColorGuide && !isClothingPiece) {
+    question = `Cu ce se asorteaza ${source}?`;
+  } else if (lower.includes('marime') || lower.includes('alegi') || lower.includes('fit') || lower.includes('croiala') || lower.includes('material')) {
+    question = `Cum alegi ${source}?`;
+  } else if (lower.includes('vs') || lower.includes('diferenta') || lower.includes('diferente')) {
+    question = `Care este diferenta: ${source}?`;
+  } else if (lower.includes('spalare') || lower.includes('intretinere') || lower.includes('pete') || lower.includes('scamosare') || lower.includes('miros')) {
+    question = `Cum rezolvi problema: ${source}?`;
+  } else if (lower.includes('nunta') || lower.includes('botez') || lower.includes('absolvire') || lower.includes('eveniment') || lower.includes('restaurant') || lower.includes('cununie')) {
+    question = `Ce porti la eveniment: ${source}?`;
+  }
+  return limitQuestion(question, 66);
+}
+
+function questionMetaDescription(page: any) {
+  const topic = coreMetaTopic(page.h1 || page.title || '');
+  const full = cleanMetaTopic(page.h1 || page.title || '');
+  const lower = full.toLowerCase();
+  let intent = `Afla cum porti ${topic}: proportii, culori, greseli de evitat si exemple clare pentru tinute urbane.`;
+
+  const isColorGuide = lower.includes('asort') || lower.includes('culoare') || /^(bej|gri|maro|verde|albastru|visiniu|portocaliu|galben|mov|crem)\b/i.test(topic);
+  const isClothingPiece = /(tricou|pantaloni|rochie|sandale|set|hanorac|camasa|fusta|geanta|ochelari|costum|bermude|maieu|vesta|top)\b/i.test(topic);
+  if (isColorGuide && !isClothingPiece) {
+    intent = `Afla cu ce se asorteaza ${topic}: culori sigure, combinatii de evitat, exemple de haine si raspuns rapid pentru tinute.`;
+  } else if (lower.includes('marime') || lower.includes('alegi') || lower.includes('fit') || lower.includes('croiala') || lower.includes('material')) {
+    intent = `Afla cum alegi ${topic}: marime, croiala, material, lungime si greseli care strica proportiile tinutei.`;
+  } else if (lower.includes('vs') || lower.includes('diferenta') || lower.includes('diferente')) {
+    intent = `Afla diferenta pentru ${topic}: cand alegi fiecare varianta, ce avantaje are si cum eviti o alegere gresita.`;
+  } else if (lower.includes('spalare') || lower.includes('intretinere') || lower.includes('pete') || lower.includes('scamosare') || lower.includes('miros')) {
+    intent = `Afla cum rezolvi ${topic}: pasi practici, ce sa eviti, cum protejezi materialul si cand merita curatare profesionala.`;
+  } else if (lower.includes('nunta') || lower.includes('botez') || lower.includes('absolvire') || lower.includes('eveniment') || lower.includes('restaurant') || lower.includes('cununie')) {
+    intent = `Afla ce porti pentru ${topic}: nivel de eleganta, culori potrivite, pantofi, greseli de evitat si exemple actuale.`;
+  }
+
+  return limitText(intent, 158);
+}
+
+function optimizeBlogQuestionMeta(post: any) {
+  if (startsAsQuestion(post.title) || startsAsQuestion(post.h1)) {
+    return {
+      ...post,
+      description: limitText(post.description || '', 158),
+    };
+  }
+  return {
+    ...post,
+    title: questionMetaTitle(post),
+    description: questionMetaDescription(post),
+  };
+}
+
 export const blogPosts = rawBlogPosts.map((post, index, allPosts) => ({
-  ...post,
+  ...optimizeBlogQuestionMeta(post),
   relatedLinks: Array.isArray((post as any).relatedLinks) && (post as any).relatedLinks.length > 0
     ? (post as any).relatedLinks
     : blogRelatedLinks(post, index, allPosts),

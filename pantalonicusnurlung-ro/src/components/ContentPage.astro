@@ -7,7 +7,7 @@ import { publicCopy, publicPage } from '../data/publicCopy';
 const { page: rawPage, isHome = false } = Astro.props;
 const page = publicPage(rawPage);
 const canonical = page.slug ? `${SITE}/${page.slug}/` : `${SITE}/`;
-const image = page.image.endsWith('.webp') ? `/images/products/${page.image}` : `/${page.image}`;
+const image = page.image.startsWith('images/') ? `/${page.image}` : page.image.endsWith('.webp') ? `/images/products/${page.image}` : `/${page.image}`;
 const title = page.title;
 const articleImages = Array.isArray(page.images) ? page.images : [];
 const isSummerFashionAuthority = page.articleType === 'summer-fashion-authority';

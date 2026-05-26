@@ -19,7 +19,7 @@ const title = `Blog pantaloni cu snur lung | Pagina ${currentPage}`;
 const description = `Pagina ${currentPage} din blogul PantaloniCuSnurLung.ro: ghiduri despre tinute, culori, evenimente si moda urbana 2026.`;
 const canonical = `${SITE}${blogPageUrl(currentPage)}`;
 const schema = [organizationSchema(), { '@context': 'https://schema.org', '@type': 'Blog', name: title, url: canonical }];
-const imagePath = (image: string) => image.endsWith('.webp') ? `/images/products/${image}` : `/${image}`;
+const imagePath = (image: string) => image.startsWith('images/') ? `/${image}` : image.endsWith('.webp') ? `/images/products/${image}` : `/${image}`;
 ---
 <Layout title={title} description={description} canonical={canonical} schema={schema}>
   <section class="content-hero">

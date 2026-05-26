@@ -7,7 +7,7 @@ const title = 'Blog pantaloni cu snur lung | Ghiduri 2026';
 const description = 'Blog cu ghiduri in romana despre pantaloni cu snur lung: tinute, noduri, diferente snur scurt/lung, trenduri moda urbana 2026 si vara.';
 const canonical = `${SITE}/blog/`;
 const schema = [organizationSchema(), { '@context': 'https://schema.org', '@type': 'Blog', name: title, url: canonical }];
-const imagePath = (image: string) => image.endsWith('.webp') ? `/images/products/${image}` : `/${image}`;
+const imagePath = (image: string) => image.startsWith('images/') ? `/${image}` : image.endsWith('.webp') ? `/images/products/${image}` : `/${image}`;
 const { posts: rawPosts, currentPage, totalPages } = getBlogPage(1);
 const posts = rawPosts.map(publicPage);
 const paginationHtml = getBlogPaginationHtml(currentPage, totalPages);

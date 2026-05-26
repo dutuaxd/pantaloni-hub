@@ -1,3 +1,6 @@
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+
 type Section = [string, string];
 
 type BlogImage = {
@@ -15,9 +18,22 @@ type BlogPost = {
   h1: string;
   intro: string;
   image: string;
+  imageLimit?: number;
   images?: BlogImage[];
   sections?: Section[];
 };
+
+type SeoImageManifestEntry = {
+  source: string;
+  target: string;
+  alt: string;
+  title: string;
+  slug: string;
+  role: string;
+};
+
+const seoImageManifestPath = join(process.cwd(), 'public', 'images', 'blog-seo', 'manifest.json');
+const seoImageManifest = new Map<string, SeoImageManifestEntry>();
 
 const fallbackFiles = [
   'images/products/pantaloni-cu-snur-lung-negri-produs-unisex.webp',
@@ -36,6 +52,62 @@ function normalizeFile(file: string) {
   if (file.startsWith('images/')) return file;
   if (file.endsWith('.webp')) return `images/products/${file}`;
   return file.replace(/^\/+/, '');
+}
+
+function slugifyText(text: string, maxLength = 80) {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, maxLength)
+    .replace(/-+$/g, '');
+}
+
+function fileBaseName(file: string) {
+  const name = file.split('/').pop() || 'imagine-blog';
+  return name.replace(/\.[a-z0-9]+$/i, '');
+}
+
+function uniqueBlogFile(post: BlogPost, sourceFile: string, index: number) {
+  const slug = post.slug.replace(/^blog\//, '');
+  const cleanSlug = slugifyText(slug, 64) || 'blog';
+  const cleanSource = slugifyText(fileBaseName(sourceFile), 36) || 'imagine';
+  return `images/blog-seo/${cleanSlug}/${String(index + 1).padStart(2, '0')}-${cleanSource}.webp`;
+}
+
+function uniqueBlogHeroFile(post: BlogPost, sourceFile: string) {
+  const slug = post.slug.replace(/^blog\//, '');
+  const cleanSlug = slugifyText(slug, 64) || 'blog';
+  const cleanSource = slugifyText(fileBaseName(sourceFile), 36) || 'imagine';
+  return `images/blog-seo/${cleanSlug}/00-hero-${cleanSource}.webp`;
+}
+
+function registerSeoImage(post: BlogPost, sourceFile: string, targetFile: string, alt: string, title: string, role: string) {
+  const normalizedSource = normalizeFile(sourceFile);
+  const publicDir = join(process.cwd(), 'public');
+  const sourcePath = join(publicDir, normalizedSource);
+  if (!existsSync(sourcePath)) return normalizedSource;
+
+  mkdirSync(dirname(join(publicDir, targetFile)), { recursive: true });
+  seoImageManifest.set(targetFile, {
+    source: normalizedSource,
+    target: targetFile,
+    alt,
+    title,
+    slug: post.slug,
+    role,
+  });
+  mkdirSync(dirname(seoImageManifestPath), { recursive: true });
+  writeFileSync(seoImageManifestPath, JSON.stringify([...seoImageManifest.values()], null, 2));
+  return targetFile;
+}
+
+function seoImageFile(post: BlogPost, sourceFile: string, index: number, alt: string, title: string, role: string, isHero = false) {
+  const normalizedSource = normalizeFile(sourceFile);
+  const targetFile = isHero ? uniqueBlogHeroFile(post, normalizedSource) : uniqueBlogFile(post, normalizedSource, index);
+  return registerSeoImage(post, normalizedSource, targetFile, alt, title, role);
 }
 
 function slugNumber(slug: string) {
@@ -98,6 +170,25 @@ function promptFor(role: string, title: string, subject: string, context: string
   return `${common} Imagine secundara diferita pentru articolul "${title}", cu alta lumina reala, alt unghi sau detaliu de variatie: accesoriu, incaltaminte, material sau situatie reala. Subiect: ${subject}. Context: ${context}.`;
 }
 
+function altFor(post: BlogPost, subject: string, role: string, index: number) {
+  const h1 = stripAltNoise(post.h1 || post.title);
+  const roleText: Record<string, string> = {
+    hero: 'imagine principala',
+    detaliu: 'detaliu de material si croiala',
+    context: 'tinuta completa in context urban',
+    variatie: 'variatie vizuala pentru inspiratie',
+  };
+  return `${subject} pentru ${h1}, ${roleText[role] || `imagine ${index + 1}`} SEO Atelier AXD`.slice(0, 155);
+}
+
+function stripAltNoise(text: string) {
+  return text
+    .replace(/\s*\|\s*Ghid Atelier AXD\s*$/i, '')
+    .replace(/\s*\|\s*PantaloniCuSnurLung\.ro\s*$/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export function withPremiumEditorialImages<T extends BlogPost>(posts: T[]): T[] {
   return posts.map((post) => {
     const subject = detectSubject(post);
@@ -106,19 +197,25 @@ export function withPremiumEditorialImages<T extends BlogPost>(posts: T[]): T[] 
     const files = uniqFiles(existingFiles, post.slug);
     const roles = ['hero', 'detaliu', 'context', 'variatie'];
     const labels = ['HERO', 'DETALIU', 'CONTEXT', 'VARIATIE'];
-    const images = roles.map((role, index) => {
-      const title = `${post.title} - ${labels[index]}`.slice(0, 90);
+    const imageLimit = Math.max(1, Math.min(post.imageLimit || roles.length, roles.length));
+    const images = roles.slice(0, imageLimit).map((role, index) => {
+      const title = `${stripAltNoise(post.h1 || post.title)} - ${labels[index]}`.slice(0, 90);
+      const alt = altFor(post, subject, role, index);
+      const file = seoImageFile(post, files[index], index, alt, title, role);
       return {
-        file: files[index],
-        alt: `${subject} - ${labels[index].toLowerCase()} pentru ${post.title}`.slice(0, 150),
+        file,
+        alt,
         title,
         role,
         prompt: promptFor(role, post.title, subject, context),
       };
     });
+    const heroAlt = altFor(post, subject, 'hero', 0);
+    const heroTitle = `${stripAltNoise(post.h1 || post.title)} - HERO`.slice(0, 90);
 
     return {
       ...post,
+      image: seoImageFile(post, files[0] || post.image, 0, heroAlt, heroTitle, 'hero', true),
       images,
     };
   });
