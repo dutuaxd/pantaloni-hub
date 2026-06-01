@@ -1,6 +1,7 @@
 import { scheduledBlogPosts } from './scheduledBlogPosts';
 import { queryDrivenBlogPosts } from './queryDrivenBlogPosts';
 import { summerFashionAuthorityBlogPosts2026 } from './summerFashionAuthorityBlogPosts2026';
+import { searchConsoleFashionBlogPosts2026 } from './searchConsoleFashionBlogPosts2026';
 // Removed programmatic arrays to comply with Phase 1 - Crawl Budget & Topo-SEO Restructuring
 // Focus on pillar articles instead of spam combinations
 import { withPremiumEditorialImages } from './editorialImagePrompts';
@@ -645,6 +646,7 @@ const rawBlogPosts = withPremiumEditorialImages([
     seoEngine: { cluster: 'tricouri-minimaliste' },
   },
   ...summerFashionAuthorityBlogPosts2026,
+  ...searchConsoleFashionBlogPosts2026,
   ...queryDrivenBlogPosts,
   ...visibleScheduledBlogPosts,
 ]);
