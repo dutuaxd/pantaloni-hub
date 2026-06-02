@@ -4,6 +4,7 @@ import { summerFashionAuthorityBlogPosts2026 } from './summerFashionAuthorityBlo
 import { searchConsoleFashionBlogPosts2026 } from './searchConsoleFashionBlogPosts2026';
 import { researchedPantsLongTailBlogPosts2026 } from './researchedPantsLongTailBlogPosts2026';
 import { respectfulAudiencePantsBlogPosts2026 } from './respectfulAudiencePantsBlogPosts2026';
+import { questionAnswerClothingBlogPosts2026 } from './questionAnswerClothingBlogPosts2026';
 // Removed programmatic arrays to comply with Phase 1 - Crawl Budget & Topo-SEO Restructuring
 // Focus on pillar articles instead of spam combinations
 import { withPremiumEditorialImages } from './editorialImagePrompts';
@@ -651,6 +652,7 @@ const rawBlogPosts = withPremiumEditorialImages([
   ...searchConsoleFashionBlogPosts2026,
   ...researchedPantsLongTailBlogPosts2026,
   ...respectfulAudiencePantsBlogPosts2026,
+  ...questionAnswerClothingBlogPosts2026,
   ...queryDrivenBlogPosts,
   ...visibleScheduledBlogPosts,
 ]);
