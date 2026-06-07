@@ -6,7 +6,7 @@ export async function getStaticPaths(){ const posts=(await Astro.glob('../../con
 const { post } = Astro.props; const Content = post.Content;
 const folder = post.file.split(/[\\/]/).slice(-2,-1)[0];
 const modules = import.meta.glob('../../content/blog/**/*.{jpg,jpeg,png,webp,avif}', { eager:true });
-const meta = blogImages[folder];
+const meta = blogImages[folder] ?? [];
 const imageFor = (name)=>Object.entries(modules).find(([k])=>k.endsWith('/'+folder+'/'+name))?.[1]?.default;
 const schema={ '@context':'https://schema.org', '@type':'Article', headline:post.frontmatter.title, description:post.frontmatter.metaDescription, image:post.frontmatter.images.hero.src, mainEntityOfPage:post.frontmatter.canonicalUrl, inLanguage:'ro-RO' };
 ---
