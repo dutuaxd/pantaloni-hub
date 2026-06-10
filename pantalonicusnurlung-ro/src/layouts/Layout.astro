@@ -3,7 +3,6 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SEOHead from '../components/SEOHead.astro';
 import CookieBanner from '../components/CookieBanner.astro';
-import { SHOP } from '../data/seoSite';
 import '../styles/global.css';
 interface Props { title:string; description:string; canonical?:string; image?:string; type?:string; schema?:unknown; }
 const props = Astro.props;
@@ -22,13 +21,6 @@ const props = Astro.props;
 <body>
   <Header />
   <main><slot /></main>
-  <aside class="promo-widget" aria-label="Colectia Atelier AXD">
-    <a href={SHOP} target="_blank" rel="noopener">
-      <span>AtelierAXD</span>
-      <strong>Colectia de pantaloni</strong>
-      <small>Modele selectate pentru fit urban</small>
-    </a>
-  </aside>
   <Footer />
   <CookieBanner />
   <script is:inline>

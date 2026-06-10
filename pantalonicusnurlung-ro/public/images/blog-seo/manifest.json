@@ -720,6 +720,86 @@
     "role": "hero"
   },
   {
+    "source": "images/products/pantaloni-cu-snur-lung-negri-produs-unisex.webp",
+    "target": "images/blog-seo/outfituri-monocrome-streetwear/01-pantaloni-cu-snur-lung-negri-produs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Outfituri monocrome streetwear, imagine principala SEO Atelier AXD",
+    "title": "Outfituri monocrome streetwear - HERO",
+    "slug": "blog/outfituri-monocrome-streetwear",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-outfit-masculin-pantaloni-wide-leg-maro.png",
+    "target": "images/blog-seo/outfituri-monocrome-streetwear/02-atelier-axd-outfit-masculin-pantalon.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Outfituri monocrome streetwear, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Outfituri monocrome streetwear - DETALIU",
+    "slug": "blog/outfituri-monocrome-streetwear",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/products/pantaloni-cu-snur-lung-negri-barbati-outfit.webp",
+    "target": "images/blog-seo/outfituri-monocrome-streetwear/03-pantaloni-cu-snur-lung-negri-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Outfituri monocrome streetwear, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Outfituri monocrome streetwear - CONTEXT",
+    "slug": "blog/outfituri-monocrome-streetwear",
+    "role": "context"
+  },
+  {
+    "source": "images/products/pantaloni-cu-snur-lung-negri-femei-outfit.webp",
+    "target": "images/blog-seo/outfituri-monocrome-streetwear/04-pantaloni-cu-snur-lung-negri-femei-o.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Outfituri monocrome streetwear, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Outfituri monocrome streetwear - VARIATIE",
+    "slug": "blog/outfituri-monocrome-streetwear",
+    "role": "variatie"
+  },
+  {
+    "source": "images/products/pantaloni-cu-snur-lung-negri-produs-unisex.webp",
+    "target": "images/blog-seo/outfituri-monocrome-streetwear/00-hero-pantaloni-cu-snur-lung-negri-produs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Outfituri monocrome streetwear, imagine principala SEO Atelier AXD",
+    "title": "Outfituri monocrome streetwear - HERO",
+    "slug": "blog/outfituri-monocrome-streetwear",
+    "role": "hero"
+  },
+  {
+    "source": "tinuta-unisex-pantaloni-largi-snur-extra-lung.png",
+    "target": "images/blog-seo/trenduri-streetwear-2026/01-tinuta-unisex-pantaloni-largi-snur-e.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Trenduri streetwear 2026, imagine principala SEO Atelier AXD",
+    "title": "Trenduri streetwear 2026 - HERO",
+    "slug": "blog/trenduri-streetwear-2026",
+    "role": "hero"
+  },
+  {
+    "source": "images/products/pantaloni-cu-snur-lung-negri-produs-unisex.webp",
+    "target": "images/blog-seo/trenduri-streetwear-2026/02-pantaloni-cu-snur-lung-negri-produs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Trenduri streetwear 2026, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Trenduri streetwear 2026 - DETALIU",
+    "slug": "blog/trenduri-streetwear-2026",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/products/pantaloni-cu-snur-lung-negri-barbati-outfit.webp",
+    "target": "images/blog-seo/trenduri-streetwear-2026/03-pantaloni-cu-snur-lung-negri-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Trenduri streetwear 2026, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Trenduri streetwear 2026 - CONTEXT",
+    "slug": "blog/trenduri-streetwear-2026",
+    "role": "context"
+  },
+  {
+    "source": "images/products/pantaloni-cu-snur-lung-negri-femei-outfit.webp",
+    "target": "images/blog-seo/trenduri-streetwear-2026/04-pantaloni-cu-snur-lung-negri-femei-o.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Trenduri streetwear 2026, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Trenduri streetwear 2026 - VARIATIE",
+    "slug": "blog/trenduri-streetwear-2026",
+    "role": "variatie"
+  },
+  {
+    "source": "tinuta-unisex-pantaloni-largi-snur-extra-lung.png",
+    "target": "images/blog-seo/trenduri-streetwear-2026/00-hero-tinuta-unisex-pantaloni-largi-snur-e.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Trenduri streetwear 2026, imagine principala SEO Atelier AXD",
+    "title": "Trenduri streetwear 2026 - HERO",
+    "slug": "blog/trenduri-streetwear-2026",
+    "role": "hero"
+  },
+  {
     "source": "images/blog/tricou-tie-dye-oversized-pantaloni-negri-snur-lung-outfit.png",
     "target": "images/blog-seo/tricou-tie-dye-oversized-pantaloni-negri-snur-lung/01-tricou-tie-dye-oversized-pantaloni-n.webp",
     "alt": "tricou premium purtat cu pantaloni cu snur lung pentru Tricou tie dye oversized cu pantaloni negri cu snur lung, imagine principala SEO Atelier AXD",
@@ -38101,6 +38181,966 @@
     "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung pentru facultate: idei de outfit, imagine principala SEO Atelier AXD",
     "title": "Pantaloni cu snur lung pentru facultate: idei de outfit - HERO",
     "slug": "blog/pantaloni-cu-snur-lung-pentru-facultate-idei-de-outfit-2026-06-02",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-m-n-regl-nd-fier-c-lcat-setare-mini.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-pentru-oras-idei-de-outfit-2026-06-03/01-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung pentru oras: idei de outfit, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni cu snur lung pentru oras: idei de outfit - HERO",
+    "slug": "blog/pantaloni-cu-snur-lung-pentru-oras-idei-de-outfit-2026-06-03",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-macro-photography-8k-resolution-a-p.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-pentru-oras-idei-de-outfit-2026-06-03/02-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung pentru oras: idei de outfit, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni cu snur lung pentru oras: idei de outfit - DETALIU",
+    "slug": "blog/pantaloni-cu-snur-lung-pentru-oras-idei-de-outfit-2026-06-03",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-hero-fashion-studio-photography-sof.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-pentru-oras-idei-de-outfit-2026-06-03/03-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung pentru oras: idei de outfit, tinuta completa in context urban SEO Atelier AX",
+    "title": "Pantaloni cu snur lung pentru oras: idei de outfit - CONTEXT",
+    "slug": "blog/pantaloni-cu-snur-lung-pentru-oras-idei-de-outfit-2026-06-03",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-organizare-dulap-haine-ghid-practic.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-pentru-oras-idei-de-outfit-2026-06-03/04-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung pentru oras: idei de outfit, variatie vizuala pentru inspiratie SEO Atelier ",
+    "title": "Pantaloni cu snur lung pentru oras: idei de outfit - VARIATIE",
+    "slug": "blog/pantaloni-cu-snur-lung-pentru-oras-idei-de-outfit-2026-06-03",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-m-n-regl-nd-fier-c-lcat-setare-mini.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-pentru-oras-idei-de-outfit-2026-06-03/00-hero-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung pentru oras: idei de outfit, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni cu snur lung pentru oras: idei de outfit - HERO",
+    "slug": "blog/pantaloni-cu-snur-lung-pentru-oras-idei-de-outfit-2026-06-03",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/sitemap-blogs-1-xml-pantaloni-latex-vinil.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-casuali-sau-premium-idei-de-outfit-2026-0/01-sitemap-blogs-1-xml-pantaloni-latex.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung standard sau premium: idei de outfit, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni cu snur lung standard sau premium: idei de outfit - HERO",
+    "slug": "blog/pantaloni-cu-snur-lung-casuali-sau-premium-idei-de-outfit-2026-06-03",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/sitemap-blogs-1-xml-pantaloni-mom-fit-premium-denim-hero.jpg",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-casuali-sau-premium-idei-de-outfit-2026-0/02-sitemap-blogs-1-xml-pantaloni-mom-fi.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung standard sau premium: idei de outfit, detaliu de material si croiala SEO Ate",
+    "title": "Pantaloni cu snur lung standard sau premium: idei de outfit - DETALIU",
+    "slug": "blog/pantaloni-cu-snur-lung-casuali-sau-premium-idei-de-outfit-2026-06-03",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/sitemap-blogs-1-xml-pantaloni-scurti-barbati-ghid-deschis-stil.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-casuali-sau-premium-idei-de-outfit-2026-0/03-sitemap-blogs-1-xml-pantaloni-scurti.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung standard sau premium: idei de outfit, tinuta completa in context urban SEO A",
+    "title": "Pantaloni cu snur lung standard sau premium: idei de outfit - CONTEXT",
+    "slug": "blog/pantaloni-cu-snur-lung-casuali-sau-premium-idei-de-outfit-2026-06-03",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/sitemap-blogs-1-xml-pantaloni-scurti-blugi-fete-stil-urban.jpg",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-casuali-sau-premium-idei-de-outfit-2026-0/04-sitemap-blogs-1-xml-pantaloni-scurti.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung standard sau premium: idei de outfit, variatie vizuala pentru inspiratie SEO",
+    "title": "Pantaloni cu snur lung standard sau premium: idei de outfit - VARIATIE",
+    "slug": "blog/pantaloni-cu-snur-lung-casuali-sau-premium-idei-de-outfit-2026-06-03",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/sitemap-blogs-1-xml-pantaloni-latex-vinil.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-casuali-sau-premium-idei-de-outfit-2026-0/00-hero-sitemap-blogs-1-xml-pantaloni-latex.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung standard sau premium: idei de outfit, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni cu snur lung standard sau premium: idei de outfit - HERO",
+    "slug": "blog/pantaloni-cu-snur-lung-casuali-sau-premium-idei-de-outfit-2026-06-03",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-photography-2.png",
+    "target": "images/blog-seo/cum-alegi-culoarea-la-pantaloni-cu-snur-lung-idei-de-outfit-2026/01-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Cum alegi culoarea la pantaloni cu snur lung: idei de outfit, imagine principala SEO Atelier AXD",
+    "title": "Cum alegi culoarea la pantaloni cu snur lung: idei de outfit - HERO",
+    "slug": "blog/cum-alegi-culoarea-la-pantaloni-cu-snur-lung-idei-de-outfit-2026-06-03",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-photography-3.png",
+    "target": "images/blog-seo/cum-alegi-culoarea-la-pantaloni-cu-snur-lung-idei-de-outfit-2026/02-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Cum alegi culoarea la pantaloni cu snur lung: idei de outfit, detaliu de material si croiala SEO At",
+    "title": "Cum alegi culoarea la pantaloni cu snur lung: idei de outfit - DETALIU",
+    "slug": "blog/cum-alegi-culoarea-la-pantaloni-cu-snur-lung-idei-de-outfit-2026-06-03",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-photography-4.png",
+    "target": "images/blog-seo/cum-alegi-culoarea-la-pantaloni-cu-snur-lung-idei-de-outfit-2026/03-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Cum alegi culoarea la pantaloni cu snur lung: idei de outfit, tinuta completa in context urban SEO ",
+    "title": "Cum alegi culoarea la pantaloni cu snur lung: idei de outfit - CONTEXT",
+    "slug": "blog/cum-alegi-culoarea-la-pantaloni-cu-snur-lung-idei-de-outfit-2026-06-03",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-photography-5.png",
+    "target": "images/blog-seo/cum-alegi-culoarea-la-pantaloni-cu-snur-lung-idei-de-outfit-2026/04-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Cum alegi culoarea la pantaloni cu snur lung: idei de outfit, variatie vizuala pentru inspiratie SE",
+    "title": "Cum alegi culoarea la pantaloni cu snur lung: idei de outfit - VARIATIE",
+    "slug": "blog/cum-alegi-culoarea-la-pantaloni-cu-snur-lung-idei-de-outfit-2026-06-03",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-photography-2.png",
+    "target": "images/blog-seo/cum-alegi-culoarea-la-pantaloni-cu-snur-lung-idei-de-outfit-2026/00-hero-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Cum alegi culoarea la pantaloni cu snur lung: idei de outfit, imagine principala SEO Atelier AXD",
+    "title": "Cum alegi culoarea la pantaloni cu snur lung: idei de outfit - HERO",
+    "slug": "blog/cum-alegi-culoarea-la-pantaloni-cu-snur-lung-idei-de-outfit-2026-06-03",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-photography-11.png",
+    "target": "images/blog-seo/pantaloni-negri-cu-snur-lung-cum-ii-porti-2026-06-04/01-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni negri cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni negri cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-negri-cu-snur-lung-cum-ii-porti-2026-06-04",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-photography-12.png",
+    "target": "images/blog-seo/pantaloni-negri-cu-snur-lung-cum-ii-porti-2026-06-04/02-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni negri cu snur lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni negri cu snur lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-negri-cu-snur-lung-cum-ii-porti-2026-06-04",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-photography-13.png",
+    "target": "images/blog-seo/pantaloni-negri-cu-snur-lung-cum-ii-porti-2026-06-04/03-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni negri cu snur lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni negri cu snur lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-negri-cu-snur-lung-cum-ii-porti-2026-06-04",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-photography-14.png",
+    "target": "images/blog-seo/pantaloni-negri-cu-snur-lung-cum-ii-porti-2026-06-04/04-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni negri cu snur lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni negri cu snur lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-negri-cu-snur-lung-cum-ii-porti-2026-06-04",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-photography-11.png",
+    "target": "images/blog-seo/pantaloni-negri-cu-snur-lung-cum-ii-porti-2026-06-04/00-hero-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni negri cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni negri cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-negri-cu-snur-lung-cum-ii-porti-2026-06-04",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-portrait-of.png",
+    "target": "images/blog-seo/pantaloni-barbati-cu-siret-lung-cum-ii-porti-2026-06-04/01-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni barbati cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni barbati cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-barbati-cu-siret-lung-cum-ii-porti-2026-06-04",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-professional-studio-fashion-photogr.png",
+    "target": "images/blog-seo/pantaloni-barbati-cu-siret-lung-cum-ii-porti-2026-06-04/02-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni barbati cu siret lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni barbati cu siret lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-barbati-cu-siret-lung-cum-ii-porti-2026-06-04",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-professional-studio-photography-of.png",
+    "target": "images/blog-seo/pantaloni-barbati-cu-siret-lung-cum-ii-porti-2026-06-04/03-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni barbati cu siret lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni barbati cu siret lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-barbati-cu-siret-lung-cum-ii-porti-2026-06-04",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/sitemap-blogs-1-xml-rider-echipat-cu-pantaloni-moto-touring-i-geac-adventure-p.png",
+    "target": "images/blog-seo/pantaloni-barbati-cu-siret-lung-cum-ii-porti-2026-06-04/04-sitemap-blogs-1-xml-rider-echipat-cu.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni barbati cu siret lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni barbati cu siret lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-barbati-cu-siret-lung-cum-ii-porti-2026-06-04",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-photorealistic-fashion-portrait-of.png",
+    "target": "images/blog-seo/pantaloni-barbati-cu-siret-lung-cum-ii-porti-2026-06-04/00-hero-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni barbati cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni barbati cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-barbati-cu-siret-lung-cum-ii-porti-2026-06-04",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/sitemap-blogs-1-xml-schior-pe-v-rful-muntelui-purt-nd-pantaloni-schi-portocali.png",
+    "target": "images/blog-seo/pantaloni-femei-cu-snur-lung-cum-ii-porti-2026-06-04/01-sitemap-blogs-1-xml-schior-pe-v-rful.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni femei cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni femei cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-femei-cu-snur-lung-cum-ii-porti-2026-06-04",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-simboluri-etichete-haine-ghid-compl.png",
+    "target": "images/blog-seo/pantaloni-femei-cu-snur-lung-cum-ii-porti-2026-06-04/02-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni femei cu snur lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni femei cu snur lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-femei-cu-snur-lung-cum-ii-porti-2026-06-04",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/sitemap-blogs-1-xml-snur-alb-pantaloni-scurti-negri.png",
+    "target": "images/blog-seo/pantaloni-femei-cu-snur-lung-cum-ii-porti-2026-06-04/03-sitemap-blogs-1-xml-snur-alb-pantalo.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni femei cu snur lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni femei cu snur lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-femei-cu-snur-lung-cum-ii-porti-2026-06-04",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-studio-photography-split-screen-com.png",
+    "target": "images/blog-seo/pantaloni-femei-cu-snur-lung-cum-ii-porti-2026-06-04/04-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni femei cu snur lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni femei cu snur lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-femei-cu-snur-lung-cum-ii-porti-2026-06-04",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/sitemap-blogs-1-xml-schior-pe-v-rful-muntelui-purt-nd-pantaloni-schi-portocali.png",
+    "target": "images/blog-seo/pantaloni-femei-cu-snur-lung-cum-ii-porti-2026-06-04/00-hero-sitemap-blogs-1-xml-schior-pe-v-rful.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni femei cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni femei cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-femei-cu-snur-lung-cum-ii-porti-2026-06-04",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-totul-despre-blugii-raw-denim-nespa.png",
+    "target": "images/blog-seo/pantaloni-wide-leg-cu-snur-lung-cum-ii-porti-2026-06-05/01-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni wide leg cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni wide leg cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-wide-leg-cu-snur-lung-cum-ii-porti-2026-06-05",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-unnamed.jpg",
+    "target": "images/blog-seo/pantaloni-wide-leg-cu-snur-lung-cum-ii-porti-2026-06-05/02-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni wide leg cu snur lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni wide leg cu snur lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-wide-leg-cu-snur-lung-cum-ii-porti-2026-06-05",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-unnamed-2.jpg",
+    "target": "images/blog-seo/pantaloni-wide-leg-cu-snur-lung-cum-ii-porti-2026-06-05/03-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni wide leg cu snur lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni wide leg cu snur lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-wide-leg-cu-snur-lung-cum-ii-porti-2026-06-05",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-unnamed-3.jpg",
+    "target": "images/blog-seo/pantaloni-wide-leg-cu-snur-lung-cum-ii-porti-2026-06-05/04-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni wide leg cu snur lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni wide leg cu snur lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-wide-leg-cu-snur-lung-cum-ii-porti-2026-06-05",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-blogs-1-xml-totul-despre-blugii-raw-denim-nespa.png",
+    "target": "images/blog-seo/pantaloni-wide-leg-cu-snur-lung-cum-ii-porti-2026-06-05/00-hero-pantaloni-cu-snur-lung-sitemap-blogs.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni wide leg cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni wide leg cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-wide-leg-cu-snur-lung-cum-ii-porti-2026-06-05",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-collections-1-xml-3.jpg",
+    "target": "images/blog-seo/pantaloni-slim-cu-siret-lung-cum-ii-porti-2026-06-05/01-pantaloni-cu-snur-lung-sitemap-colle.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni slim cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni slim cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-slim-cu-siret-lung-cum-ii-porti-2026-06-05",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-collections-1-xml-4.jpg",
+    "target": "images/blog-seo/pantaloni-slim-cu-siret-lung-cum-ii-porti-2026-06-05/02-pantaloni-cu-snur-lung-sitemap-colle.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni slim cu siret lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni slim cu siret lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-slim-cu-siret-lung-cum-ii-porti-2026-06-05",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-collections-1-xml-whatsappimage2025-01-05at14-2.jpg",
+    "target": "images/blog-seo/pantaloni-slim-cu-siret-lung-cum-ii-porti-2026-06-05/03-pantaloni-cu-snur-lung-sitemap-colle.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni slim cu siret lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni slim cu siret lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-slim-cu-siret-lung-cum-ii-porti-2026-06-05",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-collections-1-xml-whatsapp-01-05-at-14-22-49-3.jpg",
+    "target": "images/blog-seo/pantaloni-slim-cu-siret-lung-cum-ii-porti-2026-06-05/04-pantaloni-cu-snur-lung-sitemap-colle.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni slim cu siret lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni slim cu siret lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-slim-cu-siret-lung-cum-ii-porti-2026-06-05",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-sitemap-collections-1-xml-3.jpg",
+    "target": "images/blog-seo/pantaloni-slim-cu-siret-lung-cum-ii-porti-2026-06-05/00-hero-pantaloni-cu-snur-lung-sitemap-colle.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni slim cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni slim cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-slim-cu-siret-lung-cum-ii-porti-2026-06-05",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-3.jpg",
+    "target": "images/blog-seo/pantaloni-scurti-cu-snur-lung-cum-ii-porti-2026-06-05/01-pantaloni-cu-snur-lung-atelier-axd-3.webp",
+    "alt": "pantaloni scurti cu snur lung purtati de persoana reala pentru Pantaloni scurti cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni scurti cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-scurti-cu-snur-lung-cum-ii-porti-2026-06-05",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-4.jpg",
+    "target": "images/blog-seo/pantaloni-scurti-cu-snur-lung-cum-ii-porti-2026-06-05/02-pantaloni-cu-snur-lung-atelier-axd-4.webp",
+    "alt": "pantaloni scurti cu snur lung purtati de persoana reala pentru Pantaloni scurti cu snur lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni scurti cu snur lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-scurti-cu-snur-lung-cum-ii-porti-2026-06-05",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-5.jpg",
+    "target": "images/blog-seo/pantaloni-scurti-cu-snur-lung-cum-ii-porti-2026-06-05/03-pantaloni-cu-snur-lung-atelier-axd-5.webp",
+    "alt": "pantaloni scurti cu snur lung purtati de persoana reala pentru Pantaloni scurti cu snur lung: cum ii porti, tinuta completa in context urban SEO Atelier AX",
+    "title": "Pantaloni scurti cu snur lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-scurti-cu-snur-lung-cum-ii-porti-2026-06-05",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-anpc-logo.jpg",
+    "target": "images/blog-seo/pantaloni-scurti-cu-snur-lung-cum-ii-porti-2026-06-05/04-pantaloni-cu-snur-lung-atelier-axd-a.webp",
+    "alt": "pantaloni scurti cu snur lung purtati de persoana reala pentru Pantaloni scurti cu snur lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier ",
+    "title": "Pantaloni scurti cu snur lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-scurti-cu-snur-lung-cum-ii-porti-2026-06-05",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-3.jpg",
+    "target": "images/blog-seo/pantaloni-scurti-cu-snur-lung-cum-ii-porti-2026-06-05/00-hero-pantaloni-cu-snur-lung-atelier-axd-3.webp",
+    "alt": "pantaloni scurti cu snur lung purtati de persoana reala pentru Pantaloni scurti cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni scurti cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-scurti-cu-snur-lung-cum-ii-porti-2026-06-05",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-bermude-albe-copii-bumbac-casual.jpg",
+    "target": "images/blog-seo/pantaloni-bej-cu-siret-lung-cum-ii-porti-2026-06-06/01-pantaloni-cu-snur-lung-atelier-axd-b.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni bej cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni bej cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-bej-cu-siret-lung-cum-ii-porti-2026-06-06",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-blue-chevron-zip-hoodie-luxury-s.png",
+    "target": "images/blog-seo/pantaloni-bej-cu-siret-lung-cum-ii-porti-2026-06-06/02-pantaloni-cu-snur-lung-atelier-axd-b.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni bej cu siret lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni bej cu siret lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-bej-cu-siret-lung-cum-ii-porti-2026-06-06",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-bluza-barbati-gri-deschis-fermoa.jpg",
+    "target": "images/blog-seo/pantaloni-bej-cu-siret-lung-cum-ii-porti-2026-06-06/03-pantaloni-cu-snur-lung-atelier-axd-b.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni bej cu siret lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni bej cu siret lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-bej-cu-siret-lung-cum-ii-porti-2026-06-06",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-bluza-bej-slim-fit-minimal-premi.png",
+    "target": "images/blog-seo/pantaloni-bej-cu-siret-lung-cum-ii-porti-2026-06-06/04-pantaloni-cu-snur-lung-atelier-axd-b.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni bej cu siret lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni bej cu siret lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-bej-cu-siret-lung-cum-ii-porti-2026-06-06",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-bermude-albe-copii-bumbac-casual.jpg",
+    "target": "images/blog-seo/pantaloni-bej-cu-siret-lung-cum-ii-porti-2026-06-06/00-hero-pantaloni-cu-snur-lung-atelier-axd-b.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni bej cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni bej cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-bej-cu-siret-lung-cum-ii-porti-2026-06-06",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-compleu-barbati-prespalat-gri-bl.png",
+    "target": "images/blog-seo/pantaloni-maro-cu-snur-lung-cum-ii-porti-2026-06-06/01-pantaloni-cu-snur-lung-atelier-axd-c.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni maro cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni maro cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-maro-cu-snur-lung-cum-ii-porti-2026-06-06",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-compleu-bej-barbati-snur-lung.png",
+    "target": "images/blog-seo/pantaloni-maro-cu-snur-lung-cum-ii-porti-2026-06-06/02-pantaloni-cu-snur-lung-atelier-axd-c.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni maro cu snur lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni maro cu snur lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-maro-cu-snur-lung-cum-ii-porti-2026-06-06",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-compleu-negru-barbati-set-tricou-pantaloni.png",
+    "target": "images/blog-seo/pantaloni-maro-cu-snur-lung-cum-ii-porti-2026-06-06/03-atelier-axd-compleu-negru-barbati-se.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni maro cu snur lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni maro cu snur lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-maro-cu-snur-lung-cum-ii-porti-2026-06-06",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-geaca-hoodie-alba-model-geometri.png",
+    "target": "images/blog-seo/pantaloni-maro-cu-snur-lung-cum-ii-porti-2026-06-06/04-pantaloni-cu-snur-lung-atelier-axd-g.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni maro cu snur lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni maro cu snur lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-maro-cu-snur-lung-cum-ii-porti-2026-06-06",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-compleu-barbati-prespalat-gri-bl.png",
+    "target": "images/blog-seo/pantaloni-maro-cu-snur-lung-cum-ii-porti-2026-06-06/00-hero-pantaloni-cu-snur-lung-atelier-axd-c.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni maro cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni maro cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-maro-cu-snur-lung-cum-ii-porti-2026-06-06",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-hanorac-gri-barbati-look-uzat-bu.jpg",
+    "target": "images/blog-seo/pantaloni-bleumarin-cu-snur-lung-cum-ii-porti-2026-06-06/01-pantaloni-cu-snur-lung-atelier-axd-h.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni bleumarin cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni bleumarin cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-bleumarin-cu-snur-lung-cum-ii-porti-2026-06-06",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-hanorac-gri-oversized-snur-lung.png",
+    "target": "images/blog-seo/pantaloni-bleumarin-cu-snur-lung-cum-ii-porti-2026-06-06/02-pantaloni-cu-snur-lung-atelier-axd-h.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni bleumarin cu snur lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni bleumarin cu snur lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-bleumarin-cu-snur-lung-cum-ii-porti-2026-06-06",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-hanorac-negru-barbati-gluga-ferm.jpg",
+    "target": "images/blog-seo/pantaloni-bleumarin-cu-snur-lung-cum-ii-porti-2026-06-06/03-pantaloni-cu-snur-lung-atelier-axd-h.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni bleumarin cu snur lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni bleumarin cu snur lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-bleumarin-cu-snur-lung-cum-ii-porti-2026-06-06",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-hanorac-unisex-crem-sireturi-lun.jpg",
+    "target": "images/blog-seo/pantaloni-bleumarin-cu-snur-lung-cum-ii-porti-2026-06-06/04-pantaloni-cu-snur-lung-atelier-axd-h.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni bleumarin cu snur lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni bleumarin cu snur lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-bleumarin-cu-snur-lung-cum-ii-porti-2026-06-06",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-hanorac-gri-barbati-look-uzat-bu.jpg",
+    "target": "images/blog-seo/pantaloni-bleumarin-cu-snur-lung-cum-ii-porti-2026-06-06/00-hero-pantaloni-cu-snur-lung-atelier-axd-h.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni bleumarin cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni bleumarin cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-bleumarin-cu-snur-lung-cum-ii-porti-2026-06-06",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-bluza-casual-maneca-lunga-negru-x.jpg",
+    "target": "images/blog-seo/pantaloni-gri-cu-siret-lung-cum-ii-porti-2026-06-07/01-pantaloni-cu-snur-lung-atelier-axd-b.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni gri cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni gri cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-gri-cu-siret-lung-cum-ii-porti-2026-06-07",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-bumbac-snur-lung.png",
+    "target": "images/blog-seo/pantaloni-gri-cu-siret-lung-cum-ii-porti-2026-06-07/02-atelier-axd-pantaloni-bumbac-snur-lu.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni gri cu siret lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni gri cu siret lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-gri-cu-siret-lung-cum-ii-porti-2026-06-07",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-albi-barbati-slim-fit-snur-reglabil.jpg",
+    "target": "images/blog-seo/pantaloni-gri-cu-siret-lung-cum-ii-porti-2026-06-07/03-atelier-axd-pantaloni-albi-barbati-s.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni gri cu siret lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni gri cu siret lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-gri-cu-siret-lung-cum-ii-porti-2026-06-07",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-albi-oversized-barbati-snur-lung.jpg",
+    "target": "images/blog-seo/pantaloni-gri-cu-siret-lung-cum-ii-porti-2026-06-07/04-atelier-axd-pantaloni-albi-oversized.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni gri cu siret lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni gri cu siret lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-gri-cu-siret-lung-cum-ii-porti-2026-06-07",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/pantaloni-cu-snur-lung-atelier-axd-bluza-casual-maneca-lunga-negru-x.jpg",
+    "target": "images/blog-seo/pantaloni-gri-cu-siret-lung-cum-ii-porti-2026-06-07/00-hero-pantaloni-cu-snur-lung-atelier-axd-b.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni gri cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni gri cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-gri-cu-siret-lung-cum-ii-porti-2026-06-07",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-barbati-verzi-wide-leg-siret-lung.jpg",
+    "target": "images/blog-seo/tricou-oversized-si-pantaloni-cu-snur-lung-cum-ii-porti-2026-06/01-atelier-axd-pantaloni-barbati-verzi.webp",
+    "alt": "tricou premium purtat cu pantaloni cu snur lung pentru Tricou oversized si pantaloni cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Tricou oversized si pantaloni cu snur lung: cum ii porti - HERO",
+    "slug": "blog/tricou-oversized-si-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-07",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-bej-cu-siret-lung.png",
+    "target": "images/blog-seo/tricou-oversized-si-pantaloni-cu-snur-lung-cum-ii-porti-2026-06/02-atelier-axd-pantaloni-bej-cu-siret-l.webp",
+    "alt": "tricou premium purtat cu pantaloni cu snur lung pentru Tricou oversized si pantaloni cu snur lung: cum ii porti, detaliu de material si croiala SEO Atelier",
+    "title": "Tricou oversized si pantaloni cu snur lung: cum ii porti - DETALIU",
+    "slug": "blog/tricou-oversized-si-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-07",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-bej-lejeri-snur-lung-talie-elastica-2.png",
+    "target": "images/blog-seo/tricou-oversized-si-pantaloni-cu-snur-lung-cum-ii-porti-2026-06/03-atelier-axd-pantaloni-bej-lejeri-snu.webp",
+    "alt": "tricou premium purtat cu pantaloni cu snur lung pentru Tricou oversized si pantaloni cu snur lung: cum ii porti, tinuta completa in context urban SEO Ateli",
+    "title": "Tricou oversized si pantaloni cu snur lung: cum ii porti - CONTEXT",
+    "slug": "blog/tricou-oversized-si-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-07",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-bleumarin-slim-cu-siret-lung-2.png",
+    "target": "images/blog-seo/tricou-oversized-si-pantaloni-cu-snur-lung-cum-ii-porti-2026-06/04-atelier-axd-pantaloni-bleumarin-slim.webp",
+    "alt": "tricou premium purtat cu pantaloni cu snur lung pentru Tricou oversized si pantaloni cu snur lung: cum ii porti, variatie vizuala pentru inspiratie SEO Ate",
+    "title": "Tricou oversized si pantaloni cu snur lung: cum ii porti - VARIATIE",
+    "slug": "blog/tricou-oversized-si-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-07",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-barbati-verzi-wide-leg-siret-lung.jpg",
+    "target": "images/blog-seo/tricou-oversized-si-pantaloni-cu-snur-lung-cum-ii-porti-2026-06/00-hero-atelier-axd-pantaloni-barbati-verzi.webp",
+    "alt": "tricou premium purtat cu pantaloni cu snur lung pentru Tricou oversized si pantaloni cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Tricou oversized si pantaloni cu snur lung: cum ii porti - HERO",
+    "slug": "blog/tricou-oversized-si-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-07",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-gri-casual-barbati-fit-lejer.png",
+    "target": "images/blog-seo/hanorac-si-pantaloni-cu-siret-lung-cum-ii-porti-2026-06-07/01-atelier-axd-pantaloni-gri-casual-bar.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Hanorac si pantaloni cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Hanorac si pantaloni cu siret lung: cum ii porti - HERO",
+    "slug": "blog/hanorac-si-pantaloni-cu-siret-lung-cum-ii-porti-2026-06-07",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-gri-inchis-slim-fit-cu-snur-2.jpg",
+    "target": "images/blog-seo/hanorac-si-pantaloni-cu-siret-lung-cum-ii-porti-2026-06-07/02-atelier-axd-pantaloni-gri-inchis-sli.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Hanorac si pantaloni cu siret lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Hanorac si pantaloni cu siret lung: cum ii porti - DETALIU",
+    "slug": "blog/hanorac-si-pantaloni-cu-siret-lung-cum-ii-porti-2026-06-07",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-gri-maro-slim-fit-cu-snur.jpg",
+    "target": "images/blog-seo/hanorac-si-pantaloni-cu-siret-lung-cum-ii-porti-2026-06-07/03-atelier-axd-pantaloni-gri-maro-slim.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Hanorac si pantaloni cu siret lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Hanorac si pantaloni cu siret lung: cum ii porti - CONTEXT",
+    "slug": "blog/hanorac-si-pantaloni-cu-siret-lung-cum-ii-porti-2026-06-07",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-gri-slim-cu-siret-lung.png",
+    "target": "images/blog-seo/hanorac-si-pantaloni-cu-siret-lung-cum-ii-porti-2026-06-07/04-atelier-axd-pantaloni-gri-slim-cu-si.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Hanorac si pantaloni cu siret lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AX",
+    "title": "Hanorac si pantaloni cu siret lung: cum ii porti - VARIATIE",
+    "slug": "blog/hanorac-si-pantaloni-cu-siret-lung-cum-ii-porti-2026-06-07",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-gri-casual-barbati-fit-lejer.png",
+    "target": "images/blog-seo/hanorac-si-pantaloni-cu-siret-lung-cum-ii-porti-2026-06-07/00-hero-atelier-axd-pantaloni-gri-casual-bar.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Hanorac si pantaloni cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Hanorac si pantaloni cu siret lung: cum ii porti - HERO",
+    "slug": "blog/hanorac-si-pantaloni-cu-siret-lung-cum-ii-porti-2026-06-07",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-largi-trening-barbati-gri-deschis.jpg",
+    "target": "images/blog-seo/seturi-cu-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-08/01-atelier-axd-pantaloni-largi-trening.webp",
+    "alt": "tricou premium purtat cu pantaloni cu snur lung pentru Seturi cu pantaloni cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Seturi cu pantaloni cu snur lung: cum ii porti - HERO",
+    "slug": "blog/seturi-cu-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-08",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-lungi-barbati-dungi-gri.jpg",
+    "target": "images/blog-seo/seturi-cu-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-08/02-atelier-axd-pantaloni-lungi-barbati.webp",
+    "alt": "tricou premium purtat cu pantaloni cu snur lung pentru Seturi cu pantaloni cu snur lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Seturi cu pantaloni cu snur lung: cum ii porti - DETALIU",
+    "slug": "blog/seturi-cu-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-08",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-lungi-verzi-largi-snur-siret-lung.jpg",
+    "target": "images/blog-seo/seturi-cu-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-08/03-atelier-axd-pantaloni-lungi-verzi-la.webp",
+    "alt": "tricou premium purtat cu pantaloni cu snur lung pentru Seturi cu pantaloni cu snur lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Seturi cu pantaloni cu snur lung: cum ii porti - CONTEXT",
+    "slug": "blog/seturi-cu-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-08",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-maro-cu-siret-lung-wide-2.png",
+    "target": "images/blog-seo/seturi-cu-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-08/04-atelier-axd-pantaloni-maro-cu-siret.webp",
+    "alt": "tricou premium purtat cu pantaloni cu snur lung pentru Seturi cu pantaloni cu snur lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Seturi cu pantaloni cu snur lung: cum ii porti - VARIATIE",
+    "slug": "blog/seturi-cu-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-08",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-largi-trening-barbati-gri-deschis.jpg",
+    "target": "images/blog-seo/seturi-cu-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-08/00-hero-atelier-axd-pantaloni-largi-trening.webp",
+    "alt": "tricou premium purtat cu pantaloni cu snur lung pentru Seturi cu pantaloni cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Seturi cu pantaloni cu snur lung: cum ii porti - HERO",
+    "slug": "blog/seturi-cu-pantaloni-cu-snur-lung-cum-ii-porti-2026-06-08",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-maro-snur-lung-fermoare-mijloc.png",
+    "target": "images/blog-seo/pantaloni-raiati-cu-snur-lung-cum-ii-porti-2026-06-08/01-atelier-axd-pantaloni-maro-snur-lung.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni raiati cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni raiati cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-raiati-cu-snur-lung-cum-ii-porti-2026-06-08",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-maro-streetwear-tricou-alb-oversized.png",
+    "target": "images/blog-seo/pantaloni-raiati-cu-snur-lung-cum-ii-porti-2026-06-08/02-atelier-axd-pantaloni-maro-streetwea.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni raiati cu snur lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni raiati cu snur lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-raiati-cu-snur-lung-cum-ii-porti-2026-06-08",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-negri-bumbac-snur-lung.png",
+    "target": "images/blog-seo/pantaloni-raiati-cu-snur-lung-cum-ii-porti-2026-06-08/03-atelier-axd-pantaloni-negri-bumbac-s.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni raiati cu snur lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni raiati cu snur lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-raiati-cu-snur-lung-cum-ii-porti-2026-06-08",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-negri-oversized-barbati-snur-lung.jpg",
+    "target": "images/blog-seo/pantaloni-raiati-cu-snur-lung-cum-ii-porti-2026-06-08/04-atelier-axd-pantaloni-negri-oversize.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni raiati cu snur lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni raiati cu snur lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-raiati-cu-snur-lung-cum-ii-porti-2026-06-08",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-maro-snur-lung-fermoare-mijloc.png",
+    "target": "images/blog-seo/pantaloni-raiati-cu-snur-lung-cum-ii-porti-2026-06-08/00-hero-atelier-axd-pantaloni-maro-snur-lung.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni raiati cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni raiati cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-raiati-cu-snur-lung-cum-ii-porti-2026-06-08",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-raiati-gri-inchis-snur-lung.jpg",
+    "target": "images/blog-seo/pantaloni-largi-cu-siret-lung-cum-ii-porti-2026-06-08/01-atelier-axd-pantaloni-raiati-gri-inc.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni largi cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni largi cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-largi-cu-siret-lung-cum-ii-porti-2026-06-08",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-albastri-cu-snur-lung.jpg",
+    "target": "images/blog-seo/pantaloni-largi-cu-siret-lung-cum-ii-porti-2026-06-08/02-atelier-axd-pantaloni-scurti-albastr.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni largi cu siret lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni largi cu siret lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-largi-cu-siret-lung-cum-ii-porti-2026-06-08",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-albastru-deschis-cu-snur-lung.jpg",
+    "target": "images/blog-seo/pantaloni-largi-cu-siret-lung-cum-ii-porti-2026-06-08/03-atelier-axd-pantaloni-scurti-albastr.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni largi cu siret lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni largi cu siret lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-largi-cu-siret-lung-cum-ii-porti-2026-06-08",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-albi-dungi-bleumarin-siret-maro.jpg",
+    "target": "images/blog-seo/pantaloni-largi-cu-siret-lung-cum-ii-porti-2026-06-08/04-atelier-axd-pantaloni-scurti-albi-du.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni largi cu siret lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni largi cu siret lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-largi-cu-siret-lung-cum-ii-porti-2026-06-08",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-raiati-gri-inchis-snur-lung.jpg",
+    "target": "images/blog-seo/pantaloni-largi-cu-siret-lung-cum-ii-porti-2026-06-08/00-hero-atelier-axd-pantaloni-raiati-gri-inc.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni largi cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni largi cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-largi-cu-siret-lung-cum-ii-porti-2026-06-08",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-barbati-crem-siret-lung.jpg",
+    "target": "images/blog-seo/pantaloni-casual-cu-snur-lung-cum-ii-porti-2026-06-09/01-atelier-axd-pantaloni-scurti-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni casual cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni casual cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-casual-cu-snur-lung-cum-ii-porti-2026-06-09",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-barbati-dungi-bleu-snur-siret-lung.jpg",
+    "target": "images/blog-seo/pantaloni-casual-cu-snur-lung-cum-ii-porti-2026-06-09/02-atelier-axd-pantaloni-scurti-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni casual cu snur lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni casual cu snur lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-casual-cu-snur-lung-cum-ii-porti-2026-06-09",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-barbati-dungi-gri-siret-maro-margele.jpg",
+    "target": "images/blog-seo/pantaloni-casual-cu-snur-lung-cum-ii-porti-2026-06-09/03-atelier-axd-pantaloni-scurti-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni casual cu snur lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni casual cu snur lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-casual-cu-snur-lung-cum-ii-porti-2026-06-09",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-barbati-gri-deschis-snur-lung-ajustabi.jpg",
+    "target": "images/blog-seo/pantaloni-casual-cu-snur-lung-cum-ii-porti-2026-06-09/04-atelier-axd-pantaloni-scurti-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni casual cu snur lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni casual cu snur lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-casual-cu-snur-lung-cum-ii-porti-2026-06-09",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-barbati-crem-siret-lung.jpg",
+    "target": "images/blog-seo/pantaloni-casual-cu-snur-lung-cum-ii-porti-2026-06-09/00-hero-atelier-axd-pantaloni-scurti-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni casual cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni casual cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-casual-cu-snur-lung-cum-ii-porti-2026-06-09",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-barbati-roz-snur-lung-ajustabil-fata.jpg",
+    "target": "images/blog-seo/pantaloni-albi-cu-snur-lung-cum-ii-porti-2026-06-09/01-atelier-axd-pantaloni-scurti-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni albi cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni albi cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-albi-cu-snur-lung-cum-ii-porti-2026-06-09",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-barbati-turcoaz-inchis-snur-lung-casua.jpg",
+    "target": "images/blog-seo/pantaloni-albi-cu-snur-lung-cum-ii-porti-2026-06-09/02-atelier-axd-pantaloni-scurti-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni albi cu snur lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni albi cu snur lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-albi-cu-snur-lung-cum-ii-porti-2026-06-09",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-barbati-turcoaz-snur-lung-casual.jpg",
+    "target": "images/blog-seo/pantaloni-albi-cu-snur-lung-cum-ii-porti-2026-06-09/03-atelier-axd-pantaloni-scurti-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni albi cu snur lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni albi cu snur lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-albi-cu-snur-lung-cum-ii-porti-2026-06-09",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-barbati-verde-militar-snur-lung-kaki.jpg",
+    "target": "images/blog-seo/pantaloni-albi-cu-snur-lung-cum-ii-porti-2026-06-09/04-atelier-axd-pantaloni-scurti-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni albi cu snur lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni albi cu snur lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-albi-cu-snur-lung-cum-ii-porti-2026-06-09",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-barbati-roz-snur-lung-ajustabil-fata.jpg",
+    "target": "images/blog-seo/pantaloni-albi-cu-snur-lung-cum-ii-porti-2026-06-09/00-hero-atelier-axd-pantaloni-scurti-barbati.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni albi cu snur lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni albi cu snur lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-albi-cu-snur-lung-cum-ii-porti-2026-06-09",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-crem-cu-siret-lung.jpg",
+    "target": "images/blog-seo/pantaloni-kaki-cu-siret-lung-cum-ii-porti-2026-06-09/01-atelier-axd-pantaloni-scurti-crem-cu.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni kaki cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni kaki cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-kaki-cu-siret-lung-cum-ii-porti-2026-06-09",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-crem-snur-lung-barbati.jpg",
+    "target": "images/blog-seo/pantaloni-kaki-cu-siret-lung-cum-ii-porti-2026-06-09/02-atelier-axd-pantaloni-scurti-crem-sn.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni kaki cu siret lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni kaki cu siret lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-kaki-cu-siret-lung-cum-ii-porti-2026-06-09",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-grena-snur-lung.jpg",
+    "target": "images/blog-seo/pantaloni-kaki-cu-siret-lung-cum-ii-porti-2026-06-09/03-atelier-axd-pantaloni-scurti-grena-s.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni kaki cu siret lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni kaki cu siret lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-kaki-cu-siret-lung-cum-ii-porti-2026-06-09",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-gri-bumbac-fermoar.png",
+    "target": "images/blog-seo/pantaloni-kaki-cu-siret-lung-cum-ii-porti-2026-06-09/04-atelier-axd-pantaloni-scurti-gri-bum.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni kaki cu siret lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni kaki cu siret lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-kaki-cu-siret-lung-cum-ii-porti-2026-06-09",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-crem-cu-siret-lung.jpg",
+    "target": "images/blog-seo/pantaloni-kaki-cu-siret-lung-cum-ii-porti-2026-06-09/00-hero-atelier-axd-pantaloni-scurti-crem-cu.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni kaki cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni kaki cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-kaki-cu-siret-lung-cum-ii-porti-2026-06-09",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-negri-bumbac-fermoar.png",
+    "target": "images/blog-seo/pantaloni-oversized-cu-siret-lung-cum-ii-porti-2026-06-10/01-atelier-axd-pantaloni-scurti-negri-b.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni oversized cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni oversized cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-oversized-cu-siret-lung-cum-ii-porti-2026-06-10",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-negri-cu-snur-lung.jpg",
+    "target": "images/blog-seo/pantaloni-oversized-cu-siret-lung-cum-ii-porti-2026-06-10/02-atelier-axd-pantaloni-scurti-negri-c.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni oversized cu siret lung: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni oversized cu siret lung: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-oversized-cu-siret-lung-cum-ii-porti-2026-06-10",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-negri-snur-lung-capse.png",
+    "target": "images/blog-seo/pantaloni-oversized-cu-siret-lung-cum-ii-porti-2026-06-10/03-atelier-axd-pantaloni-scurti-negri-s.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni oversized cu siret lung: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni oversized cu siret lung: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-oversized-cu-siret-lung-cum-ii-porti-2026-06-10",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-negru-intens-snur-lung.jpg",
+    "target": "images/blog-seo/pantaloni-oversized-cu-siret-lung-cum-ii-porti-2026-06-10/04-atelier-axd-pantaloni-scurti-negru-i.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni oversized cu siret lung: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AXD",
+    "title": "Pantaloni oversized cu siret lung: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-oversized-cu-siret-lung-cum-ii-porti-2026-06-10",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-negri-bumbac-fermoar.png",
+    "target": "images/blog-seo/pantaloni-oversized-cu-siret-lung-cum-ii-porti-2026-06-10/00-hero-atelier-axd-pantaloni-scurti-negri-b.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni oversized cu siret lung: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni oversized cu siret lung: cum ii porti - HERO",
+    "slug": "blog/pantaloni-oversized-cu-siret-lung-cum-ii-porti-2026-06-10",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-unisex-bumbac-negri-siret-lung.jpg",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-si-fermoare-cum-ii-porti-2026-06-10/01-atelier-axd-pantaloni-scurti-unisex.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung si fermoare: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni cu snur lung si fermoare: cum ii porti - HERO",
+    "slug": "blog/pantaloni-cu-snur-lung-si-fermoare-cum-ii-porti-2026-06-10",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-slim-crem-snur-lung.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-si-fermoare-cum-ii-porti-2026-06-10/02-atelier-axd-pantaloni-slim-crem-snur.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung si fermoare: cum ii porti, detaliu de material si croiala SEO Atelier AXD",
+    "title": "Pantaloni cu snur lung si fermoare: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-cu-snur-lung-si-fermoare-cum-ii-porti-2026-06-10",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-slim-negri-snur-lung.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-si-fermoare-cum-ii-porti-2026-06-10/03-atelier-axd-pantaloni-slim-negri-snu.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung si fermoare: cum ii porti, tinuta completa in context urban SEO Atelier AXD",
+    "title": "Pantaloni cu snur lung si fermoare: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-cu-snur-lung-si-fermoare-cum-ii-porti-2026-06-10",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-teracota-cu-snur-lung-detaliu.jpg",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-si-fermoare-cum-ii-porti-2026-06-10/04-atelier-axd-pantaloni-teracota-cu-sn.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung si fermoare: cum ii porti, variatie vizuala pentru inspiratie SEO Atelier AX",
+    "title": "Pantaloni cu snur lung si fermoare: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-cu-snur-lung-si-fermoare-cum-ii-porti-2026-06-10",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-pantaloni-scurti-unisex-bumbac-negri-siret-lung.jpg",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-si-fermoare-cum-ii-porti-2026-06-10/00-hero-atelier-axd-pantaloni-scurti-unisex.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung si fermoare: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni cu snur lung si fermoare: cum ii porti - HERO",
+    "slug": "blog/pantaloni-cu-snur-lung-si-fermoare-cum-ii-porti-2026-06-10",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-set-barbati-alb-camasa-pantaloni-italia-snur-lung.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-in-tinute-monocrome-cum-ii-porti-2026-06/01-atelier-axd-set-barbati-alb-camasa-p.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung in tinute monocrome: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni cu snur lung in tinute monocrome: cum ii porti - HERO",
+    "slug": "blog/pantaloni-cu-snur-lung-in-tinute-monocrome-cum-ii-porti-2026-06-10",
+    "role": "hero"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-set-barbati-bej-camasa-pantaloni-italia-snur-lung.jpg",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-in-tinute-monocrome-cum-ii-porti-2026-06/02-atelier-axd-set-barbati-bej-camasa-p.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung in tinute monocrome: cum ii porti, detaliu de material si croiala SEO Atelie",
+    "title": "Pantaloni cu snur lung in tinute monocrome: cum ii porti - DETALIU",
+    "slug": "blog/pantaloni-cu-snur-lung-in-tinute-monocrome-cum-ii-porti-2026-06-10",
+    "role": "detaliu"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-set-barbati-bumbac-hanorac-pantaloni-largi-negru-gri.jpg",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-in-tinute-monocrome-cum-ii-porti-2026-06/03-atelier-axd-set-barbati-bumbac-hanor.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung in tinute monocrome: cum ii porti, tinuta completa in context urban SEO Atel",
+    "title": "Pantaloni cu snur lung in tinute monocrome: cum ii porti - CONTEXT",
+    "slug": "blog/pantaloni-cu-snur-lung-in-tinute-monocrome-cum-ii-porti-2026-06-10",
+    "role": "context"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-set-barbati-bumbac-gri-bluza-fermoar-pantaloni-siret-lu.jpg",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-in-tinute-monocrome-cum-ii-porti-2026-06/04-atelier-axd-set-barbati-bumbac-gri-b.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung in tinute monocrome: cum ii porti, variatie vizuala pentru inspiratie SEO At",
+    "title": "Pantaloni cu snur lung in tinute monocrome: cum ii porti - VARIATIE",
+    "slug": "blog/pantaloni-cu-snur-lung-in-tinute-monocrome-cum-ii-porti-2026-06-10",
+    "role": "variatie"
+  },
+  {
+    "source": "images/atelieraxd-long-tail/atelier-axd-set-barbati-alb-camasa-pantaloni-italia-snur-lung.png",
+    "target": "images/blog-seo/pantaloni-cu-snur-lung-in-tinute-monocrome-cum-ii-porti-2026-06/00-hero-atelier-axd-set-barbati-alb-camasa-p.webp",
+    "alt": "pantaloni cu snur lung purtati de persoana reala pentru Pantaloni cu snur lung in tinute monocrome: cum ii porti, imagine principala SEO Atelier AXD",
+    "title": "Pantaloni cu snur lung in tinute monocrome: cum ii porti - HERO",
+    "slug": "blog/pantaloni-cu-snur-lung-in-tinute-monocrome-cum-ii-porti-2026-06-10",
     "role": "hero"
   }
 ]

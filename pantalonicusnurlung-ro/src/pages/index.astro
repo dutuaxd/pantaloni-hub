@@ -1,304 +1,175 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { productImages, productImagePath } from '../data/productImages';
-import { SITE, SHOP, faqSchema, faqs, organizationSchema, productSchema, websiteSchema } from '../data/seoSite';
+import { SITE, ATELIER_HOME, organizationSchema, websiteSchema } from '../data/seoSite';
+import { atelierRecommendations, editorialArticles, portalCategoryGroups, socialLinks } from '../data/portalContent';
+import { blogPosts } from '../data/seoSite';
+import { publicPage } from '../data/publicCopy';
 
-const title = 'Pantaloni cu snur lung | Ghid moda urbana 2026';
-const description = 'Pantaloni cu snur lung pentru moda urbana: ghid despre croieli baggy, modele oversized, marimi, materiale si outfituri cu link transparent catre Atelier AXD.';
+const title = 'PSL Fashion | Revista si catalog de fashion masculin';
+const description = 'PSL Fashion este un portal editorial despre pantaloni, tricouri, hanorace, tinute masculine, trenduri, ghiduri si recomandari informative AtelierAXD.';
 const canonical = `${SITE}/`;
-const hero = productImages[2];
-const img = (index: number) => productImages[index % productImages.length];
-const imageUrl = (item: { file: string }) => item.file.endsWith('.webp') ? `${productImagePath}${item.file}` : `/${item.file}`;
+const featured = publicPage(blogPosts[0]);
+const newsItems = editorialArticles.filter((page) => page.slug.startsWith('news/')).slice(0, 4);
+const guideItems = editorialArticles.filter((page) => page.slug.startsWith('ghiduri/')).slice(0, 4);
+const featuredInternalPosts = [
+  'blog/tricou-gri-oversized-cusaturi-laterale',
+  'blog/tricou-gri-prespalat-buzunar-aplicat',
+  'blog/tricou-negru-oversized-minimalist',
+]
+  .map((slug) => blogPosts.find((post) => post.slug === slug))
+  .filter(Boolean)
+  .map(publicPage);
+const recentPosts = [...featuredInternalPosts, ...blogPosts.slice(1, 5).map(publicPage)];
+const imagePath = (image: string) => image.startsWith('images/') ? `/${image}` : image.endsWith('.webp') ? `/images/products/${image}` : `/${image}`;
 const schema = [
   organizationSchema(),
   websiteSchema(),
-  faqSchema(),
-  productSchema(),
   {
     '@context': 'https://schema.org',
-    '@type': 'ImageGallery',
-    name: 'Pantaloni cu Snur Lung Atelier AXD',
+    '@type': 'WebPage',
+    name: title,
+    description,
     url: canonical,
-    image: productImages.map((item) => ({
-      '@type': 'ImageObject',
-      url: `${SITE}${imageUrl(item)}`,
-      name: item.title,
-      description: item.alt,
-      width: 1200,
-      height: 1600,
-    })),
+    isPartOf: { '@type': 'WebSite', name: 'PSL Fashion', url: SITE },
   },
 ];
-
-const categories = [
-  ['Pantaloni cu siret lung', 'Termen popular pentru snur lung vizibil', img(3), '/pantaloni-cu-siret-lung/'],
-  ['Pantaloni negri cu siret lung', 'Contrast alb-negru puternic in imagini', img(2), '/pantaloni-negri-cu-siret-lung/'],
-  ['Pantaloni scurti cu siret lung', 'Varianta de vara pentru cautari vizuale', img(18), '/pantaloni-scurti-cu-siret-lung/'],
-  ['Pantaloni cu siret lung barbati', 'Fit larg, talie elastica, stil urban', img(14), '/pantaloni-cu-siret-lung-barbati/'],
-  ['Tricou gri si pantaloni albi', 'Outfit unisex cu siret lung vizibil', { file: 'tricou-gri-pantaloni-albi-siret-lung-outfit.png', title: 'Tricou gri cu pantaloni albi cu siret lung', alt: 'Tinuta unisex cu tricou gri oversized si pantaloni scurti albi cu siret lung' }, '/tricou-gri-pantaloni-albi-siret-lung/'],
-  ['Set alb cu siret lung', 'All white pentru vara', { file: 'set-alb-pantaloni-scurti-siret-lung-outfit.png', title: 'Set alb cu pantaloni scurti cu siret lung', alt: 'Set alb unisex cu tricou oversized si pantaloni scurti cu siret lung' }, '/set-alb-pantaloni-scurti-siret-lung/'],
-  ['Tricou bej si pantaloni albi', 'Paleta neutra, soft, usor de purtat', { file: 'tricou-bej-pantaloni-albi-siret-lung-outfit.png', title: 'Tricou bej cu pantaloni albi cu siret lung', alt: 'Tinuta cu tricou bej oversized si pantaloni scurti albi cu siret lung' }, '/tricou-bej-pantaloni-albi-siret-lung/'],
-  ['Tricou verde armata', 'Culoare neutra pentru pantaloni cu siret', { file: 'tricou-verde-armata-pantaloni-siret-lung-produs.png', title: 'Tricou verde armata pentru pantaloni cu siret lung', alt: 'Tricou verde armata simplu pentru outfituri cu pantaloni cu siret lung' }, '/tricou-verde-armata-pantaloni-siret-lung/'],
-  ['Verde armata cu alb', 'Outfit de vara cu siret lung vizibil', { file: 'tricou-verde-armata-pantaloni-albi-siret-lung-outfit.png', title: 'Tricou verde armata cu pantaloni albi cu siret lung', alt: 'Tinuta cu tricou verde armata oversized si pantaloni scurti albi cu siret lung' }, '/tricou-verde-armata-pantaloni-albi-siret-lung/'],
-  ['Bleumarin cu pantaloni albi', 'Contrast navy-alb usor de purtat', { file: 'tricou-bleumarin-pantaloni-albi-siret-lung-outfit.png', title: 'Tricou bleumarin cu pantaloni albi cu siret lung', alt: 'Tinuta cu tricou bleumarin oversized si pantaloni scurti albi cu siret lung' }, '/tricou-bleumarin-pantaloni-albi-siret-lung/'],
-  ['Tricou gri simplu', 'Piesa neutra langa pantaloni cu siret', { file: 'tricou-gri-simplu-pantaloni-siret-lung-produs.png', title: 'Tricou gri simplu pentru pantaloni cu siret lung', alt: 'Tricou gri simplu din bumbac pentru tinute cu pantaloni cu siret lung' }, '/tricou-gri-simplu-pantaloni-siret-lung/'],
-  ['Tie dye cu pantaloni albi', 'Statement top, pantaloni simpli cu siret', { file: 'tricou-tie-dye-pantaloni-albi-siret-lung-outfit.png', title: 'Tricou tie dye cu pantaloni albi cu siret lung', alt: 'Tinuta unisex cu tricou tie dye gri albastru si pantaloni scurti albi cu siret lung' }, '/tricou-tie-dye-pantaloni-albi-siret-lung/'],
-  ['Tricou tie dye', 'Gri-albastru pentru pantaloni cu siret', { file: 'tricou-tie-dye-gri-albastru-pantaloni-siret-lung-produs.png', title: 'Tricou tie dye gri albastru pentru pantaloni cu siret lung', alt: 'Tricou tie dye gri albastru pentru tinute cu pantaloni cu siret lung' }, '/tricou-tie-dye-pantaloni-siret-lung/'],
-];
-
-const colorCategories = [
-  ['Pantaloni negri', 'Usor de purtat zilnic', img(3)],
-  ['Pantaloni bleumarin', 'Look curat, urban, discret', img(6)],
-  ['Pantaloni maro', 'Ton cald pentru tinute relaxate', img(9)],
-  ['Pantaloni bej', 'Varianta luminoasa pentru vara', img(11)],
-];
-
-const benefits = [
-  ['<svg viewBox="0 0 24 24"><path d="M4 14c4-6 10-8 16-7-1 7-5 11-12 12l-4 1 1-4Z"></path><path d="M8 16c3-3 6-5 10-7"></path></svg>', 'Confort zilnic', 'Materiale lejere, usor de purtat zilnic.'],
-  ['<svg viewBox="0 0 24 24"><path d="M7 8h10l2 4-7 8-7-8 2-4Z"></path><path d="M8 12h8"></path></svg>', 'Croiala actuala', 'Croiala relaxata care ramane relevanta si in 2027.'],
-  ['<svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h10M5 17h14"></path></svg>', 'Linie curata', 'Proportii ordonate, fara stilizare incarcata.'],
-  ['<svg viewBox="0 0 24 24"><path d="m12 3 8 4-8 4-8-4 8-4Z"></path><path d="m4 12 8 4 8-4"></path><path d="m4 17 8 4 8-4"></path></svg>', 'Versatilitate', 'Merge cu tricou, hanorac sau jacheta minimal.'],
-];
-
-const iconBenefits = [
-  ['<svg viewBox="0 0 24 24"><path d="M4 14c4-6 10-8 16-7-1 7-5 11-12 12l-4 1 1-4Z"></path></svg>', 'Confort'],
-  ['<svg viewBox="0 0 24 24"><path d="M6 12c2-4 5-6 9-6 2 0 3 1 3 3 0 4-4 7-10 9"></path></svg>', 'Actual'],
-  ['<svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h10M5 17h14"></path></svg>', 'Linie curata'],
-  ['<svg viewBox="0 0 24 24"><path d="m12 4 8 4-8 4-8-4 8-4Z"></path><path d="m4 14 8 4 8-4"></path></svg>', 'Straturi'],
-  ['<svg viewBox="0 0 24 24"><path d="M3 7h11v10H3z"></path><path d="M14 11h4l3 3v3h-7z"></path><circle cx="7" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg>', 'Livrare'],
-  ['<svg viewBox="0 0 24 24"><path d="m4 8 8-4 8 4-8 4-8-4Z"></path><path d="M4 8v8l8 4 8-4V8"></path><path d="M12 12v8"></path></svg>', 'Ambalare'],
-  ['<svg viewBox="0 0 24 24"><path d="M4 10h16l-2-5H6l-2 5Z"></path><path d="M6 10v9h12v-9"></path><path d="M9 19v-5h6v5"></path></svg>', 'Atelier AXD'],
-];
 ---
-<Layout title={title} description={description} canonical={canonical} image={imageUrl(hero)} type="website" schema={schema}>
-  <section class="landing-hero">
-    <div class="landing-shell landing-hero-grid">
-      <div class="landing-copy">
-        <p class="eyebrow">Ghid moda urbana romanesc</p>
-        <h1>Pantaloni cu snur lung pentru moda urbana in 2026</h1>
-        <p>Ghid editorial despre pantaloni casual largi, joggeri oversized, croieli loose fit si tinute moda urbana curate. Produsele si comenzile raman pe Atelier AXD.</p>
-        <div class="landing-actions">
-          <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Descopera modelele</a>
-          <a class="secondary-action" href="/ghid-marimi-pantaloni-cu-snur/">Ghid de marimi</a>
+<Layout title={title} description={description} canonical={canonical} image="/og-pantaloni-cu-snur-lung.jpg" schema={schema}>
+  <section class="mag-hero">
+    <div class="container mag-hero-grid">
+      <article class="mag-featured">
+        <a href={`/${featured.slug}/`}>
+          <img src={imagePath(featured.image)} alt={featured.h1} width="1200" height="900" loading="eager" fetchpriority="high" />
+          <span>Articol featured</span>
+          <h1>Fashion masculin: cum se schimba tinutele casual in 2026</h1>
+          <p>O privire editoriala asupra pantalonilor relaxati, tricourilor oversize, hanoracelor si pieselor usor de purtat zilnic.</p>
+        </a>
+      </article>
+      <aside class="mag-cover-list" aria-label="Subiecte principale">
+        {[
+          ['/pantaloni/', 'Pantaloni', 'Croieli largi, cargo, jogger si modele cu snur.'],
+          ['/tricouri/', 'Tricouri', 'Oversize, basic, negru, alb si piese de vara.'],
+          ['/hanorace/', 'Hanorace', 'Layering, streetwear si tinute casual.'],
+          ['/fashion-masculin/', 'Fashion masculin', 'Hub pentru trenduri, ghiduri si categorii.'],
+        ].map(([href, label, text]) => (
+          <a href={href}>
+            <strong>{label}</strong>
+            <span>{text}</span>
+          </a>
+        ))}
+      </aside>
+    </div>
+  </section>
+
+  <section class="mag-section">
+    <div class="container">
+      <div class="mag-section-head">
+        <span>News grid</span>
+        <h2>Articole recente</h2>
+      </div>
+      <div class="mag-news-grid">
+        {[...newsItems, ...recentPosts].slice(0, 6).map((item) => (
+          <article class="mag-card">
+            <a href={`/${item.slug}/`}>
+              <span>{item.category || 'Fashion'}</span>
+              <h3>{item.h1}</h3>
+              <p>{item.intro || item.description}</p>
+            </a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="mag-section alt">
+    <div class="container">
+      <div class="mag-section-head">
+        <span>Tendinte</span>
+        <h2>Ce urmarim in garderoba masculina</h2>
+      </div>
+      <div class="mag-trend-row">
+        {[
+          ['/tinute-streetwear/', 'Streetwear purtabil', 'Volume relaxate, culori neutre si piese care raman usor de integrat.'],
+          ['/tinute-vara/', 'Vara', 'Pantaloni scurti, tricouri usoare si tonuri deschise.'],
+          ['/tinute-all-black/', 'All black', 'Texturi diferite si proportii clare pentru tinute monocrome.'],
+        ].map(([href, title, copy]) => (
+          <a href={href}>
+            <strong>{title}</strong>
+            <p>{copy}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {portalCategoryGroups.slice(0, 4).map(([title, slugs]) => (
+    <section class="mag-section">
+      <div class="container">
+        <div class="mag-section-head">
+          <span>{title}</span>
+          <h2>{title}</h2>
         </div>
-        <div class="offer-note">
-          <span>Atelier AXD</span>
-          <strong>Produse, preturi si stoc actualizate</strong>
-          <small>Conditiile comerciale sunt afisate in magazinul Atelier AXD.</small>
+        <div class="mag-link-grid">
+          {slugs.map((slug) => {
+            const page = editorialArticles.find((item) => item.slug === slug);
+            return page && (
+              <a href={`/${page.slug}/`}>
+                <strong>{page.h1}</strong>
+                <span>{page.intro}</span>
+              </a>
+            );
+          })}
         </div>
       </div>
-      <a class="hero-product-link" href={SHOP} target="_blank" rel="noopener" aria-label={hero.alt}>
-        <img src={imageUrl(hero)} alt={hero.alt} title={hero.title} width="1200" height="1600" loading="eager" fetchpriority="high" />
-      </a>
-    </div>
-  </section>
+    </section>
+  ))}
 
-  <section class="proof-band">
-    <div class="landing-shell">
-      <p>Ghiduri in romana pentru pantaloni baggy, snur lung, siret lung, croieli relaxate si tinute moda urbana.</p>
-    </div>
-  </section>
-
-  <section class="landing-section">
-    <div class="landing-shell">
-      <h2>Cluster nou: siret lung</h2>
-      <div class="product-grid categories-grid">
-        {categories.map(([name, copy, item, href]) => (
-          <a class="product-card" href={href}>
-            <img src={imageUrl(item)} alt={`${name} in tinuta moda urbana cu snur alb vizibil`} title={name} width="800" height="1067" loading="lazy" decoding="async" />
-            <small class="stars">Ghid vizual</small>
-            <strong>{name}</strong>
-            <em>{copy}</em>
-            <span class="card-button">Vezi ghidul</span>
-          </a>
+  <section class="mag-section alt">
+    <div class="container">
+      <div class="mag-section-head">
+        <span>Ghiduri</span>
+        <h2>Citeste inainte sa alegi</h2>
+      </div>
+      <div class="mag-news-grid compact">
+        {guideItems.map((item) => (
+          <article class="mag-card">
+            <a href={`/${item.slug}/`}>
+              <span>Ghid</span>
+              <h3>{item.h1}</h3>
+              <p>{item.intro}</p>
+            </a>
+          </article>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="landing-section">
-    <div class="landing-shell">
-      <h2>Ghid vizual pentru modele esentiale</h2>
-      <div class="filter-row">
-        <span>Alege tinuta</span><span>Croiala larga</span><span>Unisex</span><span>Moda urbana romaneasca</span>
+  <section class="mag-section">
+    <div class="container">
+      <div class="mag-section-head">
+        <span>Recomandari AtelierAXD</span>
+        <h2>Produse si idei de styling</h2>
       </div>
-      <div class="product-grid">
-        {productImages.slice(0, 4).map((item) => (
-          <a class="product-card" href={SHOP} target="_blank" rel="noopener">
-            <span class="card-badge">Catre Atelier AXD</span>
-            <img src={imageUrl(item)} alt={item.alt} title={item.title} width="800" height="1067" loading="lazy" decoding="async" />
-            <small class="stars">2000+ comenzi onorate</small>
-            <strong>{item.title}</strong>
-            <em>Snur lung contrastant, croiala lejera.</em>
-            <span class="card-button">Vezi pe site</span>
-          </a>
+      <div class="mag-product-grid">
+        {atelierRecommendations.map((item) => (
+          <article class="mag-product-card">
+            <img src={item.image} alt={item.title} width="800" height="1000" loading="lazy" decoding="async" />
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+            <a href={item.href} target="_blank" rel="noopener">Vezi stocul actualizat pe AtelierAXD</a>
+          </article>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="landing-section soft">
-    <div class="landing-shell">
-      <h2>Galerie urbana</h2>
-      <div class="ugc-grid">
-        {productImages.slice(4, 7).map((item) => (
-          <a href={SHOP} target="_blank" rel="noopener">
-            <img src={imageUrl(item)} alt={item.alt} title={item.title} width="800" height="1067" loading="lazy" decoding="async" />
-            <span>{item.title}</span>
-          </a>
-        ))}
+  <section class="mag-social-proof">
+    <div class="container">
+      <h2>Urmareste comunitatea noastra de fashion masculin</h2>
+      <div>
+        {socialLinks.map(([href, label]) => <a href={href} target="_blank" rel="noopener">{label}</a>)}
+        <a href={ATELIER_HOME} target="_blank" rel="noopener">AtelierAXD</a>
       </div>
-      <a class="primary-action center" href={SHOP} target="_blank" rel="noopener">Vezi pe Atelier AXD</a>
-    </div>
-  </section>
-
-  <section class="icon-row">
-    <div class="landing-shell icons">
-        {iconBenefits.map(([icon, text]) => (
-        <span><b set:html={icon}></b>{text}</span>
-      ))}
-    </div>
-  </section>
-
-  <section class="landing-section">
-    <div class="landing-shell split">
-      <a class="image-panel" href={SHOP} target="_blank" rel="noopener">
-        <img src={imageUrl(img(7))} alt={img(7).alt} title={img(7).title} width="900" height="1200" loading="lazy" decoding="async" />
-      </a>
-      <div class="text-panel">
-        <h2>Detaliu vizual puternic</h2>
-        <p>Snurul lung creeaza imediat un centru vizual. Nu ai nevoie de imprimeuri mari sau stilizare complicat: pantalonii devin piesa care da directia tinutei.</p>
-        <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Descopera</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="landing-section">
-    <div class="landing-shell split reverse">
-      <div class="text-panel">
-        <h2>Croiala relaxata, look ordonat</h2>
-        <p>Croiala relaxata merge in tinute de oras, drum, facultate, munca lejera sau weekend. Modelele sunt usor de purtat cu tricou alb, tricou negru sau hanorac.</p>
-        <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Vezi pe Atelier AXD</a>
-      </div>
-      <a class="image-panel" href={SHOP} target="_blank" rel="noopener">
-        <img src={imageUrl(img(8))} alt={img(8).alt} title={img(8).title} width="900" height="1200" loading="lazy" decoding="async" />
-      </a>
-    </div>
-  </section>
-
-  <section class="landing-section soft">
-    <div class="landing-shell">
-      <h2>Categorii principale</h2>
-      <div class="product-grid categories-grid">
-        {colorCategories.map(([name, copy, item]) => (
-          <a class="product-card" href={SHOP} target="_blank" rel="noopener">
-            <img src={imageUrl(item)} alt={item.alt} title={item.title} width="800" height="1067" loading="lazy" decoding="async" />
-            <small class="stars">4.9 | Atelier AXD</small>
-            <strong>{name}</strong>
-            <em>{copy}</em>
-            <span class="card-button">Vezi categoria</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="proof-large">
-    <div class="landing-shell">
-      <h2>Minimal pe culoare, maxim pe impact</h2>
-      <div>Snur lung contrastant, talie elastica si volume usor de integrat in tinute urbane.</div>
-      <a class="primary-action center" href={SHOP} target="_blank" rel="noopener">Mergi catre magazin</a>
-    </div>
-  </section>
-
-  <section class="landing-section">
-    <div class="landing-shell">
-      <h2>Beneficii clare</h2>
-      <div class="benefit-grid">
-        {benefits.map(([icon, name, body]) => (
-          <a href={SHOP} target="_blank" rel="noopener">
-            <span class="benefit-svg" set:html={icon}></span>
-            <strong>{name}</strong>
-            <span>{body}</span>
-          </a>
-        ))}
-      </div>
-      <a class="primary-action center" href={SHOP} target="_blank" rel="noopener">Intra pe Atelier AXD</a>
-    </div>
-  </section>
-
-  <section class="landing-section soft">
-    <div class="landing-shell split reverse">
-      <div class="text-panel">
-        <h2>Creat pentru cautari vizuale</h2>
-        <p>Pagina foloseste imagini de produs, tinute si detalii pentru a prezenta clar forma, snurul si proportia pantalonilor in cautari vizuale.</p>
-        <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Vezi pe Atelier AXD</a>
-      </div>
-      <a class="image-panel" href={SHOP} target="_blank" rel="noopener">
-        <img src={imageUrl(img(14))} alt={img(14).alt} title={img(14).title} width="900" height="1200" loading="lazy" decoding="async" />
-      </a>
-    </div>
-  </section>
-
-  <section class="guarantee">
-    <div class="landing-shell">
-      <h2>Comanda gestionata transparent</h2>
-      <p>Comanda, livrarea, returul si plata sunt gestionate transparent pe atelieraxd.ro.</p>
-      <a class="primary-action center" href={SHOP} target="_blank" rel="noopener">Vezi pe Atelier AXD</a>
-    </div>
-  </section>
-
-  <section class="proof-large">
-    <div class="landing-shell">
-      <h2>Moda urbana fara zgomot vizual</h2>
-      <div>Alb, negru estompat si albastru intens: o prezenta curata, moderna si usor de recunoscut.</div>
-      <a class="primary-action center" href={SHOP} target="_blank" rel="noopener">Mergi catre magazin</a>
-    </div>
-  </section>
-
-  <section class="landing-section faq-split">
-    <div class="landing-shell split">
-      <a class="image-panel" href={SHOP} target="_blank" rel="noopener">
-        <img src={imageUrl(img(20))} alt={img(20).alt} title={img(20).title} width="900" height="1200" loading="lazy" decoding="async" />
-      </a>
-      <div class="faq-panel">
-        <h2>Intrebari frecvente</h2>
-        {faqs.slice(0, 4).map(([question, answer]) => (
-          <details>
-            <summary>{question}</summary>
-            <p>{answer}</p>
-          </details>
-        ))}
-        <a class="primary-action" href={SHOP} target="_blank" rel="noopener">Vezi colectia</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="landing-section offers">
-    <div class="landing-shell offer-grid">
-      <a class="offer-card wide" href={SHOP} target="_blank" rel="noopener">
-        <img src={imageUrl(img(21))} alt={img(21).alt} title={img(21).title} width="1200" height="900" loading="lazy" decoding="async" />
-        <span>Modele noi</span>
-        <strong>Modele noi cu snur lung</strong>
-      </a>
-      <a class="offer-card" href={SHOP} target="_blank" rel="noopener">
-        <img src={imageUrl(img(22))} alt={img(22).alt} title={img(22).title} width="1200" height="900" loading="lazy" decoding="async" />
-        <span>Croiala</span>
-        <strong>Croieli relaxate</strong>
-      </a>
-      <a class="offer-card" href={SHOP} target="_blank" rel="noopener">
-        <img src={imageUrl(img(18))} alt={img(18).alt} title={img(18).title} width="1200" height="900" loading="lazy" decoding="async" />
-        <span>Sezon</span>
-        <strong>Variante scurte</strong>
-      </a>
-    </div>
-  </section>
-
-  <section class="final-cta">
-    <div class="landing-shell">
-      <p>Ghid informativ pentru stil urban</p>
-      <h2>Alege croiala relaxata care tine tinuta curata si intentionata.</h2>
-      <a class="white-action" href={SHOP} target="_blank" rel="noopener">Vezi pe Atelier AXD</a>
     </div>
   </section>
 </Layout>

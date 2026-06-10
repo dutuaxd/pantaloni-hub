@@ -28,7 +28,7 @@ export const ATELIER_LINKS = {
   blog: 'https://atelieraxd.ro/blogs/news',
 };
 export const updated = '2026-05-20';
-export const brandName = 'PantaloniCuSnurLung.ro';
+export const brandName = 'PSL Fashion';
 export const merchantReturnPolicyId = `${SITE}/#merchant-return-policy`;
 const todayInRomania = new Intl.DateTimeFormat('en-CA', {
   timeZone: 'Europe/Bucharest',
@@ -256,58 +256,7 @@ export function productSchema(
     url,
     sku: 'atelier-axd-wide-leg-snur-negru',
     mpn: 'AXD-WIDE-LEG-SNUR-NEGRU',
-    offers: {
-      '@type': 'Offer',
-      '@id': `${url}#offer`,
-      url,
-      price: 100.00,
-      priceCurrency: 'RON',
-      priceSpecification: {
-        '@type': 'UnitPriceSpecification',
-        price: 100.00,
-        priceCurrency: 'RON',
-      },
-      priceValidUntil: '2027-12-31',
-      availability: 'https://schema.org/InStock',
-      itemCondition: 'https://schema.org/NewCondition',
-      seller: { '@type': 'Organization', name: 'Atelier AXD', url: ATELIER_HOME },
-      shippingDetails: {
-        '@type': 'OfferShippingDetails',
-        shippingDestination: {
-          '@type': 'DefinedRegion',
-          addressCountry: 'RO',
-        },
-        shippingRate: {
-          '@type': 'MonetaryAmount',
-          value: 19.00,
-          currency: 'RON',
-        },
-        deliveryTime: {
-          '@type': 'ShippingDeliveryTime',
-          handlingTime: {
-            '@type': 'QuantitativeValue',
-            minValue: 0,
-            maxValue: 1,
-            unitCode: 'DAY',
-          },
-          transitTime: {
-            '@type': 'QuantitativeValue',
-            minValue: 1,
-            maxValue: 3,
-            unitCode: 'DAY',
-          },
-        },
-      },
-      hasMerchantReturnPolicy: {
-        '@type': 'MerchantReturnPolicy',
-        '@id': merchantReturnPolicyId,
-        applicableCountry: 'RO',
-        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
-        merchantReturnDays: 14,
-        returnMethod: 'https://schema.org/ReturnByMail',
-        returnFees: 'https://schema.org/ReturnFeesCustomerResponsibility',
-      },
-    },
+    isRelatedTo: { '@type': 'WebSite', name: 'AtelierAXD', url: ATELIER_HOME },
   };
 }
 
@@ -320,7 +269,7 @@ export function breadcrumbSchema(title: string, url: string) {
 }
 
 export function articleSchema(page: PageLike) {
-  const imagePath = page.image.endsWith('.webp') ? `images/products/${page.image}` : page.image;
+  const imagePath = page.image.startsWith('images/') ? page.image : page.image.endsWith('.webp') ? `images/products/${page.image}` : page.image;
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -522,6 +471,12 @@ const landingPages = [
   page('pantaloni-oversized', 'Pantaloni oversized | Croieli relaxate si styling', 'Afla cum alegi pantaloni oversized, cum ii porti fara volum excesiv si ce piese completeaza un outfit urban fit.', 'Pantaloni oversized cu proportii curate', 'Pantalonii oversized functioneaza cand volumul este intentionat: talie stabila, material cu cadere buna si partea superioara echilibrata prin tricou dens sau hoodie scurt.', baseSections, 'pantaloni-cu-snur-lung-maro-baggy-produs.webp'),
   page('moda-urbana-barbati', 'Moda urbana barbati | Pantaloni largi si outfituri 2026', 'Ghid moda urbana barbati cu pantaloni loose fit, joggeri oversized, hoodie, sneakers si layering urban.', 'Moda urbana barbati construit pe croieli relaxate', 'Stilul de moda urbana pentru barbati in 2026 pleaca de la pantaloni loose fit, sneakers cu prezenta si piese simple care pastreaza silueta moderna.', baseSections, 'pantaloni-cu-snur-lung-negri-barbati-outfit.webp'),
   page('moda-urbana-femei', 'Moda urbana femei | Outfituri oversized si urban fit', 'Idei moda urbana femei cu pantaloni baggy, topuri simple, jachete scurte, sneakers si outfituri monocrome.', 'Moda urbana femei cu volum controlat', 'Stilul de moda urbana pentru femei arata cel mai bine cand pantalonul larg este echilibrat cu topuri compacte, tricouri curate si incaltaminte care sustine vizual croiala.', baseSections, 'pantaloni-cu-snur-lung-negri-femei-outfit.webp'),
+  page('streetwear-femei', 'Streetwear femei | Ghid editorial PSL Fashion', 'Ghid informativ despre streetwear femei: croieli relaxate, pantaloni largi, tricouri simple, sneakers si proportii curate.', 'Streetwear femei ca directie de stil urban', 'Streetwear femei este tratat aici ca subiect editorial separat de moda urbana femei: accentul cade pe influente streetwear, proportii relaxate, sneakers si piese usor de purtat in oras.', [
+    ['Intentie separata', 'Pagina pastreaza termenul streetwear pentru utilizatorii care cauta explicit aceasta estetica. Moda urbana femei ramane pagina mai larga despre tinute casual urbane, iar aici discutam codurile streetwear: volum, incaltaminte, layering si textura.'],
+    ['Piese principale', 'Pantalonii largi, tricourile oversize, hanoracele compacte si sneakersii cu volum mediu formeaza baza. Pagina nu declara stoc, preturi sau disponibilitate, ci explica felul in care piesele pot fi combinate.'],
+    ['Culori si proportii', 'Negru, gri, alb, bej si verde oliv sunt usor de integrat. Pentru o tinuta coerenta, o singura piesa poate avea volum mai mare, iar restul ramane clar ca linie.'],
+    ['Legaturi interne', 'Continua cu moda urbana femei, outfituri monocrome moda urbana, pantaloni loose fit si ghidul de culori pentru tinute neutre.'],
+  ], 'pantaloni-cu-snur-lung-negri-femei-outfit.webp'),
   page('baggy-cu-snur', 'Baggy cu snur | Fit relaxat si detaliu vizual', 'Ghid baggy cu snur pentru tinute urbane: cum alegi lungimea, materialul, talia si pant stacking.', 'Baggy cu snur pentru tinute relaxate', 'Modelele baggy cu snur adauga miscare in zona taliei si transforma un pantalon casual larg intr-o piesa moda urbana recognoscibila.', baseSections, 'pantaloni-cu-snur-lung-maro-baggy-barbati.webp'),
   page('pantaloni-loose-fit', 'Pantaloni loose fit | Ghid de croiala relaxata', 'Ce inseamna loose fit, cum se diferentiaza de baggy si oversized, cu exemple de outfituri si recomandari de marime.', 'Pantaloni loose fit pentru confort zilnic', 'Loose fit inseamna volum moderat, suficient pentru miscare si confort, dar mai usor de purtat decat o croiala baggy extrema.', baseSections, 'pantaloni-cu-snur-lung-gri-bej-produs.webp'),
   page('pantaloni-urban-fit', 'Pantaloni urban fit | Ghid styling 2026', 'Pantaloni urban fit pentru tinute minimal moda urbana: culori, materiale, sneakers, layering si recomandari de sezon.', 'Pantaloni urban fit pentru garderoba moderna', 'Urban fit inseamna croiala relaxata, utila in oras, suficient de clara pentru tinute minimaliste si suficient de comoda pentru purtare zilnica.', baseSections, 'pantaloni-cu-snur-lung-bleumarin-produs-unisex.webp'),
@@ -558,6 +513,18 @@ const rawBlogPosts = withPremiumEditorialImages([
   page('blog/baggy-daca-esti-scund', 'Cum porti baggy daca esti scund', 'Ghid pentru persoane scunde: pantaloni baggy, proportii, talie, sneakers si greseli de evitat.', 'Cum porti baggy daca esti scund', 'Daca esti scund, pantalonii baggy trebuie sa pastreze talia clara si tivul controlat, ca volumul sa nu scurteze vizual silueta.', baseSections, 'pantaloni-cu-snur-lung-bej-femei-outfit.webp'),
   page('blog/greseli-outfit-oversized', 'Greseli in outfituri oversized', 'Intrebari utile greseli in outfituri oversized: volum fara proportie, materiale slabe, culori haotice si pant stacking excesiv.', 'Greseli in outfituri oversized', 'Oversized nu inseamna haine prea mari, ci volum ales intentionat si echilibrat prin proportii.', baseSections, 'pantaloni-cu-snur-lung-maro-produs-unisex.webp'),
   page('blog/trenduri-moda-urbana-2026', 'Trenduri moda urbana 2026', 'Trenduri moda urbana 2026: baggy, loose fit, monochrome, influente japoneze, layering si materiale dense.', 'Trenduri moda urbana 2026', 'In 2026, moda urbana se muta spre croieli relaxate, palete mai curate si outfituri care pot fi purtate zilnic.', baseSections, 'tinuta-unisex-pantaloni-largi-snur-extra-lung.png'),
+  page('blog/outfituri-monocrome-streetwear', 'Outfituri monocrome streetwear', 'Ghid editorial pentru outfituri monocrome streetwear: all black, gri ton pe ton, texturi si proportii relaxate.', 'Outfituri monocrome streetwear', 'Outfiturile monocrome streetwear pornesc de la o paleta restransa si adauga interes prin volum, textura si incaltaminte. Pagina este separata de outfiturile monocrome moda urbana prin accentul pe coduri streetwear.', [
+    ['Diferenta fata de moda urbana', 'Moda urbana monocroma este mai larga si poate include tinute casual minimaliste. Streetwear monocrom pune accent pe sneakers, hoodie, pantaloni largi, layering si linii mai relaxate.'],
+    ['All black fara monotonie', 'Diferentele de textura conteaza: bumbac dens, fleece, denim, nylon mat sau tricot. Daca toate piesele sunt negre, proportia si materialul trebuie sa faca separarea vizuala.'],
+    ['Gri ton pe ton', 'Griul permite o varianta mai moale decat all black. Gri deschis sus, antracit jos si sneakers simpli creeaza profunzime fara contrast puternic.'],
+    ['Linkuri utile', 'Vezi si outfituri monocrome moda urbana, trenduri streetwear 2026, pantaloni baggy negri si ghidul de culori neutre.'],
+  ], 'pantaloni-cu-snur-lung-negri-produs-unisex.webp'),
+  page('blog/trenduri-streetwear-2026', 'Trenduri streetwear 2026', 'Trenduri streetwear 2026 explicate editorial: pantaloni largi, hoodie compact, sneakers, layering si culori neutre.', 'Trenduri streetwear 2026', 'Trendurile streetwear din 2026 merg spre piese purtabile zilnic: croieli relaxate, sneakers simpli, culori neutre si layering mai curat decat in perioadele dominate de logo-uri mari.', [
+    ['Intentie separata', 'Pagina foloseste termenul streetwear pentru cautarile care vor cultura si estetica strazii. Trenduri moda urbana 2026 ramane pagina mai larga pentru casual urban si garderoba zilnica.'],
+    ['Croieli vizibile', 'Wide leg, baggy, loose fit si pantaloni cargo raman directii importante, dar sunt purtate mai controlat: talie clara, tiv gandit si partea de sus mai simpla.'],
+    ['Culori si materiale', 'Negru, gri, bej, bleumarin si oliv sunt usor de purtat. Materialele dense, bumbacul greu, fleece-ul mat si nylonul tehnic ajuta tinuta sa para intentionata.'],
+    ['Legaturi interne', 'Continua cu trenduri moda urbana 2026, outfituri monocrome streetwear, streetwear Romania si pantaloni wide leg.'],
+  ], 'tinuta-unisex-pantaloni-largi-snur-extra-lung.png'),
   {
     ...page('blog/tricou-tie-dye-oversized-pantaloni-negri-snur-lung', 'Tricou tie dye oversized cu pantaloni negri cu snur lung', 'Ghid despre tricou tie dye oversized purtat cu pantaloni negri cu snur lung: contrast, proportii, sneakers si styling unisex.', 'Tricou tie dye oversized cu pantaloni negri cu snur lung', 'Un tricou tie dye oversized functioneaza cel mai bine cu pantaloni negri cu snur lung atunci cand vrei o tinuta statement, dar controlata. Imprimeul ramane sus, pantalonii tin baza neutra, iar snurul alb leaga vizual outfitul.', [
       ['Intentia articolului', 'Acest ghid acopera cautarea pentru tricou tie dye oversized purtat cu pantaloni negri cu snur lung. Nu concureaza cu paginile despre pantaloni cu snur lung, pentru ca piesa principala analizata este tricoul cu imprimeu si felul in care se echilibreaza cu o baza neagra.'],

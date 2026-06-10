@@ -1,9 +1,10 @@
 ---
 import ContentPage from '../components/ContentPage.astro';
 import { pages } from '../data/seoSite';
+import { editorialArticles } from '../data/portalContent';
 
 export function getStaticPaths() {
-  return pages
+  return [...pages, ...editorialArticles]
     .filter((page) => !['contact', 'faq', 'politica-de-confidentialitate', 'politica-cookies', 'termeni-si-conditii'].includes(page.slug))
     .map((page) => ({ params: { slug: page.slug }, props: { page } }));
 }
