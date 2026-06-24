@@ -480,6 +480,254 @@ footer .logo,footer h4,.company-details strong{color:#fff}
   .logo-word{max-width:none;font-size:.72rem;letter-spacing:1.2px}
 }
 
+/* PSL Fashion homepage rebuild */
+.mag-hero{
+  background:#efede7;
+  padding:38px 0 46px;
+  border-bottom:1px solid #d8d2c8;
+}
+.mag-hero-grid{
+  grid-template-columns:minmax(0,1fr) minmax(320px,.36fr);
+  gap:22px;
+  align-items:stretch;
+}
+.mag-featured a{
+  display:grid;
+  grid-template-columns:minmax(280px,.58fr) minmax(0,1fr);
+  gap:0;
+  min-height:620px;
+  background:#111;
+  color:#fff;
+  overflow:hidden;
+  border:1px solid #111;
+}
+.mag-featured-media{
+  min-height:100%;
+  background:#f7f5f0;
+}
+.mag-featured-media img{
+  width:100%;
+  height:100%;
+  min-height:620px;
+  object-fit:cover;
+  object-position:center top;
+}
+.mag-featured-copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:30px;
+  background:#111;
+}
+.mag-featured-copy span,.mag-section-head span,.mag-card span{
+  color:#7cbbff;
+}
+.mag-featured h1{
+  color:#fff;
+  font-size:clamp(2.35rem,4vw,4.25rem);
+  line-height:.95;
+  margin:12px 0 18px;
+  max-width:760px;
+}
+.mag-featured p{
+  color:rgba(255,255,255,.75);
+  max-width:540px;
+  margin:0;
+}
+.mag-read-link{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  margin-top:28px;
+  background:#fff;
+  color:#111;
+  border-radius:4px;
+  padding:12px 16px;
+  font-size:.76rem;
+  font-weight:900;
+  text-transform:uppercase;
+}
+.mag-cover-list{
+  gap:10px;
+}
+.mag-cover-list a{
+  display:grid;
+  grid-template-columns:112px minmax(0,1fr);
+  gap:14px;
+  align-items:center;
+  min-height:142px;
+  border:1px solid #d8d2c8;
+  border-radius:0;
+  padding:10px;
+  background:#fff;
+}
+.mag-cover-list img{
+  width:112px;
+  height:122px;
+  object-fit:cover;
+  background:#f2f2f2;
+}
+.mag-cover-list strong{
+  font-size:.95rem;
+  line-height:1.1;
+}
+.mag-cover-list small{
+  display:block;
+  color:#5b554d;
+  font-size:.84rem;
+  line-height:1.45;
+  margin-top:7px;
+}
+.mag-section{
+  padding:58px 0;
+}
+.mag-section-head{
+  border-bottom:1px solid #111;
+  padding-bottom:16px;
+  margin-bottom:22px;
+}
+.mag-section-head h2{
+  letter-spacing:0;
+}
+.mag-news-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+.mag-news-grid.compact{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.mag-card{
+  border-radius:0;
+  overflow:hidden;
+  border-color:#d8d2c8;
+}
+.mag-card a{
+  padding:0;
+}
+.mag-card img{
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  background:#eee;
+}
+.mag-card span,.mag-card h3,.mag-card p{
+  display:block;
+  margin-left:18px;
+  margin-right:18px;
+}
+.mag-card span{
+  margin-top:18px;
+}
+.mag-card h3{
+  min-height:3.45em;
+  margin-top:9px;
+}
+.mag-card p{
+  margin-bottom:20px;
+}
+.mag-trend-row{
+  gap:18px;
+}
+.mag-trend-row a{
+  border-radius:0;
+  overflow:hidden;
+  padding:0 0 20px;
+  border-color:#d8d2c8;
+}
+.mag-trend-row img{
+  width:100%;
+  aspect-ratio:5/4;
+  object-fit:cover;
+  margin-bottom:18px;
+}
+.mag-trend-row strong,.mag-trend-row p{
+  display:block;
+  margin-left:20px;
+  margin-right:20px;
+}
+.mag-link-grid a,.mag-product-card{
+  border-radius:0;
+  border-color:#d8d2c8;
+}
+.mag-product-card img{
+  border-radius:0;
+  object-position:center top;
+}
+.mag-cover-list a:hover,.mag-trend-row a:hover,.mag-link-grid a:hover,.mag-card:hover,.mag-product-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 18px 38px rgba(17,17,17,.10);
+}
+@media(max-width:1100px){
+  .mag-hero-grid,.mag-featured a{
+    grid-template-columns:1fr;
+  }
+  .mag-featured a{
+    min-height:0;
+  }
+  .mag-featured-media img{
+    min-height:0;
+    height:auto;
+    aspect-ratio:16/10;
+    object-position:center 18%;
+  }
+  .mag-cover-list{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .mag-news-grid,.mag-news-grid.compact,.mag-trend-row,.mag-product-grid,.mag-link-grid,.mag-footer-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:640px){
+  .mag-hero{
+    padding:18px 0 32px;
+  }
+  .mag-featured-copy{
+    padding:22px;
+  }
+  .mag-featured h1{
+    font-size:2.35rem;
+    line-height:.98;
+  }
+  .mag-featured-media img{
+    aspect-ratio:4/5;
+  }
+  .mag-cover-list,.mag-news-grid,.mag-news-grid.compact,.mag-trend-row,.mag-product-grid,.mag-link-grid,.mag-footer-grid{
+    grid-template-columns:1fr;
+  }
+  .mag-cover-list a{
+    grid-template-columns:96px minmax(0,1fr);
+    min-height:120px;
+  }
+  .mag-cover-list img{
+    width:96px;
+    height:102px;
+  }
+  .mag-section-head{
+    display:block;
+  }
+  .mag-card h3{
+    min-height:0;
+  }
+}
+@media(max-width:1200px) and (min-width:1101px){
+  .mag-featured a{
+    grid-template-columns:1fr;
+    min-height:0;
+  }
+  .mag-featured-media img{
+    min-height:0;
+    height:auto;
+    aspect-ratio:16/9;
+    object-position:center 18%;
+  }
+  .mag-featured-copy{
+    padding:28px;
+  }
+  .mag-featured h1{
+    max-width:620px;
+  }
+}
+
 /* Visual-only premium refinement */
 :root{
   --bg:#ffffff;

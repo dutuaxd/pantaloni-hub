@@ -122,7 +122,7 @@ export const atelierRecommendations = [
   },
   {
     title: 'Hanorace pentru layering',
-    image: '/images/products/pantaloni-cu-snur-lung-hanorac-cu-model-barbati.webp',
+    image: '/images/atelieraxd-long-tail/pantaloni-cu-snur-lung-hanorac-negru-simplu-siret-lung-hoodie-negru-minimalist.jpg',
     text: 'Optiuni de styling pentru vreme mai rece si tinute de oras.',
     href: ATELIER_LINKS.hanorace,
   },

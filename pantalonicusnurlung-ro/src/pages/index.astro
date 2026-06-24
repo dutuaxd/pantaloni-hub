@@ -21,6 +21,18 @@ const featuredInternalPosts = [
   .map(publicPage);
 const recentPosts = [...featuredInternalPosts, ...blogPosts.slice(1, 5).map(publicPage)];
 const imagePath = (image: string) => image.startsWith('images/') ? `/${image}` : image.endsWith('.webp') ? `/images/products/${image}` : `/${image}`;
+const heroImage = '/moda-urbana-pantaloni-unisex-cu-snur-lung.png';
+const sideStories = [
+  ['/pantaloni/', 'Pantaloni', 'Croieli largi, cargo, jogger si modele cu snur.', '/images/products/pantaloni-cu-snur-lung-negri-barbati-outfit.webp'],
+  ['/tricouri/', 'Tricouri', 'Oversize, basic, negru, alb si piese de vara.', '/tricou-gri-simplu-pantaloni-siret-lung-produs.png'],
+  ['/hanorace/', 'Hanorace', 'Layering, streetwear si tinute casual.', '/images/atelieraxd-long-tail/pantaloni-cu-snur-lung-hanorac-negru-simplu-siret-lung-hoodie-negru-minimalist.jpg'],
+  ['/tinute/', 'Tinute', 'Idei rapide pentru oras, vara si all black.', '/outfit-casual-tricou-pantaloni-negri-snur-lung.png'],
+];
+const trendStories = [
+  ['/tinute-streetwear/', 'Streetwear purtabil', 'Volume relaxate, culori neutre si piese care raman usor de integrat.', '/tinuta-unisex-pantaloni-largi-snur-extra-lung.png'],
+  ['/tinute-vara/', 'Vara', 'Pantaloni scurti, tricouri usoare si tonuri deschise.', '/set-alb-pantaloni-scurti-siret-lung-outfit.png'],
+  ['/tinute-all-black/', 'All black', 'Texturi diferite si proportii clare pentru tinute monocrome.', '/pantaloni-barbati-largi-negri-snur-casual.jpg'],
+];
 const schema = [
   organizationSchema(),
   websiteSchema(),
@@ -39,22 +51,25 @@ const schema = [
     <div class="container mag-hero-grid">
       <article class="mag-featured">
         <a href={`/${featured.slug}/`}>
-          <img src={imagePath(featured.image)} alt={featured.h1} width="1200" height="900" loading="eager" fetchpriority="high" />
-          <span>Articol featured</span>
-          <h1>Fashion masculin: cum se schimba tinutele casual in 2026</h1>
-          <p>O privire editoriala asupra pantalonilor relaxati, tricourilor oversize, hanoracelor si pieselor usor de purtat zilnic.</p>
+          <div class="mag-featured-media">
+            <img src={heroImage} alt="Tinuta urbana cu pantaloni largi si snur lung" width="1200" height="1500" loading="eager" fetchpriority="high" />
+          </div>
+          <div class="mag-featured-copy">
+            <span>Articol featured</span>
+            <h1>Tinute casual masculine pentru 2026</h1>
+            <p>Un ghid vizual pentru pantaloni relaxati, tricouri oversize, hanorace curate si combinatii usor de purtat zilnic.</p>
+            <strong class="mag-read-link">Citeste articolul</strong>
+          </div>
         </a>
       </article>
       <aside class="mag-cover-list" aria-label="Subiecte principale">
-        {[
-          ['/pantaloni/', 'Pantaloni', 'Croieli largi, cargo, jogger si modele cu snur.'],
-          ['/tricouri/', 'Tricouri', 'Oversize, basic, negru, alb si piese de vara.'],
-          ['/hanorace/', 'Hanorace', 'Layering, streetwear si tinute casual.'],
-          ['/fashion-masculin/', 'Fashion masculin', 'Hub pentru trenduri, ghiduri si categorii.'],
-        ].map(([href, label, text]) => (
+        {sideStories.map(([href, label, text, image]) => (
           <a href={href}>
-            <strong>{label}</strong>
-            <span>{text}</span>
+            <img src={image} alt={label} width="240" height="180" loading="eager" decoding="async" />
+            <span>
+              <strong>{label}</strong>
+              <small>{text}</small>
+            </span>
           </a>
         ))}
       </aside>
@@ -71,6 +86,7 @@ const schema = [
         {[...newsItems, ...recentPosts].slice(0, 6).map((item) => (
           <article class="mag-card">
             <a href={`/${item.slug}/`}>
+              <img src={imagePath(item.image)} alt={item.h1} width="640" height="480" loading="lazy" decoding="async" />
               <span>{item.category || 'Fashion'}</span>
               <h3>{item.h1}</h3>
               <p>{item.intro || item.description}</p>
@@ -88,12 +104,9 @@ const schema = [
         <h2>Ce urmarim in garderoba masculina</h2>
       </div>
       <div class="mag-trend-row">
-        {[
-          ['/tinute-streetwear/', 'Streetwear purtabil', 'Volume relaxate, culori neutre si piese care raman usor de integrat.'],
-          ['/tinute-vara/', 'Vara', 'Pantaloni scurti, tricouri usoare si tonuri deschise.'],
-          ['/tinute-all-black/', 'All black', 'Texturi diferite si proportii clare pentru tinute monocrome.'],
-        ].map(([href, title, copy]) => (
+        {trendStories.map(([href, title, copy, image]) => (
           <a href={href}>
+            <img src={image} alt={title} width="760" height="860" loading="lazy" decoding="async" />
             <strong>{title}</strong>
             <p>{copy}</p>
           </a>
@@ -134,6 +147,7 @@ const schema = [
         {guideItems.map((item) => (
           <article class="mag-card">
             <a href={`/${item.slug}/`}>
+              <img src={imagePath(item.image)} alt={item.h1} width="640" height="480" loading="lazy" decoding="async" />
               <span>Ghid</span>
               <h3>{item.h1}</h3>
               <p>{item.intro}</p>
