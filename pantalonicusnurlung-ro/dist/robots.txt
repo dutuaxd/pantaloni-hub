@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /api/
+Disallow: /search/
 Sitemap: https://pantalonicusnurlung.ro/sitemap.xml
 Sitemap: https://pantalonicusnurlung.ro/sitemap-articles.xml
 Sitemap: https://pantalonicusnurlung.ro/sitemap-news.xml

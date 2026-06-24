@@ -30,10 +30,6 @@ export function GET() {
 
   const urls = [
     { loc: `${SITE}/`, priority: '1.0', changefreq: 'monthly' },
-    { loc: `${SITE}/sitemap-articles.xml`, priority: '0.5', changefreq: 'weekly' },
-    { loc: `${SITE}/sitemap-news.xml`, priority: '0.5', changefreq: 'daily' },
-    { loc: `${SITE}/sitemap-categories.xml`, priority: '0.5', changefreq: 'weekly' },
-    { loc: `${SITE}/sitemap-products.xml`, priority: '0.5', changefreq: 'weekly' },
     ...hubs.map(hub => ({ loc: `${SITE}${hub}/`, priority: '0.9', changefreq: 'weekly' })),
     ...editorialArticles.map((page) => ({
       loc: `${SITE}/${page.slug}/`,

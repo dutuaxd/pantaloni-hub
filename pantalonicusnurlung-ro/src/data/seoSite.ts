@@ -37,7 +37,7 @@ const todayInRomania = new Intl.DateTimeFormat('en-CA', {
   day: '2-digit',
 }).format(new Date());
 const publishDate = import.meta.env.PUBLISH_DATE || todayInRomania;
-const showFuturePosts = String(import.meta.env.SHOW_FUTURE_POSTS) === 'true';
+const showFuturePosts = String(import.meta.env.SHOW_FUTURE_POSTS ?? 'true') === 'true';
 const visibleScheduledBlogPosts = scheduledBlogPosts.filter((post) => showFuturePosts || post.date <= publishDate);
 
 export const company = {
@@ -227,11 +227,6 @@ export function websiteSchema() {
     url: SITE,
     inLanguage: 'ro-RO',
     publisher: { '@type': 'Organization', name: brandName },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${SITE}/search/{search_term_string}/`,
-      'query-input': 'required name=search_term_string',
-    },
   };
 }
 
