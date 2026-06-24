@@ -3711,9 +3711,1885 @@ declare module 'astro:content' {
   collection: "blog";
   data: any
 } & { render(): Render[".md"] };
+"bermude-blugi-clasici/index.md": {
+	id: "bermude-blugi-clasici/index.md";
+  slug: "bermude-blugi-clasici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-blugi-rupti/index.md": {
+	id: "bermude-blugi-rupti/index.md";
+  slug: "bermude-blugi-rupti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-blugi-scurti/index.md": {
+	id: "bermude-blugi-scurti/index.md";
+  slug: "bermude-blugi-scurti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-bumbac-dungi/index.md": {
+	id: "bermude-bumbac-dungi/index.md";
+  slug: "bermude-bumbac-dungi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-bumbac-elastici/index.md": {
+	id: "bermude-bumbac-elastici/index.md";
+  slug: "bermude-bumbac-elastici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-bumbac-lejeri/index.md": {
+	id: "bermude-bumbac-lejeri/index.md";
+  slug: "bermude-bumbac-lejeri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-bumbac-plaja/index.md": {
+	id: "bermude-bumbac-plaja/index.md";
+  slug: "bermude-bumbac-plaja";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-bumbac-simpli/index.md": {
+	id: "bermude-bumbac-simpli/index.md";
+  slug: "bermude-bumbac-simpli";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-bumbac-subtire/index.md": {
+	id: "bermude-bumbac-subtire/index.md";
+  slug: "bermude-bumbac-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-bumbac-trening/index.md": {
+	id: "bermude-bumbac-trening/index.md";
+  slug: "bermude-bumbac-trening";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-camuflaj-armata/index.md": {
+	id: "bermude-camuflaj-armata/index.md";
+  slug: "bermude-camuflaj-armata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-cargo-bumbac/index.md": {
+	id: "bermude-cargo-bumbac/index.md";
+  slug: "bermude-cargo-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-cargo-buzunare/index.md": {
+	id: "bermude-cargo-buzunare/index.md";
+  slug: "bermude-cargo-buzunare";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-doc-buzunare/index.md": {
+	id: "bermude-doc-buzunare/index.md";
+  slug: "bermude-doc-buzunare";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-doc-lejeri/index.md": {
+	id: "bermude-doc-lejeri/index.md";
+  slug: "bermude-doc-lejeri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-doc-rezistent/index.md": {
+	id: "bermude-doc-rezistent/index.md";
+  slug: "bermude-doc-rezistent";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-doc-rezistenti/index.md": {
+	id: "bermude-doc-rezistenti/index.md";
+  slug: "bermude-doc-rezistenti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-doc-vara/index.md": {
+	id: "bermude-doc-vara/index.md";
+  slug: "bermude-doc-vara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-in-lejeri/index.md": {
+	id: "bermude-in-lejeri/index.md";
+  slug: "bermude-in-lejeri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-inot-lejeri/index.md": {
+	id: "bermude-inot-lejeri/index.md";
+  slug: "bermude-inot-lejeri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-jeans-clasici/index.md": {
+	id: "bermude-jeans-clasici/index.md";
+  slug: "bermude-jeans-clasici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-jeans-rupti/index.md": {
+	id: "bermude-jeans-rupti/index.md";
+  slug: "bermude-jeans-rupti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-jeans-scurti/index.md": {
+	id: "bermude-jeans-scurti/index.md";
+  slug: "bermude-jeans-scurti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-plaja-dungi/index.md": {
+	id: "bermude-plaja-dungi/index.md";
+  slug: "bermude-plaja-dungi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-plaja-imprimeu/index.md": {
+	id: "bermude-plaja-imprimeu/index.md";
+  slug: "bermude-plaja-imprimeu";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-plaja-rapida/index.md": {
+	id: "bermude-plaja-rapida/index.md";
+  slug: "bermude-plaja-rapida";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-sport-bumbac/index.md": {
+	id: "bermude-sport-bumbac/index.md";
+  slug: "bermude-sport-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-sport-buzunar/index.md": {
+	id: "bermude-sport-buzunar/index.md";
+  slug: "bermude-sport-buzunar";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-sport-fermoar/index.md": {
+	id: "bermude-sport-fermoar/index.md";
+  slug: "bermude-sport-fermoar";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bermude-tercot-oliv/index.md": {
+	id: "bermude-tercot-oliv/index.md";
+  slug: "bermude-tercot-oliv";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-boyfriend-rupti/index.md": {
+	id: "blugi-boyfriend-rupti/index.md";
+  slug: "blugi-boyfriend-rupti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-conici-barbati/index.md": {
+	id: "blugi-conici-barbati/index.md";
+  slug: "blugi-conici-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-dama-conici/index.md": {
+	id: "blugi-dama-conici/index.md";
+  slug: "blugi-dama-conici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-dama-skinny/index.md": {
+	id: "blugi-dama-skinny/index.md";
+  slug: "blugi-dama-skinny";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-drepti-clasici/index.md": {
+	id: "blugi-drepti-clasici/index.md";
+  slug: "blugi-drepti-clasici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-elastici-conici/index.md": {
+	id: "blugi-elastici-conici/index.md";
+  slug: "blugi-elastici-conici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-evazati-retro/index.md": {
+	id: "blugi-evazati-retro/index.md";
+  slug: "blugi-evazati-retro";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-gri-stersi/index.md": {
+	id: "blugi-gri-stersi/index.md";
+  slug: "blugi-gri-stersi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-lejeri-rupti/index.md": {
+	id: "blugi-lejeri-rupti/index.md";
+  slug: "blugi-lejeri-rupti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-lejeri-spalati/index.md": {
+	id: "blugi-lejeri-spalati/index.md";
+  slug: "blugi-lejeri-spalati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-mom-fit/index.md": {
+	id: "blugi-mom-fit/index.md";
+  slug: "blugi-mom-fit";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-negri-simpli/index.md": {
+	id: "blugi-negri-simpli/index.md";
+  slug: "blugi-negri-simpli";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-prespalati-retro/index.md": {
+	id: "blugi-prespalati-retro/index.md";
+  slug: "blugi-prespalati-retro";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-regular-barbati/index.md": {
+	id: "blugi-regular-barbati/index.md";
+  slug: "blugi-regular-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-regular-fit/index.md": {
+	id: "blugi-regular-fit/index.md";
+  slug: "blugi-regular-fit";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-retro-evazati/index.md": {
+	id: "blugi-retro-evazati/index.md";
+  slug: "blugi-retro-evazati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-rupti-genunchi/index.md": {
+	id: "blugi-rupti-genunchi/index.md";
+  slug: "blugi-rupti-genunchi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-skinny-albastri/index.md": {
+	id: "blugi-skinny-albastri/index.md";
+  slug: "blugi-skinny-albastri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-skinny-elastici/index.md": {
+	id: "blugi-skinny-elastici/index.md";
+  slug: "blugi-skinny-elastici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-skinny-negri/index.md": {
+	id: "blugi-skinny-negri/index.md";
+  slug: "blugi-skinny-negri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-slim-gri/index.md": {
+	id: "blugi-slim-gri/index.md";
+  slug: "blugi-slim-gri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-spalare-medie/index.md": {
+	id: "blugi-spalare-medie/index.md";
+  slug: "blugi-spalare-medie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-spalati-acid/index.md": {
+	id: "blugi-spalati-acid/index.md";
+  slug: "blugi-spalati-acid";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-spalati-des/index.md": {
+	id: "blugi-spalati-des/index.md";
+  slug: "blugi-spalati-des";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-spalati-deschis/index.md": {
+	id: "blugi-spalati-deschis/index.md";
+  slug: "blugi-spalati-deschis";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-spalati-mediu/index.md": {
+	id: "blugi-spalati-mediu/index.md";
+  slug: "blugi-spalati-mediu";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-talie-inalta/index.md": {
+	id: "blugi-talie-inalta/index.md";
+  slug: "blugi-talie-inalta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-talie-joasa/index.md": {
+	id: "blugi-talie-joasa/index.md";
+  slug: "blugi-talie-joasa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"blugi-talie-medie/index.md": {
+	id: "blugi-talie-medie/index.md";
+  slug: "blugi-talie-medie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-bumbac-brodat/index.md": {
+	id: "bluza-bumbac-brodat/index.md";
+  slug: "bluza-bumbac-brodat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-crep-matase/index.md": {
+	id: "bluza-crep-matase/index.md";
+  slug: "bluza-crep-matase";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-crep-viscoza/index.md": {
+	id: "bluza-crep-viscoza/index.md";
+  slug: "bluza-crep-viscoza";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-dantela-alba/index.md": {
+	id: "bluza-dantela-alba/index.md";
+  slug: "bluza-dantela-alba";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-dantela-eleganta/index.md": {
+	id: "bluza-dantela-eleganta/index.md";
+  slug: "bluza-dantela-eleganta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-dantela-neagra/index.md": {
+	id: "bluza-dantela-neagra/index.md";
+  slug: "bluza-dantela-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-guler-inalt/index.md": {
+	id: "bluza-guler-inalt/index.md";
+  slug: "bluza-guler-inalt";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-imprimata-flori/index.md": {
+	id: "bluza-imprimata-flori/index.md";
+  slug: "bluza-imprimata-flori";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-inodora-simpla/index.md": {
+	id: "bluza-inodora-simpla/index.md";
+  slug: "bluza-inodora-simpla";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-inodora-subtire/index.md": {
+	id: "bluza-inodora-subtire/index.md";
+  slug: "bluza-inodora-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-maneci-bufante/index.md": {
+	id: "bluza-maneci-bufante/index.md";
+  slug: "bluza-maneci-bufante";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-matase-brodata/index.md": {
+	id: "bluza-matase-brodata/index.md";
+  slug: "bluza-matase-brodata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-matase-naturala/index.md": {
+	id: "bluza-matase-naturala/index.md";
+  slug: "bluza-matase-naturala";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-poplin-alba/index.md": {
+	id: "bluza-poplin-alba/index.md";
+  slug: "bluza-poplin-alba";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-poplin-dungi/index.md": {
+	id: "bluza-poplin-dungi/index.md";
+  slug: "bluza-poplin-dungi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-satin-eleganta/index.md": {
+	id: "bluza-satin-eleganta/index.md";
+  slug: "bluza-satin-eleganta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-satinata-eleganta/index.md": {
+	id: "bluza-satinata-eleganta/index.md";
+  slug: "bluza-satinata-eleganta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-transparenta-matase/index.md": {
+	id: "bluza-transparenta-matase/index.md";
+  slug: "bluza-transparenta-matase";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-transparenta-neagra/index.md": {
+	id: "bluza-transparenta-neagra/index.md";
+  slug: "bluza-transparenta-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-transparenta-petrecere/index.md": {
+	id: "bluza-transparenta-petrecere/index.md";
+  slug: "bluza-transparenta-petrecere";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-viscoza-flori/index.md": {
+	id: "bluza-viscoza-flori/index.md";
+  slug: "bluza-viscoza-flori";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-viscoza-imprimata/index.md": {
+	id: "bluza-viscoza-imprimata/index.md";
+  slug: "bluza-viscoza-imprimata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-voal-elastica/index.md": {
+	id: "bluza-voal-elastica/index.md";
+  slug: "bluza-voal-elastica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-voal-imprimata/index.md": {
+	id: "bluza-voal-imprimata/index.md";
+  slug: "bluza-voal-imprimata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-voal-matase/index.md": {
+	id: "bluza-voal-matase/index.md";
+  slug: "bluza-voal-matase";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"bluza-voal-transparent/index.md": {
+	id: "bluza-voal-transparent/index.md";
+  slug: "bluza-voal-transparent";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-casual-carouri/index.md": {
+	id: "camasa-casual-carouri/index.md";
+  slug: "camasa-casual-carouri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-denim-clasica/index.md": {
+	id: "camasa-denim-clasica/index.md";
+  slug: "camasa-denim-clasica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-denim-prespalata/index.md": {
+	id: "camasa-denim-prespalata/index.md";
+  slug: "camasa-denim-prespalata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-flanel-carouri/index.md": {
+	id: "camasa-flanel-carouri/index.md";
+  slug: "camasa-flanel-carouri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-flanel-groasa/index.md": {
+	id: "camasa-flanel-groasa/index.md";
+  slug: "camasa-flanel-groasa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-guler-ascutit/index.md": {
+	id: "camasa-guler-ascutit/index.md";
+  slug: "camasa-guler-ascutit";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-guler-tunica/index.md": {
+	id: "camasa-guler-tunica/index.md";
+  slug: "camasa-guler-tunica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-in-alba/index.md": {
+	id: "camasa-in-alba/index.md";
+  slug: "camasa-in-alba";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-in-albastra/index.md": {
+	id: "camasa-in-albastra/index.md";
+  slug: "camasa-in-albastra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-in-dungi/index.md": {
+	id: "camasa-in-dungi/index.md";
+  slug: "camasa-in-dungi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-matase-eleganta/index.md": {
+	id: "camasa-matase-eleganta/index.md";
+  slug: "camasa-matase-eleganta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-matase-naturala/index.md": {
+	id: "camasa-matase-naturala/index.md";
+  slug: "camasa-matase-naturala";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-noapte-bumbac/index.md": {
+	id: "camasa-noapte-bumbac/index.md";
+  slug: "camasa-noapte-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-noapte-matase/index.md": {
+	id: "camasa-noapte-matase/index.md";
+  slug: "camasa-noapte-matase";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-oversize-dama/index.md": {
+	id: "camasa-oversize-dama/index.md";
+  slug: "camasa-oversize-dama";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-oxford-bumbac/index.md": {
+	id: "camasa-oxford-bumbac/index.md";
+  slug: "camasa-oxford-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-oxford-dungi/index.md": {
+	id: "camasa-oxford-dungi/index.md";
+  slug: "camasa-oxford-dungi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-poplin-alba/index.md": {
+	id: "camasa-poplin-alba/index.md";
+  slug: "camasa-poplin-alba";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-poplin-dungi/index.md": {
+	id: "camasa-poplin-dungi/index.md";
+  slug: "camasa-poplin-dungi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-satin-lux/index.md": {
+	id: "camasa-satin-lux/index.md";
+  slug: "camasa-satin-lux";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-slim-albastra/index.md": {
+	id: "camasa-slim-albastra/index.md";
+  slug: "camasa-slim-albastra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"camasa-slim-fit/index.md": {
+	id: "camasa-slim-fit/index.md";
+  slug: "camasa-slim-fit";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-asimetric-lung/index.md": {
+	id: "cardigan-asimetric-lung/index.md";
+  slug: "cardigan-asimetric-lung";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-asimetric-nasturi/index.md": {
+	id: "cardigan-asimetric-nasturi/index.md";
+  slug: "cardigan-asimetric-nasturi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-fara-inchidere/index.md": {
+	id: "cardigan-fara-inchidere/index.md";
+  slug: "cardigan-fara-inchidere";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-lana-bucle/index.md": {
+	id: "cardigan-lana-bucle/index.md";
+  slug: "cardigan-lana-bucle";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-lana-fin/index.md": {
+	id: "cardigan-lana-fin/index.md";
+  slug: "cardigan-lana-fin";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-lana-gros/index.md": {
+	id: "cardigan-lana-gros/index.md";
+  slug: "cardigan-lana-gros";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-lejer-toamna/index.md": {
+	id: "cardigan-lejer-toamna/index.md";
+  slug: "cardigan-lejer-toamna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-lejer-vara/index.md": {
+	id: "cardigan-lejer-vara/index.md";
+  slug: "cardigan-lejer-vara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-lung-buzunare/index.md": {
+	id: "cardigan-lung-buzunare/index.md";
+  slug: "cardigan-lung-buzunare";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-lung-fir/index.md": {
+	id: "cardigan-lung-fir/index.md";
+  slug: "cardigan-lung-fir";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-lung-nasturi/index.md": {
+	id: "cardigan-lung-nasturi/index.md";
+  slug: "cardigan-lung-nasturi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-lung-tricotat/index.md": {
+	id: "cardigan-lung-tricotat/index.md";
+  slug: "cardigan-lung-tricotat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-moale-mohair/index.md": {
+	id: "cardigan-moale-mohair/index.md";
+  slug: "cardigan-moale-mohair";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-mohair-lung/index.md": {
+	id: "cardigan-mohair-lung/index.md";
+  slug: "cardigan-mohair-lung";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-mohair-pufos/index.md": {
+	id: "cardigan-mohair-pufos/index.md";
+  slug: "cardigan-mohair-pufos";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-nasturi-lemn/index.md": {
+	id: "cardigan-nasturi-lemn/index.md";
+  slug: "cardigan-nasturi-lemn";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-nasturi-mari/index.md": {
+	id: "cardigan-nasturi-mari/index.md";
+  slug: "cardigan-nasturi-mari";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-nasturi-perle/index.md": {
+	id: "cardigan-nasturi-perle/index.md";
+  slug: "cardigan-nasturi-perle";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-oversize-nasturi/index.md": {
+	id: "cardigan-oversize-nasturi/index.md";
+  slug: "cardigan-oversize-nasturi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-perle-albastre/index.md": {
+	id: "cardigan-perle-albastre/index.md";
+  slug: "cardigan-perle-albastre";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-perle-nasturi/index.md": {
+	id: "cardigan-perle-nasturi/index.md";
+  slug: "cardigan-perle-nasturi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-pufos-iarna/index.md": {
+	id: "cardigan-pufos-iarna/index.md";
+  slug: "cardigan-pufos-iarna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-subtire-vara/index.md": {
+	id: "cardigan-subtire-vara/index.md";
+  slug: "cardigan-subtire-vara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-tricotat-bej/index.md": {
+	id: "cardigan-tricotat-bej/index.md";
+  slug: "cardigan-tricotat-bej";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"cardigan-tricotat-lung/index.md": {
+	id: "cardigan-tricotat-lung/index.md";
+  slug: "cardigan-tricotat-lung";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-alergare-buzunar/index.md": {
+	id: "colanti-alergare-buzunar/index.md";
+  slug: "colanti-alergare-buzunar";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-anticelulitici-fitness/index.md": {
+	id: "colanti-anticelulitici-fitness/index.md";
+  slug: "colanti-anticelulitici-fitness";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-anticelulitici-sport/index.md": {
+	id: "colanti-anticelulitici-sport/index.md";
+  slug: "colanti-anticelulitici-sport";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-bumbac-gri/index.md": {
+	id: "colanti-bumbac-gri/index.md";
+  slug: "colanti-bumbac-gri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-bumbac-negri/index.md": {
+	id: "colanti-bumbac-negri/index.md";
+  slug: "colanti-bumbac-negri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-bumbac-simpli/index.md": {
+	id: "colanti-bumbac-simpli/index.md";
+  slug: "colanti-bumbac-simpli";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-captusiti-flausati/index.md": {
+	id: "colanti-captusiti-flausati/index.md";
+  slug: "colanti-captusiti-flausati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-captusiti-fleece/index.md": {
+	id: "colanti-captusiti-fleece/index.md";
+  slug: "colanti-captusiti-fleece";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-compresie-fitness/index.md": {
+	id: "colanti-compresie-fitness/index.md";
+  slug: "colanti-compresie-fitness";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-compresie-sport/index.md": {
+	id: "colanti-compresie-sport/index.md";
+  slug: "colanti-compresie-sport";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-elastan-visiniu/index.md": {
+	id: "colanti-elastan-visiniu/index.md";
+  slug: "colanti-elastan-visiniu";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-flausati-interior/index.md": {
+	id: "colanti-flausati-interior/index.md";
+  slug: "colanti-flausati-interior";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-gravide-bumbac/index.md": {
+	id: "colanti-gravide-bumbac/index.md";
+  slug: "colanti-gravide-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-gravide-elastici/index.md": {
+	id: "colanti-gravide-elastici/index.md";
+  slug: "colanti-gravide-elastici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-iarna-caldurosi/index.md": {
+	id: "colanti-iarna-caldurosi/index.md";
+  slug: "colanti-iarna-caldurosi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-iarna-flausati/index.md": {
+	id: "colanti-iarna-flausati/index.md";
+  slug: "colanti-iarna-flausati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-luciosi-fitness/index.md": {
+	id: "colanti-luciosi-fitness/index.md";
+  slug: "colanti-luciosi-fitness";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-modelatori-fitness/index.md": {
+	id: "colanti-modelatori-fitness/index.md";
+  slug: "colanti-modelatori-fitness";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-piele-ecologica/index.md": {
+	id: "colanti-piele-ecologica/index.md";
+  slug: "colanti-piele-ecologica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-push-up/index.md": {
+	id: "colanti-push-up/index.md";
+  slug: "colanti-push-up";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-scurti-ciclism/index.md": {
+	id: "colanti-scurti-ciclism/index.md";
+  slug: "colanti-scurti-ciclism";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-sport-buzunar/index.md": {
+	id: "colanti-sport-buzunar/index.md";
+  slug: "colanti-sport-buzunar";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-sport-buzunare/index.md": {
+	id: "colanti-sport-buzunare/index.md";
+  slug: "colanti-sport-buzunare";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-sport-dungi/index.md": {
+	id: "colanti-sport-dungi/index.md";
+  slug: "colanti-sport-dungi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-termo-iarna/index.md": {
+	id: "colanti-termo-iarna/index.md";
+  slug: "colanti-termo-iarna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-yoga-bumbac/index.md": {
+	id: "colanti-yoga-bumbac/index.md";
+  slug: "colanti-yoga-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"colanti-yoga-elastici/index.md": {
+	id: "colanti-yoga-elastici/index.md";
+  slug: "colanti-yoga-elastici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-business-clasic/index.md": {
+	id: "costum-business-clasic/index.md";
+  slug: "costum-business-clasic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-business-elegant/index.md": {
+	id: "costum-business-elegant/index.md";
+  slug: "costum-business-elegant";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-casual-bumbac/index.md": {
+	id: "costum-casual-bumbac/index.md";
+  slug: "costum-casual-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-casual-in/index.md": {
+	id: "costum-casual-in/index.md";
+  slug: "costum-casual-in";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-casual-lana/index.md": {
+	id: "costum-casual-lana/index.md";
+  slug: "costum-casual-lana";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-casual-stofa/index.md": {
+	id: "costum-casual-stofa/index.md";
+  slug: "costum-casual-stofa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-casual-vara/index.md": {
+	id: "costum-casual-vara/index.md";
+  slug: "costum-casual-vara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-catifea-barbati/index.md": {
+	id: "costum-catifea-barbati/index.md";
+  slug: "costum-catifea-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-catifea-eleganta/index.md": {
+	id: "costum-catifea-eleganta/index.md";
+  slug: "costum-catifea-eleganta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-ceremonie-barbati/index.md": {
+	id: "costum-ceremonie-barbati/index.md";
+  slug: "costum-ceremonie-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-ceremonie-eleganta/index.md": {
+	id: "costum-ceremonie-eleganta/index.md";
+  slug: "costum-ceremonie-eleganta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-croiala-clasica/index.md": {
+	id: "costum-croiala-clasica/index.md";
+  slug: "costum-croiala-clasica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-elegant-dama/index.md": {
+	id: "costum-elegant-dama/index.md";
+  slug: "costum-elegant-dama";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-haine-business/index.md": {
+	id: "costum-haine-business/index.md";
+  slug: "costum-haine-business";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-lana-barbati/index.md": {
+	id: "costum-lana-barbati/index.md";
+  slug: "costum-lana-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-mire-catifea/index.md": {
+	id: "costum-mire-catifea/index.md";
+  slug: "costum-mire-catifea";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-mire-smoking/index.md": {
+	id: "costum-mire-smoking/index.md";
+  slug: "costum-mire-smoking";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-nunta-barbati/index.md": {
+	id: "costum-nunta-barbati/index.md";
+  slug: "costum-nunta-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-office-clasic/index.md": {
+	id: "costum-office-clasic/index.md";
+  slug: "costum-office-clasic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-office-dama/index.md": {
+	id: "costum-office-dama/index.md";
+  slug: "costum-office-dama";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-office-elegant/index.md": {
+	id: "costum-office-elegant/index.md";
+  slug: "costum-office-elegant";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-slim-fit/index.md": {
+	id: "costum-slim-fit/index.md";
+  slug: "costum-slim-fit";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-stofa-groasa/index.md": {
+	id: "costum-stofa-groasa/index.md";
+  slug: "costum-stofa-groasa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-stofa-subtire/index.md": {
+	id: "costum-stofa-subtire/index.md";
+  slug: "costum-stofa-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"costum-trei-piese/index.md": {
+	id: "costum-trei-piese/index.md";
+  slug: "costum-trei-piese";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
 "cum-porti-tricoul-negru-oversized/index.md": {
 	id: "cum-porti-tricoul-negru-oversized/index.md";
   slug: "cum-porti-tricoul-negru-oversized";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-blugi-lunga/index.md": {
+	id: "fusta-blugi-lunga/index.md";
+  slug: "fusta-blugi-lunga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-blugi-midi/index.md": {
+	id: "fusta-blugi-midi/index.md";
+  slug: "fusta-blugi-midi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-clos-elastica/index.md": {
+	id: "fusta-clos-elastica/index.md";
+  slug: "fusta-clos-elastica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-clos-matase/index.md": {
+	id: "fusta-clos-matase/index.md";
+  slug: "fusta-clos-matase";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-clos-midi/index.md": {
+	id: "fusta-clos-midi/index.md";
+  slug: "fusta-clos-midi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-clos-rosie/index.md": {
+	id: "fusta-clos-rosie/index.md";
+  slug: "fusta-clos-rosie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-clos-scurta/index.md": {
+	id: "fusta-clos-scurta/index.md";
+  slug: "fusta-clos-scurta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-clos-volane/index.md": {
+	id: "fusta-clos-volane/index.md";
+  slug: "fusta-clos-volane";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-creion-elastica/index.md": {
+	id: "fusta-creion-elastica/index.md";
+  slug: "fusta-creion-elastica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-creion-midi/index.md": {
+	id: "fusta-creion-midi/index.md";
+  slug: "fusta-creion-midi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-creion-office/index.md": {
+	id: "fusta-creion-office/index.md";
+  slug: "fusta-creion-office";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-creion-piele/index.md": {
+	id: "fusta-creion-piele/index.md";
+  slug: "fusta-creion-piele";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-creion-stofa/index.md": {
+	id: "fusta-creion-stofa/index.md";
+  slug: "fusta-creion-stofa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-denim-scurta/index.md": {
+	id: "fusta-denim-scurta/index.md";
+  slug: "fusta-denim-scurta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-lina-midi/index.md": {
+	id: "fusta-lina-midi/index.md";
+  slug: "fusta-lina-midi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-maxi-volane/index.md": {
+	id: "fusta-maxi-volane/index.md";
+  slug: "fusta-maxi-volane";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-mini-clos/index.md": {
+	id: "fusta-mini-clos/index.md";
+  slug: "fusta-mini-clos";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-mini-denim/index.md": {
+	id: "fusta-mini-denim/index.md";
+  slug: "fusta-mini-denim";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-mini-piele/index.md": {
+	id: "fusta-mini-piele/index.md";
+  slug: "fusta-mini-piele";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-petrecuta-asimetrica/index.md": {
+	id: "fusta-petrecuta-asimetrica/index.md";
+  slug: "fusta-petrecuta-asimetrica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-piele-intoarsa/index.md": {
+	id: "fusta-piele-intoarsa/index.md";
+  slug: "fusta-piele-intoarsa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-piele-maro/index.md": {
+	id: "fusta-piele-maro/index.md";
+  slug: "fusta-piele-maro";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-piele-neagra/index.md": {
+	id: "fusta-piele-neagra/index.md";
+  slug: "fusta-piele-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-plisata-midi/index.md": {
+	id: "fusta-plisata-midi/index.md";
+  slug: "fusta-plisata-midi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-satin-midi/index.md": {
+	id: "fusta-satin-midi/index.md";
+  slug: "fusta-satin-midi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-satin-neagra/index.md": {
+	id: "fusta-satin-neagra/index.md";
+  slug: "fusta-satin-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"fusta-talie-inalta/index.md": {
+	id: "fusta-talie-inalta/index.md";
+  slug: "fusta-talie-inalta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-blugi-oversize/index.md": {
+	id: "geaca-blugi-oversize/index.md";
+  slug: "geaca-blugi-oversize";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-bomber-fas/index.md": {
+	id: "geaca-bomber-fas/index.md";
+  slug: "geaca-bomber-fas";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-bomber-piele/index.md": {
+	id: "geaca-bomber-piele/index.md";
+  slug: "geaca-bomber-piele";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-bomber-satin/index.md": {
+	id: "geaca-bomber-satin/index.md";
+  slug: "geaca-bomber-satin";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-fas-barbati/index.md": {
+	id: "geaca-fas-barbati/index.md";
+  slug: "geaca-fas-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-fas-gluga/index.md": {
+	id: "geaca-fas-gluga/index.md";
+  slug: "geaca-fas-gluga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-fas-groasa/index.md": {
+	id: "geaca-fas-groasa/index.md";
+  slug: "geaca-fas-groasa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-fas-lunga/index.md": {
+	id: "geaca-fas-lunga/index.md";
+  slug: "geaca-fas-lunga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-fas-scurta/index.md": {
+	id: "geaca-fas-scurta/index.md";
+  slug: "geaca-fas-scurta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-iarna-gluga/index.md": {
+	id: "geaca-iarna-gluga/index.md";
+  slug: "geaca-iarna-gluga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-iarna-puf/index.md": {
+	id: "geaca-iarna-puf/index.md";
+  slug: "geaca-iarna-puf";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-parka-iarna/index.md": {
+	id: "geaca-parka-iarna/index.md";
+  slug: "geaca-parka-iarna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-piele-maro/index.md": {
+	id: "geaca-piele-maro/index.md";
+  slug: "geaca-piele-maro";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-praf-decolotata/index.md": {
+	id: "geaca-praf-decolotata/index.md";
+  slug: "geaca-praf-decolotata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-puf-argintie/index.md": {
+	id: "geaca-puf-argintie/index.md";
+  slug: "geaca-puf-argintie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-puf-aurie/index.md": {
+	id: "geaca-puf-aurie/index.md";
+  slug: "geaca-puf-aurie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-puf-barbati/index.md": {
+	id: "geaca-puf-barbati/index.md";
+  slug: "geaca-puf-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-puf-iarna/index.md": {
+	id: "geaca-puf-iarna/index.md";
+  slug: "geaca-puf-iarna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-puf-lunga/index.md": {
+	id: "geaca-puf-lunga/index.md";
+  slug: "geaca-puf-lunga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-puf-matlasata/index.md": {
+	id: "geaca-puf-matlasata/index.md";
+  slug: "geaca-puf-matlasata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-puf-oversize/index.md": {
+	id: "geaca-puf-oversize/index.md";
+  slug: "geaca-puf-oversize";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-puf-oversized/index.md": {
+	id: "geaca-puf-oversized/index.md";
+  slug: "geaca-puf-oversized";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-puf-scurta/index.md": {
+	id: "geaca-puf-scurta/index.md";
+  slug: "geaca-puf-scurta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-puf-subtire/index.md": {
+	id: "geaca-puf-subtire/index.md";
+  slug: "geaca-puf-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-puf-usoara/index.md": {
+	id: "geaca-puf-usoara/index.md";
+  slug: "geaca-puf-usoara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-reflectorizanta-noapte/index.md": {
+	id: "geaca-reflectorizanta-noapte/index.md";
+  slug: "geaca-reflectorizanta-noapte";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-ski-barbati/index.md": {
+	id: "geaca-ski-barbati/index.md";
+  slug: "geaca-ski-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"geaca-ski-impermeabila/index.md": {
+	id: "geaca-ski-impermeabila/index.md";
+  slug: "geaca-ski-impermeabila";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-albastru-deschis/index.md": {
+	id: "hanorac-albastru-deschis/index.md";
+  slug: "hanorac-albastru-deschis";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-albastru-marin/index.md": {
+	id: "hanorac-albastru-marin/index.md";
+  slug: "hanorac-albastru-marin";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-asimetric-fermoar/index.md": {
+	id: "hanorac-asimetric-fermoar/index.md";
+  slug: "hanorac-asimetric-fermoar";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-asimetric-zip/index.md": {
+	id: "hanorac-asimetric-zip/index.md";
+  slug: "hanorac-asimetric-zip";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-brodat-logo/index.md": {
+	id: "hanorac-brodat-logo/index.md";
+  slug: "hanorac-brodat-logo";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-broderie-fina/index.md": {
+	id: "hanorac-broderie-fina/index.md";
+  slug: "hanorac-broderie-fina";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-broderie-spate/index.md": {
+	id: "hanorac-broderie-spate/index.md";
+  slug: "hanorac-broderie-spate";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-buzunar-cangur/index.md": {
+	id: "hanorac-buzunar-cangur/index.md";
+  slug: "hanorac-buzunar-cangur";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-captuseala-fleece/index.md": {
+	id: "hanorac-captuseala-fleece/index.md";
+  slug: "hanorac-captuseala-fleece";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-captusit-blana/index.md": {
+	id: "hanorac-captusit-blana/index.md";
+  slug: "hanorac-captusit-blana";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-crop-fete/index.md": {
+	id: "hanorac-crop-fete/index.md";
+  slug: "hanorac-crop-fete";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-fara-gluga/index.md": {
+	id: "hanorac-fara-gluga/index.md";
+  slug: "hanorac-fara-gluga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-fermoar-asimetric/index.md": {
+	id: "hanorac-fermoar-asimetric/index.md";
+  slug: "hanorac-fermoar-asimetric";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-fete-roz/index.md": {
+	id: "hanorac-fete-roz/index.md";
+  slug: "hanorac-fete-roz";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-galben-mustar/index.md": {
+	id: "hanorac-galben-mustar/index.md";
+  slug: "hanorac-galben-mustar";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-gri-melanj/index.md": {
+	id: "hanorac-gri-melanj/index.md";
+  slug: "hanorac-gri-melanj";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-gri-sport/index.md": {
+	id: "hanorac-gri-sport/index.md";
+  slug: "hanorac-gri-sport";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-imprimeu-abstract/index.md": {
+	id: "hanorac-imprimeu-abstract/index.md";
+  slug: "hanorac-imprimeu-abstract";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-imprimeu-spate/index.md": {
+	id: "hanorac-imprimeu-spate/index.md";
+  slug: "hanorac-imprimeu-spate";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-imprimeu-text/index.md": {
+	id: "hanorac-imprimeu-text/index.md";
+  slug: "hanorac-imprimeu-text";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-neopren-modern/index.md": {
+	id: "hanorac-neopren-modern/index.md";
+  slug: "hanorac-neopren-modern";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-neopren-sport/index.md": {
+	id: "hanorac-neopren-sport/index.md";
+  slug: "hanorac-neopren-sport";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-oversized-negru/index.md": {
+	id: "hanorac-oversized-negru/index.md";
+  slug: "hanorac-oversized-negru";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-pufos-gluga/index.md": {
+	id: "hanorac-pufos-gluga/index.md";
+  slug: "hanorac-pufos-gluga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-pufos-nasturi/index.md": {
+	id: "hanorac-pufos-nasturi/index.md";
+  slug: "hanorac-pufos-nasturi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-rosu-aprins/index.md": {
+	id: "hanorac-rosu-aprins/index.md";
+  slug: "hanorac-rosu-aprins";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-verde-olive/index.md": {
+	id: "hanorac-verde-olive/index.md";
+  slug: "hanorac-verde-olive";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-zip-buzunar/index.md": {
+	id: "hanorac-zip-buzunar/index.md";
+  slug: "hanorac-zip-buzunar";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"hanorac-zip-buzunare/index.md": {
+	id: "hanorac-zip-buzunare/index.md";
+  slug: "hanorac-zip-buzunare";
   body: string;
   collection: "blog";
   data: any
@@ -3725,9 +5601,2382 @@ declare module 'astro:content' {
   collection: "blog";
   data: any
 } & { render(): Render[".md"] };
+"jacheta-aviator-piele/index.md": {
+	id: "jacheta-aviator-piele/index.md";
+  slug: "jacheta-aviator-piele";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-biker-dama/index.md": {
+	id: "jacheta-biker-dama/index.md";
+  slug: "jacheta-biker-dama";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-biker-piele/index.md": {
+	id: "jacheta-biker-piele/index.md";
+  slug: "jacheta-biker-piele";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-blugi-barbati/index.md": {
+	id: "jacheta-blugi-barbati/index.md";
+  slug: "jacheta-blugi-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-blugi-dama/index.md": {
+	id: "jacheta-blugi-dama/index.md";
+  slug: "jacheta-blugi-dama";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-denim-clasica/index.md": {
+	id: "jacheta-denim-clasica/index.md";
+  slug: "jacheta-denim-clasica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-denim-decolorata/index.md": {
+	id: "jacheta-denim-decolorata/index.md";
+  slug: "jacheta-denim-decolorata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-denim-neagra/index.md": {
+	id: "jacheta-denim-neagra/index.md";
+  slug: "jacheta-denim-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-denim-prespalata/index.md": {
+	id: "jacheta-denim-prespalata/index.md";
+  slug: "jacheta-denim-prespalata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-fas-subtire/index.md": {
+	id: "jacheta-fas-subtire/index.md";
+  slug: "jacheta-fas-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-fleece-calduroasa/index.md": {
+	id: "jacheta-fleece-calduroasa/index.md";
+  slug: "jacheta-fleece-calduroasa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-impermeabila-ploaie/index.md": {
+	id: "jacheta-impermeabila-ploaie/index.md";
+  slug: "jacheta-impermeabila-ploaie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-jeans-neagra/index.md": {
+	id: "jacheta-jeans-neagra/index.md";
+  slug: "jacheta-jeans-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-lana-fiarta/index.md": {
+	id: "jacheta-lana-fiarta/index.md";
+  slug: "jacheta-lana-fiarta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-lana-groasa/index.md": {
+	id: "jacheta-lana-groasa/index.md";
+  slug: "jacheta-lana-groasa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-matlasata-iarna/index.md": {
+	id: "jacheta-matlasata-iarna/index.md";
+  slug: "jacheta-matlasata-iarna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-matlasata-subtire/index.md": {
+	id: "jacheta-matlasata-subtire/index.md";
+  slug: "jacheta-matlasata-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-matlasata-toamna/index.md": {
+	id: "jacheta-matlasata-toamna/index.md";
+  slug: "jacheta-matlasata-toamna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-militara-buzunare/index.md": {
+	id: "jacheta-militara-buzunare/index.md";
+  slug: "jacheta-militara-buzunare";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-militara-kaki/index.md": {
+	id: "jacheta-militara-kaki/index.md";
+  slug: "jacheta-militara-kaki";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-militara-verde/index.md": {
+	id: "jacheta-militara-verde/index.md";
+  slug: "jacheta-militara-verde";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-piele-eco/index.md": {
+	id: "jacheta-piele-eco/index.md";
+  slug: "jacheta-piele-eco";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-piele-intoarsa/index.md": {
+	id: "jacheta-piele-intoarsa/index.md";
+  slug: "jacheta-piele-intoarsa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-piele-maro/index.md": {
+	id: "jacheta-piele-maro/index.md";
+  slug: "jacheta-piele-maro";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-piele-neagra/index.md": {
+	id: "jacheta-piele-neagra/index.md";
+  slug: "jacheta-piele-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-ploaie-subtire/index.md": {
+	id: "jacheta-ploaie-subtire/index.md";
+  slug: "jacheta-ploaie-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-puf-scurta/index.md": {
+	id: "jacheta-puf-scurta/index.md";
+  slug: "jacheta-puf-scurta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"jacheta-vant-subtire/index.md": {
+	id: "jacheta-vant-subtire/index.md";
+  slug: "jacheta-vant-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-alergare-tehnic/index.md": {
+	id: "maiou-alergare-tehnic/index.md";
+  slug: "maiou-alergare-tehnic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-alergare-uscat/index.md": {
+	id: "maiou-alergare-uscat/index.md";
+  slug: "maiou-alergare-uscat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-alergare-usor/index.md": {
+	id: "maiou-alergare-usor/index.md";
+  slug: "maiou-alergare-usor";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-boxeri-spate/index.md": {
+	id: "maiou-boxeri-spate/index.md";
+  slug: "maiou-boxeri-spate";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-bumbac-barbatesc/index.md": {
+	id: "maiou-bumbac-barbatesc/index.md";
+  slug: "maiou-bumbac-barbatesc";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-bumbac-confortabil/index.md": {
+	id: "maiou-bumbac-confortabil/index.md";
+  slug: "maiou-bumbac-confortabil";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-bumbac-elastic/index.md": {
+	id: "maiou-bumbac-elastic/index.md";
+  slug: "maiou-bumbac-elastic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-bumbac-moale/index.md": {
+	id: "maiou-bumbac-moale/index.md";
+  slug: "maiou-bumbac-moale";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-bumbac-rip/index.md": {
+	id: "maiou-bumbac-rip/index.md";
+  slug: "maiou-bumbac-rip";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-bumbac-simplu/index.md": {
+	id: "maiou-bumbac-simplu/index.md";
+  slug: "maiou-bumbac-simplu";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-bumbac-striat/index.md": {
+	id: "maiou-bumbac-striat/index.md";
+  slug: "maiou-bumbac-striat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-bumbac-subtire/index.md": {
+	id: "maiou-bumbac-subtire/index.md";
+  slug: "maiou-bumbac-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-culturism-bumbac/index.md": {
+	id: "maiou-culturism-bumbac/index.md";
+  slug: "maiou-culturism-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-fin-bumbac/index.md": {
+	id: "maiou-fin-bumbac/index.md";
+  slug: "maiou-fin-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-fin-matase/index.md": {
+	id: "maiou-fin-matase/index.md";
+  slug: "maiou-fin-matase";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-fin-satin/index.md": {
+	id: "maiou-fin-satin/index.md";
+  slug: "maiou-fin-satin";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-fitness-barbati/index.md": {
+	id: "maiou-fitness-barbati/index.md";
+  slug: "maiou-fitness-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-fitness-mulat/index.md": {
+	id: "maiou-fitness-mulat/index.md";
+  slug: "maiou-fitness-mulat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-mulat-negru/index.md": {
+	id: "maiou-mulat-negru/index.md";
+  slug: "maiou-mulat-negru";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-plasa-negru/index.md": {
+	id: "maiou-plasa-negru/index.md";
+  slug: "maiou-plasa-negru";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-plasa-sport/index.md": {
+	id: "maiou-plasa-sport/index.md";
+  slug: "maiou-plasa-sport";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-spate-decupat/index.md": {
+	id: "maiou-spate-decupat/index.md";
+  slug: "maiou-spate-decupat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-sport-galben/index.md": {
+	id: "maiou-sport-galben/index.md";
+  slug: "maiou-sport-galben";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"maiou-sport-respirabil/index.md": {
+	id: "maiou-sport-respirabil/index.md";
+  slug: "maiou-sport-respirabil";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-blana-artificiala/index.md": {
+	id: "palton-blana-artificiala/index.md";
+  slug: "palton-blana-artificiala";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-cambrat-elegant/index.md": {
+	id: "palton-cambrat-elegant/index.md";
+  slug: "palton-cambrat-elegant";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-clasic-negru/index.md": {
+	id: "palton-clasic-negru/index.md";
+  slug: "palton-clasic-negru";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-drept-elegant/index.md": {
+	id: "palton-drept-elegant/index.md";
+  slug: "palton-drept-elegant";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-drept-lana/index.md": {
+	id: "palton-drept-lana/index.md";
+  slug: "palton-drept-lana";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-drept-stofa/index.md": {
+	id: "palton-drept-stofa/index.md";
+  slug: "palton-drept-stofa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-gluga-blana/index.md": {
+	id: "palton-gluga-blana/index.md";
+  slug: "palton-gluga-blana";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-gluga-blanita/index.md": {
+	id: "palton-gluga-blanita/index.md";
+  slug: "palton-gluga-blanita";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-guler-blana/index.md": {
+	id: "palton-guler-blana/index.md";
+  slug: "palton-guler-blana";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-lana-elegant/index.md": {
+	id: "palton-lana-elegant/index.md";
+  slug: "palton-lana-elegant";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-lana-gri/index.md": {
+	id: "palton-lana-gri/index.md";
+  slug: "palton-lana-gri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-lana-gros/index.md": {
+	id: "palton-lana-gros/index.md";
+  slug: "palton-lana-gros";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-lana-iarna/index.md": {
+	id: "palton-lana-iarna/index.md";
+  slug: "palton-lana-iarna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-lana-lung/index.md": {
+	id: "palton-lana-lung/index.md";
+  slug: "palton-lana-lung";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-lana-toamna/index.md": {
+	id: "palton-lana-toamna/index.md";
+  slug: "palton-lana-toamna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-lung-lana/index.md": {
+	id: "palton-lung-lana/index.md";
+  slug: "palton-lung-lana";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-nasturi-ascunsi/index.md": {
+	id: "palton-nasturi-ascunsi/index.md";
+  slug: "palton-nasturi-ascunsi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-nasturi-dubli/index.md": {
+	id: "palton-nasturi-dubli/index.md";
+  slug: "palton-nasturi-dubli";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-nasturi-metalici/index.md": {
+	id: "palton-nasturi-metalici/index.md";
+  slug: "palton-nasturi-metalici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-stofa-gri/index.md": {
+	id: "palton-stofa-gri/index.md";
+  slug: "palton-stofa-gri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-stofa-neagra/index.md": {
+	id: "palton-stofa-neagra/index.md";
+  slug: "palton-stofa-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"palton-stofa-visinie/index.md": {
+	id: "palton-stofa-visinie/index.md";
+  slug: "palton-stofa-visinie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-bumbac-lejeri/index.md": {
+	id: "pantaloni-bumbac-lejeri/index.md";
+  slug: "pantaloni-bumbac-lejeri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-cargo-khaki/index.md": {
+	id: "pantaloni-cargo-khaki/index.md";
+  slug: "pantaloni-cargo-khaki";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-chino-proaspat/index.md": {
+	id: "pantaloni-chino-proaspat/index.md";
+  slug: "pantaloni-chino-proaspat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-conici-eleganti/index.md": {
+	id: "pantaloni-conici-eleganti/index.md";
+  slug: "pantaloni-conici-eleganti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-culottes-bumbac/index.md": {
+	id: "pantaloni-culottes-bumbac/index.md";
+  slug: "pantaloni-culottes-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-culottes-in/index.md": {
+	id: "pantaloni-culottes-in/index.md";
+  slug: "pantaloni-culottes-in";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-drepti-stofa/index.md": {
+	id: "pantaloni-drepti-stofa/index.md";
+  slug: "pantaloni-drepti-stofa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-evazati-catifea/index.md": {
+	id: "pantaloni-evazati-catifea/index.md";
+  slug: "pantaloni-evazati-catifea";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-evazati-negri/index.md": {
+	id: "pantaloni-evazati-negri/index.md";
+  slug: "pantaloni-evazati-negri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-evazati-stofa/index.md": {
+	id: "pantaloni-evazati-stofa/index.md";
+  slug: "pantaloni-evazati-stofa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-jogging-bumbac/index.md": {
+	id: "pantaloni-jogging-bumbac/index.md";
+  slug: "pantaloni-jogging-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-jogging-elastici/index.md": {
+	id: "pantaloni-jogging-elastici/index.md";
+  slug: "pantaloni-jogging-elastici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-jogging-fleece/index.md": {
+	id: "pantaloni-jogging-fleece/index.md";
+  slug: "pantaloni-jogging-fleece";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-largi-catifea/index.md": {
+	id: "pantaloni-largi-catifea/index.md";
+  slug: "pantaloni-largi-catifea";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-largi-in/index.md": {
+	id: "pantaloni-largi-in/index.md";
+  slug: "pantaloni-largi-in";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-largi-satin/index.md": {
+	id: "pantaloni-largi-satin/index.md";
+  slug: "pantaloni-largi-satin";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-pijama-bumbac/index.md": {
+	id: "pantaloni-pijama-bumbac/index.md";
+  slug: "pantaloni-pijama-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-reiat-barbati/index.md": {
+	id: "pantaloni-reiat-barbati/index.md";
+  slug: "pantaloni-reiat-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-reiat-elastici/index.md": {
+	id: "pantaloni-reiat-elastici/index.md";
+  slug: "pantaloni-reiat-elastici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-reiat-maro/index.md": {
+	id: "pantaloni-reiat-maro/index.md";
+  slug: "pantaloni-reiat-maro";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-stofa-barbati/index.md": {
+	id: "pantaloni-stofa-barbati/index.md";
+  slug: "pantaloni-stofa-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-stofa-eleganti/index.md": {
+	id: "pantaloni-stofa-eleganti/index.md";
+  slug: "pantaloni-stofa-eleganti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-stofa-office/index.md": {
+	id: "pantaloni-stofa-office/index.md";
+  slug: "pantaloni-stofa-office";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-stofa-regular/index.md": {
+	id: "pantaloni-stofa-regular/index.md";
+  slug: "pantaloni-stofa-regular";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-stofa-slim/index.md": {
+	id: "pantaloni-stofa-slim/index.md";
+  slug: "pantaloni-stofa-slim";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-talie-inalta/index.md": {
+	id: "pantaloni-talie-inalta/index.md";
+  slug: "pantaloni-talie-inalta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-trening-bumbac/index.md": {
+	id: "pantaloni-trening-bumbac/index.md";
+  slug: "pantaloni-trening-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-trening-drepti/index.md": {
+	id: "pantaloni-trening-drepti/index.md";
+  slug: "pantaloni-trening-drepti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pantaloni-trening-elastici/index.md": {
+	id: "pantaloni-trening-elastici/index.md";
+  slug: "pantaloni-trening-elastici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-casmir-decolteu/index.md": {
+	id: "pulover-casmir-decolteu/index.md";
+  slug: "pulover-casmir-decolteu";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-casmir-fin/index.md": {
+	id: "pulover-casmir-fin/index.md";
+  slug: "pulover-casmir-fin";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-casmir-guler/index.md": {
+	id: "pulover-casmir-guler/index.md";
+  slug: "pulover-casmir-guler";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-decolteu-rotund/index.md": {
+	id: "pulover-decolteu-rotund/index.md";
+  slug: "pulover-decolteu-rotund";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-decolteu-v/index.md": {
+	id: "pulover-decolteu-v/index.md";
+  slug: "pulover-decolteu-v";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-guler-barca/index.md": {
+	id: "pulover-guler-barca/index.md";
+  slug: "pulover-guler-barca";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-guler-inalt/index.md": {
+	id: "pulover-guler-inalt/index.md";
+  slug: "pulover-guler-inalt";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-guler-tunica/index.md": {
+	id: "pulover-guler-tunica/index.md";
+  slug: "pulover-guler-tunica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-impletit-gros/index.md": {
+	id: "pulover-impletit-gros/index.md";
+  slug: "pulover-impletit-gros";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-impletit-manual/index.md": {
+	id: "pulover-impletit-manual/index.md";
+  slug: "pulover-impletit-manual";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-jacard-iarna/index.md": {
+	id: "pulover-jacard-iarna/index.md";
+  slug: "pulover-jacard-iarna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-lana-crem/index.md": {
+	id: "pulover-lana-crem/index.md";
+  slug: "pulover-lana-crem";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-lana-merino/index.md": {
+	id: "pulover-lana-merino/index.md";
+  slug: "pulover-lana-merino";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-moale-lana/index.md": {
+	id: "pulover-moale-lana/index.md";
+  slug: "pulover-moale-lana";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-moale-oversize/index.md": {
+	id: "pulover-moale-oversize/index.md";
+  slug: "pulover-moale-oversize";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-mohair-pufos/index.md": {
+	id: "pulover-mohair-pufos/index.md";
+  slug: "pulover-mohair-pufos";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-nasturi-guler/index.md": {
+	id: "pulover-nasturi-guler/index.md";
+  slug: "pulover-nasturi-guler";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-oversize-moale/index.md": {
+	id: "pulover-oversize-moale/index.md";
+  slug: "pulover-oversize-moale";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-subtire-bumbac/index.md": {
+	id: "pulover-subtire-bumbac/index.md";
+  slug: "pulover-subtire-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-torsade-clasic/index.md": {
+	id: "pulover-torsade-clasic/index.md";
+  slug: "pulover-torsade-clasic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-torsade-gros/index.md": {
+	id: "pulover-torsade-gros/index.md";
+  slug: "pulover-torsade-gros";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"pulover-torsade-iarna/index.md": {
+	id: "pulover-torsade-iarna/index.md";
+  slug: "pulover-torsade-iarna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-asimetrica-seara/index.md": {
+	id: "rochie-asimetrica-seara/index.md";
+  slug: "rochie-asimetrica-seara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-camasa-bumbac/index.md": {
+	id: "rochie-camasa-bumbac/index.md";
+  slug: "rochie-camasa-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-clos-casual/index.md": {
+	id: "rochie-clos-casual/index.md";
+  slug: "rochie-clos-casual";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-clos-flori/index.md": {
+	id: "rochie-clos-flori/index.md";
+  slug: "rochie-clos-flori";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-clos-imprimeu/index.md": {
+	id: "rochie-clos-imprimeu/index.md";
+  slug: "rochie-clos-imprimeu";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-dantela-alba/index.md": {
+	id: "rochie-dantela-alba/index.md";
+  slug: "rochie-dantela-alba";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-dreapta-office/index.md": {
+	id: "rochie-dreapta-office/index.md";
+  slug: "rochie-dreapta-office";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-empire-matase/index.md": {
+	id: "rochie-empire-matase/index.md";
+  slug: "rochie-empire-matase";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-inodora-simpla/index.md": {
+	id: "rochie-inodora-simpla/index.md";
+  slug: "rochie-inodora-simpla";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-lunga-eleganta/index.md": {
+	id: "rochie-lunga-eleganta/index.md";
+  slug: "rochie-lunga-eleganta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-lunga-satin/index.md": {
+	id: "rochie-lunga-satin/index.md";
+  slug: "rochie-lunga-satin";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-lunga-seara/index.md": {
+	id: "rochie-lunga-seara/index.md";
+  slug: "rochie-lunga-seara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-lunga-voal/index.md": {
+	id: "rochie-lunga-voal/index.md";
+  slug: "rochie-lunga-voal";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-matase-verde/index.md": {
+	id: "rochie-matase-verde/index.md";
+  slug: "rochie-matase-verde";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-midi-clos/index.md": {
+	id: "rochie-midi-clos/index.md";
+  slug: "rochie-midi-clos";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-midi-mulata/index.md": {
+	id: "rochie-midi-mulata/index.md";
+  slug: "rochie-midi-mulata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-office-midi/index.md": {
+	id: "rochie-office-midi/index.md";
+  slug: "rochie-office-midi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-office-neagra/index.md": {
+	id: "rochie-office-neagra/index.md";
+  slug: "rochie-office-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-petrecuta-bumbac/index.md": {
+	id: "rochie-petrecuta-bumbac/index.md";
+  slug: "rochie-petrecuta-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-petrecuta-matase/index.md": {
+	id: "rochie-petrecuta-matase/index.md";
+  slug: "rochie-petrecuta-matase";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-plaja-bumbac/index.md": {
+	id: "rochie-plaja-bumbac/index.md";
+  slug: "rochie-plaja-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-plaja-in/index.md": {
+	id: "rochie-plaja-in/index.md";
+  slug: "rochie-plaja-in";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-seara-eleganta/index.md": {
+	id: "rochie-seara-eleganta/index.md";
+  slug: "rochie-seara-eleganta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-tricotata-iarna/index.md": {
+	id: "rochie-tricotata-iarna/index.md";
+  slug: "rochie-tricotata-iarna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-tricotata-lunga/index.md": {
+	id: "rochie-tricotata-lunga/index.md";
+  slug: "rochie-tricotata-lunga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-tricotata-mulata/index.md": {
+	id: "rochie-tricotata-mulata/index.md";
+  slug: "rochie-tricotata-mulata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-vaporoasa-vara/index.md": {
+	id: "rochie-vaporoasa-vara/index.md";
+  slug: "rochie-vaporoasa-vara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-vara-in/index.md": {
+	id: "rochie-vara-in/index.md";
+  slug: "rochie-vara-in";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"rochie-vara-vaporoasa/index.md": {
+	id: "rochie-vara-vaporoasa/index.md";
+  slug: "rochie-vara-vaporoasa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-cambrat-dama/index.md": {
+	id: "sacou-cambrat-dama/index.md";
+  slug: "sacou-cambrat-dama";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-carouri-gri/index.md": {
+	id: "sacou-carouri-gri/index.md";
+  slug: "sacou-carouri-gri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-carouri-maro/index.md": {
+	id: "sacou-carouri-maro/index.md";
+  slug: "sacou-carouri-maro";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-carouri-vintage/index.md": {
+	id: "sacou-carouri-vintage/index.md";
+  slug: "sacou-carouri-vintage";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-casual-bumbac/index.md": {
+	id: "sacou-casual-bumbac/index.md";
+  slug: "sacou-casual-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-casual-in/index.md": {
+	id: "sacou-casual-in/index.md";
+  slug: "sacou-casual-in";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-casual-stofa/index.md": {
+	id: "sacou-casual-stofa/index.md";
+  slug: "sacou-casual-stofa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-catifea-barbatesc/index.md": {
+	id: "sacou-catifea-barbatesc/index.md";
+  slug: "sacou-catifea-barbatesc";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-catifea-eleganta/index.md": {
+	id: "sacou-catifea-eleganta/index.md";
+  slug: "sacou-catifea-eleganta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-catifea-visinie/index.md": {
+	id: "sacou-catifea-visinie/index.md";
+  slug: "sacou-catifea-visinie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-elegant-bleumarin/index.md": {
+	id: "sacou-elegant-bleumarin/index.md";
+  slug: "sacou-elegant-bleumarin";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-in-carouri/index.md": {
+	id: "sacou-in-carouri/index.md";
+  slug: "sacou-in-carouri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-in-crem/index.md": {
+	id: "sacou-in-crem/index.md";
+  slug: "sacou-in-crem";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-in-dungi/index.md": {
+	id: "sacou-in-dungi/index.md";
+  slug: "sacou-in-dungi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-in-negru/index.md": {
+	id: "sacou-in-negru/index.md";
+  slug: "sacou-in-negru";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-in-simplu/index.md": {
+	id: "sacou-in-simplu/index.md";
+  slug: "sacou-in-simplu";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-inot-carouri/index.md": {
+	id: "sacou-inot-carouri/index.md";
+  slug: "sacou-inot-carouri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-inot-casual/index.md": {
+	id: "sacou-inot-casual/index.md";
+  slug: "sacou-inot-casual";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-inot-clasic/index.md": {
+	id: "sacou-inot-clasic/index.md";
+  slug: "sacou-inot-clasic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-lana-carouri/index.md": {
+	id: "sacou-lana-carouri/index.md";
+  slug: "sacou-lana-carouri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-lana-subtire/index.md": {
+	id: "sacou-lana-subtire/index.md";
+  slug: "sacou-lana-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-lana-tweed/index.md": {
+	id: "sacou-lana-tweed/index.md";
+  slug: "sacou-lana-tweed";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-office-dama/index.md": {
+	id: "sacou-office-dama/index.md";
+  slug: "sacou-office-dama";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-office-elegant/index.md": {
+	id: "sacou-office-elegant/index.md";
+  slug: "sacou-office-elegant";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-smoking-clasic/index.md": {
+	id: "sacou-smoking-clasic/index.md";
+  slug: "sacou-smoking-clasic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-smoking-negru/index.md": {
+	id: "sacou-smoking-negru/index.md";
+  slug: "sacou-smoking-negru";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-supradimensionat-barbati/index.md": {
+	id: "sacou-supradimensionat-barbati/index.md";
+  slug: "sacou-supradimensionat-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"sacou-visiniu-catifea/index.md": {
+	id: "sacou-visiniu-catifea/index.md";
+  slug: "sacou-visiniu-catifea";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-blugi-clasica/index.md": {
+	id: "salopeta-blugi-clasica/index.md";
+  slug: "salopeta-blugi-clasica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-bumbac-elastica/index.md": {
+	id: "salopeta-bumbac-elastica/index.md";
+  slug: "salopeta-bumbac-elastica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-bumbac-mecanici/index.md": {
+	id: "salopeta-bumbac-mecanici/index.md";
+  slug: "salopeta-bumbac-mecanici";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-bumbac-utilitara/index.md": {
+	id: "salopeta-bumbac-utilitara/index.md";
+  slug: "salopeta-bumbac-utilitara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-cargo-bumbac/index.md": {
+	id: "salopeta-cargo-bumbac/index.md";
+  slug: "salopeta-cargo-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-catifea-neagra/index.md": {
+	id: "salopeta-catifea-neagra/index.md";
+  slug: "salopeta-catifea-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-denim-albastra/index.md": {
+	id: "salopeta-denim-albastra/index.md";
+  slug: "salopeta-denim-albastra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-denim-lejera/index.md": {
+	id: "salopeta-denim-lejera/index.md";
+  slug: "salopeta-denim-lejera";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-denim-neagra/index.md": {
+	id: "salopeta-denim-neagra/index.md";
+  slug: "salopeta-denim-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-denim-scurta/index.md": {
+	id: "salopeta-denim-scurta/index.md";
+  slug: "salopeta-denim-scurta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-denim-spalata/index.md": {
+	id: "salopeta-denim-spalata/index.md";
+  slug: "salopeta-denim-spalata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-eleganta-neagra/index.md": {
+	id: "salopeta-eleganta-neagra/index.md";
+  slug: "salopeta-eleganta-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-eleganta-nunta/index.md": {
+	id: "salopeta-eleganta-nunta/index.md";
+  slug: "salopeta-eleganta-nunta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-evazata-bumbac/index.md": {
+	id: "salopeta-evazata-bumbac/index.md";
+  slug: "salopeta-evazata-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-evazata-eleganta/index.md": {
+	id: "salopeta-evazata-eleganta/index.md";
+  slug: "salopeta-evazata-eleganta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-in-culori/index.md": {
+	id: "salopeta-in-culori/index.md";
+  slug: "salopeta-in-culori";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-in-eleganta/index.md": {
+	id: "salopeta-in-eleganta/index.md";
+  slug: "salopeta-in-eleganta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-in-nasturi/index.md": {
+	id: "salopeta-in-nasturi/index.md";
+  slug: "salopeta-in-nasturi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-in-vara/index.md": {
+	id: "salopeta-in-vara/index.md";
+  slug: "salopeta-in-vara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-scurta-bumbac/index.md": {
+	id: "salopeta-scurta-bumbac/index.md";
+  slug: "salopeta-scurta-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-scurta-in/index.md": {
+	id: "salopeta-scurta-in/index.md";
+  slug: "salopeta-scurta-in";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-scurta-vara/index.md": {
+	id: "salopeta-scurta-vara/index.md";
+  slug: "salopeta-scurta-vara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-sport-fermoar/index.md": {
+	id: "salopeta-sport-fermoar/index.md";
+  slug: "salopeta-sport-fermoar";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-utilitara-bumbac/index.md": {
+	id: "salopeta-utilitara-bumbac/index.md";
+  slug: "salopeta-utilitara-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-utilitara-kaki/index.md": {
+	id: "salopeta-utilitara-kaki/index.md";
+  slug: "salopeta-utilitara-kaki";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"salopeta-utilitara-neagra/index.md": {
+	id: "salopeta-utilitara-neagra/index.md";
+  slug: "salopeta-utilitara-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-bretele-elastice/index.md": {
+	id: "top-bretele-elastice/index.md";
+  slug: "top-bretele-elastice";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-bretele-subtiri/index.md": {
+	id: "top-bretele-subtiri/index.md";
+  slug: "top-bretele-subtiri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-bumbac-organic/index.md": {
+	id: "top-bumbac-organic/index.md";
+  slug: "top-bumbac-organic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-bumbac-simplu/index.md": {
+	id: "top-bumbac-simplu/index.md";
+  slug: "top-bumbac-simplu";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-corset-dantela/index.md": {
+	id: "top-corset-dantela/index.md";
+  slug: "top-corset-dantela";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-crop-bumbac/index.md": {
+	id: "top-crop-bumbac/index.md";
+  slug: "top-crop-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-crop-elastic/index.md": {
+	id: "top-crop-elastic/index.md";
+  slug: "top-crop-elastic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-crop-mulat/index.md": {
+	id: "top-crop-mulat/index.md";
+  slug: "top-crop-mulat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-crop-tricotat/index.md": {
+	id: "top-crop-tricotat/index.md";
+  slug: "top-crop-tricotat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-dantela-neagra/index.md": {
+	id: "top-dantela-neagra/index.md";
+  slug: "top-dantela-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-decupat-spate/index.md": {
+	id: "top-decupat-spate/index.md";
+  slug: "top-decupat-spate";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-decupat-talie/index.md": {
+	id: "top-decupat-talie/index.md";
+  slug: "top-decupat-talie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-decupat-umeri/index.md": {
+	id: "top-decupat-umeri/index.md";
+  slug: "top-decupat-umeri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-inecat-guler/index.md": {
+	id: "top-inecat-guler/index.md";
+  slug: "top-inecat-guler";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-mulat-gat/index.md": {
+	id: "top-mulat-gat/index.md";
+  slug: "top-mulat-gat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-paiete-argintii/index.md": {
+	id: "top-paiete-argintii/index.md";
+  slug: "top-paiete-argintii";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-paiete-aurii/index.md": {
+	id: "top-paiete-aurii/index.md";
+  slug: "top-paiete-aurii";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-paiete-festival/index.md": {
+	id: "top-paiete-festival/index.md";
+  slug: "top-paiete-festival";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-paiete-negre/index.md": {
+	id: "top-paiete-negre/index.md";
+  slug: "top-paiete-negre";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-paiete-petrecere/index.md": {
+	id: "top-paiete-petrecere/index.md";
+  slug: "top-paiete-petrecere";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-plasa-festival/index.md": {
+	id: "top-plasa-festival/index.md";
+  slug: "top-plasa-festival";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-satin-bretele/index.md": {
+	id: "top-satin-bretele/index.md";
+  slug: "top-satin-bretele";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-satin-fin/index.md": {
+	id: "top-satin-fin/index.md";
+  slug: "top-satin-fin";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-satin-fuchsia/index.md": {
+	id: "top-satin-fuchsia/index.md";
+  slug: "top-satin-fuchsia";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-satin-negru/index.md": {
+	id: "top-satin-negru/index.md";
+  slug: "top-satin-negru";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"top-satinat-bretele/index.md": {
+	id: "top-satinat-bretele/index.md";
+  slug: "top-satinat-bretele";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-bej-clasic/index.md": {
+	id: "trenci-bej-clasic/index.md";
+  slug: "trenci-bej-clasic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-bej-lung/index.md": {
+	id: "trenci-bej-lung/index.md";
+  slug: "trenci-bej-lung";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-bej-nasturi/index.md": {
+	id: "trenci-bej-nasturi/index.md";
+  slug: "trenci-bej-nasturi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-bumbac-fin/index.md": {
+	id: "trenci-bumbac-fin/index.md";
+  slug: "trenci-bumbac-fin";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-bumbac-impermeabil/index.md": {
+	id: "trenci-bumbac-impermeabil/index.md";
+  slug: "trenci-bumbac-impermeabil";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-captusit-toamna/index.md": {
+	id: "trenci-captusit-toamna/index.md";
+  slug: "trenci-captusit-toamna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-clasic-bej/index.md": {
+	id: "trenci-clasic-bej/index.md";
+  slug: "trenci-clasic-bej";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-clasic-camel/index.md": {
+	id: "trenci-clasic-camel/index.md";
+  slug: "trenci-clasic-camel";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-clasic-nasturi/index.md": {
+	id: "trenci-clasic-nasturi/index.md";
+  slug: "trenci-clasic-nasturi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-impermeabil-camel/index.md": {
+	id: "trenci-impermeabil-camel/index.md";
+  slug: "trenci-impermeabil-camel";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-impermeabil-gluga/index.md": {
+	id: "trenci-impermeabil-gluga/index.md";
+  slug: "trenci-impermeabil-gluga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-lung-bumbac/index.md": {
+	id: "trenci-lung-bumbac/index.md";
+  slug: "trenci-lung-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-lung-impermeabil/index.md": {
+	id: "trenci-lung-impermeabil/index.md";
+  slug: "trenci-lung-impermeabil";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-lung-nasturi/index.md": {
+	id: "trenci-lung-nasturi/index.md";
+  slug: "trenci-lung-nasturi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-lung-stofa/index.md": {
+	id: "trenci-lung-stofa/index.md";
+  slug: "trenci-lung-stofa";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-midi-nasturi/index.md": {
+	id: "trenci-midi-nasturi/index.md";
+  slug: "trenci-midi-nasturi";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-piele-ecologica/index.md": {
+	id: "trenci-piele-ecologica/index.md";
+  slug: "trenci-piele-ecologica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-stofa-carouri/index.md": {
+	id: "trenci-stofa-carouri/index.md";
+  slug: "trenci-stofa-carouri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-stofa-subtire/index.md": {
+	id: "trenci-stofa-subtire/index.md";
+  slug: "trenci-stofa-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-stofa-toamna/index.md": {
+	id: "trenci-stofa-toamna/index.md";
+  slug: "trenci-stofa-toamna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-subtire-primavara/index.md": {
+	id: "trenci-subtire-primavara/index.md";
+  slug: "trenci-subtire-primavara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-subtire-toamna/index.md": {
+	id: "trenci-subtire-toamna/index.md";
+  slug: "trenci-subtire-toamna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-subtire-vara/index.md": {
+	id: "trenci-subtire-vara/index.md";
+  slug: "trenci-subtire-vara";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-verde-inchis/index.md": {
+	id: "trenci-verde-inchis/index.md";
+  slug: "trenci-verde-inchis";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trenci-verde-olive/index.md": {
+	id: "trenci-verde-olive/index.md";
+  slug: "trenci-verde-olive";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-bumbac-baieti/index.md": {
+	id: "trening-bumbac-baieti/index.md";
+  slug: "trening-bumbac-baieti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-bumbac-barbati/index.md": {
+	id: "trening-bumbac-barbati/index.md";
+  slug: "trening-bumbac-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-bumbac-fete/index.md": {
+	id: "trening-bumbac-fete/index.md";
+  slug: "trening-bumbac-fete";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-bumbac-frotir/index.md": {
+	id: "trening-bumbac-frotir/index.md";
+  slug: "trening-bumbac-frotir";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-bumbac-gros/index.md": {
+	id: "trening-bumbac-gros/index.md";
+  slug: "trening-bumbac-gros";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-bumbac-negru/index.md": {
+	id: "trening-bumbac-negru/index.md";
+  slug: "trening-bumbac-negru";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-bumbac-pieptanat/index.md": {
+	id: "trening-bumbac-pieptanat/index.md";
+  slug: "trening-bumbac-pieptanat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-catifea-albastra/index.md": {
+	id: "trening-catifea-albastra/index.md";
+  slug: "trening-catifea-albastra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-catifea-dama/index.md": {
+	id: "trening-catifea-dama/index.md";
+  slug: "trening-catifea-dama";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-catifea-neagra/index.md": {
+	id: "trening-catifea-neagra/index.md";
+  slug: "trening-catifea-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-catifea-rosie/index.md": {
+	id: "trening-catifea-rosie/index.md";
+  slug: "trening-catifea-rosie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-catifea-verde/index.md": {
+	id: "trening-catifea-verde/index.md";
+  slug: "trening-catifea-verde";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-catifea-visinie/index.md": {
+	id: "trening-catifea-visinie/index.md";
+  slug: "trening-catifea-visinie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-complet-bumbac/index.md": {
+	id: "trening-complet-bumbac/index.md";
+  slug: "trening-complet-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-complet-gri/index.md": {
+	id: "trening-complet-gri/index.md";
+  slug: "trening-complet-gri";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-complet-negru/index.md": {
+	id: "trening-complet-negru/index.md";
+  slug: "trening-complet-negru";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-dama-bumbac/index.md": {
+	id: "trening-dama-bumbac/index.md";
+  slug: "trening-dama-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-dama-catifea/index.md": {
+	id: "trening-dama-catifea/index.md";
+  slug: "trening-dama-catifea";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-fas-captusit/index.md": {
+	id: "trening-fas-captusit/index.md";
+  slug: "trening-fas-captusit";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-fas-fasait/index.md": {
+	id: "trening-fas-fasait/index.md";
+  slug: "trening-fas-fasait";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-fleece-barbati/index.md": {
+	id: "trening-fleece-barbati/index.md";
+  slug: "trening-fleece-barbati";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-fleece-calduros/index.md": {
+	id: "trening-fleece-calduros/index.md";
+  slug: "trening-fleece-calduros";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-fleece-pufos/index.md": {
+	id: "trening-fleece-pufos/index.md";
+  slug: "trening-fleece-pufos";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-oversize-bumbac/index.md": {
+	id: "trening-oversize-bumbac/index.md";
+  slug: "trening-oversize-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-poliester-lila/index.md": {
+	id: "trening-poliester-lila/index.md";
+  slug: "trening-poliester-lila";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-slim-bumbac/index.md": {
+	id: "trening-slim-bumbac/index.md";
+  slug: "trening-slim-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"trening-slim-fit/index.md": {
+	id: "trening-slim-fit/index.md";
+  slug: "trening-slim-fit";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
 "tricou-alb-pantaloni-negri-snur-lung/index.md": {
 	id: "tricou-alb-pantaloni-negri-snur-lung/index.md";
   slug: "tricou-alb-pantaloni-negri-snur-lung";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-bumbac-alb/index.md": {
+	id: "tricou-bumbac-alb/index.md";
+  slug: "tricou-bumbac-alb";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-bumbac-fin/index.md": {
+	id: "tricou-bumbac-fin/index.md";
+  slug: "tricou-bumbac-fin";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-bumbac-greu/index.md": {
+	id: "tricou-bumbac-greu/index.md";
+  slug: "tricou-bumbac-greu";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-bumbac-organic/index.md": {
+	id: "tricou-bumbac-organic/index.md";
+  slug: "tricou-bumbac-organic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-bumbac-pieptanat/index.md": {
+	id: "tricou-bumbac-pieptanat/index.md";
+  slug: "tricou-bumbac-pieptanat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-bumbac-premium/index.md": {
+	id: "tricou-bumbac-premium/index.md";
+  slug: "tricou-bumbac-premium";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-bumbac-simplu/index.md": {
+	id: "tricou-bumbac-simplu/index.md";
+  slug: "tricou-bumbac-simplu";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-croiala-patrata/index.md": {
+	id: "tricou-croiala-patrata/index.md";
+  slug: "tricou-croiala-patrata";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-decolteu-adanc/index.md": {
+	id: "tricou-decolteu-adanc/index.md";
+  slug: "tricou-decolteu-adanc";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-dungi-marinaresti/index.md": {
+	id: "tricou-dungi-marinaresti/index.md";
+  slug: "tricou-dungi-marinaresti";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-guler-rotund/index.md": {
+	id: "tricou-guler-rotund/index.md";
+  slug: "tricou-guler-rotund";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-guler-v/index.md": {
+	id: "tricou-guler-v/index.md";
+  slug: "tricou-guler-v";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-imprimeu-grafic/index.md": {
+	id: "tricou-imprimeu-grafic/index.md";
+  slug: "tricou-imprimeu-grafic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-logo-brodat/index.md": {
+	id: "tricou-logo-brodat/index.md";
+  slug: "tricou-logo-brodat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-logo-imprimat/index.md": {
+	id: "tricou-logo-imprimat/index.md";
+  slug: "tricou-logo-imprimat";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-logo-text/index.md": {
+	id: "tricou-logo-text/index.md";
+  slug: "tricou-logo-text";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-maneca-curta/index.md": {
+	id: "tricou-maneca-curta/index.md";
+  slug: "tricou-maneca-curta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-maneca-lunga/index.md": {
+	id: "tricou-maneca-lunga/index.md";
+  slug: "tricou-maneca-lunga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-maneca-scurta/index.md": {
+	id: "tricou-maneca-scurta/index.md";
+  slug: "tricou-maneca-scurta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-oversized-alb/index.md": {
+	id: "tricou-oversized-alb/index.md";
+  slug: "tricou-oversized-alb";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-oversized-grafic/index.md": {
+	id: "tricou-oversized-grafic/index.md";
+  slug: "tricou-oversized-grafic";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-polo-bumbac/index.md": {
+	id: "tricou-polo-bumbac/index.md";
+  slug: "tricou-polo-bumbac";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-relaxed-alb/index.md": {
+	id: "tricou-relaxed-alb/index.md";
+  slug: "tricou-relaxed-alb";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-relaxed-fit/index.md": {
+	id: "tricou-relaxed-fit/index.md";
+  slug: "tricou-relaxed-fit";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-relaxed-negru/index.md": {
+	id: "tricou-relaxed-negru/index.md";
+  slug: "tricou-relaxed-negru";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"tricou-simplu-buzunar/index.md": {
+	id: "tricou-simplu-buzunar/index.md";
+  slug: "tricou-simplu-buzunar";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-blana-artificiala/index.md": {
+	id: "vesta-blana-artificiala/index.md";
+  slug: "vesta-blana-artificiala";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-blana-ecologica/index.md": {
+	id: "vesta-blana-ecologica/index.md";
+  slug: "vesta-blana-ecologica";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-blana-iepure/index.md": {
+	id: "vesta-blana-iepure/index.md";
+  slug: "vesta-blana-iepure";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-blana-vulpe/index.md": {
+	id: "vesta-blana-vulpe/index.md";
+  slug: "vesta-blana-vulpe";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-fas-barbateasca/index.md": {
+	id: "vesta-fas-barbateasca/index.md";
+  slug: "vesta-fas-barbateasca";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-fas-buzunar/index.md": {
+	id: "vesta-fas-buzunar/index.md";
+  slug: "vesta-fas-buzunar";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-fas-buzunare/index.md": {
+	id: "vesta-fas-buzunare/index.md";
+  slug: "vesta-fas-buzunare";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-fas-gluga/index.md": {
+	id: "vesta-fas-gluga/index.md";
+  slug: "vesta-fas-gluga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-fas-neagra/index.md": {
+	id: "vesta-fas-neagra/index.md";
+  slug: "vesta-fas-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-fas-reflectorizanta/index.md": {
+	id: "vesta-fas-reflectorizanta/index.md";
+  slug: "vesta-fas-reflectorizanta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-fas-rosie/index.md": {
+	id: "vesta-fas-rosie/index.md";
+  slug: "vesta-fas-rosie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-fas-roz/index.md": {
+	id: "vesta-fas-roz/index.md";
+  slug: "vesta-fas-roz";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-lana-barbateasca/index.md": {
+	id: "vesta-lana-barbateasca/index.md";
+  slug: "vesta-lana-barbateasca";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-lana-traditionala/index.md": {
+	id: "vesta-lana-traditionala/index.md";
+  slug: "vesta-lana-traditionala";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-matlasata-neagra/index.md": {
+	id: "vesta-matlasata-neagra/index.md";
+  slug: "vesta-matlasata-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-matlasata-rosie/index.md": {
+	id: "vesta-matlasata-rosie/index.md";
+  slug: "vesta-matlasata-rosie";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-matlasata-subtire/index.md": {
+	id: "vesta-matlasata-subtire/index.md";
+  slug: "vesta-matlasata-subtire";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-matlasata-toamna/index.md": {
+	id: "vesta-matlasata-toamna/index.md";
+  slug: "vesta-matlasata-toamna";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-puf-albastra/index.md": {
+	id: "vesta-puf-albastra/index.md";
+  slug: "vesta-puf-albastra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-puf-gluga/index.md": {
+	id: "vesta-puf-gluga/index.md";
+  slug: "vesta-puf-gluga";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-puf-guler/index.md": {
+	id: "vesta-puf-guler/index.md";
+  slug: "vesta-puf-guler";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-puf-neagra/index.md": {
+	id: "vesta-puf-neagra/index.md";
+  slug: "vesta-puf-neagra";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-puf-scurta/index.md": {
+	id: "vesta-puf-scurta/index.md";
+  slug: "vesta-puf-scurta";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-puf-sport/index.md": {
+	id: "vesta-puf-sport/index.md";
+  slug: "vesta-puf-sport";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-scurta-fas/index.md": {
+	id: "vesta-scurta-fas/index.md";
+  slug: "vesta-scurta-fas";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-tricotata-manual/index.md": {
+	id: "vesta-tricotata-manual/index.md";
+  slug: "vesta-tricotata-manual";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"vesta-tricotata-nasturi/index.md": {
+	id: "vesta-tricotata-nasturi/index.md";
+  slug: "vesta-tricotata-nasturi";
   body: string;
   collection: "blog";
   data: any

@@ -1,0 +1,19 @@
+---
+import InternationalContentPage from '../../components/InternationalContentPage.astro';
+import { pages } from '../../data/seoSite';
+import { editorialArticles } from '../../data/portalContent';
+import { internationalLocales, localizedSlug } from '../../data/internationalSeo';
+
+export function getStaticPaths() {
+  const sourcePages = [...pages, ...editorialArticles];
+  return internationalLocales.flatMap((locale) =>
+    sourcePages.map((page) => ({
+      params: { locale: locale.code, slug: localizedSlug(page) },
+      props: { page, locale },
+    })),
+  );
+}
+
+const { page, locale } = Astro.props;
+---
+<InternationalContentPage page={page} locale={locale} />

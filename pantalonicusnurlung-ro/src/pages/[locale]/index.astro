@@ -1,0 +1,76 @@
+---
+import InternationalLayout from '../../layouts/InternationalLayout.astro';
+import { SITE, pages } from '../../data/seoSite';
+import { editorialArticles } from '../../data/portalContent';
+import { internationalLocales, localizedHub, localizedUrl } from '../../data/internationalSeo';
+
+export function getStaticPaths() {
+  const sourcePages = [...pages, ...editorialArticles];
+  return internationalLocales.map((locale) => ({
+    params: { locale: locale.code },
+    props: { hub: localizedHub(locale, sourcePages), locale },
+  }));
+}
+
+const { hub, locale } = Astro.props;
+const sourcePages = [...pages, ...editorialArticles];
+const canonical = `${SITE}/${locale.code}/`;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: hub.title,
+  description: hub.description,
+  url: canonical,
+  inLanguage: 'en',
+};
+---
+<InternationalLayout title={hub.title} description={hub.description} canonical={canonical} lang="en" schema={schema}>
+  <section class="intl-hero">
+    <div class="container intl-hero-grid">
+      <div>
+        <p class="ency-kicker">International fashion hub</p>
+        <h1>{hub.h1}</h1>
+        <p>{hub.description}</p>
+        <div class="intl-meta-row">
+          <span>Content language: English</span>
+          <span>Audience: {locale.region}</span>
+          <span>URL prefix: /{locale.code}/</span>
+        </div>
+      </div>
+      <figure>
+        <img src="/og-pantaloni-cu-snur-lung.jpg" alt={hub.h1} title={hub.h1} width="1200" height="630" loading="eager" decoding="async" />
+      </figure>
+    </div>
+  </section>
+
+  <section class="ency-section">
+    <div class="container">
+      <div class="ency-section-head">
+        <span>English pages</span>
+        <h2>Start With Popular Guides</h2>
+      </div>
+      <div class="taxonomy-grid">
+        {hub.featuredPages.map((page) => (
+          <a href={`/${locale.code}/${page.slug}/`}>
+            <strong>{page.h1}</strong>
+            <span>{page.description}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="ency-section muted">
+    <div class="container">
+      <div class="ency-section-head">
+        <span>Full archive</span>
+        <h2>All English URLs Under This Hub</h2>
+      </div>
+      <div class="intl-link-list">
+        {sourcePages.map((page) => (
+          <a href={localizedUrl(locale, page)}>{localizedUrl(locale, page)}</a>
+        ))}
+      </div>
+    </div>
+  </section>
+</InternationalLayout>

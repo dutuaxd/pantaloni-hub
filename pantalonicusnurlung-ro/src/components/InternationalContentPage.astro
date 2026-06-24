@@ -1,0 +1,107 @@
+---
+import InternationalLayout from '../layouts/InternationalLayout.astro';
+import { SITE, pages, updated } from '../data/seoSite';
+import { editorialArticles } from '../data/portalContent';
+import { localizedPage, localizedUrl, type InternationalLocale } from '../data/internationalSeo';
+
+const sourcePages = [...pages, ...editorialArticles];
+const { page: sourcePage, locale } = Astro.props as { page: (typeof sourcePages)[number]; locale: InternationalLocale };
+const page = localizedPage(sourcePage, locale);
+const canonical = `${SITE}/${locale.code}/${page.slug}/`;
+const image = page.image.startsWith('images/') ? `/${page.image}` : page.image.endsWith('.webp') ? `/images/products/${page.image}` : `/${page.image}`;
+const relatedPages = sourcePages
+  .filter((item) => item.slug !== sourcePage.slug)
+  .slice(0, 8)
+  .map((item) => ({ href: localizedUrl(locale, item), label: localizedPage(item, locale).h1 }));
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: page.h1,
+    description: page.description,
+    image: new URL(image, canonical).href,
+    dateModified: updated,
+    inLanguage: 'en',
+    mainEntityOfPage: canonical,
+    publisher: { '@type': 'Organization', name: 'PSL Fashion Encyclopedia' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'International Hubs', item: `${SITE}/#international-fashion-hubs` },
+      { '@type': 'ListItem', position: 2, name: locale.hubTitle, item: `${SITE}/${locale.code}/` },
+      { '@type': 'ListItem', position: 3, name: page.h1, item: canonical },
+    ],
+  },
+];
+---
+<InternationalLayout title={page.title} description={page.description} canonical={canonical} image={image} lang="en" schema={schema}>
+  <article class="intl-page-shell">
+    <header class="intl-topbar">
+      <a href="/">PSL Fashion Encyclopedia</a>
+      <nav aria-label="International navigation">
+        <a href={`/${locale.code}/`}>{locale.language} Hub</a>
+        <a href="/#international-fashion-hubs">All Hubs</a>
+      </nav>
+    </header>
+
+    <section class="intl-hero">
+      <div class="container intl-hero-grid">
+        <div>
+          <p class="ency-kicker">English page for {locale.language} readers</p>
+          <h1>{page.h1}</h1>
+          <p>{page.description}</p>
+          <div class="intl-meta-row">
+            <span>Language: English</span>
+            <span>Regional hub: {locale.region}</span>
+            <span>Updated: {updated}</span>
+          </div>
+        </div>
+        <figure>
+          <img src={image} alt={page.h1} title={page.h1} width="900" height="1100" loading="eager" decoding="async" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="intl-body">
+      <div class="container intl-layout">
+        <aside>
+          <strong>Contents</strong>
+          {page.sections.map(([heading]) => (
+            <a href={`#${heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`}>{heading}</a>
+          ))}
+          <a href="#frequently-asked-questions">Frequently Asked Questions</a>
+        </aside>
+
+        <main>
+          {page.sections.map(([heading, body]) => (
+            <section class="wiki-section">
+              <h2 id={heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}>{heading}</h2>
+              <p>{body}</p>
+            </section>
+          ))}
+
+          <section class="wiki-section">
+            <h2>Related English Pages</h2>
+            <div class="wiki-related-grid">
+              {relatedPages.map((item) => <a href={item.href}>{item.label}</a>)}
+            </div>
+          </section>
+
+          <section class="wiki-section" id="frequently-asked-questions">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+              {page.faqs.map(([question, answer]) => (
+                <details>
+                  <summary>{question}</summary>
+                  <p>{answer}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
+  </article>
+</InternationalLayout>

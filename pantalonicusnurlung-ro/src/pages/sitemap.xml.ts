@@ -1,8 +1,10 @@
-import { allContentPages, SITE, updated } from '../data/seoSite';
+import { allContentPages, pages, SITE, updated } from '../data/seoSite';
 import { localCityPages, localCityUrl, localHub } from '../data/localSeo';
 import { editorialArticles } from '../data/portalContent';
+import { internationalLocales, localizedUrl } from '../data/internationalSeo';
 
 export function GET() {
+  const internationalSourcePages = [...pages, ...editorialArticles];
   const hubs = [
     '/moda-urbana-barbati',
     '/moda-urbana-femei',
@@ -46,6 +48,18 @@ export function GET() {
       priority: '0.6',
       changefreq: 'monthly',
     })),
+    ...internationalLocales.map((locale) => ({
+      loc: `${SITE}/${locale.code}/`,
+      priority: '0.7',
+      changefreq: 'monthly',
+    })),
+    ...internationalLocales.flatMap((locale) =>
+      internationalSourcePages.map((page) => ({
+        loc: `${SITE}${localizedUrl(locale, page)}`,
+        priority: '0.5',
+        changefreq: 'monthly',
+      })),
+    ),
   ];
   
   // Deduplicate URLs just in case

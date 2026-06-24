@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  image?: string;
+  lang?: string;
+  schema?: unknown;
+}
+
+const { title, description, canonical, image = '/og-pantaloni-cu-snur-lung.jpg', lang = 'en', schema } = Astro.props;
+const absoluteImage = image.startsWith('http') ? image : new URL(image, canonical).href;
+const schemaList = Array.isArray(schema) ? schema : schema ? [schema] : [];
+---
+<html lang={lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="generator" content={Astro.generator} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={absoluteImage} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="PSL Fashion Encyclopedia" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={absoluteImage} />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="language" content="English" />
+  <meta name="content-language" content="en" />
+  {schemaList.map((item) => <script type="application/ld+json" set:html={JSON.stringify(item)} />)}
+</head>
+<body class="international-page">
+  <slot />
+</body>
+</html>
