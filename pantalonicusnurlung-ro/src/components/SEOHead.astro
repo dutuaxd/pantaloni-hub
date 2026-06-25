@@ -3,6 +3,9 @@ interface Props { title:string; description:string; canonical?:string; image?:st
 const { title, description, canonical, image='/og-pantaloni-cu-snur-lung.jpg', type='website', schema } = Astro.props;
 const canonicalURL = canonical ? new URL(canonical, Astro.site) : new URL(Astro.url.pathname, Astro.site);
 const absoluteImage = image.startsWith('http') ? image : new URL(image, canonicalURL.href).href;
+const socialImageURL = new URL(absoluteImage);
+socialImageURL.searchParams.set('page', canonicalURL.pathname.replace(/^\/|\/$/g, '').replace(/[^a-z0-9-]+/gi, '-') || 'home');
+const socialImage = socialImageURL.href;
 const schemaList = Array.isArray(schema) ? schema : schema ? [schema] : [];
 ---
 <title>{title}</title>
@@ -10,7 +13,7 @@ const schemaList = Array.isArray(schema) ? schema : schema ? [schema] : [];
 <link rel="canonical" href={canonicalURL.href} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={absoluteImage} />
+<meta property="og:image" content={socialImage} />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:url" content={canonicalURL.href} />
@@ -20,7 +23,7 @@ const schemaList = Array.isArray(schema) ? schema : schema ? [schema] : [];
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={absoluteImage} />
+<meta name="twitter:image" content={socialImage} />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="geo.region" content="RO" />
 <meta name="geo.placename" content="Romania" />

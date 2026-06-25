@@ -12,6 +12,9 @@ interface Props {
 
 const { title, description, canonical, image = '/og-pantaloni-cu-snur-lung.jpg', lang = 'en', schema } = Astro.props;
 const absoluteImage = image.startsWith('http') ? image : new URL(image, canonical).href;
+const socialImageURL = new URL(absoluteImage);
+socialImageURL.searchParams.set('page', new URL(canonical).pathname.replace(/^\/|\/$/g, '').replace(/[^a-z0-9-]+/gi, '-') || 'home');
+const socialImage = socialImageURL.href;
 const schemaList = Array.isArray(schema) ? schema : schema ? [schema] : [];
 ---
 <html lang={lang}>
@@ -28,7 +31,7 @@ const schemaList = Array.isArray(schema) ? schema : schema ? [schema] : [];
   <link rel="canonical" href={canonical} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={absoluteImage} />
+  <meta property="og:image" content={socialImage} />
   <meta property="og:url" content={canonical} />
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="en_US" />
@@ -36,7 +39,7 @@ const schemaList = Array.isArray(schema) ? schema : schema ? [schema] : [];
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={absoluteImage} />
+  <meta name="twitter:image" content={socialImage} />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="language" content="English" />
   <meta name="content-language" content="en" />
