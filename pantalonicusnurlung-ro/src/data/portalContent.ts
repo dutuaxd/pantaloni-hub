@@ -45,6 +45,7 @@ export const mainNavLinks = [
   ['/hanorace/', 'Hanorace'],
   ['/tinute/', 'Tinute'],
   ['/ghiduri/', 'Ghiduri'],
+  ['/ingrijire-textile/', 'Ingrijire textile'],
   ['/news/', 'News'],
   ['/blog/', 'Blog'],
   ['/despre-noi/', 'Despre noi'],
@@ -84,6 +85,13 @@ export const editorialArticles = [
   portalPage('tinute-vara', 'Tinute de vara barbati', 'Idei pentru pantaloni scurti, tricouri usoare, culori deschise si incaltaminte lejera.', 'Tinute'),
   portalPage('tinute-all-black', 'Tinute all black barbati', 'Cum pastrezi profunzimea unei tinute negre prin texturi, proportii si accente discrete.', 'Tinute'),
   portalPage('ghiduri', 'Ghiduri de stil masculin', 'Ghiduri despre marimi, materiale, croieli, culori si alegeri vestimentare informate.', 'Ghiduri'),
+  portalPage('ingrijire-textile', 'Ingrijire textile', 'Sectiune despre spalarea materialelor, solutii de curatare textile, pete, mirosuri, temperaturi si greseli de evitat.', 'Ghiduri', 'images/blog-seo/cum-scoti-pete-vopsea-sange-deodorant-haine/00-hero-pantaloni-cu-snur-lung-negri-produs.webp', [
+    ['Ce gasesti aici', 'Sectiunea ingrijire textile separa intentiile dupa material, solutie si context. Astfel, un ghid despre detergent lichid pe bumbac alb nu concureaza cu un ghid despre oxigen activ pe lana sau cu un articol despre mirosuri dupa spalare.'],
+    ['Materiale acoperite', 'Clusterul include bumbac, bumbac organic, poliester, elastan, vascoza, in, lana, merinos, casmir, denim, twill, poplin, flanel, fleece, softshell, jersey, ribbed, satin si materiale impermeabile.'],
+    ['Solutii explicate', 'Fiecare articol explica ce face solutia: detergent lichid, detergent pudra, detergent pentru rufe colorate, solutie enzimatica, degresant textil bland, oxigen activ, bicarbonat, otet alb la clatire, balsam de rufe si spray de pretratare.'],
+    ['Regula de siguranta', 'Eticheta hainei ramane prima sursa. Pentru materiale scumpe, delicate sau necunoscute, ghidurile recomanda test pe zona ascunsa si curatare profesionala cand riscul este mare.'],
+    ['Cum navighezi', 'Porneste de la materialul hainei, apoi alege solutia folosita si contextul: haine albe, haine negre, haine colorate, pantaloni si tricouri sau haine purtate des.'],
+  ]),
   portalPage('ghiduri/marimi', 'Ghid marimi barbati', 'Cum citesti masuratorile, cum verifici talia si cum alegi fitul in functie de croiala.', 'Ghiduri'),
   portalPage('ghiduri/materiale', 'Ghid materiale haine barbati', 'Bumbac, fleece, jersey si alte materiale explicate pe intelesul cititorului.', 'Ghiduri'),
   portalPage('ghiduri/croieli', 'Ghid croieli barbati', 'Diferente intre slim, drept, loose, baggy, oversized si cargo.', 'Ghiduri'),
@@ -104,6 +112,7 @@ export const portalCategoryGroups = [
   ['Hanorace', ['hanorace-oversize', 'hanorace-negre', 'hanorace-streetwear', 'hanorace-casual']],
   ['Tinute', ['tinute-streetwear', 'tinute-casual', 'tinute-vara', 'tinute-all-black']],
   ['Ghiduri', ['ghiduri/marimi', 'ghiduri/materiale', 'ghiduri/croieli', 'ghiduri/culori']],
+  ['Ingrijire textile', ['ingrijire-textile', 'ghiduri/materiale', 'ghiduri/culori', 'ghiduri/croieli']],
   ['News', ['news/fashion-masculin', 'news/trenduri', 'news/streetwear', 'news/sezon']],
 ];
 

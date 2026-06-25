@@ -114,6 +114,51 @@ export const productImages = [
     title: 'Pantaloni cu snur lung crem barbati',
     alt: 'Model masculin purtand pantaloni cu snur lung crem, tricou alb oversized si incaltaminte sport albi',
   },
+  {
+    file: 'pantaloni-scurti-barbati-atelier-axd.webp',
+    title: 'Pantaloni scurti barbati Atelier AXD',
+    alt: 'Model masculin purtand pantaloni scurti negri cu snur lung alb, tricou alb si sneakers albi',
+  },
+  {
+    file: 'pantaloni-scurti-burgundy-snur-lung-produs.webp',
+    title: 'Pantaloni scurti burgundy cu snur lung',
+    alt: 'Pantaloni scurti burgundy cu talie elastica, buzunare laterale si snur lung alb pe fundal alb',
+  },
+  {
+    file: 'pantaloni-scurti-bej-snur-lung-subtiri.webp',
+    title: 'Pantaloni scurti bej cu snur lung subtiri',
+    alt: 'Pantaloni scurti bej subtiri cu croiala lejera, talie elastica si snur lung alb',
+  },
+  {
+    file: 'set-scurt-negru-texturat-snur-lung.webp',
+    title: 'Set scurt negru texturat cu snur lung',
+    alt: 'Set negru texturat pentru barbati cu camasa scurta, pantaloni scurti si snur lung alb',
+  },
+  {
+    file: 'pantaloni-scurti-negri-snur-lung-vascoza-in.webp',
+    title: 'Pantaloni scurti negri cu snur lung vascoza in',
+    alt: 'Pantaloni scurti negri lejeri cu talie elastica, snur lung alb si aspect de material fluid',
+  },
+  {
+    file: 'pantaloni-scurti-roz-snur-lung-produs.webp',
+    title: 'Pantaloni scurti roz cu snur lung',
+    alt: 'Pantaloni scurti roz pastel cu talie elastica, snur lung alb si croiala relaxata',
+  },
+  {
+    file: 'tinuta-nunta-barbati-2026.webp',
+    title: 'Tinuta nunta barbati 2026',
+    alt: 'Tinuta eleganta pentru barbati in 2026 cu costum bleumarin, camasa alba si pantalon asortat',
+  },
+  {
+    file: 'outfit-smart-casual-cununie-civila.webp',
+    title: 'Outfit smart casual cununie civila',
+    alt: 'Outfit smart casual pentru cununie civila cu sacou bleumarin, camasa alba si pantaloni deschisi',
+  },
+  {
+    file: 'set-vara-barbati-bleumarin-texturat.webp',
+    title: 'Set vara barbati bleumarin texturat',
+    alt: 'Set de vara bleumarin texturat pentru barbati cu camasa cu maneca scurta si pantaloni scurti cu snur lung',
+  },
 ];
 
 export const productImagePath = '/images/products/';

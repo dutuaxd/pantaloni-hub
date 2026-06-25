@@ -1,136 +1,156 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { SITE, SHOP, articleSchema, breadcrumbSchema, company, editorialClusters, faqSchema, faqs, galleryImages, organizationSchema, updated, websiteSchema } from '../data/seoSite';
-import { atelierImages, atelierImagePath } from '../data/atelierImages';
+import { SITE, allContentPages, articleSchema, breadcrumbSchema, company, editorialClusters, faqSchema, faqs, organizationSchema, updated, websiteSchema } from '../data/seoSite';
 import { publicCopy, publicPage } from '../data/publicCopy';
 
-const { page: rawPage, isHome = false } = Astro.props;
+const { page: rawPage } = Astro.props;
 const page = publicPage(rawPage);
-const canonical = page.slug ? `${SITE}/${page.slug}/` : `${SITE}/`;
+const canonical = `${SITE}/${page.slug}/`;
 const image = page.image.startsWith('images/') ? `/${page.image}` : page.image.endsWith('.webp') ? `/images/products/${page.image}` : `/${page.image}`;
-const title = page.title;
-const articleImages = Array.isArray(page.images) ? page.images : [];
-const isSummerFashionAuthority = page.articleType === 'summer-fashion-authority';
-const hasArticleGallery = articleImages.length > 0;
-const isScheduledArticle = hasArticleGallery && !isSummerFashionAuthority;
+const articleFaqs = Array.isArray(page.faqs) && page.faqs.length > 0 ? page.faqs : faqs;
+const visibleSections = Array.isArray(page.sections) ? page.sections : [];
 const keyTakeaways = Array.isArray(page.keyTakeaways) ? page.keyTakeaways.map(publicCopy) : [];
 const comparisonRows = Array.isArray(page.comparisonRows) ? page.comparisonRows : [];
-const articleFaqs = Array.isArray(page.faqs) && page.faqs.length > 0 ? page.faqs : faqs;
+const articleImages = Array.isArray(page.images) ? page.images : [];
 const relatedLinks = Array.isArray(page.relatedLinks) ? page.relatedLinks : [];
-const visibleSections = Array.isArray(page.sections) ? page.sections : [];
-const tocSections = visibleSections.slice(0, 6);
-const fullGalleryImages = [
-  ...galleryImages.map(([file, alt]) => ({ file: `/${file}`, alt })),
-  ...atelierImages.map((item) => ({ file: `${atelierImagePath}${item.file}`, alt: item.alt })),
+const allPages = allContentPages.map(publicPage);
+const currentIndex = allPages.findIndex((item) => item.slug === page.slug);
+const previousPage = currentIndex > 0 ? allPages[currentIndex - 1] : null;
+const nextPage = currentIndex >= 0 && currentIndex < allPages.length - 1 ? allPages[currentIndex + 1] : null;
+const slugTerms = page.slug.split('/').pop()?.split('-').filter((term) => term.length > 3) || [];
+const automaticRelated = allPages
+  .filter((item) => item.slug !== page.slug)
+  .filter((item) => slugTerms.some((term) => item.slug.includes(term)) || item.category === page.category)
+  .slice(0, 8);
+const mergedRelated = [
+  ...relatedLinks.map(([href, label]) => ({ href, label: publicCopy(label) })),
+  ...automaticRelated.map((item) => ({ href: `/${item.slug}/`, label: item.h1 })),
+].filter((item, index, arr) => arr.findIndex((candidate) => candidate.href === item.href) === index).slice(0, 10);
+const tocSections = [
+  ['definitie', 'Definitie'],
+  ['infobox', 'Infobox'],
+  ...visibleSections.slice(0, 7).map(([heading]) => [heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''), heading]),
+  ['vezi-si', 'Vezi si'],
+  ['intrebari-frecvente', 'Intrebari frecvente'],
+];
+const isMaterial = /material|textil|bumbac|poliester|vascoza|denim|lana|casmir|softshell|jersey|fleece|satin|in\b/i.test(`${page.h1} ${page.slug}`);
+const isBrand = /atelier|brand|nike|adidas|zara|uniqlo|h&m/i.test(`${page.h1} ${page.slug}`);
+const infoboxRows = isBrand
+  ? [
+      ['Tip entitate', 'Brand / actor fashion'],
+      ['Tara', page.slug.includes('atelier') ? 'Romania' : 'International'],
+      ['Industrie', 'Fashion, imbracaminte, lifestyle'],
+      ['Produse', 'Pantaloni, tricouri, hanorace, piese casual'],
+      ['Fondatori', page.slug.includes('atelier') ? 'Atelier AXD' : 'Date variabile dupa brand'],
+      ['Website oficial', page.slug.includes('atelier') ? 'atelieraxd.ro' : 'Vezi sursele oficiale ale brandului'],
+    ]
+  : isMaterial
+    ? [
+        ['Categorie', 'Material / textila'],
+        ['Origine', 'Fibra naturala, sintetica sau mix, in functie de subiect'],
+        ['Utilizare', 'Haine casual, pantaloni, tricouri, stratificare si intretinere'],
+        ['Avantaje', 'Confort, versatilitate si comportament predictibil cand este ales corect'],
+        ['Dezavantaje', 'Poate necesita ingrijire specifica si testare pe zona ascunsa'],
+        ['Intretinere', 'Respecta eticheta, temperatura joasa si solutii potrivite materialului'],
+      ]
+    : [
+        ['Categorie', page.category || 'Fashion'],
+        ['Tip pagina', 'Articol enciclopedic'],
+        ['Subiect', page.h1],
+        ['Utilizare', 'Documentare, comparatie, inspiratie si navigare intre concepte'],
+        ['Actualizare', updated],
+        ['Autor', company.author],
+      ];
+const termLinks = [
+  ['/pantaloni-baggy-negri/', 'Baggy'],
+  ['/pantaloni-oversized/', 'Oversized'],
+  ['/pantaloni-loose-fit/', 'Loose fit'],
+  ['/pantaloni-cargo/', 'Cargo'],
+  ['/tinute-streetwear/', 'Streetwear'],
+  ['/ghiduri/materiale/', 'Materiale'],
+  ['/ghiduri/culori/', 'Culori'],
+  ['/ingrijire-textile/', 'Ingrijire textile'],
 ];
 const schema = [
   organizationSchema(),
   websiteSchema(),
-  ...(isHome ? [] : [articleSchema(page), breadcrumbSchema(page.h1, canonical)]),
+  articleSchema(page),
+  breadcrumbSchema(page.h1, canonical),
   faqSchema(articleFaqs),
-  ...(page.slug === 'galerie-pantaloni-snur-lung'
-    ? [{
-        '@context': 'https://schema.org',
-        '@type': 'ImageGallery',
-        name: 'Galerie Pantaloni cu Snur Lung',
-        description: page.description,
-        url: canonical,
-        image: fullGalleryImages.map((item) => ({ '@type': 'ImageObject', url: `${SITE}${item.file}`, name: item.alt, description: item.alt, width: 800, height: 1200 })),
-      }]
-    : []),
 ];
 ---
-<Layout title={title} description={page.description} canonical={canonical} image={image} type={isHome ? 'website' : 'article'} schema={schema}>
-  <article class="content-article">
-    <section class:list={['content-hero', isHome && 'home-hero']}>
-      <div class="container hero-grid">
+<Layout title={page.title} description={page.description} canonical={canonical} image={image} type="article" schema={schema}>
+  <article class="wiki-page">
+    <header class="wiki-hero">
+      <div class="container wiki-hero-grid">
         <div>
-          <p class="section-tag">{isHome ? 'pantaloni cu snur lung' : `// actualizat ${updated}`}</p>
+          <nav class="wiki-breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Acasa</a>
+            <span>/</span>
+            <a href={`/${page.category === 'Pantaloni' ? 'pantaloni' : page.category === 'Ghiduri' ? 'ghiduri' : 'fashion'}/`}>{page.category || 'Fashion'}</a>
+          </nav>
+          <p class="ency-kicker">Pagina enciclopedica · actualizat {updated}</p>
           <h1>{page.h1}</h1>
-          <p class="direct-answer">{page.intro}</p>
-          <div class="hero-actions">
-            <a class="btn-primary" href={SHOP} target="_blank" rel="noopener">{isHome ? 'Verifica disponibilitatea pe AtelierAXD' : 'Vezi stocul actualizat pe AtelierAXD'}</a>
-            <a class="btn-ghost" href={isHome ? '/ghid-marimi-pantaloni-cu-snur/' : '/galerie-pantaloni-snur-lung/'}>{isHome ? 'Ghid de marimi' : 'Vezi galeria'}</a>
+          <p class="wiki-definition" id="definitie">{page.intro}</p>
+          <div class="wiki-meta-row">
+            <span>Autor: {company.author}</span>
+            <span>Publicat: <time datetime={page.date || '2026-01-01'}>{page.date || '2026-01-01'}</time></span>
+            <span>Revizuit: <time datetime={updated}>{updated}</time></span>
           </div>
-          {isHome && (
-            <div class="home-offer">
-              <span>Atelier AXD</span>
-              <strong>Colectie verificata pe magazin</strong>
-              <small>Disponibilitatea si conditiile comerciale sunt afisate pe atelieraxd.ro.</small>
-            </div>
-          )}
         </div>
-        <figure class="hero-figure">
-          <img src={image} alt={page.h1} title={page.h1} width="1200" height="1600" loading="eager" decoding="async" fetchpriority="high" />
+        <figure class="wiki-main-image">
+          <img src={image} alt={page.h1} title={page.h1} width="900" height="1100" loading="eager" decoding="async" fetchpriority="high" />
           <figcaption>{page.h1}</figcaption>
         </figure>
       </div>
-    </section>
+    </header>
 
-    <section class="section">
-      <div class="container content-layout">
-        <div class="article-main">
-          <aside class="about-box">
-            <strong>Despre acest articol</strong>
-            <span>Autor: {company.author}</span>
-            <span>Publicat: <time datetime={page.date || '2026-01-01'}>{page.date || '2026-01-01'}</time></span>
-            <span>Actualizat: <time datetime={updated}>{updated}</time></span>
-          </aside>
+    <section class="wiki-body">
+      <div class="container wiki-layout">
+        <aside class="wiki-left-nav">
+          <strong>Cuprins</strong>
+          <nav aria-label="Cuprins articol">
+            {tocSections.map(([href, label]) => <a href={`#${href}`}>{label}</a>)}
+          </nav>
+        </aside>
 
-          {isHome && (
-            <>
-              <h2>De ce snurul lung?</h2>
-              <ul class="check-list">
-                <li>Poate adauga un accent vizual imediat, fara imprimeuri sau logo-uri mari.</li>
-                <li>Functioneaza in tinute unisex, moda urbana si casual.</li>
-                <li>Regleaza talia si pastreaza o silueta relaxata.</li>
-                <li>Se observa bine in poze si in continut de inspiratie moda.</li>
+        <main class="wiki-main">
+          <section class="wiki-summary-box">
+            <h2>Pe scurt</h2>
+            <p>{page.serpSnippet ? publicCopy(page.serpSnippet) : page.description}</p>
+            {keyTakeaways.length > 0 && (
+              <ul>
+                {keyTakeaways.slice(0, 5).map((item) => <li>{item}</li>)}
               </ul>
-              <h2>Categorii principale</h2>
-              <div class="mini-grid">
-                {['barbati', 'femei', 'unisex', 'negri', 'bumbac', 'stil-urban'].map((item) => (
-                  <a class="mini-card" href={`/pantaloni-cu-snur-lung-${item}/`}>Pantaloni cu snur lung {item}</a>
-                ))}
-              </div>
-            </>
-          )}
+            )}
+          </section>
 
-          {(page.serpSnippet || keyTakeaways.length > 0 || tocSections.length > 2) && (
-            <section class="serp-brief">
-              <h2>Pe scurt</h2>
-              {page.serpSnippet && <p>{publicCopy(page.serpSnippet)}</p>}
-              {keyTakeaways.length > 0 && (
-                <ul class="check-list">
-                  {keyTakeaways.map((item) => <li>{item}</li>)}
-                </ul>
-              )}
-              {tocSections.length > 2 && (
-                <nav class="article-toc" aria-label="Cuprins articol">
-                  {tocSections.map(([heading]) => <a href={`#${heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`}>{heading}</a>)}
-                </nav>
-              )}
-            </section>
-          )}
+          <section class="wiki-infobox" id="infobox">
+            <h2>Infobox</h2>
+            <dl>
+              {infoboxRows.map(([label, value]) => (
+                <>
+                  <dt>{label}</dt>
+                  <dd>{value}</dd>
+                </>
+              ))}
+            </dl>
+          </section>
 
           {visibleSections.map(([heading, body]) => (
-            <section>
+            <section class="wiki-section">
               <h2 id={heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}>{heading}</h2>
-              <p>{body}</p>
-              <p>Continua lectura prin <a href="/pantaloni-baggy-negri/">ghidul pentru pantaloni baggy negri</a>, analiza despre <a href="/pantaloni-oversized/">croieli oversized</a> si pagina de <a href="/pantaloni-loose-fit/">pantaloni loose fit</a>.</p>
+              <p>{publicCopy(body)}</p>
             </section>
           ))}
 
           {comparisonRows.length > 0 && (
-            <section>
-              <h2>Comparatie rapida pentru decizie</h2>
+            <section class="wiki-section">
+              <h2>Comparatie rapida</h2>
               <div class="article-table-wrap">
                 <table class="article-table">
                   <thead>
-                    <tr>
-                      <th>Criteriu</th>
-                      <th>Alege asa</th>
-                      <th>Evita</th>
-                    </tr>
+                    <tr><th>Criteriu</th><th>Alege asa</th><th>Evita</th></tr>
                   </thead>
                   <tbody>
                     {comparisonRows.map((row) => (
@@ -146,68 +166,13 @@ const schema = [
             </section>
           )}
 
-          {relatedLinks.length > 0 && (
-            <section class="related-guides">
-              <h2>Ghiduri conexe fara suprapunere</h2>
-              <div class="related-link-grid">
-                {relatedLinks.map(([href, label]) => (
-                  <a href={href}>{publicCopy(label)}</a>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {isScheduledArticle && (
-            <section class="scheduled-guide-pack">
-              <h2>Comparatie rapida pentru alegere</h2>
-              <div class="article-table-wrap">
-                <table class="article-table">
-                  <thead>
-                    <tr>
-                      <th>Criteriu</th>
-                      <th>Alege asa</th>
-                      <th>Evita</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Fit</td>
-                      <td>Croiala relaxata, talie clara, snur vizibil</td>
-                      <td>Volum fara structura sau tiv prea lung</td>
-                    </tr>
-                    <tr>
-                      <td>Culoare</td>
-                      <td>Negru, gri, bej, maro sau bleumarin</td>
-                      <td>Prea multe accente intr-o singura tinuta</td>
-                    </tr>
-                    <tr>
-                      <td>Styling</td>
-                      <td>Tricou simplu, hanorac compact, sneakers curati</td>
-                      <td>Logo-uri mari peste tot si proportii neclare</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="reader-question">
-                <strong>Intrebare pentru cititor</strong>
-                <span>Ai purta modelul mai degraba cu tricou oversized sau cu hanorac minimalist?</span>
-              </div>
-              <div class="social-share-row" aria-label="Urmareste-ne">
-                <a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://www.facebook.com/profile.php?id=100067635362487" target="_blank" rel="noopener">FB</a>
-                <a href="https://ro.pinterest.com/ATELIERAXD/" target="_blank" rel="noopener">Pinterest</a>
-                <a href="https://www.tiktok.com/@atelieraxd" target="_blank" rel="noopener">TikTok</a>
-              </div>
-            </section>
-          )}
-
-          {hasArticleGallery && (
-            <section>
-              <h2>Galerie vizuala pentru articol</h2>
-              <div class="gallery-grid article-image-grid">
-                {articleImages.map((item) => (
+          {articleImages.length > 0 && (
+            <section class="wiki-section">
+              <h2>Imagine principala si galerie</h2>
+              <div class="wiki-gallery">
+                {articleImages.slice(0, 6).map((item) => (
                   <figure>
-                    <img src={`/${item.file}`} alt={item.alt} title={item.title || item.alt} width="800" height="1200" loading="lazy" decoding="async" />
+                    <img src={`/${item.file}`} alt={item.alt} title={item.title || item.alt} width="800" height="1000" loading="lazy" decoding="async" />
                     <figcaption>{publicCopy(item.alt)}</figcaption>
                   </figure>
                 ))}
@@ -215,42 +180,64 @@ const schema = [
             </section>
           )}
 
-          <div class="cta-strip">
-            <h2>Colectia comerciala este pe Atelier AXD</h2>
-            <p>Pantalonicusnurlung.ro este site informativ. Pentru produse, marimi disponibile si comanda, intra pe atelieraxd.ro.</p>
-            <a class="btn-primary" href={SHOP} target="_blank" rel="noopener">Vezi stocul actualizat pe AtelierAXD</a>
-          </div>
+          <section class="wiki-section" id="vezi-si">
+            <h2>Vezi si</h2>
+            <div class="wiki-related-grid">
+              {mergedRelated.slice(0, 8).map((item) => <a href={item.href}>{item.label}</a>)}
+            </div>
+          </section>
 
-          {page.slug === 'galerie-pantaloni-snur-lung' && (
-            <div class="gallery-grid">
-              {fullGalleryImages.map(({ file, alt }) => (
-                <figure>
-                  <img src={file} alt={alt} title={alt} width="800" height="1200" loading="lazy" decoding="async" />
-                  <figcaption>{alt}</figcaption>
-                </figure>
+          <section class="wiki-section">
+            <h2>Termeni asociati</h2>
+            <div class="wiki-term-grid">
+              {termLinks.map(([href, label]) => <a href={href}>{label}</a>)}
+            </div>
+          </section>
+
+          <section class="wiki-section">
+            <h2>Surse si metodologie editoriala</h2>
+            <p>Pagina este construita ca material informativ, pe baza taxonomiei interne PSL, a relatiilor dintre articole, a termenilor cautati de utilizatori si a revizuirilor editoriale. Pentru produse sau disponibilitate comerciala se verifica intotdeauna sursa oficiala a comerciantului.</p>
+          </section>
+
+          <section class="wiki-section" id="intrebari-frecvente">
+            <h2>Intrebari frecvente</h2>
+            <div class="faq-list">
+              {articleFaqs.slice(0, 6).map(([q, a]) => (
+                <details>
+                  <summary>{publicCopy(q)}</summary>
+                  <p>{publicCopy(a)}</p>
+                </details>
               ))}
             </div>
-          )}
+          </section>
 
-          <h2>Intrebari frecvente despre pantaloni cu snur lung</h2>
-          <div class="faq-list">
-            {articleFaqs.map(([q, a]) => (
-              <details>
-                <summary>{publicCopy(q)}</summary>
-                <p>{publicCopy(a)}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-        <aside class="article-side">
-          <h2>Ghiduri recomandate</h2>
-          <a href="/ce-sunt-pantalonii-cu-snur-lung/">Ce sunt pantalonii cu snur lung?</a>
-          <a href="/ghid-alegere-pantaloni-snur-lung/">Ghid alegere</a>
-          <a href="/blog/cum-faci-nod-snur-pantaloni/">Cum faci nod la snur</a>
-          <a href="/blog/trenduri-urbane-pantaloni-2026/">Trenduri moda urbana 2026</a>
-          {editorialClusters[0].links.slice(0, 3).map(([href, label]) => <a href={href}>{label}</a>)}
-          <a href={SHOP} target="_blank" rel="noopener">Verifica disponibilitatea pe AtelierAXD</a>
-          <address>{company.name}<br />{company.cui}</address>
+          <nav class="wiki-prev-next" aria-label="Navigare intre articole">
+            {previousPage && <a href={`/${previousPage.slug}/`}><span>Articol anterior</span><strong>{previousPage.h1}</strong></a>}
+            {nextPage && <a href={`/${nextPage.slug}/`}><span>Articol urmator</span><strong>{nextPage.h1}</strong></a>}
+          </nav>
+        </main>
+
+        <aside class="wiki-sidebar">
+          <section>
+            <h2>Categorii principale</h2>
+            <a href="/pantaloni/">Pantaloni</a>
+            <a href="/ghiduri/materiale/">Materiale</a>
+            <a href="/ingrijire-textile/">Textile</a>
+            <a href="/ghiduri/culori/">Culori</a>
+            <a href="/tinute/">Stiluri</a>
+          </section>
+          <section>
+            <h2>Articole conexe</h2>
+            {mergedRelated.slice(0, 5).map((item) => <a href={item.href}>{item.label}</a>)}
+          </section>
+          <section>
+            <h2>Pagini populare</h2>
+            {editorialClusters.slice(0, 3).flatMap((cluster) => cluster.links.slice(0, 2)).map(([href, label]) => <a href={href}>{label}</a>)}
+          </section>
+          <section>
+            <h2>Termeni populari</h2>
+            {termLinks.slice(0, 6).map(([href, label]) => <a href={href}>{label}</a>)}
+          </section>
         </aside>
       </div>
     </section>

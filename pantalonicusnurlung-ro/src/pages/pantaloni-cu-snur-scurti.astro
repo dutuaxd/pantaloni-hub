@@ -1,14 +1,148 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { productSchema } from '../data/seoSite';
-const title = 'Pantaloni cu snur lung si pantaloni scurti';
-const description = 'Pantaloni cu snur lung si variante scurte negre pentru vara, moda urbana relaxat si croieli unisex. Vezi modelele!';
+
+const title = 'Pantaloni scurti cu snur lung barbati | Modele vara 2026';
+const description = 'Pantaloni scurti cu snur lung pentru barbati: negri, bej, roz, burgundy si seturi de vara. Ghid vizual Atelier AXD cu poze optimizate.';
 const canonical = 'https://pantalonicusnurlung.ro/pantaloni-cu-snur-scurti/';
-const image = '/pantaloni-barbati-largi-negri-snur-casual.jpg';
+const image = '/images/products/pantaloni-scurti-barbati-atelier-axd.webp';
+const shopShorts = 'https://atelieraxd.ro/collections/pantaloni-scurti-barbati-atelier-axd';
+const shopSets = 'https://atelieraxd.ro/collections/seturi-barbati-atelier-axd';
+const products = [
+  {
+    image: '/images/products/pantaloni-scurti-barbati-atelier-axd.webp',
+    name: 'Pantaloni scurti barbati Atelier AXD',
+    alt: 'Pantaloni scurti barbati Atelier AXD cu snur lung alb',
+    desc: 'Look de vara cu tricou alb, sneakers si pantaloni scurti negri cu snur lung vizibil.',
+    tags: ['Hero', 'Barbati'],
+    href: shopShorts,
+  },
+  {
+    image: '/images/products/pantaloni-scurti-negri-snur-lung-vascoza-in.webp',
+    name: 'Pantaloni scurti negri cu snur lung',
+    alt: 'Pantaloni scurti negri cu snur lung alb material lejer',
+    desc: 'Varianta neagra, usor de purtat in outfituri minimaliste sau all black de vara.',
+    tags: ['Negru', 'Lejer'],
+    href: shopShorts,
+  },
+  {
+    image: '/images/products/pantaloni-scurti-bej-snur-lung-subtiri.webp',
+    name: 'Pantaloni scurti bej cu snur lung',
+    alt: 'Pantaloni scurti bej subtiri cu snur lung alb',
+    desc: 'Nuanta deschisa pentru zile calde, tricouri albe, camasi lejere si tinute curate.',
+    tags: ['Bej', 'Vara'],
+    href: shopShorts,
+  },
+  {
+    image: '/images/products/pantaloni-scurti-burgundy-snur-lung-produs.webp',
+    name: 'Pantaloni scurti burgundy cu snur lung',
+    alt: 'Pantaloni scurti burgundy cu snur lung alb',
+    desc: 'Culoare accent pentru tinute de seara, festival sau lookuri streetwear cu tricouri simple.',
+    tags: ['Burgundy', 'Accent'],
+    href: shopShorts,
+  },
+  {
+    image: '/images/products/pantaloni-scurti-roz-snur-lung-produs.webp',
+    name: 'Pantaloni scurti roz cu snur lung',
+    alt: 'Pantaloni scurti roz pastel cu snur lung alb',
+    desc: 'Pastel relaxat pentru vara, potrivit cu alb, gri, bleumarin sau sneakers simpli.',
+    tags: ['Roz', 'Pastel'],
+    href: shopShorts,
+  },
+  {
+    image: '/images/products/set-scurt-negru-texturat-snur-lung.webp',
+    name: 'Set scurt negru texturat',
+    alt: 'Set scurt negru texturat cu pantaloni scurti si snur lung',
+    desc: 'Set coordonat pentru vara: camasa scurta, pantaloni scurti si snur lung alb ca accent.',
+    tags: ['Set', 'Texturat'],
+    href: shopSets,
+  },
+  {
+    image: '/images/products/set-vara-barbati-bleumarin-texturat.webp',
+    name: 'Set vara barbati bleumarin texturat',
+    alt: 'Set vara barbati bleumarin texturat cu pantaloni scurti',
+    desc: 'Alternativa bleumarin pentru seturi de vara, buna pentru vacanta, terasa si tinute smart relaxate.',
+    tags: ['Bleumarin', 'Set vara'],
+    href: shopSets,
+  },
+];
 const schema = [
   { '@context':'https://schema.org', '@type':'WebPage', name:title, url:canonical, image:new URL(image, canonical).href },
-  productSchema('Pantaloni scurti negri cu snur lung', 'https://atelieraxd.ro/collections/pantaloni-scurti-barbati-atelier-axd', 'https://pantalonicusnurlung.ro/pantaloni-scurti-negri-cu-snur-lung.jpg'),
+  productSchema('Pantaloni scurti cu snur lung barbati', shopShorts, new URL(image, canonical).href),
 ];
 ---
 <Layout title={title} description={description} canonical={canonical} image={image} type="website" schema={schema}>
-<section id="hero"><div class="hero-bg"></div><div class="container"><div class="hero-inner-wrapper"><div class="hero-content"><div class="hero-badge">Ghid urban 2026</div><h1 class="hero-h1">Pantaloni cu<br/><span class="line2">snur lung</span><br/>si scurti</h1><p class="hero-sub">Modelele scurte pastreaza acelasi limbaj moda urbana: negru, talie elastica, snur alb lung si purtare usoara vara.</p><div class="hero-actions"><a href="https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd" class="btn-primary">Verifica disponibilitatea pe AtelierAXD</a><a href="/ghid-marimi-pantaloni-cu-snur" class="btn-ghost">Ghid marimi</a></div></div></div><div class="hero-stats"><div class="hero-stat"><div class="stat-num">Ghid</div><div class="stat-label">Informativ</div></div><div class="hero-stat"><div class="stat-num">Unisex</div><div class="stat-label">Purtat si de femei</div></div><div class="hero-stat"><div class="stat-num">AtelierAXD</div><div class="stat-label">Disponibilitate</div></div><div class="hero-stat"><div class="stat-num">Card</div><div class="stat-label">sau ramburs</div></div></div></div></section><section class="section" id="colectie"><div class="container"><div class="services-header reveal"><div><span class="section-tag">// Catalog informativ</span><h2 class="section-h2">Alege modelul de <em>pantaloni</em> preferat</h2></div><p class="section-lead">Prezentam editorial croieli moda urbana cautate, disponibile prin AtelierAXD, cu accent pe pantaloni cu snur lung, negru, lejer si unisex.</p></div><div class="services-grid"><a class="service-card  reveal " href="https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-barbati-largi-negri-snur-casual.jpg" alt="Pantaloni barbati largi negri snur casual" title="Pantaloni barbati largi negri snur casual" width="1200" height="1600" loading="eager" fetchpriority="high" /></div><div class="service-name">Pantaloni barbati largi negri snur casual</div><div class="service-desc">Croiala lejera potrivita pentru un aspect relaxat. Echilibru intre moda urbana si casual, purtat usor de baieti si fete.</div><div class="service-tags"><span class="tag">Popular</span><span class="tag">Unisex lejer</span></div></a><a class="service-card  reveal reveal-delay-1" href="https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-barbati-negri-snur-lung.jpg" alt="Pantaloni barbati negri snur lung" title="Pantaloni barbati negri snur lung" width="1200" height="1600" loading="lazy" decoding="async" /></div><div class="service-name">Pantaloni barbati negri snur lung</div><div class="service-desc">Varianta clasica reinventata, cu material durabil, asezare buna pe incaltaminte sport si snur lung vizibil.</div><div class="service-tags"><span class="tag">Croiala clasica</span><span class="tag">Selectie</span></div></a><a class="service-card  reveal " href="https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-scurti-negri-cu-snur-lung.jpg" alt="Pantaloni scurti negri cu snur lung" title="Pantaloni scurti negri cu snur lung" width="1200" height="1600" loading="lazy" decoding="async" /></div><div class="service-name">Pantaloni scurti negri cu snur lung</div><div class="service-desc">Pentru sezonul cald: acelasi impact vizual moda urbana intr-o pereche scurta si confortabila.</div><div class="service-tags"><span class="tag">Vara</span><span class="tag">Scurti</span></div></a><a class="service-card  reveal reveal-delay-1" href="https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-negri-scurti-snur-lung.jpg" alt="Pantaloni negri scurti snur lung" title="Pantaloni negri scurti snur lung" width="1200" height="1600" loading="lazy" decoding="async" /></div><div class="service-name">Pantaloni negri scurti snur lung</div><div class="service-desc">Alternativa pentru zile de vara petrecute in oras, cu material placut si croiala lejera.</div><div class="service-tags"><span class="tag">Croiala de vara</span><span class="tag">Urban</span></div></a><a class="service-card  reveal " href="https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-negri-oversized-barbati-snur-lung.jpg" alt="Pantaloni negri oversized barbati snur lung" title="Pantaloni negri oversized barbati snur lung" width="1200" height="1600" loading="lazy" decoding="async" /></div><div class="service-name">Pantaloni negri oversized barbati snur lung</div><div class="service-desc">Larg, masiv, pur moda urbana. Pentru look foarte larg inspirat din cultura urbana internationala.</div><div class="service-tags"><span class="tag">Oversized</span><span class="tag">Larg</span></div></a><a class="service-card  reveal reveal-delay-1" href="https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd"><div class="service-arrow">-></div><div class="card-img-wrap"><img src="/pantaloni-negri-slim-snur-lung-atelieraxd.jpg" alt="Pantaloni negri slim snur lung AtelierAXD" title="Pantaloni negri slim snur lung AtelierAXD" width="1200" height="1600" loading="lazy" decoding="async" /></div><div class="service-name">Pantaloni negri slim snur lung AtelierAXD</div><div class="service-desc">Croiala slim selectata pentru asezare mai apropiata de corp, pastrand detaliul urban al snurului lung.</div><div class="service-tags"><span class="tag">Croiala slim</span><span class="tag">AtelierAXD</span></div></a></div></div></section><section class="section"><div class="container"><div class="split-grid"><article class="content-panel reveal"><h2>Pentru vara</h2><p>Pantalonii scurti cu snur lung sunt alternativa lejera cand vrei acelasi look, dar mai mult confort termic.</p></article><article class="content-panel reveal"><h2>Diferenta fata de lungi</h2><p>Pantaloni cu snur lung sunt mai versatili pe mai multe sezoane, in timp ce modelele scurte sunt clare pentru zile calde.</p></article></div></div></section><section class="section"><div class="container"><div class="content-panel reveal" style="text-align:center"><span class="section-tag">// vezi colectia</span><h2 class="section-h2" style="margin:0 auto 18px">Pantaloni cu snur lung AtelierAXD</h2><p style="max-width:640px;margin:0 auto 26px">Daca ai ales stilul, verifica detaliile pe AtelierAXD pentru modele disponibile, plata si livrare.</p><a href="https://atelieraxd.ro/collections/pantaloni-barbati-atelier-axd" class="btn-primary">Vezi stocul actualizat pe AtelierAXD</a></div></div></section></Layout>
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-inner-wrapper">
+        <div class="hero-content">
+          <div class="hero-badge">Ghid urban 2026</div>
+          <h1 class="hero-h1">Pantaloni<br /><span class="line2">scurti</span><br />cu snur lung</h1>
+          <p class="hero-sub">Modelele scurte pastreaza acelasi limbaj moda urbana: talie elastica, snur alb lung, croieli lejere si culori usor de purtat vara.</p>
+          <div class="hero-actions">
+            <a href={shopShorts} class="btn-primary">Verifica disponibilitatea pe AtelierAXD</a>
+            <a href="/ghid-marimi-pantaloni-cu-snur" class="btn-ghost">Ghid marimi</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="stat-num">2026</div><div class="stat-label">Ghid actualizat</div></div>
+        <div class="hero-stat"><div class="stat-num">Vara</div><div class="stat-label">Croieli lejere</div></div>
+        <div class="hero-stat"><div class="stat-num">AtelierAXD</div><div class="stat-label">Disponibilitate</div></div>
+        <div class="hero-stat"><div class="stat-num">SEO</div><div class="stat-label">Poze optimizate</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="colectie">
+    <div class="container">
+      <div class="services-header reveal">
+        <div>
+          <span class="section-tag">// Catalog vizual</span>
+          <h2 class="section-h2">Modele de <em>pantaloni scurti</em> cu snur lung</h2>
+        </div>
+        <p class="section-lead">Selectie editoriala pentru cautari de vara: pantaloni scurti negri, bej, roz, burgundy si seturi barbatesti cu textura.</p>
+      </div>
+      <div class="services-grid">
+        {products.map((product, index) => (
+          <a class={`service-card reveal ${index % 2 ? 'reveal-delay-1' : ''}`} href={product.href}>
+            <div class="service-arrow">-&gt;</div>
+            <div class="card-img-wrap">
+              <img src={product.image} alt={product.alt} title={product.name} width="1200" height="1600" loading={index === 0 ? 'eager' : 'lazy'} fetchpriority={index === 0 ? 'high' : undefined} decoding={index === 0 ? undefined : 'async'} />
+            </div>
+            <div class="service-name">{product.name}</div>
+            <div class="service-desc">{product.desc}</div>
+            <div class="service-tags">{product.tags.map((tag) => <span class="tag">{tag}</span>)}</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split-grid">
+        <article class="content-panel reveal">
+          <h2>Pentru vara</h2>
+          <p>Pantalonii scurti cu snur lung sunt alternativa lejera cand vrei acelasi look urban, dar mai mult confort termic.</p>
+        </article>
+        <article class="content-panel reveal">
+          <h2>Culori cautate</h2>
+          <p>Negru, bej, roz pastel, burgundy si bleumarin acopera cele mai usor de purtat tinute de vara, de la minimal la smart casual relaxat.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="content-panel reveal" style="text-align:center">
+        <span class="section-tag">// vezi colectia</span>
+        <h2 class="section-h2" style="margin:0 auto 18px">Pantaloni scurti cu snur lung AtelierAXD</h2>
+        <p style="max-width:640px;margin:0 auto 26px">Daca ai ales stilul, verifica detaliile pe AtelierAXD pentru modele disponibile, plata si livrare.</p>
+        <a href={shopShorts} class="btn-primary">Vezi stocul actualizat pe AtelierAXD</a>
+      </div>
+    </div>
+  </section>
+</Layout>

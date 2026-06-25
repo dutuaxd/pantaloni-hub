@@ -1,46 +1,35 @@
 ---
-import { ATELIER_HOME, ATELIER_LINKS, SHOP } from '../data/seoSite';
-import { mainNavLinks, portalCategoryGroups, socialLinks } from '../data/portalContent';
+import { company } from '../data/seoSite';
+
+const legalLinks = [
+  ['/termeni-si-conditii/', 'Termeni si conditii'],
+  ['/politica-de-confidentialitate/', 'Confidentialitate'],
+  ['/politica-retur/', 'Retur'],
+  ['/politica-rambursare/', 'Rambursare'],
+  ['/politica-livrare/', 'Livrare'],
+  ['/politica-cookies/', 'Cookies'],
+  ['/preferinte-cookie/', 'Preferinte cookies'],
+  ['/solutionarea-litigiilor/', 'SAL / SOL'],
+  ['/contact/', 'Contact'],
+];
 ---
-<footer class="mag-footer">
-  <div class="container">
-    <div class="mag-footer-grid">
-      <div class="mag-footer-brand">
-        <div class="mag-logo"><span>PSL</span> Fashion</div>
-        <p>Portal fashion masculin si catalog informativ despre pantaloni, tricouri, hanorace, tinute, ghiduri si news. Parte din ecosistemul AtelierAXD.</p>
-        <p class="footer-disclaimer">Informațiile despre produse, stiluri și disponibilitate au rol informativ. Stocul, prețurile și detaliile de comandă se verifică pe AtelierAXD.</p>
-        <div class="mag-socials">
-          {socialLinks.map(([href, label]) => <a href={href} target="_blank" rel="noopener">{label}</a>)}
-        </div>
-      </div>
-      <div class="mag-footer-col">
-        <h4>Revista</h4>
-        <ul>
-          {mainNavLinks.slice(1).map(([href, label]) => <li><a href={href}>{label}</a></li>)}
-        </ul>
-      </div>
-      <div class="mag-footer-col">
-        <h4>Categorii</h4>
-        <ul>
-          {portalCategoryGroups.slice(0, 4).map(([label, slugs]) => <li><a href={`/${slugs[0]}/`}>{label}</a></li>)}
-          <li><a href="/fashion-masculin/">Fashion masculin</a></li>
-          <li><a href="/streetwear-romania/">Streetwear Romania</a></li>
-        </ul>
-      </div>
-      <div class="mag-footer-col">
-        <h4>AtelierAXD</h4>
-        <ul>
-          <li><a href={ATELIER_HOME} target="_blank" rel="noopener">AtelierAXD.ro</a></li>
-          <li><a href={SHOP} target="_blank" rel="noopener">Pantaloni</a></li>
-          <li><a href={ATELIER_LINKS.tricouri} target="_blank" rel="noopener">Tricouri</a></li>
-          <li><a href={ATELIER_LINKS.hanorace} target="_blank" rel="noopener">Hanorace</a></li>
-          <li><a href={ATELIER_LINKS.blog} target="_blank" rel="noopener">Blog AtelierAXD</a></li>
-        </ul>
-      </div>
+
+<footer class="simple-footer">
+  <div class="container simple-footer-inner">
+    <div class="simple-footer-brand">
+      <a href="/" class="simple-footer-logo">PSL Fashion</a>
+      <p>{company.name} · CUI {company.cui} · Reg. Com. {company.reg}</p>
+      <p>{company.address}</p>
     </div>
-    <div class="mag-footer-legal">
-      <span>SC ATELIER AXD SRL | CUI: 50848938 | Reg. Com: J2024039294009</span>
-      <span><a href="/politica-de-confidentialitate/">Confidentialitate</a> · <a href="/termeni-si-conditii/">Termeni</a> · <a href="/cookies/">Cookies</a></span>
+
+    <nav class="simple-footer-links" aria-label="Linkuri legale">
+      {legalLinks.map(([href, label]) => <a href={href}>{label}</a>)}
+    </nav>
+
+    <div class="simple-footer-bottom">
+      <span>ANPC: Protectia consumatorilor</span>
+      <span>Solutionarea alternativa si online a litigiilor</span>
+      <a href={`mailto:${company.email}`}>{company.email}</a>
     </div>
   </div>
 </footer>

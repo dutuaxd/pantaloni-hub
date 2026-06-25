@@ -5,6 +5,7 @@ import { searchConsoleFashionBlogPosts2026 } from './searchConsoleFashionBlogPos
 import { researchedPantsLongTailBlogPosts2026 } from './researchedPantsLongTailBlogPosts2026';
 import { respectfulAudiencePantsBlogPosts2026 } from './respectfulAudiencePantsBlogPosts2026';
 import { questionAnswerClothingBlogPosts2026 } from './questionAnswerClothingBlogPosts2026';
+import { textileCareBlogPosts2026 } from './textileCareBlogPosts2026';
 // Removed programmatic arrays to comply with Phase 1 - Crawl Budget & Topo-SEO Restructuring
 // Focus on pillar articles instead of spam combinations
 import { withPremiumEditorialImages } from './editorialImagePrompts';
@@ -173,6 +174,15 @@ export const galleryImages = [
   ['pantaloni-baggy-fete-snur-lung-atelieraxd.png', 'Pantaloni baggy pentru fete cu snur lung Atelier AXD'],
   ['detaliu-snur-lung-pantaloni-oversized-dama.png', 'Detaliu snur lung la pantaloni oversized de dama'],
   ['moda-urbana-pantaloni-unisex-cu-snur-lung.png', 'Moda urbana cu pantaloni unisex cu snur lung'],
+  ['images/products/pantaloni-scurti-barbati-atelier-axd.webp', 'Pantaloni scurti barbati Atelier AXD purtati cu tricou alb si snur lung contrastant'],
+  ['images/products/pantaloni-scurti-burgundy-snur-lung-produs.webp', 'Pantaloni scurti burgundy cu snur lung alb, talie elastica si buzunare laterale'],
+  ['images/products/pantaloni-scurti-bej-snur-lung-subtiri.webp', 'Pantaloni scurti bej subtiri cu snur lung alb si croiala lejera de vara'],
+  ['images/products/set-scurt-negru-texturat-snur-lung.webp', 'Set scurt negru texturat pentru barbati cu pantaloni scurti si snur lung alb'],
+  ['images/products/pantaloni-scurti-negri-snur-lung-vascoza-in.webp', 'Pantaloni scurti negri lejeri cu snur lung alb si aspect fluid de vascoza in'],
+  ['images/products/pantaloni-scurti-roz-snur-lung-produs.webp', 'Pantaloni scurti roz pastel cu snur lung alb pentru tinute relaxate de vara'],
+  ['images/products/tinuta-nunta-barbati-2026.webp', 'Tinuta nunta barbati 2026 cu costum bleumarin, camasa alba si pantalon elegant'],
+  ['images/products/outfit-smart-casual-cununie-civila.webp', 'Outfit smart casual cununie civila cu sacou bleumarin si pantaloni deschisi'],
+  ['images/products/set-vara-barbati-bleumarin-texturat.webp', 'Set vara barbati bleumarin texturat cu camasa scurta si pantaloni scurti cu snur lung'],
   ['pantaloni-barbati-largi-negri-snur-casual.jpg', 'Pantaloni cu snur lung negri unisex, vedere laterala'],
   ['pantaloni-barbati-negri-snur-lung.jpg', 'Pantaloni cu snur lung negru, stilizare cu incaltaminte sport'],
   ['pantaloni-negri-oversized-barbati-snur-lung.jpg', 'Pantaloni cu snur lung baggy pentru stil urban'],
@@ -615,6 +625,7 @@ const rawBlogPosts = withPremiumEditorialImages([
   ...researchedPantsLongTailBlogPosts2026,
   ...respectfulAudiencePantsBlogPosts2026,
   ...questionAnswerClothingBlogPosts2026,
+  ...textileCareBlogPosts2026,
   ...queryDrivenBlogPosts,
   ...visibleScheduledBlogPosts,
 ]);

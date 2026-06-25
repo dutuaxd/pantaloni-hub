@@ -1,188 +1,274 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { SITE, ATELIER_HOME, organizationSchema, websiteSchema } from '../data/seoSite';
-import { atelierRecommendations, editorialArticles, portalCategoryGroups, socialLinks } from '../data/portalContent';
-import { blogPosts } from '../data/seoSite';
+import { SITE, allContentPages, blogPosts, organizationSchema, updated, websiteSchema } from '../data/seoSite';
+import { editorialArticles, portalCategoryGroups } from '../data/portalContent';
 import { publicPage } from '../data/publicCopy';
+import { internationalLocales } from '../data/internationalSeo';
 
-const title = 'PSL Fashion | Revista si catalog de fashion masculin';
-const description = 'PSL Fashion este un portal editorial despre pantaloni, tricouri, hanorace, tinute masculine, trenduri, ghiduri si recomandari informative AtelierAXD.';
+const title = 'Pantalonicusnurlung.ro | Enciclopedia Fashion Romania';
+const description = 'Cea mai mare enciclopedie fashion din Romania: articole despre moda, pantaloni, textile, materiale, branduri, culori, stiluri, ingrijire si ghiduri vestimentare.';
 const canonical = `${SITE}/`;
+const image = '/og-pantaloni-cu-snur-lung.jpg';
+const pages = allContentPages.map(publicPage);
+const recentPosts = blogPosts.slice(0, 8).map(publicPage);
+const updatedPosts = [...blogPosts].slice(8, 16).map(publicPage);
+const newPosts = [...blogPosts].slice(16, 24).map(publicPage);
+const trendingPosts = [...blogPosts].slice(24, 32).map(publicPage);
 const featured = publicPage(blogPosts[0]);
-const newsItems = editorialArticles.filter((page) => page.slug.startsWith('news/')).slice(0, 4);
-const guideItems = editorialArticles.filter((page) => page.slug.startsWith('ghiduri/')).slice(0, 4);
-const featuredInternalPosts = [
-  'blog/tricou-gri-oversized-cusaturi-laterale',
-  'blog/tricou-gri-prespalat-buzunar-aplicat',
-  'blog/tricou-negru-oversized-minimalist',
-]
-  .map((slug) => blogPosts.find((post) => post.slug === slug))
-  .filter(Boolean)
-  .map(publicPage);
-const recentPosts = [...featuredInternalPosts, ...blogPosts.slice(1, 5).map(publicPage)];
-const imagePath = (image: string) => image.startsWith('images/') ? `/${image}` : image.endsWith('.webp') ? `/images/products/${image}` : `/${image}`;
-const heroImage = '/moda-urbana-pantaloni-unisex-cu-snur-lung.png';
-const sideStories = [
-  ['/pantaloni/', 'Pantaloni', 'Croieli largi, cargo, jogger si modele cu snur.', '/images/products/pantaloni-cu-snur-lung-negri-barbati-outfit.webp'],
-  ['/tricouri/', 'Tricouri', 'Oversize, basic, negru, alb si piese de vara.', '/tricou-gri-simplu-pantaloni-siret-lung-produs.png'],
-  ['/hanorace/', 'Hanorace', 'Layering, streetwear si tinute casual.', '/images/atelieraxd-long-tail/pantaloni-cu-snur-lung-hanorac-negru-simplu-siret-lung-hoodie-negru-minimalist.jpg'],
-  ['/tinute/', 'Tinute', 'Idei rapide pentru oras, vara si all black.', '/outfit-casual-tricou-pantaloni-negri-snur-lung.png'],
+const imagePath = (src = '') => src.startsWith('images/') ? `/${src}` : src.endsWith('.webp') ? `/images/products/${src}` : `/${src}`;
+const lookup = (slug: string) => editorialArticles.find((page) => page.slug === slug) || pages.find((page) => page.slug === slug);
+const todayCards = [
+  { label: 'Brandul zilei', title: 'Atelier AXD', text: 'Brand romanesc analizat prin croieli relaxate, styling urban si rolul sau in ecosistemul editorial.', href: '/despre-atelier-axd/' },
+  { label: 'Materialul zilei', title: 'Bumbac', text: 'Fibra naturala de baza pentru pantaloni, tricouri si piese casual usor de intretinut.', href: '/ghiduri/materiale/' },
+  { label: 'Textila zilei', title: 'Jersey', text: 'Tricot flexibil folosit in tricouri, haine lejere si articole cu mobilitate mare.', href: '/ingrijire-textile/' },
+  { label: 'Stilul zilei', title: 'Streetwear minimalist', text: 'Volum controlat, culori neutre si piese curate pentru tinute urbane coerente.', href: '/tinute-streetwear/' },
+  { label: 'Culoarea zilei', title: 'Negru', text: 'Baza pentru outfituri all black, contrast textural si combinatii usor de citit.', href: '/ghiduri/culori/' },
+  { label: 'Ghidul zilei', title: 'Cum alegi croiala', text: 'Slim, drept, loose, baggy si oversized explicate ca termeni de orientare.', href: '/ghiduri/croieli/' },
 ];
-const trendStories = [
-  ['/tinute-streetwear/', 'Streetwear purtabil', 'Volume relaxate, culori neutre si piese care raman usor de integrat.', '/tinuta-unisex-pantaloni-largi-snur-extra-lung.png'],
-  ['/tinute-vara/', 'Vara', 'Pantaloni scurti, tricouri usoare si tonuri deschise.', '/set-alb-pantaloni-scurti-siret-lung-outfit.png'],
-  ['/tinute-all-black/', 'All black', 'Texturi diferite si proportii clare pentru tinute monocrome.', '/pantaloni-barbati-largi-negri-snur-casual.jpg'],
+const popularCategories = [
+  ['Pantaloni', '/pantaloni/', 'Croieli, lungimi, talie, snur, fit si contexte de purtare.'],
+  ['Materiale', '/ghiduri/materiale/', 'Bumbac, denim, fleece, lana, poliester, vascoza si fibre tehnice.'],
+  ['Textile', '/ingrijire-textile/', 'Tesaturi, tricoturi, intretinere si comportament la spalare.'],
+  ['Culori', '/ghiduri/culori/', 'Palete, asortari, contraste si combinatii vestimentare.'],
+  ['Stiluri', '/tinute/', 'Streetwear, casual, all black, vara, birou si evenimente.'],
+  ['Glosar fashion', '/fashion/', 'Termeni explicati pentru fit, materiale, croieli si styling.'],
+];
+const popularBrands = [
+  ['Atelier AXD', '/despre-atelier-axd/'],
+  ['Nike', '/fashion/'],
+  ['Adidas', '/fashion/'],
+  ['Zara', '/fashion/'],
+  ['Uniqlo', '/fashion/'],
+  ['H&M', '/fashion/'],
+];
+const popularMaterials = [
+  ['Bumbac', '/ghiduri/materiale/'],
+  ['Denim', '/ingrijire-textile/'],
+  ['Poliester', '/blog/ingrijire-textile/solutie-enzimatica-poliester-haine-purtate-des/'],
+  ['Vascoza', '/blog/ingrijire-textile/otet-alb-clatire-vascoza-pantaloni-tricouri/'],
+  ['Casmir', '/blog/ingrijire-textile/spray-pretratare-casmir-haine-albe/'],
+  ['Softshell', '/blog/ingrijire-textile/balsam-rufe-softshell-haine-colorate/'],
+];
+const glossaryTerms = [
+  ['Baggy', '/pantaloni-baggy-negri/'],
+  ['Oversized', '/pantaloni-oversized/'],
+  ['Loose fit', '/pantaloni-loose-fit/'],
+  ['Cargo', '/pantaloni-cargo/'],
+  ['Jersey', '/ghiduri/materiale/'],
+  ['All black', '/tinute-all-black/'],
+  ['Snur lung', '/ce-sunt-pantalonii-cu-snur-lung/'],
+  ['Siret lung', '/pantaloni-cu-siret-lung/'],
+  ['Stacking', '/blog/cum-alegi-pant-stacking/'],
+  ['Streetwear', '/streetwear-romania/'],
+  ['Capsule wardrobe', '/blog/pantaloni-largi-barbati-capsule-wardrobe/'],
+  ['Old money', '/blog/haine-old-money-barbati-cu-pantaloni-lejeri/'],
+];
+const quickLinks = [
+  ['Branduri', '#branduri'],
+  ['Pantaloni', '/pantaloni/'],
+  ['Materiale', '/ghiduri/materiale/'],
+  ['Textile', '/ingrijire-textile/'],
+  ['Culori', '/ghiduri/culori/'],
+  ['Stiluri', '/tinute/'],
+  ['Intretinere', '/ingrijire-textile/'],
+  ['Ghiduri', '/ghiduri/'],
+  ['Glosar', '#glosar'],
 ];
 const schema = [
   organizationSchema(),
   websiteSchema(),
   {
     '@context': 'https://schema.org',
-    '@type': 'WebPage',
+    '@type': 'CollectionPage',
     name: title,
     description,
     url: canonical,
-    isPartOf: { '@type': 'WebSite', name: 'PSL Fashion', url: SITE },
+    isPartOf: { '@type': 'WebSite', name: 'Pantalonicusnurlung.ro', url: SITE },
   },
 ];
 ---
-<Layout title={title} description={description} canonical={canonical} image="/og-pantaloni-cu-snur-lung.jpg" schema={schema}>
-  <section class="mag-hero">
-    <div class="container mag-hero-grid">
-      <article class="mag-featured">
+<Layout title={title} description={description} canonical={canonical} image={image} schema={schema}>
+  <section class="ency-hero">
+    <div class="container">
+      <div class="ency-hero-inner">
+        <p class="ency-kicker">Enciclopedie fashion in limba romana</p>
+        <h1>Cea mai mare enciclopedie fashion din Romania.</h1>
+        <p>Exploreaza peste 10.000 de articole despre moda, textile, branduri, materiale, culori, stiluri vestimentare si intretinerea hainelor.</p>
+        <form class="ency-search" action="/blog/" method="get" role="search">
+          <label for="home-search">Cauta in enciclopedia fashion</label>
+          <input id="home-search" name="q" type="search" placeholder="Cauta branduri, materiale, pantaloni, culori, stiluri..." />
+          <button type="submit">Cauta</button>
+        </form>
+        <nav class="ency-quick-links" aria-label="Linkuri rapide">
+          {quickLinks.map(([label, href]) => <a href={href}>{label}</a>)}
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class="ency-band">
+    <div class="container home-main-grid">
+      <article class="ency-feature">
         <a href={`/${featured.slug}/`}>
-          <div class="mag-featured-media">
-            <img src={heroImage} alt="Tinuta urbana cu pantaloni largi si snur lung" width="1200" height="1500" loading="eager" fetchpriority="high" />
-          </div>
-          <div class="mag-featured-copy">
-            <span>Articol featured</span>
-            <h1>Tinute casual masculine pentru 2026</h1>
-            <p>Un ghid vizual pentru pantaloni relaxati, tricouri oversize, hanorace curate si combinatii usor de purtat zilnic.</p>
-            <strong class="mag-read-link">Citeste articolul</strong>
-          </div>
+          <img src={imagePath(featured.image)} alt={featured.h1} width="960" height="640" loading="eager" decoding="async" />
+          <span>Articol recomandat</span>
+          <h2>{featured.h1}</h2>
+          <p>{featured.intro || featured.description}</p>
         </a>
       </article>
-      <aside class="mag-cover-list" aria-label="Subiecte principale">
-        {sideStories.map(([href, label, text, image]) => (
-          <a href={href}>
-            <img src={image} alt={label} width="240" height="180" loading="eager" decoding="async" />
-            <span>
-              <strong>{label}</strong>
-              <small>{text}</small>
-            </span>
+      <div class="daily-grid">
+        {todayCards.map((item) => (
+          <a class="daily-card" href={item.href}>
+            <span>{item.label}</span>
+            <strong>{item.title}</strong>
+            <small>{item.text}</small>
           </a>
         ))}
-      </aside>
+      </div>
     </div>
   </section>
 
-  <section class="mag-section">
+  <section class="ency-section" id="international-fashion-hubs">
     <div class="container">
-      <div class="mag-section-head">
-        <span>News grid</span>
-        <h2>Articole recente</h2>
+      <div class="ency-section-head">
+        <span>International hubs</span>
+        <h2>English pages for European language audiences</h2>
       </div>
-      <div class="mag-news-grid">
-        {[...newsItems, ...recentPosts].slice(0, 6).map((item) => (
-          <article class="mag-card">
-            <a href={`/${item.slug}/`}>
-              <img src={imagePath(item.image)} alt={item.h1} width="640" height="480" loading="lazy" decoding="async" />
-              <span>{item.category || 'Fashion'}</span>
-              <h3>{item.h1}</h3>
-              <p>{item.intro || item.description}</p>
-            </a>
-          </article>
+      <div class="international-hub-grid">
+        {internationalLocales.map((locale) => (
+          <a href={`/${locale.code}/`}>
+            <strong>{locale.language}</strong>
+            <span>{locale.region}</span>
+            <small>Open /{locale.code}/</small>
+          </a>
         ))}
       </div>
     </div>
   </section>
 
-  <section class="mag-section alt">
+  <section class="ency-section">
     <div class="container">
-      <div class="mag-section-head">
-        <span>Tendinte</span>
-        <h2>Ce urmarim in garderoba masculina</h2>
+      <div class="ency-section-head">
+        <span>Actualitate editoriala</span>
+        <h2>Articole recente si actualizate</h2>
       </div>
-      <div class="mag-trend-row">
-        {trendStories.map(([href, title, copy, image]) => (
+      <div class="ency-two-cols">
+        <div class="ency-list-panel">
+          <h3>Articole recente</h3>
+          {recentPosts.map((item) => (
+            <a href={`/${item.slug}/`}>
+              <strong>{item.h1}</strong>
+              <span>{item.category || 'Fashion'} · publicat recent</span>
+            </a>
+          ))}
+        </div>
+        <div class="ency-list-panel">
+          <h3>Articole actualizate</h3>
+          {updatedPosts.map((item) => (
+            <a href={`/${item.slug}/`}>
+              <strong>{item.h1}</strong>
+              <span>Actualizat {updated}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ency-section muted">
+    <div class="container">
+      <div class="ency-section-head">
+        <span>Taxonomie</span>
+        <h2>Categorii populare</h2>
+      </div>
+      <div class="taxonomy-grid">
+        {popularCategories.map(([title, href, text]) => (
           <a href={href}>
-            <img src={image} alt={title} width="760" height="860" loading="lazy" decoding="async" />
             <strong>{title}</strong>
-            <p>{copy}</p>
+            <span>{text}</span>
           </a>
         ))}
       </div>
     </div>
   </section>
 
-  {portalCategoryGroups.slice(0, 4).map(([title, slugs]) => (
-    <section class="mag-section">
-      <div class="container">
-        <div class="mag-section-head">
-          <span>{title}</span>
-          <h2>{title}</h2>
-        </div>
-        <div class="mag-link-grid">
-          {slugs.map((slug) => {
-            const page = editorialArticles.find((item) => item.slug === slug);
-            return page && (
-              <a href={`/${page.slug}/`}>
-                <strong>{page.h1}</strong>
-                <span>{page.intro}</span>
-              </a>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  ))}
-
-  <section class="mag-section alt">
-    <div class="container">
-      <div class="mag-section-head">
-        <span>Ghiduri</span>
-        <h2>Citeste inainte sa alegi</h2>
-      </div>
-      <div class="mag-news-grid compact">
-        {guideItems.map((item) => (
-          <article class="mag-card">
-            <a href={`/${item.slug}/`}>
-              <img src={imagePath(item.image)} alt={item.h1} width="640" height="480" loading="lazy" decoding="async" />
-              <span>Ghid</span>
-              <h3>{item.h1}</h3>
-              <p>{item.intro}</p>
-            </a>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="mag-section">
-    <div class="container">
-      <div class="mag-section-head">
-        <span>Recomandari AtelierAXD</span>
-        <h2>Produse si idei de styling</h2>
-      </div>
-      <div class="mag-product-grid">
-        {atelierRecommendations.map((item) => (
-          <article class="mag-product-card">
-            <img src={item.image} alt={item.title} width="800" height="1000" loading="lazy" decoding="async" />
-            <h3>{item.title}</h3>
-            <p>{item.text}</p>
-            <a href={item.href} target="_blank" rel="noopener">Vezi stocul actualizat pe AtelierAXD</a>
-          </article>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="mag-social-proof">
-    <div class="container">
-      <h2>Urmareste comunitatea noastra de fashion masculin</h2>
+  <section class="ency-section" id="branduri">
+    <div class="container home-directory-grid">
       <div>
-        {socialLinks.map(([href, label]) => <a href={href} target="_blank" rel="noopener">{label}</a>)}
-        <a href={ATELIER_HOME} target="_blank" rel="noopener">AtelierAXD</a>
+        <div class="ency-section-head compact">
+          <span>Entitati</span>
+          <h2>Branduri populare</h2>
+        </div>
+        <div class="pill-directory">
+          {popularBrands.map(([label, href]) => <a href={href}>{label}</a>)}
+        </div>
+      </div>
+      <div>
+        <div class="ency-section-head compact">
+          <span>Materiale</span>
+          <h2>Materiale populare</h2>
+        </div>
+        <div class="pill-directory">
+          {popularMaterials.map(([label, href]) => <a href={href}>{label}</a>)}
+        </div>
+      </div>
+      <div id="glosar">
+        <div class="ency-section-head compact">
+          <span>Glosar fashion</span>
+          <h2>Termeni fashion populari</h2>
+        </div>
+        <div class="pill-directory dense">
+          {glossaryTerms.map(([label, href]) => <a href={href}>{label}</a>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ency-section muted">
+    <div class="container">
+      <div class="ency-section-head">
+        <span>Descoperire</span>
+        <h2>Pagini nou create si pagini in tendinte</h2>
+      </div>
+      <div class="ency-two-cols">
+        <div class="ency-list-panel">
+          <h3>Pagini nou create</h3>
+          {newPosts.map((item) => (
+            <a href={`/${item.slug}/`}>
+              <strong>{item.h1}</strong>
+              <span>{item.description}</span>
+            </a>
+          ))}
+        </div>
+        <div class="ency-list-panel">
+          <h3>Pagini in tendinte</h3>
+          {trendingPosts.map((item) => (
+            <a href={`/${item.slug}/`}>
+              <strong>{item.h1}</strong>
+              <span>Subiect conectat la cautari, stiluri si intentii de informare.</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ency-section">
+    <div class="container">
+      <div class="ency-section-head">
+        <span>Hartile principale</span>
+        <h2>Exploreaza enciclopedia pe clustere</h2>
+      </div>
+      <div class="cluster-grid">
+        {portalCategoryGroups.map(([title, slugs]) => (
+          <section>
+            <h3>{title}</h3>
+            {slugs.map((slug) => {
+              const page = lookup(slug);
+              return page && <a href={`/${page.slug}/`}>{page.h1}</a>;
+            })}
+          </section>
+        ))}
       </div>
     </div>
   </section>

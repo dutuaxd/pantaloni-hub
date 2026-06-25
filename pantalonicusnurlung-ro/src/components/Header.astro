@@ -1,36 +1,61 @@
 ---
-import { ATELIER_HOME } from '../data/seoSite';
-import { mainNavLinks } from '../data/portalContent';
+const navLinks = [
+  ['/', 'Acasa'],
+  ['/fashion/', 'Fashion'],
+  ['/pantaloni/', 'Pantaloni'],
+  ['/ghiduri/materiale/', 'Materiale'],
+  ['/ingrijire-textile/', 'Textile'],
+  ['/ghiduri/culori/', 'Culori'],
+  ['/tinute/', 'Stiluri'],
+  ['/ghiduri/', 'Ghiduri'],
+  ['/#glosar', 'Glosar'],
+];
+const directoryLinks = [
+  ['/pantaloni-cu-snur-lung/', 'Snur lung'],
+  ['/pantaloni-cargo/', 'Cargo'],
+  ['/pantaloni-largi/', 'Largi'],
+  ['/pantaloni-oversized/', 'Oversized'],
+  ['/tinute-all-black/', 'All black'],
+  ['/streetwear-romania/', 'Streetwear Romania'],
+];
 ---
-<header class="mag-header">
-  <div class="mag-topline">
-    <a href="/" class="mag-logo" aria-label="Acasa PSL Fashion">
-      <span>PSL</span> Fashion
+<header class="kb-header">
+  <div class="kb-topline">
+    <a href="/" class="kb-logo" aria-label="Acasa Pantalonicusnurlung.ro">
+      <span>PSL</span>
+      <strong>Enciclopedia Fashion</strong>
     </a>
-    <div class="mag-header-actions">
-      <a href={ATELIER_HOME} target="_blank" rel="noopener">AtelierAXD</a>
-      <a href="https://www.instagram.com/atelieraxd.ro/" target="_blank" rel="noopener">Instagram</a>
-      <button class="mobile-menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="mobile-menu-panel" aria-expanded="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg>
-      </button>
-    </div>
+    <form class="kb-header-search" action="/blog/" method="get" role="search">
+      <label for="site-search">Cauta in enciclopedie</label>
+      <input id="site-search" name="q" type="search" placeholder="Cauta materiale, branduri, stiluri..." />
+      <button type="submit" aria-label="Cauta">Cauta</button>
+    </form>
+    <button class="mobile-menu-toggle" type="button" aria-label="Deschide meniul" aria-controls="mobile-menu-panel" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg>
+    </button>
   </div>
-  <nav class="mag-nav" aria-label="Meniu principal">
+  <nav class="kb-nav" aria-label="Navigare principala">
     <ul>
-      {mainNavLinks.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
+      {navLinks.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
     </ul>
+  </nav>
+  <nav class="kb-directory-strip" aria-label="Subiecte rapide">
+    {directoryLinks.map(([href, label]) => <a href={href}>{label}</a>)}
   </nav>
   <div class="mobile-menu-panel" id="mobile-menu-panel" aria-hidden="true">
     <div class="mobile-menu-head">
-      <strong>PSL Fashion</strong>
+      <strong>Enciclopedia Fashion</strong>
       <button class="mobile-menu-close" type="button" aria-label="Inchide meniul">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg>
       </button>
     </div>
+    <form class="mobile-site-search" action="/blog/" method="get" role="search">
+      <label for="mobile-site-search">Cauta in enciclopedie</label>
+      <input id="mobile-site-search" name="q" type="search" placeholder="Cauta rapid..." />
+      <button type="submit">Cauta</button>
+    </form>
     <ul class="mobile-menu-links">
-      {mainNavLinks.map(([href, label]) => <li><a href={href}>{label}</a></li>)}
-      <li><a href={ATELIER_HOME} target="_blank" rel="noopener">AtelierAXD</a></li>
-      <li><a href="https://www.instagram.com/atelieraxd.ro/" target="_blank" rel="noopener">Instagram</a></li>
+      {[...navLinks, ...directoryLinks].map(([href, label]) => <li><a href={href}>{label}</a></li>)}
     </ul>
   </div>
   <div class="mobile-menu-backdrop" hidden></div>
@@ -40,14 +65,12 @@ import { mainNavLinks } from '../data/portalContent';
   const close = document.querySelector('.mobile-menu-close');
   const panel = document.querySelector('.mobile-menu-panel');
   const backdrop = document.querySelector('.mobile-menu-backdrop');
-
   const setMobileMenu = (open) => {
     document.documentElement.classList.toggle('mobile-menu-open', open);
     toggle?.setAttribute('aria-expanded', String(open));
     panel?.setAttribute('aria-hidden', String(!open));
     if (backdrop) backdrop.hidden = !open;
   };
-
   toggle?.addEventListener('click', () => setMobileMenu(true));
   close?.addEventListener('click', () => setMobileMenu(false));
   backdrop?.addEventListener('click', () => setMobileMenu(false));
