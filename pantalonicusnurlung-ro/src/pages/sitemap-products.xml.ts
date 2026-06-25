@@ -3,9 +3,9 @@ import { SITE, updated } from '../data/seoSite';
 const recommendationUrls = [
   '/pantaloni-cu-snur-lung/',
   '/pantaloni-cu-snur-scurti/',
-  '/pantaloni/',
-  '/tricouri/',
-  '/hanorace/',
+  '/pantaloni-cu-snur-lung-barbati/',
+  '/pantaloni-cu-snur-lung-femei/',
+  '/pantaloni-cu-snur-lung-unisex/',
 ];
 
 export function GET() {

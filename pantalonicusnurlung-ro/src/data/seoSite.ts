@@ -743,7 +743,39 @@ function optimizeBlogQuestionMeta(post: any) {
   };
 }
 
-export const blogPosts = rawBlogPosts.map((post, index, allPosts) => ({
+function normalizeImageKey(image = '') {
+  return image
+    .replace(/^https?:\/\/pantalonicusnurlung\.ro\//i, '')
+    .replace(/^\/+/, '')
+    .replace(/^images\/products\/(.+)$/i, '$1')
+    .trim();
+}
+
+function blogImageCandidates(post: any) {
+  return [
+    post.image,
+    ...(Array.isArray(post.images) ? post.images.map((image: any) => image?.file) : []),
+  ].filter(Boolean);
+}
+
+function assignUniqueBlogImages(posts: any[]) {
+  const fallbackPool = posts.flatMap(blogImageCandidates);
+  const used = new Set(pages.map((page) => normalizeImageKey(page.image)));
+
+  return posts.map((post) => {
+    const candidates = [...blogImageCandidates(post), ...fallbackPool];
+    const uniqueImage = candidates.find((image) => !used.has(normalizeImageKey(image))) || post.image;
+    used.add(normalizeImageKey(uniqueImage));
+    return {
+      ...post,
+      image: uniqueImage,
+    };
+  });
+}
+
+const rawBlogPostsWithUniqueImages = assignUniqueBlogImages(rawBlogPosts);
+
+export const blogPosts = rawBlogPostsWithUniqueImages.map((post, index, allPosts) => ({
   ...optimizeBlogQuestionMeta(post),
   relatedLinks: Array.isArray((post as any).relatedLinks) && (post as any).relatedLinks.length > 0
     ? (post as any).relatedLinks
